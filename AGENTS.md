@@ -43,3 +43,33 @@ cognición, funcionalidad y participación.
 13 notebooks con esquema válido y CI del commit inicial aprobado en GitHub.
 Usa el checkout existente; las tareas cloud están aisladas y no necesitan
 worktrees salvo solicitud explícita. No confundir CP0 con experimentos ejecutados.
+
+## Protocolo operativo por sesión (VS Code o Cloud)
+1. Identificar rama, último commit y archivos modificados antes de tocar nada; no sobrescribir trabajo ajeno.
+2. Leer los documentos indicados al inicio y contrastar la petición con el checkpoint abierto.
+3. Presentar un plan breve: archivos a modificar, riesgos estadísticos, pruebas y criterio de término.
+4. Separar código reusable (src/), demostración e interpretación (notebooks/), pruebas (tests/) y evidencia (docs/).
+5. Ejecutar las pruebas relevantes y documentar los comandos y resultados reales; si una prueba no corre, dejarlo escrito.
+6. Actualizar HANDOFF, ROADMAP y RESULTADOS cuando corresponda; marcar pendientes, decisiones provisionales y bloqueos.
+7. Informar cambios en archivos, tests, commit/rama y próximos pasos. Preferir rama de feature y PR; nunca force-push.
+
+## Siguiente entrega: CP1 — integridad y población analítica
+**Meta:** definir un universo longitudinal auditable *antes* de construir etiquetas o modelos.
+- Examinar identificadores `cunicah` + `np`, `ronda`, `a_o_ent`, `tipent`, `edad` y `fallecido`; comprobar unicidad persona-ronda.
+- Contabilizar entrevistados por ronda y por tipo (directa, sustituto, sobre fallecido), diferencias de cobertura y transición entre olas; respetar intervalos de tiempo desiguales.
+- Auditar faltantes especiales de Stata antes de la conversión a NaN; distinguir pregunta no realizada, entrevista por sustituto y fallecimiento.
+- Comparar elegibilidad por edad: 60+ en cada visita versus entrada a 60+; documentar cómo cambian IDs y observaciones.
+- Conservar el panel **no balanceado** como referencia analítica candidata; usar panel completo de seis rondas solo como sensibilidad hasta que se apruebe el estimando.
+- Documentar denominadores (personas únicas vs personas-ronda), exclusiones secuenciales y conteos con y sin pesos cuando aplique; no tratar ponderadores transversales como longitudinales.
+- Para la auditoría usar datos locales únicamente; el CI y los tests deben funcionar con datos sintéticos. No almacenar en GitHub microdatos ni IDs individuales.
+
+**Entregables verificables:** `notebooks/02_construccion_muestra.ipynb` legible y reproducible, funciones testeadas en `src/tesis_enasem/panel.py` (o módulos existentes), tablas agregadas de flujo, `docs/AUDITORIA_INICIAL.md` ampliada, decisiones provisionales en `docs/DECISIONES.md` y evidencia de aceptación en `docs/ROADMAP.md`.
+
+**Criterio de aceptación:** reconciliación explícita de conteos por onda y exclusión, pruebas de duplicados y faltantes, justificación de población de referencia y advertencia documentada sobre atrición. No avanzar automáticamente a CP2/CP3 sin revisión metodológica.
+
+## Formato de handoff al cerrar una tarea
+- Objetivo / checkpoint / estado (completado, parcial o bloqueado).
+- Archivos y funciones editados; comandos ejecutados; resultados de tests.
+- Métricas empíricas: solo si fueron calculadas; población, periodo, denominador y supuestos.
+- Decisiones nuevas (aprobadas o provisionales) y riesgos metodológicos.
+- Próxima acción reproducible y pregunta pendiente para revisión humana.
