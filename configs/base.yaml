@@ -1,0 +1,16 @@
+project: tesis_enasem
+seed: 42
+source: data/raw/simpleMHAS.dta
+round_to_year: {1: 2001, 2: 2003, 3: 2012, 4: 2015, 5: 2018, 6: 2021}
+sample:
+  min_age: 60
+  interview_types: [1, 2]
+  require_balanced_panel: false  # No imponer supervivencia para muestra principal
+  weights: null  # Pendiente justificar peso individual/longitudinal
+outcome:
+  preliminary: wealth_bottom_quartile
+  quantile: 0.25
+  relative_to: wave
+validation:
+  seed: 42
+  avoid_leakage: true
