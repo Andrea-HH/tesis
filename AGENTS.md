@@ -39,5 +39,7 @@ cognición, funcionalidad y participación.
 - Registro de progreso: cada checkpoint en `docs/ROADMAP.md` solo si pasó aceptación.
 
 ## Handoff rápido
-`docs/HANDOFF.md`. Estado: scaffold listo localmente, aún no publicado por
-permisos insuficientes del conector GitHub (error 403 al escribir).
+`docs/HANDOFF.md`. CP0 verificado: instalación editable, 9 pruebas sintéticas,
+13 notebooks con esquema válido y CI del commit inicial aprobado en GitHub.
+Usa el checkout existente; las tareas cloud están aisladas y no necesitan
+worktrees salvo solicitud explícita. No confundir CP0 con experimentos ejecutados.

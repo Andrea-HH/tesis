@@ -1,8 +1,11 @@
 # Bitácora de resultados — NO confundir planes con hallazgos
 
+## CP0 completado (2026-10-09)
+Instalación editable verificada, 9 pruebas aprobadas, 13 notebooks válidos y CI del commit inicial aprobado. Evidencia y límites: [CP0_VERIFICACION.md](CP0_VERIFICACION.md). No se ejecutaron experimentos con microdatos en esta verificación.
+
 ## Evidencia del estado técnico (2026-10-09)
 - Se preparó arquitectura del paquete y plantillas de notebooks.
-- Se verifican las pruebas por `pytest` y las notebooks por `scripts/validate_notebooks.py` en el entorno local; sin validación remota CI hasta que haya acceso GitHub.
+- Se verifican las pruebas por `pytest` y las notebooks por `scripts/validate_notebooks.py` en el entorno local; CI del commit inicial verificado en GitHub.
 - **No hay resultados predictivos ni conclusiones empíricas registradas** de este repositorio.
 
 ## Auditoría real de la base ENASEMsimple (datos suministrados, sin publicar)

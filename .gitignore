@@ -26,3 +26,21 @@ reports/figures/*
 reports/tables/*
 !reports/figures/.gitkeep
 !reports/tables/.gitkeep
+
+# Otros entornos y temporales
+venv/
+env/
+*.tmp
+*.temp
+*.swp
+*~
+/tmp/
+/cache/
+build/
+dist/
+# Otros formatos de microdatos y ubicaciones locales
+*.sav
+*.sas7bdat
+/ENASEM/
+/enasem/
+/microdatos/

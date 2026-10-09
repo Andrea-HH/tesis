@@ -7,7 +7,8 @@ Estado al 2026-10-09. Un [x] implica artefacto realizado/verificado; no equivale
 - [x] Archivo AGENTS.md, handoff, protocolo experimental, gitignore y tests.
 - [x] Notebooks narrativos para todas las fases; 01, 02, 03 y 05 con código inicial ejecutable.
 - [x] Tests locales de funcionalidad y formato de notebooks.
-- [ ] Subida a GitHub y verificación CI remota (bloqueo 403 por permisos del conector).
+- [x] Subida del commit inicial `adfe426` a GitHub y CI remoto aprobado (Python 3.11 y 3.12).
+- [x] CP0 completado: evidencia en [CP0_VERIFICACION.md](CP0_VERIFICACION.md).
 **Aceptación:** commit y CI verde en `main`.
 
 ## CP1 — Integridad de datos y muestra

@@ -30,7 +30,13 @@ python -m pip install --upgrade pip
 python -m pip install -e ".[notebooks,dev]"
 python -m pytest -q
 python scripts/validate_notebooks.py
-python -m jupyter lab notebooks/
+# En cloud con home de solo lectura:
+mkdir -p .venv/jupyter-data .venv/jupyter-runtime .venv/jupyter-config .venv/ipython
+export JUPYTER_DATA_DIR="$PWD/.venv/jupyter-data"
+export JUPYTER_RUNTIME_DIR="$PWD/.venv/jupyter-runtime"
+export JUPYTER_CONFIG_DIR="$PWD/.venv/jupyter-config"
+export IPYTHONDIR="$PWD/.venv/ipython"
+python -m jupyter lab notebooks/ --ip=127.0.0.1 --no-browser
 ```
 
 En Colab: subir o clonar el repositorio y ejecutar `!pip install -e .`; el microdato debe cargarse por separado en el entorno, nunca hacerle commit.

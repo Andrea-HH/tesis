@@ -5,7 +5,7 @@
 - Pregunta principal: ¿qué detectan salud, cognición y funcionalidad antes de que el patrimonio muestre vulnerabilidad? ¿Cuánto afecta la desaparición del seguimiento?
 - Base: ENASEMsimple (`simpleMHAS.dta`), longitudinal, 6 rondas 2001-2021. **NO** subir el `.dta` al repositorio público.
 - Repositorio: notebooks narrativos bajo `notebooks/`; funciones en `src/tesis_enasem`; pruebas en `tests/`; decisiones en `docs/DECISIONES.md`; resultados probados en `docs/RESULTADOS.md`.
-- Estado: scaffold programático; no se han entrenado aún los modelos de tesis. CP0 local validado; escritura remota pendiente. Se realizó una auditoría estructural preliminar del archivo en `docs/AUDITORIA_INICIAL.md`.
+- Estado: scaffold programático; no se han entrenado aún los modelos de tesis. CP0 validado; commit inicial `adfe426` publicado con CI aprobado. Ver docs/CP0_VERIFICACION.md. Se realizó una auditoría estructural preliminar del archivo en `docs/AUDITORIA_INICIAL.md`.
 - Acción siguiente: CP1, auditar persona/ronda, entrevistas directas vs sustituto, fallecimiento y las diferentes muestras. Construir flujo de muestra antes de filtrar panel completo.
 
 ## Lecturas de ingreso
@@ -26,5 +26,12 @@
 - Patrimonio puede ser negativo: transformar con `asinh`; comparar a precios constantes antes de afirmar variaciones reales.
 - Evitar leakage por persona, por año y por cálculo de umbral Q1 con el test.
 
+## Infraestructura cloud
+Activar `.venv` y ejecutar la instalación y pruebas de README.md.
+En este entorno el home no es escribible: antes de iniciar Jupyter aplicar las
+rutas locales de configuración, datos y runtime documentadas en README.md.
+
 ## Bloqueos conocidos
-Acceso de integración GitHub devuelve 403 para escritura en `Andrea-HH/tesis`. Reautorizar conexión de GitHub con permiso de escritura para el repositorio; no afirmar que el scaffold está subido mientras no exista commit.
+No hay bloqueo de lectura GitHub: el commit inicial y su CI están disponibles.
+Los microdatos no están presentes en este entorno; no ejecutar ni marcar CP1+
+como completos hasta contar con los datos autorizados y evidencia real.

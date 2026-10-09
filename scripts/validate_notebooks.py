@@ -1,12 +1,14 @@
 """Valida estructura de los notebooks sin ejecutarlos ni requerir datos."""
 from pathlib import Path
 import json
+import nbformat
 
 root=Path(__file__).resolve().parents[1]
 files=sorted((root/'notebooks').glob('*.ipynb'))
 assert len(files)>=13, 'Se esperaban los 13 notebooks del roadmap'
 for path in files:
     item=json.loads(path.read_text(encoding='utf-8'))
+    nbformat.validate(item)
     assert item.get('nbformat')==4, path
     assert item.get('cells') and item['cells'][0]['cell_type']=='markdown', path
     for cell in item['cells']:
