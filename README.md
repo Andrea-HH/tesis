@@ -1,6 +1,6 @@
 # Tesis ENASEM — Alerta temprana de vulnerabilidad económica
 
-> **Estado actual (2026-10-09):** infraestructura local/plantilla reproducible. Los modelos de tesis y resultados científicos **todavía no se han ejecutado**; para el progreso real consultar `docs/ROADMAP.md`.
+> **Estado actual (2026-10-11):** CP1 implementado y ejecutado localmente; revisión metodológica pendiente. Los modelos predictivos de tesis **todavía no se han ejecutado**; para el progreso real consultar `docs/ROADMAP.md`.
 
 ## Pregunta de investigación
 ¿Es posible desarrollar un modelo longitudinal de alerta temprana que permita identificar y caracterizar trayectorias de vulnerabilidad económica en adultos mayores en México a partir de señales observables de salud física, salud mental, cognición, funcionalidad y características socioeconómicas, y determinar con cuánta anticipación pueden detectarse dicho riesgo y cómo varía su capacidad predictiva entre distintos perfiles demográficos y socioeconómicos?
@@ -47,7 +47,7 @@ Fuente oficial: [ENASEM](https://enasem.org/); diccionario: ENASEMsimple/simpleM
 **Importante:** `ronda=3` es 2012 nominal, pero algunas entrevistas son 2013. `tipent` distingue entrevista directa, sustituto y sobre fallecido; `.f`, `.p`, `.w` NO equivalen a cero. Algunas pruebas cognitivas solo existen en ciertas rondas. Los intervalos entre rondas no son uniformes.
 
 ## Cómo usar los notebooks
-Leer 00 (diseño), ejecutar 01 (ingesta y faltantes), 02 (flujo de muestra), 03 (EDA inicial) y 05 (cortes por ronda). Los restantes notebooks son **planes de experimentación**; completar una vez resueltas definiciones y controles de sesgo. No ejecutar CP4+ sin haber cerrado CP1/CP3. Cada resultado validado debe constar en `docs/RESULTADOS.md`.
+Leer 00 (diseño), 01 (ingesta) y ejecutar 02 (CP1: seis fichas, muestra y seguimiento). También se puede ejecutar `/opt/miniconda3/envs/myenv/bin/python scripts/run_cp1.py`. Ver [docs/CP1_RESULTADOS.md](docs/CP1_RESULTADOS.md). Los notebooks 03–04 corresponden a CP2 pendiente de autorización; 05 y modelos posteriores requieren cierre de muestra y metodología. No avanzar automáticamente. El notebook 02 ejecutado con tablas y figuras se conserva localmente en `reports/notebooks/`; los fuentes versionados no contienen outputs según la política de CI.
 
 ## Colaboración y agentes
 - Contexto para nuevos agentes: `AGENTS.md` y `docs/HANDOFF.md`.

@@ -1,6 +1,6 @@
 # Roadmap — checkpoints y criterios de aceptación
 
-Estado al 2026-10-09. Un [x] implica artefacto realizado/verificado; no equivale a conclusión científica.
+Estado al 2026-10-11. Un [x] implica artefacto realizado/verificado; no equivale a conclusión científica.
 
 ## CP0 — Infraestructura reproducible
 - [x] Estructura y paquete Python instalable preparado localmente.
@@ -12,9 +12,11 @@ Estado al 2026-10-09. Un [x] implica artefacto realizado/verificado; no equivale
 **Aceptación:** commit y CI verde en `main`.
 
 ## CP1 — Integridad de datos y muestra
-- [ ] Conteos por ronda/persona/tipo de entrevista; discrepancias, duplicados, valores .f/.p/.w.
-- [ ] Reglas explícitas de edad de entrada, grupos de comparación y panel no balanceado.
-- [ ] Flujo reproducible de muestra (directas/sustituto/muerte/no respuesta).
+- [x] Conteos ejecutados por ronda/persona/tipo, faltantes de 119 variables y anomalías documentadas.
+- [x] Once alternativas y composición comparadas; reglas explícitas de edad y balance.
+- [x] Flujo reproducible, presencia, estados de entrevista y ausencia sin causa asumida.
+- [ ] Aprobación del estimando/población, reglas de anomalías y ponderación; cierre metodológico CP1.
+**Evidencia técnica:** CP1_RESULTADOS.md, notebook 02 ejecutado localmente, 16 tests y 13 notebooks válidos. CP1 no se declara completo mientras esté pendiente la aceptación humana.
 **Aceptación:** tabla auditable y definición del estimando. Exigir además seis fichas
 por ronda con N de registros y personas, `tipent` desglosado, grupos de edad,
 fechas efectivas, excluidos, patrones de participación, transición y faltantes.

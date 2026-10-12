@@ -77,3 +77,7 @@ Trabajar en `notebooks/03_eda_univariado.ipynb` y `notebooks/04_eda_longitudinal
 - Solicitar primero CP1; CP2 después de revisar conteos, muestra y cobertura.
 - Entregar notebooks narrativos con tablas/figuras visibles, funciones en `src`, pruebas con datos sintéticos, documentación de decisiones, `git status` claro y reporte de qué se ejecutó realmente.
 - Registrar resultados empíricos solo como agregados en `docs/RESULTADOS.md` y pendientes en `docs/HANDOFF.md`.
+
+## Entrada preparada a CP2 tras CP1 (2026-10-11; no ejecutada)
+El inventario CP1 ya audita presencia y tipos de faltantes de las 119 columnas por ronda. CP2 reutilizará estos denominadores, sin interpretar disponibilidad empírica como universo del cuestionario. Antes de ejecutar 03/04: aprobación de muestra/estimando y revisión de anomalías de edad, sexo y fallecimiento.
+Orden previsto en 03: ficha de definición del diccionario → universo/cobertura → filtros → seis fichas por variable disponible → tabla/figura conjunta → interpretación y límites. En 04: asociaciones dentro de cada ronda (Spearman o Cramér V), N por par, comparación de perfiles y análisis dentro de persona con pares explícitos. Comparabilidad monetaria de imp_neto, imputaciones del proveedor y cobertura cognitiva se verifican antes de interpretar cambios. Mantener BrBG fijo por ronda y originales patrimoniales. No se ejecutaron EDA clínico/patrimonial, correlaciones ni integraciones de pensiones en CP1.

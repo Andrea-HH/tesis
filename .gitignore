@@ -44,3 +44,5 @@ dist/
 /ENASEM/
 /enasem/
 /microdatos/
+# Notebooks CP1 ejecutados localmente; los fuentes versionados conservan outputs vacíos
+/reports/notebooks/

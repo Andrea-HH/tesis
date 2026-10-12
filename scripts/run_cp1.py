@@ -1,0 +1,58 @@
+"""Ejecuta CP1 localmente. Solo exporta agregados a reports/ (ignorado)."""
+from pathlib import Path
+import hashlib
+import json
+import sys
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / 'src'))
+from tesis_enasem.io import load_stata
+from tesis_enasem.audit import build_audit
+from tesis_enasem.audit_report import plot_wave, plot_longitudinal
+import matplotlib.pyplot as plt
+
+
+def main() -> None:
+    """Lee original sin modificar y comprueba reconciliaciones contra el diccionario."""
+    source = ROOT / 'data/raw/simpleMHAS.dta'
+    raw = load_stata(source)
+    tables = build_audit(raw)
+    expected = [15186,14250,18465,15988,18249,17538]
+    assert tables['rondas'].registros.tolist() == expected, 'Discrepancia con cuadro 1 del diccionario'
+    expected_types = [[0,14154,0,1032,0], [12363,163,1134,44,546],
+                      [8868,5580,959,316,2742], [13254,596,884,45,1209],
+                      [11183,4603,1122,206,1135], [14336,148,1247,8,1799]]
+    from tesis_enasem.audit import INTERVIEW_LABELS
+    for wave, counts in enumerate(expected_types, 1):
+        table = tables['demografia']
+        table = table.loc[table.ronda.eq(wave) & table.variable.eq('tipent')].set_index('categoria')
+        assert table.reindex(INTERVIEW_LABELS.values()).n.tolist() == counts
+    miss = tables['faltantes']
+    assert (miss.groupby(['ronda','variable']).n.sum() == miss.groupby(['ronda','variable']).denominador.first()).all()
+    flow = tables['flujo']
+    assert (flow.antes-flow.excluidos).equals(flow.despues)
+    trans = tables['transiciones']
+    assert (trans.continuan+trans.no_observadas).equals(trans.denominador_origen)
+    assert tables['patrones'].personas.sum() == tables['estructura'].personas.iloc[0]
+    checks = tables['consistencia'].set_index('control').n.to_dict()
+    out = ROOT/'reports/tables'
+    out.mkdir(parents=True, exist_ok=True)
+    for name, table in tables.items():
+        table.to_json(out/f'cp1_{name}.json', orient='table', force_ascii=False, indent=2)
+    meta = {'fecha': '2026-10-11', 'python': sys.executable,
+            'sha256_datos': hashlib.sha256(source.read_bytes()).hexdigest(),
+            'fuente': 'ENASEMsimple v2, enero 2025, cuadro 1 y apéndice 1',
+            'reconciliaciones': 'aprobadas', 'consistencia': checks}
+    (out/'cp1_ejecucion.json').write_text(json.dumps(meta, ensure_ascii=False, indent=2))
+    for wave in range(1,7):
+        plt.close(plot_wave(raw, wave, ROOT/'reports/figures'))
+    plt.close(plot_longitudinal(tables, ROOT/'reports/figures'))
+    print(tables['estructura'].to_string(index=False))
+    print(tables['muestras'].to_string(index=False))
+    print(tables['transiciones'].to_string(index=False))
+    print(checks)
+    print('Reconciliaciones aprobadas; agregados y 7 figuras en reports/.')
+
+
+if __name__ == '__main__':
+    main()
