@@ -15,13 +15,19 @@ Estado al 2026-10-09. Un [x] implica artefacto realizado/verificado; no equivale
 - [ ] Conteos por ronda/persona/tipo de entrevista; discrepancias, duplicados, valores .f/.p/.w.
 - [ ] Reglas explícitas de edad de entrada, grupos de comparación y panel no balanceado.
 - [ ] Flujo reproducible de muestra (directas/sustituto/muerte/no respuesta).
-**Aceptación:** tabla auditable y definición del estimando.
+**Aceptación:** tabla auditable y definición del estimando. Exigir además seis fichas
+por ronda con N de registros y personas, `tipent` desglosado, grupos de edad,
+fechas efectivas, excluidos, patrones de participación, transición y faltantes.
+Protocolo: [PLAN_EDA_RONDAS_Y_PENSIONES.md](PLAN_EDA_RONDAS_Y_PENSIONES.md).
 
 ## CP2 — EDA univariado y longitudinal
 - [ ] Comparar distribuciones por año/ronda con leyendas etiquetadas, BrBG y conteos.
 - [ ] Gráficas de patrimonio e IMC por año; subgrupos; Spearman/Cramér V por ronda.
 - [ ] Revisar cobertura por variable/ola, panel desbalanceado, atrición.
 **Aceptación:** resumen con figuras, tablas y al menos tres hipótesis falsables.
+No limitar el EDA a un gráfico agregado: cada variable y dimensión debe tener
+resumen y distribución para cada ronda disponible, más comparación conjunta,
+con N y denominador explícitos. Protocolo: [PLAN_EDA_RONDAS_Y_PENSIONES.md](PLAN_EDA_RONDAS_Y_PENSIONES.md).
 
 ## CP3 — Outcome económico
 - [ ] Definir Q1 ponderado o no, población de referencia, transición futura y sensibilidad.
@@ -54,3 +60,11 @@ Estado al 2026-10-09. Un [x] implica artefacto realizado/verificado; no equivale
 - [ ] Sensibilidad a target, pesos, muestra, modelos, imputación, especificaciones.
 - [ ] Selección final y documentación de resultados/limitaciones.
 **Aceptación:** pipeline completo, resultados repetibles y capítulo de tesis.
+
+## Integración futura — Pensiones en ENASEM completo (no iniciada)
+- [ ] Localizar módulos, archivos y diccionarios originales por ronda.
+- [ ] Auditar claves, cardinalidad, cobertura y tasas de emparejamiento por ola.
+- [ ] Armonizar conceptos de pensión/ingresos de retiro, periodicidad, unidades, faltantes y cambios de cuestionario.
+- [ ] Validar impacto en análisis sin atribuir automáticamente flujos del hogar a una persona.
+**No modificar CP3 ni completar este apartado antes de tener los archivos y una decisión aprobada.**
+Ver [PLAN_EDA_RONDAS_Y_PENSIONES.md](PLAN_EDA_RONDAS_Y_PENSIONES.md).
