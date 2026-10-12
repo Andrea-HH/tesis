@@ -57,7 +57,7 @@ La ronda 1 (2001) contiene 15,186 registros de 15,186 personas. Las entrevistas 
 
 La edad es válida en 15,186/15,186 registros: la mediana es 59.0 años y el intervalo intercuartílico 53.0–68.0. Se observan 7,770 registros menores de 60, 7,416 de 60 o más y 0 sin edad válida. El filtro directo 60+ conserva 6,812/15,186 (44.86%) y excluye 8,374. Las tablas de flujo distinguen entrevista, edad ausente y edad insuficiente.
 
- Se registran 8,683 mujeres (57.18% del total de la ronda).  Se registran 2,535 personas viudas (16.69% del total de la ronda).  Se registran 8,957 registros en localidades de 100 mil o más habitantes (58.98% del total de la ronda). 
+ Se registran 8,683 mujeres (57.18% del total de la ronda).  Se registran 2,535 personas viudas (16.69% del total de la ronda).  Se registran 8,957 registros en localidades de 100 mil o más habitantes (58.98% del total de la ronda).
 
 Las distribuciones demográficas incluyen códigos especiales en el denominador total; la edad continua se resume únicamente entre valores válidos. Las diferencias entre rondas combinan envejecimiento, incorporaciones y selección por observación. No identifican cambios dentro de la misma persona ni efectos causales. Las entrevistas sobre fallecidos forman parte del seguimiento amplio y no son predictores directos contemporáneos. La tabla de pesos verifica disponibilidad, sin convertir su suma en un tamaño de muestra ni estimar todavía estadísticas poblacionales.
 
@@ -155,7 +155,7 @@ La ronda 2 (2003) contiene 14,250 registros de 14,250 personas. Las entrevistas 
 
 La edad es válida en 13,693/14,250 registros: la mediana es 61.0 años y el intervalo intercuartílico 55.0–69.0. Se observan 6,002 registros menores de 60, 7,691 de 60 o más y 557 sin edad válida. El filtro directo 60+ conserva 6,970/14,250 (48.91%) y excluye 7,280. Las tablas de flujo distinguen entrevista, edad ausente y edad insuficiente.
 
- Se registran 8,142 mujeres (57.14% del total de la ronda).  Se registran 2,545 personas viudas (17.86% del total de la ronda).  Se registran 7,927 registros en localidades de 100 mil o más habitantes (55.63% del total de la ronda).  La mediana de edad cambia +2.0 años respecto a la ronda anterior; es una comparación de muestras observadas, no un cambio individual. 
+ Se registran 8,142 mujeres (57.14% del total de la ronda).  Se registran 2,545 personas viudas (17.86% del total de la ronda).  Se registran 7,927 registros en localidades de 100 mil o más habitantes (55.63% del total de la ronda).  La mediana de edad cambia +2.0 años respecto a la ronda anterior; es una comparación de muestras observadas, no un cambio individual.
 
 Las distribuciones demográficas incluyen códigos especiales en el denominador total; la edad continua se resume únicamente entre valores válidos. Las diferencias entre rondas combinan envejecimiento, incorporaciones y selección por observación. No identifican cambios dentro de la misma persona ni efectos causales. Las entrevistas sobre fallecidos forman parte del seguimiento amplio y no son predictores directos contemporáneos. La tabla de pesos verifica disponibilidad, sin convertir su suma en un tamaño de muestra ni estimar todavía estadísticas poblacionales.
 
@@ -272,7 +272,7 @@ La ronda 3 (2012) contiene 18,465 registros de 18,465 personas. Las entrevistas 
 
 La edad es válida en 15,701/18,465 registros: la mediana es 63.0 años y el intervalo intercuartílico 56.0–71.0. Se observan 5,815 registros menores de 60, 9,886 de 60 o más y 2,764 sin edad válida. El filtro directo 60+ conserva 8,888/18,465 (48.13%) y excluye 9,577. Las tablas de flujo distinguen entrevista, edad ausente y edad insuficiente.
 
- Se registran 10,465 mujeres (56.67% del total de la ronda).  Se registran 2,860 personas viudas (15.49% del total de la ronda).  Se registran 9,123 registros en localidades de 100 mil o más habitantes (49.41% del total de la ronda).  La mediana de edad cambia +2.0 años respecto a la ronda anterior; es una comparación de muestras observadas, no un cambio individual. 
+ Se registran 10,465 mujeres (56.67% del total de la ronda).  Se registran 2,860 personas viudas (15.49% del total de la ronda).  Se registran 9,123 registros en localidades de 100 mil o más habitantes (49.41% del total de la ronda).  La mediana de edad cambia +2.0 años respecto a la ronda anterior; es una comparación de muestras observadas, no un cambio individual.
 
 Las distribuciones demográficas incluyen códigos especiales en el denominador total; la edad continua se resume únicamente entre valores válidos. Las diferencias entre rondas combinan envejecimiento, incorporaciones y selección por observación. No identifican cambios dentro de la misma persona ni efectos causales. Las entrevistas sobre fallecidos forman parte del seguimiento amplio y no son predictores directos contemporáneos. La tabla de pesos verifica disponibilidad, sin convertir su suma en un tamaño de muestra ni estimar todavía estadísticas poblacionales.
 
@@ -396,7 +396,7 @@ La ronda 4 (2015) contiene 15,988 registros de 15,988 personas. Las entrevistas 
 
 La edad es válida en 14,775/15,988 registros: la mediana es 66.0 años y el intervalo intercuartílico 58.0–73.0. Se observan 4,359 registros menores de 60, 10,416 de 60 o más y 1,213 sin edad válida. El filtro directo 60+ conserva 9,640/15,988 (60.30%) y excluye 6,348. Las tablas de flujo distinguen entrevista, edad ausente y edad insuficiente.
 
- Se registran 9,249 mujeres (57.85% del total de la ronda).  Se registran 2,829 personas viudas (17.69% del total de la ronda).  Se registran 8,450 registros en localidades de 100 mil o más habitantes (52.85% del total de la ronda).  La mediana de edad cambia +3.0 años respecto a la ronda anterior; es una comparación de muestras observadas, no un cambio individual. 
+ Se registran 9,249 mujeres (57.85% del total de la ronda).  Se registran 2,829 personas viudas (17.69% del total de la ronda).  Se registran 8,450 registros en localidades de 100 mil o más habitantes (52.85% del total de la ronda).  La mediana de edad cambia +3.0 años respecto a la ronda anterior; es una comparación de muestras observadas, no un cambio individual.
 
 Las distribuciones demográficas incluyen códigos especiales en el denominador total; la edad continua se resume únicamente entre valores válidos. Las diferencias entre rondas combinan envejecimiento, incorporaciones y selección por observación. No identifican cambios dentro de la misma persona ni efectos causales. Las entrevistas sobre fallecidos forman parte del seguimiento amplio y no son predictores directos contemporáneos. La tabla de pesos verifica disponibilidad, sin convertir su suma en un tamaño de muestra ni estimar todavía estadísticas poblacionales.
 
@@ -511,7 +511,7 @@ La ronda 5 (2018) contiene 18,249 registros de 18,249 personas. Las entrevistas 
 
 La edad es válida en 17,094/18,249 registros: la mediana es 63.0 años y el intervalo intercuartílico 55.0–72.0. Se observan 6,981 registros menores de 60, 10,113 de 60 o más y 1,155 sin edad válida. El filtro directo 60+ conserva 9,107/18,249 (49.90%) y excluye 9,142. Las tablas de flujo distinguen entrevista, edad ausente y edad insuficiente.
 
- Se registran 10,488 mujeres (57.47% del total de la ronda).  Se registran 3,047 personas viudas (16.70% del total de la ronda).  Se registran 9,524 registros en localidades de 100 mil o más habitantes (52.19% del total de la ronda).  La mediana de edad cambia -3.0 años respecto a la ronda anterior; es una comparación de muestras observadas, no un cambio individual. 
+ Se registran 10,488 mujeres (57.47% del total de la ronda).  Se registran 3,047 personas viudas (16.70% del total de la ronda).  Se registran 9,524 registros en localidades de 100 mil o más habitantes (52.19% del total de la ronda).  La mediana de edad cambia -3.0 años respecto a la ronda anterior; es una comparación de muestras observadas, no un cambio individual.
 
 Las distribuciones demográficas incluyen códigos especiales en el denominador total; la edad continua se resume únicamente entre valores válidos. Las diferencias entre rondas combinan envejecimiento, incorporaciones y selección por observación. No identifican cambios dentro de la misma persona ni efectos causales. Las entrevistas sobre fallecidos forman parte del seguimiento amplio y no son predictores directos contemporáneos. La tabla de pesos verifica disponibilidad, sin convertir su suma en un tamaño de muestra ni estimar todavía estadísticas poblacionales.
 
@@ -633,7 +633,7 @@ La ronda 6 (2021) contiene 17,538 registros de 17,538 personas. Las entrevistas 
 
 La edad es válida en 15,729/17,538 registros: la mediana es 65.0 años y el intervalo intercuartílico 57.0–74.0. Se observan 5,247 registros menores de 60, 10,482 de 60 o más y 1,809 sin edad válida. El filtro directo 60+ conserva 9,424/17,538 (53.73%) y excluye 8,114. Las tablas de flujo distinguen entrevista, edad ausente y edad insuficiente.
 
- Se registran 10,092 mujeres (57.54% del total de la ronda).  Se registran 3,448 personas viudas (19.66% del total de la ronda).  Se registran 8,803 registros en localidades de 100 mil o más habitantes (50.19% del total de la ronda).  La mediana de edad cambia +2.0 años respecto a la ronda anterior; es una comparación de muestras observadas, no un cambio individual. 
+ Se registran 10,092 mujeres (57.54% del total de la ronda).  Se registran 3,448 personas viudas (19.66% del total de la ronda).  Se registran 8,803 registros en localidades de 100 mil o más habitantes (50.19% del total de la ronda).  La mediana de edad cambia +2.0 años respecto a la ronda anterior; es una comparación de muestras observadas, no un cambio individual.
 
 Las distribuciones demográficas incluyen códigos especiales en el denominador total; la edad continua se resume únicamente entre valores válidos. Las diferencias entre rondas combinan envejecimiento, incorporaciones y selección por observación. No identifican cambios dentro de la misma persona ni efectos causales. Las entrevistas sobre fallecidos forman parte del seguimiento amplio y no son predictores directos contemporáneos. La tabla de pesos verifica disponibilidad, sin convertir su suma en un tamaño de muestra ni estimar todavía estadísticas poblacionales.
 
