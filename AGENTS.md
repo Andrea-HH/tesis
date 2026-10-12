@@ -3,6 +3,11 @@
 ## Antes de cualquier cambio
 Lee `README.md`, `docs/HANDOFF.md`, `docs/ROADMAP.md`, `docs/FUENTES.md`,
 `docs/DECISIONES.md`, `docs/RESULTADOS.md` y `docs/EXPERIMENTOS.md`.
+Para CP1, CP2 y una futura incorporación de pensiones, leer obligatoriamente
+`docs/PLAN_EDA_RONDAS_Y_PENSIONES.md`; el requerimiento explícito es analizar
+**cada ronda por separado**, con conteos absolutos, denominadores y faltantes.
+La integración con archivos completos para pensiones es futura y no debe
+anticiparse ni improvisarse sin inventario y validación de claves.
 
 ## Propósito
 Desarrollar y evaluar un modelo longitudinal **prospectivo** de alerta temprana de
