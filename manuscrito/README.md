@@ -1,0 +1,148 @@
+# Manuscrito de tesis en LaTeX
+
+La escritura avanza junto con cada checkpoint. Este proyecto contiene un borrador académico de introducción, datos/metodología CP1 y resultados del primer bloque de EDA independiente autorizado, no una conversión literal de Markdown. Las decisiones predictivas siguen pendientes; CP2 está en curso y no se declara cerrado.
+
+## Estructura
+
+```text
+manuscrito/
+  main.tex                      Documento principal
+  configuracion.tex             Formato provisional y paquetes
+  capitulos/
+    01_introduccion.tex          Contexto, problema, pregunta, objetivos e hipótesis
+    02_marco_teorico.tex         Revisión extensa pendiente, declarada como tal
+    03_datos_metodologia.tex     Datos, auditoría y límites reales de CP1
+    04_resultados.tex           EDA B01/B02a; resultados predictivos pendientes
+    05_discusion_conclusiones.tex Discusión final pendiente
+    a_tablas_cp1.tex             Tablas complementarias y exclusiones por ronda
+    b_pendientes.tex             Estado de escritura y revisión
+  tablas/                       Tablas CP1/EDA/inventario, macros y trazabilidad
+  figuras/
+    borradores/                 Figuras agregadas para revisión editorial
+  referencias.bib               Bibliografía científica/documental verificable
+  build/                        PDF/auxiliares locales ignorados por Git
+```
+
+## Plantilla UDLAP: confirmación pendiente
+
+**No se ha adoptado una plantilla institucional definitiva.** Confirmar con el departamento y la dirección las normas vigentes de tesis: portada, programa/grado, nombres, jurado, márgenes, tipografía, interlineado, numeración, resumen, estilo bibliográfico, entrega digital y permisos de difusión. La [guía pública de documentos de fin de carrera](https://catarina.udlap.mx/u_dl_a/tales/guias/estudiante/index.html), actualizada el 29 de noviembre de 2024, acepta PDF y fuentes LaTeX e indica requisitos de resumen, pero no acredita por sí misma el formato específico vigente del programa. Consultada el 11 de octubre de 2026; no se aplican sus fechas de entrega de 2025 a este proyecto.
+
+El formato actual usa `report`, tamaño carta, 12 puntos, margen de 2.5 cm, interlineado de 1.5 y citas autor-año con natbib/BibTeX. Son elecciones de trabajo reversibles, **no normas UDLAP verificadas**. La portada tiene datos pendientes explícitos. Las figuras incluidas son borradores, no figuras aprobadas.
+
+## Compilar y visualizar
+
+Las fuentes y agregados exportados permiten compilar sin `simpleMHAS.dta` ni `reports/tables/`. Tener instalado TeX Live/MacTeX con latexmk y BibTeX, o Tectonic. No se instala automáticamente ninguna distribución desde los scripts.
+
+Desde la raíz del repositorio:
+
+```bash
+python scripts/validate_manuscript.py
+python scripts/compile_manuscript.py
+```
+
+El compilador detecta latexmk, Tectonic, pdflatex o xelatex; para los dos últimos requiere BibTeX. Se puede indicar un motor:
+
+```bash
+python scripts/compile_manuscript.py --engine tectonic
+```
+
+Equivalente con latexmk, desde `manuscrito/`:
+
+```bash
+mkdir -p build
+latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=build main.tex
+```
+
+Equivalente con Tectonic:
+
+```bash
+mkdir -p build
+tectonic --keep-logs --keep-intermediates --outdir build main.tex
+```
+
+Abrir `manuscrito/build/main.pdf` en un visor PDF. En macOS puede usarse `open manuscrito/build/main.pdf` desde la raíz. En VS Code, abrir `main.tex` con LaTeX Workshop si está disponible y configurar su motor; el PDF compilado queda en `build/`. También puede abrirse el PDF en un visor externo. No es necesario usar notebooks para compilar una copia que ya contenga las exportaciones.
+
+**Verificación de esta entrega:** no había una distribución LaTeX instalada; se utilizó un binario temporal oficial Tectonic 0.17.0 para macOS ARM64 en `/tmp/tesis-tectonic-0.17.0/tectonic`. No es una dependencia permanente del repositorio. La primera ejecución descargó componentes TeX; para recompilar con Tectonic se requiere su caché o acceso de red. Véase la evidencia final de compilación y revisión en `docs/HANDOFF.md`. El PDF se conserva localmente y no se publica.
+
+## Actualizar resultados sin transcripción manual
+
+Con los agregados locales de la auditoría ya ejecutada:
+
+```bash
+python scripts/export_cp1_manuscript.py
+python scripts/export_cp1_manuscript.py --check
+python scripts/validate_manuscript.py
+```
+
+El exportador reutiliza JSON agregados, comprueba la huella del microdato cuando está disponible, reconcilia distribuciones y exclusiones y genera las tablas mediante `src/tesis_enasem/manuscript.py`. Las cifras sustantivas del texto se insertan como macros de `tablas/cp1_cifras.tex`. `trazabilidad_cp1.json` registra las huellas de las fuentes y los artefactos. El script no reconstruye la auditoría ni lee filas privadas para tabular. La celda final del notebook 02 también exporta desde sus mismos agregados en memoria.
+
+No editar cifras directamente en tablas generadas. Si cambia una definición, validar primero el análisis, regenerar agregados/exportaciones y revisar la interpretación del capítulo. No atribuir resultados nuevos al commit previo sin documentar la ejecución. Los tests utilizan datos sintéticos y CI comprueba referencias/dependencias del manuscrito sin microdatos; la compilación local y `--check` son verificaciones distintas.
+
+## Referencias verificadas
+
+| Clave BibTeX | Fuente primaria verificada | Uso en el borrador |
+| --- | --- | --- |
+| `inegi2024enadid` | [INEGI, comunicado 305/24, p. 2](https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2024/ENADID/ENADID2023.pdf) | Cambio de la proporción de 60+ entre 2018 y 2023 |
+| `smith1999` | [American Economic Association](https://www.aeaweb.org/articles?id=10.1257/jep.13.2.145) | Motivación de la relación salud-recursos; sin trasladar inferencia causal |
+| `ligon2003` | [Oxford, volumen 113(486)](https://academic.oup.com/ej/issue/113/486), [bibliografía del autor](https://are.berkeley.edu/~ligon/papers.html) | Diferencia conceptual entre condición económica y vulnerabilidad; no se implementa su medida |
+| `wong2017` | [Artículo original registrado en PubMed](https://pubmed.ncbi.nlm.nih.gov/25626437/) | Diseño y cohorte ENASEM; publicación electrónica 2015, volumen definitivo 2017 |
+| `enasem2025simple` | [Documento oficial y apéndice de códigos v2](https://enasem.org/Resources/DATA/Constructed_Imputed/simpleMHAS/ENASEMsimple_Documento_Descriptivo_y_Libro_de_Codigos.pdf) | Archivo 2001–2021, codificaciones y notas del proveedor |
+| `udlap2024guia` | [Guía pública UDLAP](https://catarina.udlap.mx/u_dl_a/tales/guias/estudiante/index.html) | Pendiente institucional de formato; confirmar vigencia |
+
+Las referencias motivacionales no sustituyen una revisión de literatura completa ni demuestran novedad del proyecto. Las cifras de CP1 son cálculos propios reconciliados con el archivo local y el diccionario.
+
+## Pendientes de escritura
+
+Revisar título, pregunta y objetivos con la dirección; confirmar programa/datos de portada y formato; ampliar el capítulo 2; definir resultado económico, elegibilidad, horizonte, modalidades, anomalías, atrición y ponderación; escribir protocolo ejecutado y resultados de modelos cuando existan; completar discusión, resumen y conclusiones. El apéndice B identifica estos pendientes dentro del PDF. Ninguno se considera resuelto por crear esta estructura.
+
+## Complemento pensionario (2026-10-12)
+
+El capítulo 2 incorpora la sección histórica solicitada, con versiones documentales federales y ejemplos locales; el capítulo 3 incorpora inventario, unidades, claves, ocho conceptos y límites; el capítulo 4 contiene el protocolo exploratorio pendiente, no resultados económicos integrados. Fuentes de texto: `capitulos/02_marco_teorico_antecedentes.tex` y `capitulos/03_datos_metodologia.tex`. Los tres cuadros nuevos se generan desde metadatos y catálogo, sin microdatos en LaTeX:
+
+```bash
+python scripts/inventory_pension_sources.py
+python scripts/export_pension_review.py
+python scripts/export_pension_availability.py
+python scripts/validate_manuscript.py
+python scripts/compile_manuscript.py
+```
+
+Solo el primer comando necesita los archivos privados locales. Después de exportar, el manuscrito puede compilarse sin datos ni `reports/`. El catálogo y las matrices están en [docs/pensiones](../resultados/INFORME_GENERAL.md#origen-96509f3d2504). Las fuentes históricas verificables están en el catálogo y BibTeX; no se presupone que cada programa tenga una variable identificable en ENASEM. La plantilla UDLAP, bibliografía ampliada, validación semántica completa, aprobación de figuras y decisiones predictivas siguen pendientes. La ampliación al año 2024 no está aprobada.
+## EDA independiente autorizado: primer bloque (12 de octubre de 2026)
+
+El capítulo 3 incorpora `capitulos/03_datos_metodologia.tex`; el capítulo 4 contiene `capitulos/04_analisis_exploratorio_resultados.tex`, con resultados reales de las 91 variables sustantivas/banderas de ENASEMsimple y sus límites. La muestra principal y el cierre CP2 siguen pendientes. K original/imputada/construida y G/J/SA tienen prevalidación; no se presentan como EDA sustantivo concluido.
+
+`python scripts/export_independent_eda.py` regenera cuatro cuadros seleccionados, macros numéricos y dos figuras agregadas en revisión desde `reports/eda_independiente/simple_resultados.json`. Este script no carga ni integra microdatos. Los cuadros son `eda_simple_cobertura.tex`, `eda_simple_patrimonio.tex`, `eda_simple_salud.tex` y `eda_simple_versiones.tex`; las cifras del texto están en `eda_simple_cifras.tex`. Las fichas y distribuciones extensas se conservan en docs/eda y el notebook 03 ejecutado localmente, según [instrucciones de reproducción](../resultados/INFORME_GENERAL.md#origen-f7fba3ac2814). La carpeta manuscrito contiene todas las dependencias de compilación y no necesita acceso a data/ ni reports/ para generar el PDF.
+
+## Revisión B01 y continuación K 2021
+
+La revisión incorpora comparaciones conjuntas de las 91 variables, universos del indicador (534 reconstruidos/12 ND) e investigación n_res con causa abierta. `scripts/review_b01.py` reutiliza agregados; `scripts/export_independent_eda.py` genera cuadros/macros/figuras. B02a describe 338 variables independientes de 2021 y 59 cotejos derivados/imputados; `scripts/export_k2021_eda.py` genera las tablas, cifras y figura seleccionadas desde los mismos agregados del notebook. La selección editorial no excluye variables del EDA ni aprueba las figuras.
+
+Los salarios conservan periodicidad pendiente; los demás montos distinguen mensual/total/stock. La ventana anual de recepción no impone una unidad anual. Las fuentes no se suman ni se integran definitivamente. El resto de K y rondas permanece pendiente; ver docs/eda. CP1/introducción y decisiones abiertas se conservan.
+
+## Integración provisional y primer EDA conjunto
+
+La autorización nueva permite integrar ahora, sin esperar a terminar el EDA independiente. Capítulos 3–4: integración, cobertura, titularidad conservadora 2021 y J01; cuatro tablas/cifras y dos figuras BrBG desde agregados, con homologación global pendiente. Regenerar con `python scripts/export_integration_manuscript.py` después de constructor/J01; comandos y notebook 05b en docs/integracion/README.md. El manuscrito compila sin base privada; las figuras siguen en borradores y normas UDLAP pendientes.
+
+
+## Recuperación del original y catálogo nacional (12 de octubre de 2026)
+
+La [matriz de conciliación](../resultados/INFORME_GENERAL.md#origen-eece14d800ac) documenta 26 correspondencias con el PDF original, conserva la pregunta y deja explícitas las diferencias de cuartil/quintil, hipótesis y panel. Los módulos `02_recuperacion_conceptual.tex`, `02_catalogo_nacional.tex` y `03_recuperacion_metodologica.tex` están incluidos en los capítulos existentes. Se excluye el resumen ajeno sobre CVA. La portada recupera el nombre de la autora; normas UDLAP y estructura definitiva pendientes.
+
+`estilo_cuadros.tex` establece **Cuadro capítulo.número**, título superior centrado, reglas discretas, encabezados en negritas y notas/fuentes. El exportador compartido divide encabezados extensos y mantiene las cifras. Después de exportadores antiguos ejecutar `scripts/reconcile_manuscript.py`; adapta encabezados existentes sin modificar celdas numéricas. La selección de figuras sigue en revisión.
+
+El [catálogo nacional](../resultados/INFORME_GENERAL.md#origen-d94b156198db) aporta dos cuadros desde inventarios y contratos documentados: cobertura territorial y especificidad de las seis rondas. No identifica beneficiarios ni modifica el EDA. Las 46,495 filas son ocurrencias de intervenciones por territorio/periodo, no programas únicos. Las versiones normativas anteriores permanecen preservadas.
+
+```bash
+/opt/miniconda3/envs/myenv/bin/python scripts/export_national_context.py
+/opt/miniconda3/envs/myenv/bin/python scripts/build_documentary_notebook.py --execute
+/opt/miniconda3/envs/myenv/bin/python scripts/reconcile_manuscript.py
+/opt/miniconda3/envs/myenv/bin/python scripts/export_cp1_manuscript.py --check
+/opt/miniconda3/envs/myenv/bin/python scripts/validate_manuscript.py
+/opt/miniconda3/envs/myenv/bin/python scripts/compile_manuscript.py --engine tectonic
+/opt/miniconda3/envs/myenv/bin/python scripts/review_documentary_artifacts.py
+```
+
+Los comandos de esta etapa reutilizan resultados anteriores. Para restaurar las extracciones documentales usar `build_national_catalog.py --download`; no se necesita repetir las 17 uniones. Abrir el notebook 05 eejecutado desde VS Code y el PDF local; consultar la [revisión académica](../resultados/INFORME_GENERAL.md#origen-459ef58882c6) para los límites y decisiones abiertas. El manuscrito compila desde exportaciones agregadas sin microdatos.
+
+Cada capítulo y cada anexo tiene un único archivo completo; los módulos anteriores se incorporaron sin reescritura. No generar archivos independientes por sección.

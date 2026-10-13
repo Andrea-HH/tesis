@@ -1,0 +1,632 @@
+\chapter{Análisis exploratorio y resultados}
+\label{cap:resultados}
+\estadoBorrador
+
+Este capítulo presenta resultados exploratorios de la muestra observada.
+Los productos anteriores de CP1, EDA independiente, integración y titularidad
+se preservan y se amplían con pensiones como eje. No se seleccionan una
+pregunta definitiva, hipótesis principal, outcome ni modelo. Los contratos
+provisionales y la comparabilidad documental condicionan la interpretación;
+los resultados débiles también se conservan.
+
+% BEGIN CONSOLIDATED 04_eda_independiente
+\section{Primer bloque: ENASEMsimple completo}
+\label{sec:eda-simple-resultados}
+
+El primer bloque exploratorio amplía la descripción de integridad hacia las
+dimensiones sustantivas disponibles, sin seleccionar todavía un universo para
+modelos. Se analizaron \edaVariables{} variables sustantivas y banderas de
+calidad de ENASEMsimple, además de auditar las columnas técnicas de claves,
+diseño y ponderación. La población registrada es la misma documentada en CP1.
+La cobertura se distribuye en
+\edaResumenenes{} resúmenes variable-ronda y \edaLaminas{} láminas de seis
+paneles. Las fichas completas, las tablas por modalidad y los histogramas
+permanecen en los reportes y en el notebook 03; aquí se seleccionan resultados
+pertinentes para el diseño longitudinal. El carácter exhaustivo del control
+de columnas no implica que se hayan resuelto todos los universos de pregunta.
+
+La revisión añadió \edaComparativas{} comparaciones conjuntas y sus tablas
+numéricas, reutilizando los descriptivos calculados. Se reconstruyeron
+\edaUniversosConocidos{} de los 546 universos de indicadores por ronda;
+\edaUniversosND{} continúan no determinados. Los filtros laborales y la
+exclusión parcial de sustitutos en hermanos vivos de 2012 requieren cotejo
+adicional. Este avance no establece validación integral de preguntas brutas
+ni aceptación académica del bloque.
+
+\subsection{Disponibilidad y composición}
+
+La tabla~\ref{tab:eda-simple-cobertura} muestra denominadores propios de cada
+medición. La cobertura no es uniforme: la disponibilidad de edad, salud,
+trabajo y patrimonio cambia con la modalidad, la observación y el instrumento.
+En particular, \variable{compras} y \variable{med_farm} tienen respuestas
+disponibles únicamente en 2018; \variable{serial7} comienza en 2015 y
+\variable{orientacion} en 2003. Estas diferencias impiden construir series
+completas interpretando rondas sin instrumento como valores cero.
+Las edades medianas y la composición de las nuevas incorporaciones descritas
+en CP1 muestran que las rondas no representan conjuntos idénticos de personas.
+Por ello, los cambios en distribuciones deben distinguirse del envejecimiento
+o de transiciones económicas del mismo individuo.
+
+\input{tablas/eda_simple_cobertura}
+
+\input{tablas/eda_simple_universos}
+
+La escolaridad se refiere a la primera entrevista; una diferencia de su
+distribución entre rondas no demuestra escolarización posterior de los
+participantes. Asimismo, el estado laboral reúne actividades diferentes.
+La categoría de retiro, incapacidad o ausencia de trabajo no identifica
+por sí sola recepción de pensiones. El análisis de horas semanales se limita
+a valores disponibles entre quienes alcanzaron la rama pertinente del
+cuestionario, cuyo universo exacto sigue por verificar. Estas restricciones
+son sustantivas para evitar atribuir ingresos o prestaciones a partir de
+etiquetas laborales incompletas.
+
+\subsection{Salud, síntomas y recursos funcionales}
+
+La tabla~\ref{tab:eda-simple-salud} presenta respuestas afirmativas y su
+proporción entre los valores válidos, con denominadores separados para cada
+variable. La proporción observada de diabetes es \edaDiabetesInicial{} en
+2001 y \edaDiabetesFinal{} en 2021; para hipertensión es
+\edaHipertensionInicial{} y \edaHipertensionFinal{}, respectivamente.
+El indicador construido de cinco o más síntomas depresivos registra
+\edaCesdInicial{} y \edaCesdFinal{}. Las diferencias muestran heterogeneidad
+de la composición registrada, pero no permiten identificar incidencia,
+evolución clínica individual ni efectos de apoyos económicos. El autorreporte
+de diagnóstico y un umbral de síntomas tampoco equivalen a diagnósticos
+clínicos obtenidos directamente por esta investigación.
+
+\input{tablas/eda_simple_salud}
+
+Las medidas de funcionalidad, cognición, apoyo familiar y participación
+complementan esta descripción y se conservan íntegramente en las fichas.
+Su relevancia para la tesis reside en caracterizar dimensiones potencialmente
+relacionadas con autonomía y recursos de los hogares. Sin embargo, todavía
+no se estima su relación con cambios patrimoniales ni su capacidad de
+anticipación. Los ítems positivos de la escala emocional y las puntuaciones
+agregadas requieren interpretaciones diferentes; una respuesta afirmativa
+a felicidad no constituye automáticamente un síntoma adverso.
+
+La figura~\ref{fig:eda-bmi} describe la distribución del índice de masa corporal
+en su escala original. Las mediciones disponibles se concentran en intervalos
+semejantes entre rondas, con colas que las medias por sí solas no muestran.
+El indicador representa un promedio de diez imputaciones del proveedor;
+no debe tratarse como una medición clínica observada sin incertidumbre.
+Las banderas de imputación se reportan por separado y requieren revisión
+antes de cualquier uso prospectivo.
+
+\begin{figure}[!htbp]
+ \centering
+ \includegraphics[width=\textwidth]{../resultados/figuras/eda_independiente__figuras__bmi_imp.png}
+ \caption{Distribución del IMC por ronda. Frecuencias sin ponderar entre valores
+ disponibles; N válido y total en cada panel. Figura en revisión editorial.}
+ \label{fig:eda-bmi}
+\end{figure}
+
+\begin{figure}[!htbp]
+ \centering
+ \includegraphics[width=\textwidth]{../resultados/figuras/eda_independiente__comparativas__bmi_imp.png}
+ \caption{Comparación conjunta del IMC: mediana, P25--P75 y P05--P95.
+ Cuantiles de valores disponibles sin ponderar; dispersión, no intervalos
+ de confianza. Figura en revisión editorial.}
+ \label{fig:eda-bmi-comparativa}
+\end{figure}
+
+\subsection{Patrimonio y asimetría económica}
+
+La tabla~\ref{tab:eda-simple-patrimonio} y la figura~\ref{fig:eda-patrimonio}
+describen el patrimonio dentro de cada ronda. Los cuantiles evidencian una
+distribución heterogénea y las medias superiores a las medianas son
+compatibles con asimetría hacia valores altos. Los patrimonios cero y
+negativos se conservan: no son códigos de falta de información ni evidencia
+suficiente de ausencia de pensión. Los intervalos gráficos mantienen las
+colas completas; no se aplicó truncamiento ni winsorización.
+
+\input{tablas/eda_simple_patrimonio}
+
+El titular de \variable{imp_neto} incluye al entrevistado y al cónyuge cuando
+existe. En consecuencia, este agregado no es un ingreso individual y sumar
+registros de integrantes de la misma unidad económica puede duplicar
+patrimonios. Las cifras se presentan en las unidades monetarias almacenadas.
+No se interpreta su diferencia temporal como crecimiento real, porque faltan
+validación de precios, unidades y concordancia de construcción. Tampoco se
+elige un umbral de vulnerabilidad. La comparación con ingresos, transferencias
+y pensiones requerirá los análisis independientes de K original, imputada
+y construida, con filtros, titulares y periodicidades verificados.
+
+\begin{figure}[!htbp]
+ \centering
+ \includegraphics[width=\textwidth]{../resultados/figuras/eda_independiente__figuras__imp_neto.png}
+ \caption{Distribución patrimonial dentro de cada ronda, con intervalos comunes
+ y frecuencias sin ponderar. Unidades almacenadas; sin comparación de crecimiento
+ real. Figura en revisión editorial.}
+ \label{fig:eda-patrimonio}
+\end{figure}
+
+\subsection{Cotejo documental y conclusión parcial}
+
+El archivo está etiquetado como versión 3 de enero de 2025, mientras que el
+libro disponible corresponde a la versión 2 del mismo mes. Se cotejaron
+\edaCotejos{} pares variable-ronda con cuadros numéricos extraíbles, usando
+una tolerancia declarada para el redondeo de las medias impresas. Se detectaron
+\edaDiferencias{} diferencias en la media de \variable{n_res}, correspondientes
+a 2003, 2012, 2015 y 2018, con denominadores iguales
+(tabla~\ref{tab:eda-simple-versiones}). Las cifras de esta tesis proceden del
+archivo suministrado. Una modificación entre versiones es una hipótesis
+documental plausible, no una causa comprobada; se requiere cotejo con el
+proveedor. No se corrigieron registros automáticamente.
+
+El cotejo posterior confirma que los libros públicos español e inglés
+reproducen los mismos cuadros. En las cuatro rondas discrepantes cambian
+también la desviación estándar y el máximo. Todas las medias por modalidad
+con valores válidos superan la media publicada y la media por hogar de clave
+completa tampoco la reproduce. Por tanto, el redondeo, una diferencia exclusiva
+de traducción y esas alternativas de denominador no explican los cuadros.
+Sin la base anterior, su programa de creación y una nota de cambios, no se
+discrimina entre modificación de construcción y error documental. No se
+declara una causa a partir de la etiqueta de versión.
+
+\input{tablas/eda_simple_versiones}
+
+El primer bloque permite identificar qué distribuciones pueden describirse
+con los datos disponibles y dónde cambian sus condiciones de observación.
+Las particiones de respuestas y faltantes se reconciliaron con el total de
+cada ronda, sin valores fuera de los dominios declarados. Esta comprobación
+no valida la veracidad de cada registro ni cierra las equivalencias entre
+instrumentos. Las demás fuentes cuentan con perfiles independientes de
+códigos etiquetados y faltantes, pero su análisis sustantivo exhaustivo sigue
+pendiente. Los problemas de enlace señalados en el inventario se mantienen.
+No se ha construido una base integrada definitiva, aprobado una muestra
+principal ni entrenado modelos.
+
+\section{Bloque independiente de componentes K 2021}
+\label{sec:eda-k2021}
+
+El siguiente bloque describe \edaKVariables{} variables originales,
+derivadas, imputadas y construidas individualmente, con las fuentes separadas
+(tabla~\ref{tab:eda-k2021-cobertura}). La cobertura incluye activos, negocios,
+trabajo, capital, deudas, consumo, alimentación, herencia, transferencias y
+viudez además de pensiones. El archivo imputado de hogar cubre 59 componentes
+en tres versiones y una pregunta de propiedad de negocio; el individual
+incluye componentes y campos sustantivos de orientación y composición.
+El original combinado permanece parcialmente descrito, por lo que estos
+conteos no establecen conclusión exhaustiva de K ni de las demás rondas.
+
+\input{tablas/eda_k2021_cobertura}
+
+En \edaKPares{} cotejos derivados--imputados de la misma fuente,
+\edaKComponentesRecuperados{} componentes recuperan al menos un valor.
+No se detectaron modificaciones de montos derivados disponibles que excedan
+la tolerancia declarada, ni desacuerdo entre las recuperaciones y las
+banderas. La tabla~\ref{tab:eda-k2021-componentes} selecciona componentes
+de dominios distintos: el consumo recupera \edaKConsumoRecuperados{} montos
+y el primer componente de jubilación propia \edaKPensionRecuperados{}.
+Los cambios de cobertura no prueban que la imputación sea ignorable ni
+identifican capacidad predictiva. Las medianas cero reflejan componentes
+no recibidos o ceros construidos; no deben interpretarse como ausencia de
+ingreso total del hogar.
+
+\input{tablas/eda_k2021_componentes}
+
+\begin{figure}[!htbp]
+ \centering
+ \includegraphics[width=\textwidth]{../resultados/figuras/figuras__borradores__eda_k2021_recuperacion.png}
+ \caption{Recuperación de cobertura de componentes seleccionados en K 2021.
+ Porcentajes sobre los registros del producto de hogar, no sobre receptores.
+ Sin ponderar; figura en revisión editorial.}
+ \label{fig:eda-k2021-recuperacion}
+\end{figure}
+
+En el individual construido, \edaKPunterosSinCoincidir{} registros no
+coinciden con ninguno de los dos punteros de titular. El prefijo propio o
+cónyuge no atribuye automáticamente el monto a la persona de la fila.
+Se conserva esta limitación sin corregir casos ni divulgar identificadores.
+Para componentes del cónyuge, el individual permite confirmar 10\,189
+registros con pareja, 5\,527 sin pareja y 23 de condición desconocida.
+Estos últimos impiden declarar un universo elegible completo. El archivo
+imputado de hogar no contiene dicho filtro: sus 5\,199 valores disponibles
+no se presentan como universo elegible. Esta diferencia distingue ausencia
+estructural y falta de respuesta sin imponer ceros.
+Asimismo, la entrevista económica del hogar puede ser directa aunque la
+modalidad individual en otra fuente sea diferente; sus etiquetas no se
+intercambian con las de CP1.
+
+Las periodicidades se muestran separadamente y el salario conserva su
+validación pendiente. Los resultados son sin ponderar y en unidades
+almacenadas; no constituyen tendencias reales ni una clasificación aprobada
+de sistemas pensionarios. Los demás intervalos, preguntas y secciones del
+original, las fuentes de otras rondas y los problemas de enlace registrados
+continúan abiertos. Se mantiene el periodo 2001--2021 y el archivo de 2024
+separado. Este bloque independiente se ejecutó antes de la integración
+provisional documentada en la sección~\ref{sec:integracion-resultados}; sus
+resultados se conservan sin cambiar la pregunta de investigación.
+% END CONSOLIDATED 04_eda_independiente
+
+\section{Continuación pendiente del análisis exploratorio pensionario}
+\label{sec:pensiones-eda}
+
+El inventario consolidado fue revisado y el EDA independiente está autorizado.
+El análisis sustantivo de K original, imputada y construida requiere completar
+la validación de filtros, códigos y unidades por fuente. La prevalidación de
+todas las columnas ya realizada no constituye ese EDA conjunto. Se continuará
+con cada archivo por separado, con todas sus variables sustantivas,
+universos de pregunta, frecuencias y denominadores. Después se contrastarán
+originales, derivados, imputados y construidos de la misma ronda, en claves,
+titulares y referencias comparables. Solo posteriormente se describirán
+trayectorias y diferencias entre rondas con las homologaciones validadas.
+
+Además de cobertura y tipo de pensión, se examinarán remuneraciones, negocios,
+rentas, capital, deuda, transferencias públicas y privadas, vivienda, gasto,
+inseguridad alimentaria y apoyo familiar, conservando rangos y banderas de
+imputación. Los desconocidos numéricos se auditarán antes de calcular cuantiles
+o medias. Las ocho variables armonizadas resumen dimensiones específicas y
+no sustituyen el EDA de sus fuentes ni de las variables restantes de K, G, J
+y SA. Las entrevistas sobre fallecidos se presentarán como una modalidad
+propia, sin tratarlas como ingresos contemporáneos de entrevistados vivos.
+
+Las comparaciones por sexo, edad, educación, localidad, trabajo, patrimonio y
+salud declararán población, periodo, N elegible, N válido y faltantes de cada
+estrato. Para examinar patrimonios similares y distintas fuentes de ingreso,
+se delimitarán grupos dentro de ronda tras validar unidad patrimonial y precios.
+Los intervalos y asociaciones deberán respetar la dependencia por persona y
+los intervalos desiguales entre rondas. No se interpretará una correlación como
+impacto de recibir una pensión. Este apartado conserva el alcance del inventario;
+la integración provisional y las primeras asociaciones autorizadas después
+se presentan en la sección~\ref{sec:integracion-resultados}. Los modelos
+predictivos siguen pendientes.
+
+% BEGIN CONSOLIDATED 04_integracion_provisional
+\section{Resultados de integración y comienzo del EDA conjunto}
+\label{sec:integracion-resultados}
+
+La base provisional conserva \intRegistros{} registros y \intPersonas{}
+personas. Se verificaron cero exclusiones del maestro, cero duplicados
+persona-ronda y cero multiplicación de observaciones. Sus \intColumnas{}
+columnas comprenden variables de las fuentes, tags de faltantes, controles
+de enlace y derivados provisionales. La ampliación del número de columnas
+no representa nuevas personas ni fuentes adicionales de ingreso. Las 34
+comprobaciones de cobertura total/directa coinciden con el inventario previo.
+
+\input{tablas/integracion_cobertura}
+
+La tabla~\ref{tab:integracion-cobertura} muestra que la disponibilidad
+económica depende de la ronda y de la fuente. En 2001 y 2003, los puentes
+recuperan cobertura sustancial sin resolver la totalidad de faltantes. En
+2015, el imputado de hogar cubre menos registros que el original y el
+individual construido; esta diferencia se conserva, sin completar los
+componentes ausentes. En 2021, disponer de registro individual no garantiza
+correspondencia con el hogar. Los desgloses por modalidad distinguen registros
+sobre fallecidos y permiten estudiar cobertura sin confundir no enlace con
+ausencia de pensión. El panel completo continúa siendo la referencia
+descriptiva, aunque cada comparación sustantiva tenga un N válido propio.
+
+\input{tablas/integracion_titularidad}
+
+La concordancia seleccionada de titular aparta
+\intPunterosDiscrepantes{} registros por punteros discrepantes y
+\intOrientacionPendiente{} por orientación individual no confirmada
+(tabla~\ref{tab:integracion-titularidad}). Un cotejo adicional encuentra 32
+diferencias en el puntero propio y 97 en el del cónyuge, entre 15,716 y
+10,189 pares de valores disponibles, respectivamente. Son filas individuales
+enlazadas a hogar, no hogares independientes; estas cifras no se suman como
+errores de personas distintas. La discrepancia identifica un problema de
+atribución pendiente, pero no determina qué versión es correcta.
+
+\input{tablas/integracion_pensiones}
+
+En 2021 se identifican \intPensionSi{} registros con recepción afirmativa
+en el bloque de pensiones K orientado al titular y \intVejezSi{} con apoyo de
+vejez explícitamente identificado. Ambos grupos pueden coexistir; no se
+suman como personas distintas. Una negativa del bloque pensionario no excluye
+recepción de apoyos públicos, mientras el desconocido reúne cobertura y
+respuestas no concluyentes. Estos son conteos observados sin ponderación;
+no representan prevalencias nacionales ni acreditan suficiencia económica.
+La menor cobertura de los derivados respecto al enlace estructural expresa
+el requisito adicional de atribución, no una exclusión del maestro.
+
+\subsection{Asociaciones contemporáneas y perfiles de protección}
+
+El primer bloque conjunto examina patrimonio y siete medidas de salud,
+cognición, funcionalidad y contexto socioeconómico en cada ronda: 42
+asociaciones de Spearman, con pares válidos y faltantes explícitos. Los
+extremos del periodo se presentan en la
+tabla~\ref{tab:integracion-asociaciones}; las seis rondas figuran en la
+figura~\ref{fig:integracion-spearman} y en las tablas completas del notebook.
+El patrimonio conserva valores negativos y no se interpreta como ingreso.
+
+\input{tablas/integracion_asociaciones}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\linewidth]{../resultados/figuras/figuras__borradores__integracion_spearman.png}
+  \caption{Asociaciones con patrimonio dentro de cada ronda. Spearman sin
+  ponderar; N de cada par en las tablas reproducibles. Figura en revisión.}
+  \label{fig:integracion-spearman}
+\end{figure}
+
+La escala ordinal de salud global aumenta hacia peor salud, mientras una
+mayor puntuación de aprendizaje verbal corresponde a mayor desempeño. Esta
+orientación debe considerarse al interpretar signos opuestos. La cognición
+contiene imputación del proveedor y las medidas no cubren idénticas
+modalidades. La asociación contemporánea entre rangos no revela el orden
+temporal de deterioro ni el efecto causal de la salud sobre recursos; las
+diferencias entre rondas pueden reflejar composición, observación e imputación.
+
+En 2021, la asociación patrimonial con síntomas depresivos es
+$\rho=\intRhoDepresion{}$ entre \intRhoDepresionPares{} pares válidos;
+con aprendizaje verbal, $\rho=\intRhoCognicion{}$ entre
+\intRhoCognicionPares{} pares; y con limitaciones ABVD,
+$\rho=\intRhoAbvd{}$ entre \intRhoAbvdPares{}. Las magnitudes son pequeñas:
+el signo negativo para síntomas y limitaciones resulta compatible con una
+coocurrencia de menor posición patrimonial y peor condición observada, pero
+no permite atribuir un mecanismo ni establecer capacidad predictiva. La
+asociación positiva con cognición tampoco prueba protección causal del
+patrimonio.
+
+Los perfiles de 2021 cruzan pensión K y síntomas depresivos con medianas y
+rangos intercuartílicos patrimoniales
+(figura~\ref{fig:integracion-perfiles}). Se muestran también los grupos
+desconocidos. Cinco o más síntomas es un indicador de la escala construida,
+no un diagnóstico clínico. El patrimonio pertenece a persona y pareja,
+mientras la pensión derivada se atribuye al sujeto; esa diferencia de unidad
+impide interpretar un contraste de medianas como efecto o suficiencia de una
+pensión individual. No se usa ningún monto de fuente no validada para
+inferir recepción.
+
+La mediana patrimonial de quienes declaran pensión K con titular validado
+es \intMedianaPensionSi{}, frente a \intMedianaPensionNo{} entre quienes
+dan las cuatro negativas explícitas, en unidades monetarias almacenadas.
+El contraste describe las poblaciones observadas, con posible selección por
+trayectoria laboral, edad, pareja y cobertura. La presencia de apoyo de vejez
+en el segundo grupo impide llamarlo grupo sin protección económica.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\linewidth]{../resultados/figuras/figuras__borradores__integracion_perfiles_2021.png}
+  \caption{Patrimonio, recepción pensionaria K y síntomas depresivos en 2021.
+  Mediana y rango intercuartílico por registros válidos, sin ponderar;
+  denominadores en el notebook. Figura en revisión.}
+  \label{fig:integracion-perfiles}
+\end{figure}
+
+Este comienzo del EDA conjunto demuestra la utilidad descriptiva de la base
+sin cerrar la homologación global ni entrenar modelos. Quedan pendientes
+ponderación, dependencia de pareja, filtros, periodicidad y precios, además
+del análisis de todas las variables económicas restantes. Los resultados
+de este bloque orientan verificaciones posteriores; no modifican el
+estimando ni la definición provisional de vulnerabilidad.
+% END CONSOLIDATED 04_integracion_provisional
+% BEGIN CONSOLIDATED 04_titularidad_pensiones
+\section{Resultados de la auditoría de titularidad pensionaria}
+\label{sec:titularidad-resultados}
+
+La auditoría conserva las 99,676 observaciones del maestro y distingue los
+denominadores de persona y hogar. La tabla~\ref{tab:titularidad-rondas} presenta
+la recepción personal K, el contexto pensionario de la pareja y los casos de
+orientación indeterminada. Los dos primeros conteos pueden coexistir: recibir
+una prestación no impide que la pareja también reciba otra. Por tanto, no
+constituyen categorías excluyentes ni deben sumarse como personas distintas.
+Los cuadros completos por ronda incluyen frecuencias, porcentajes sobre el
+total, negativas explícitas, respuestas desconocidas y cinco modalidades
+individuales de entrevista en el notebook 05c y su reporte.
+
+\input{tablas/titularidad_rondas}
+
+En 2001 los resultados corresponden a la orientación publicada por el
+proveedor, con validación independiente pendiente de J1 y los controles.
+En las rondas posteriores se exige evidencia adicional de informante o
+puntero personal. Esta diferencia de verificabilidad contribuye a que las
+cifras no constituyan una serie de prevalencia homogénea. Tampoco el mayor
+conteo K de 2015 seguido de una reducción en 2018 demuestra pérdida de cobertura:
+2012/2015 incluyen una opción institucional de programas federales/estatales,
+y 2018/2021 registran apoyos públicos en un bloque separado. La
+figura~\ref{fig:titularidad-rondas} muestra los conteos y las incertidumbres
+documentales, sin atribuir causalidad ni cambios de cobro dentro de la persona.
+
+\begin{figure}[htbp]
+ \centering
+ \includegraphics[width=\linewidth]{../resultados/figuras/figuras__borradores__titularidad_rondas.png}
+ \caption{Recepción K por beneficiario y titularidad indeterminada por ronda}
+ \label{fig:titularidad-rondas}
+ \small Elaboración reproducible, sin ponderar. Categorías solapadas;
+ instrumentos y niveles de validación distintos. Figura de borrador.
+\end{figure}
+
+En 2021 la auditoría arroja \titCambios{} cambios frente al indicador personal
+ya almacenado. Se mantienen los 3,993 receptores propios K, 11,635 negativas
+explícitas y 1,910 desconocidos. La clasificación anterior ya exigía concordancia
+del titular; el resultado no acredita que los punteros discordantes hayan sido
+resueltos. Hay \titParejaSi{} personas con recepción de su pareja y \titAmbos{}
+que reciben en ambas ramas. El cotejo separado del otro puntero cambia
+\titParejaCambios{} estados de recepción de pareja a desconocidos, incluidos
+\titParejaPosND{} inicialmente afirmativos. Esta comparación es interna a la
+auditoría: el indicador de pareja no estaba almacenado en la base anterior.
+El escenario contrafactual que atribuye cualquier pensión del hogar
+al sujeto clasificaría como receptores propios a \titFalsosPropios{} personas
+con negativa propia K. Este escenario cuantifica el riesgo evitado y no describe
+una regla aplicada anteriormente. Los 5,460 apoyos de vejez identificados para
+el titular se conservan separados del bloque K y no prueban un monto monetario
+cuando la pregunta admite especie.
+
+\input{tablas/titularidad_duplicacion}
+
+La tabla~\ref{tab:titularidad-duplicacion} muestra las réplicas que introduciría
+sumar preguntas de hogar desde filas individuales. Se eliminan únicamente
+réplicas del mismo evento fuente, conforme a la
+ecuación~\ref{eq:titularidad-agregado}. Las firmas coincidentes de montos e
+instituciones requieren contraste documental y no se eliminan automáticamente.
+En 2015 se identifican 33 firmas candidatas; no se presentan como prestaciones
+duplicadas comprobadas. Los originales, imputados y construidos permanecen
+separados y ninguna versión se suma como ingreso adicional.
+
+Subsisten limitaciones específicas. En 2012, 3,279 hogares mantienen desconocida
+la ausencia total de recepción K por falta de un filtro de pareja utilizable;
+el desconocido no se convirtió en ausencia. En 2021 continúan las discrepancias
+de punteros entre fuentes. La recepción se refiere a la ventana retrospectiva
+del cuestionario y no necesariamente al día de entrevista. Los montos son
+parciales y nominales; no se aplican pesos longitudinales ni se interpreta una
+diferencia temporal como cambio real de poder adquisitivo. La clasificación
+pensionaria permanece provisional hasta completar los controles pendientes.
+% END CONSOLIDATED 04_titularidad_pensiones
+% BEGIN CONSOLIDATED 04_proteccion_economica
+% Generado desde J02 agregado; regenerar con export_protection_manuscript.py.
+
+\section{Pensiones y apoyos públicos en la población de 60 años o más}
+
+\label{sec:proteccion-resultados}
+
+La recepción de prestaciones se examina como un componente de protección económica, complementario al patrimonio y sin convertirlo en ingreso total. La selección descriptiva contiene \protObservaciones{} observaciones de \protPersonas{} personas con edad de 60 años o más en al menos una visita. Cada ronda utiliza la edad de esa visita; no se exige panel balanceado. La tabla~\ref{tab:proteccion-cobertura} distingue recepción K, donativo A, coexistencia y apoyo ante negativa K. Esta última categoría responde a la pregunta sobre cobertura adicional observada; no identifica personas carentes de toda pensión ni constituye una estimación de efecto del programa.
+
+\input{tablas/proteccion_cobertura}
+
+\input{tablas/proteccion_validez}
+
+En 2001, se identifican 1,788 personas receptoras propias K y 726 personas receptoras A de 7,416 personas de 60+. Coexisten ambas recepciones en 96 y se observa apoyo con negativa propia K en 630. Entre respuestas conocidas de apoyo, la proporción es 11.24\% en negativas K y 5.37\% en personas receptoras K, una diferencia de 5.87 puntos porcentuales (no menos sí). Estos denominadores seleccionan estados conocidos; su contraste es descriptivo de la muestra.
+
+En 2015, se identifican 4,253 personas receptoras propias K y 2,693 personas receptoras A de 10,416 personas de 60+. Coexisten ambas recepciones en 544 y se observa apoyo con negativa propia K en 2,143. Entre respuestas conocidas de apoyo, la proporción es 38.97\% en negativas K y 12.80\% en personas receptoras K, una diferencia de 26.17 puntos porcentuales (no menos sí). Estos denominadores seleccionan estados conocidos; su contraste es descriptivo de la muestra.
+
+En 2018, se identifican 3,559 personas receptoras propias K y 3,107 personas receptoras A de 10,113 personas de 60+. Coexisten ambas recepciones en 380 y se observa apoyo con negativa propia K en 2,725. Entre respuestas conocidas de apoyo, la proporción es 42.09\% en negativas K y 10.69\% en personas receptoras K, una diferencia de 31.41 puntos porcentuales (no menos sí). Estos denominadores seleccionan estados conocidos; su contraste es descriptivo de la muestra.
+
+En 2021, se identifican 3,599 personas receptoras propias K y 5,583 personas receptoras A de 10,482 personas de 60+. Coexisten ambas recepciones en 2,019 y se observa apoyo con negativa propia K en 3,558. Entre respuestas conocidas de apoyo, la proporción es 52.29\% en negativas K y 56.22\% en personas receptoras K, una diferencia de -3.94 puntos porcentuales (no menos sí). Estos denominadores seleccionan estados conocidos; su contraste es descriptivo de la muestra.
+
+El contraste de 2021 muestra coexistencia de apoyo y pensión K, mientras en las rondas previas seleccionadas el apoyo resulta más frecuente entre negativas K. La incorporación de una opción explícita de vejez, los cambios de programas y la composición del panel impiden interpretar esta diferencia como impacto o ampliación causal de una política. Asimismo, K puede contener programas públicos agrupados: no representa exclusivamente pensiones contributivas. La figura~\ref{fig:proteccion-comparativa} presenta los porcentajes con esta restricción.
+
+\begin{figure}[htbp]\centering\includegraphics[width=0.98\textwidth]{../resultados/figuras/figuras__borradores__proteccion_comparativa.png}\caption{Recepción K y A por ronda entre respuestas conocidas de personas de 60 años o más. Sin ponderar; definiciones históricas parcialmente comparables.}\label{fig:proteccion-comparativa}\end{figure}
+
+\subsection{Diferencias por perfil y asociaciones contemporáneas}
+
+La tabla~\ref{tab:proteccion-perfiles} expresa tasas dentro de grupos, con denominadores separados para K y A. Estos porcentajes no equivalen a la proporción de hombres, mujeres o habitantes de cada localidad dentro del conjunto receptor. La escolaridad corresponde a la primera entrevista; los contrastes por edad incorporan efectos de cohorte y supervivencia que este análisis no separa.
+
+\input{tablas/proteccion_perfiles_2021}
+
+Por sexo, la recepción K de los hombres es 1,920/4,578 (41.94\%), frente a 1,679/5,831 (28.79\%) de las mujeres. En cambio, A registra 2,438/4,575 (53.29\%) y 3,145/5,829 (53.95\%), respectivamente. La diferencia de sexo es más marcada para K que para el donativo público observado: esto motiva examinar distintas trayectorias de protección, sin atribuir la diferencia a una política ni a un mecanismo laboral no medido.
+
+El gradiente territorial difiere según la fuente. K aparece en 1,046/4,535 (23.07\%) de localidades menores de 100 mil y en 2,553/5,874 (43.46\%) de las mayores; A registra 2,629/4,532 (58.01\%) y 2,954/5,872 (50.31\%), respectivamente. La recepción pública adicional es más frecuente en el grupo con menor recepción K. Esta complementariedad descriptiva no demuestra compensación efectiva de ingresos y el corte no permite inferir ruralidad.
+
+La escolaridad presenta gradientes opuestos: entre personas sin años de educación, K registra 305/1,685 (18.10\%) y A 1,153/1,686 (68.39\%); con 10 años o más, K registra 876/1,526 (57.40\%) y A 525/1,522 (34.49\%). El apoyo observado alcanza con mayor frecuencia a perfiles de menor escolaridad, mientras K aumenta con ella. Escolaridad, cohortes y trayectorias ocupacionales no se separan causalmente en este diseño.
+
+La edad muestra mayor contraste para A: en 60--69 se observa 674/4,512 (14.94\%), frente a 3,279/3,942 (83.18\%) en 70--79. K pasa de 1,251/4,513 (27.72\%) a 1,595/3,945 (40.43\%). La recepción K no es monótona en edades posteriores, por lo que el contraste no se interpreta como incremento mecánico al envejecer. La referencia al año previo, la composición de sobrevivientes y el cambio de opciones del cuestionario limitan cualquier interpretación de elegibilidad.
+
+La asociación global K--A en 2021 tiene V de Cramér=0.038, con 10,396 pares válidos y 86 excluidos por falta de respuesta. La coexistencia absoluta de receptores puede ser importante aun cuando la dependencia estadística global sea pequeña: una magnitud no sustituye a la otra.
+
+En <100 mil habitantes, el apoyo entre negativas K es 58.12\% (2,026/3,486), frente a 57.70\% (603/1,045) entre receptoras K. La diferencia estratificada es 0.41 puntos porcentuales; permite describir heterogeneidad, sin probar focalización o sustitución de prestaciones.
+
+En $\geq$100 mil habitantes, el apoyo entre negativas K es 46.16\% (1,532/3,319), frente a 55.62\% (1,416/2,546) entre receptoras K. La diferencia estratificada es -9.46 puntos porcentuales; permite describir heterogeneidad, sin probar focalización o sustitución de prestaciones.
+
+En Hombre, el apoyo entre negativas K es 50.41\% (1,339/2,656), frente a 57.21\% (1,095/1,914) entre receptoras K. La diferencia estratificada es -6.80 puntos porcentuales; permite describir heterogeneidad, sin probar focalización o sustitución de prestaciones.
+
+En Mujer, el apoyo entre negativas K es 53.48\% (2,219/4,149), frente a 55.10\% (924/1,677) entre receptoras K. La diferencia estratificada es -1.62 puntos porcentuales; permite describir heterogeneidad, sin probar focalización o sustitución de prestaciones.
+
+El cruce Pensión K × Escolaridad en primera entrevista / Sexo presenta Hombre: V=0.256, N=4,468; Mujer: V=0.277, N=5,794. El gradiente de escolaridad aparece en ambos sexos, sin que esta similitud ajuste por cohortes o historia laboral. Son tamaños descriptivos, sin prueba ajustada por diseño ni comparación causal de estratos.
+
+El cruce Pensión K × Edad en la visita / Localidad a 100 mil (no ruralidad estricta) presenta <100 mil habitantes: V=0.096, N=4,535; $\geq$100 mil habitantes: V=0.160, N=5,874. La magnitud de asociación edad--K cambia entre tamaños de localidad; estratificar evita atribuir al envejecimiento una composición territorial agregada. Son tamaños descriptivos, sin prueba ajustada por diseño ni comparación causal de estratos.
+
+\begin{figure}[htbp]\centering\includegraphics[width=0.98\textwidth]{../resultados/figuras/proteccion_economica__figuras__2021_pension_apoyo_localidad_grupo.png}\caption{Pensión K, apoyo A y tamaño de localidad en 2021. Cada celda indica N y porcentaje dentro de su fila pensionaria. El corte de 100 mil habitantes no identifica ruralidad estricta.}\label{fig:proteccion-localidad}\end{figure}
+
+\subsection{Instituciones, eventos y seguimiento}
+
+En 2021, 3,221 personas de 60+ tienen evidencia de pensión IMSS/ISSSTE, que incluye derechos derivados. El programa de vejez explícito se observa junto con esta evidencia en 1,805 personas y ante negativa propia K en 3,455. Las demás instituciones no se convierten automáticamente en pensiones no contributivas; tampoco el donativo agregado acredita ese tipo. Los eventos, instituciones y montos se conservan por beneficiario, y no se suman las versiones originales, imputadas y construidas.
+
+Los montos son mediciones mensuales nominales observadas de eventos, con datos faltantes; no se presentan como suficiencia, ingreso total ni cambios reales entre rondas. Continúan los 33 candidatos de coincidencia de 2015, los controles de 2001 y los punteros discordantes. Igualdad de montos entre K y A no demuestra que se trate de la misma prestación; por ello no se suman estos bloques ni se descuentan cantidades automáticamente.
+
+La tabla~\ref{tab:proteccion-transiciones} selecciona pares de comparabilidad conceptual condicionada. Las matrices completas mantienen muerte registrada, ausencia con posterior reaparición, ausencia sin retorno observado y recepción desconocida. Una afirmativa en la visita siguiente no permite fechar el alta, y una negativa no demuestra suspensión definitiva. Los pares con ruptura del instrumento se describen como observación, sin interpretar inicio o pérdida homogénea.
+
+\input{tablas/proteccion_transiciones}
+
+El alcance es descriptivo de la muestra observada de personas de 60 años o más. Persisten limitaciones de selección, dependencia entre cónyuges, ponderación y diseño, programas agrupados, dinero frente a especie y cambios de captura. La armonización conserva desconocidos y fuentes; no cierra la clasificación pensionaria ni las decisiones del diseño predictivo de la tesis.
+% END CONSOLIDATED 04_proteccion_economica
+
+% BEGIN CONSOLIDATED 04_exploracion_pensionaria
+\section{Exploración de pensiones con perfiles contemporáneos y seguimiento}
+
+\label{sec:exploracion-resultados}
+
+Esta ampliación responde a ocho cruces bivariados y ocho trivariados explícitos en cada ronda. El respaldo completo se organiza por solicitud y año en los notebooks 06b y 06c; los trivariados usan tres dimensiones simultáneamente. Los cuadros siguientes seleccionan resultados por relevancia sustantiva y cobertura, no por significancia. Todas las clasificaciones personales permanecen provisionales conforme a la auditoría anterior.
+
+\subsection{Ramas pensionarias, instituciones y montos}
+
+El cuadro~\ref{tab:exploracion-ramas} compara situaciones de las dos ramas entre rondas; el cuadro~\ref{tab:exploracion-instituciones} distingue fuente institucional de régimen.
+
+\input{tablas/exploracion_ramas}
+
+En 2021, entre 10\,482 personas observadas de 60+, 3\,110 tienen solo pensión propia, 1\,072 solo pensión del cónyuge y 473 ambas ramas afirmativas. Las negativas explícitas conjuntas suman 5\,712 y los estados conjuntos desconocidos 115. Estas categorías son exhaustivas, pero los desconocidos conjuntos pueden conservar una afirmativa propia: la recepción propia individual sigue siendo 3\,599, no la suma automática de dos categorías que exigen pareja conocida. La diferencia responde a denominadores de clasificación y no a una corrección de titularidad.
+
+\input{tablas/exploracion_instituciones}
+
+IMSS aparece en 2\,540 personas, 70,71\% de receptoras con al menos una institución identificada; ISSSTE, en 745 (20,74\%). Las selecciones no son excluyentes y no se suman como instituciones distintas por persona. La fuente de una prestación no determina por sí sola régimen, historial contributivo ni monto atribuible por institución. En 2012/2015, la selección identifica contingencia y no una correspondencia unívoca de institución con slot monetario.
+
+En 2021 se identifican 2\,656 beneficiarios de jubilación/retiro, 864 beneficiarios de viudez/supervivencia, 72 beneficiarios de invalidez, 200 beneficiarios de otra pensión. Las contingencias pueden coexistir en una persona. La viudez se describe según quien cobra la prestación; no se atribuye a esa persona el retiro que pudo haber generado el derecho de su pareja fallecida. El número observado de slots no acredita el número total declarado ni su comparabilidad histórica.
+
+Los eventos pensionarios de 2021 tienen mediana mensual nominal de 4\,000,00, con cuartiles 2\,800,00 y 8\,200,00; 3\,626 de 3\,899 eventos cuentan con monto válido. La distribución corresponde a eventos de beneficiarios 60+, no al ingreso completo de todas las personas ni a una medida de suficiencia. Los importes permanecen separados por titular, contingencia y versión.
+
+\subsection{Sexo, edad, educación y localidad}
+
+El cuadro~\ref{tab:exploracion-edad} y la figura~\ref{fig:exploracion-b2-2021} muestran perfiles quinquenales; el cuadro~\ref{tab:exploracion-sexo-educacion} y la figura~\ref{fig:exploracion-t1-2021} examinan simultáneamente sexo, escolaridad y recepción.
+
+\input{tablas/exploracion_edad_2021}
+
+La desagregación quinquenal revela una diferencia que los grupos decenales resumían. En 2021, el apoyo es mucho menos frecuente entre 60--64 y 65--69 que entre 70--74; los denominadores de cada grupo figuran en el cuadro. La recepción K presenta un perfil diferente y no sigue mecánicamente la distribución del apoyo. Las listas de A cambian en 2021 y añaden vejez explícita: el patrón es compatible con diferencias de captación y elegibilidad histórica, pero no permite escoger una causa ni inferir un efecto de reforma.
+
+\input{tablas/exploracion_sexo_educacion}
+
+Al considerar sexo y escolaridad simultáneamente, la diferencia de recepción propia en seis años de educación es 18,59 puntos porcentuales: hombres 441/969 (45,51\%) y mujeres 343/1\,274 (26,92\%). En diez o más años, hombres 533/925 (57,62\%) y mujeres 343/601 (57,07\%), una diferencia de 0,55 puntos. La heterogeneidad condicionada impide reducir el contraste agregado por sexo a una brecha uniforme. Tampoco demuestra que escolaridad explique causalmente la diferencia: cohorte, inserción laboral previa, supervivencia y cobertura siguen sin separarse.
+
+Los cruces simultáneos edad--sexo, educación--localidad y edad--educación conservan todos los estratos, incluidos perfiles desconocidos. En 2021, entre hombres, la amplitud de tasas K por edad es mayor que entre mujeres; educación--localidad muestra un gradiente escolar en ambas categorías territoriales. La interpretación se apoya en tasas dentro de estratos, no en su composición entre receptoras. Las celdas pequeñas permanecen visibles y no se interpretan como confirmación de interacciones.
+
+Al fijar sexo en Hombre, la amplitud entre categorías de edad quinquenal es 24,52 pp, mientras en Mujer es 15,30 pp. Este contraste condicionado describe heterogeneidad, no prueba interacción causal o significancia; las celdas pequeñas y sus N conocidos están visibles en el respaldo.
+
+Al fijar tamaño de localidad en <100 mil habitantes, la amplitud entre categorías de escolaridad inicial es 45,88 pp, mientras en $\geq$100 mil habitantes es 28,78 pp. Este contraste condicionado describe heterogeneidad, no prueba interacción causal o significancia; las celdas pequeñas y sus N conocidos están visibles en el respaldo.
+
+Al fijar escolaridad inicial en $\geq$10 años, la amplitud entre categorías de edad quinquenal es 38,65 pp, mientras en 0 años es 13,07 pp. Este contraste condicionado describe heterogeneidad, no prueba interacción causal o significancia; las celdas pequeñas y sus N conocidos están visibles en el respaldo.
+
+\subsection{Actividad, pensiones y otras condiciones económicas}
+
+El cuadro~\ref{tab:exploracion-actividad} resume dos cruces bivariados; la figura~\ref{fig:exploracion-t7-2021} condiciona simultáneamente por edad. El cuadro~\ref{tab:exploracion-patrimonio} mantiene la unidad compartida del stock.
+
+\input{tablas/exploracion_actividad_sexo}
+
+La actividad y la recepción no son excluyentes: 559/2\,760 (20,25\%) de las respuestas K conocidas entre quienes trabajan son afirmativas. La categoría que agrupa retiro, incapacidad y no trabajo registra mayor recepción que trabajo o labores del hogar, pero su definición no identifica pensionados por sí misma. La simultaneidad de trabajo y pensión abre una pregunta sobre complementariedad de fuentes, no sobre un efecto pensionario en la participación laboral.
+
+Al fijar edad quinquenal en 60--64, la amplitud entre categorías de condición de actividad es 48,83 pp, mientras en 80+ es 18,96 pp. Este contraste condicionado describe heterogeneidad, no prueba interacción causal o significancia; las celdas pequeñas y sus N conocidos están visibles en el respaldo.
+
+\input{tablas/exploracion_patrimonio}
+
+El rango de patrimonio y el monto pensionario propio mensual observado parcial muestran Spearman $\rho=0,2643$, con 3\,347 pares válidos en 2021. La relación no identifica acumulación causada por pensiones ni representa igualdad de unidades de análisis: patrimonio puede corresponder a una pareja y el monto se orienta al sujeto. La diferencia de medianas entre ramas se mantiene como descripción de composición, sin convertir cuartiles en vulnerabilidad.
+
+La distribución se condiciona por escolaridad y rama pensionaria a la vez. Extremos de medianas dentro de escolaridad: 0 años: Solo cónyuge 774\,788,12 (N=102) frente a Ambas negativas K 420\,000,00 (N=1\,277); 1--5 años: Solo cónyuge 807\,000,00 (N=283) frente a Ambas negativas K 479\,158,16 (N=1\,974); 6 años: Solo cónyuge 841\,674,31 (N=298) frente a Ambas negativas K 523\,736,81 (N=1\,151); 7--9 años: Ambas 1\,550\,000,00 (N=114) frente a Ambas negativas K 676\,000,00 (N=723); Desconocido: Ambas 1\,961\,276,62 (N=5) frente a Ambas negativas K 732\,289,41 (N=84); $\geq$10 años: Ambas 1\,800\,000,00 (N=207) frente a Ambas negativas K 942\,635,25 (N=503).
+
+La recepción salarial se estudia en 1\,172 personas con rama propia y filtro asalariado principal confirmado en 2021. Entre quienes declaran salario, K propia es afirmativa en 229/988 respuestas conocidas (23,18\%); entre negativas salariales explícitas, 39/180 (21,67\%). Otros cuatro registros tienen respuesta salarial desconocida. Los 9\,310 sin filtro confirmado no se convierten en ingreso cero. Esta comparación utiliza recepción de una fuente específica: la homologación del monto mes/año y el ingreso total siguen pendientes.
+
+Los cruces complementarios con salud autopercibida, diabetes, síntomas depresivos, ABVD y recuerdo verbal conservan asociaciones débiles y excluidos por cobertura. Cada indicador mantiene su escala y universo; no se equiparan síntomas con diagnóstico ni cognición con salud global. Estos resultados orientan preguntas adicionales, sin desplazar la exploración pensionaria ni establecer que una prestación mejore salud.
+
+El universo de pareja confirmado en 2021 contiene 6\,071 personas; 4\,312 tienen ausencia explícita de rama cónyuge residente. Entre las parejas confirmadas, la recepción del cónyuge por sexo es Hombre 387/3\,449 (11,22\%); Mujer 1\,160/2\,612 (44,41\%). Son tasas dentro de este universo, distintas de la prevalencia sobre toda la muestra. Los universos tempranos no se infieren a partir de No operativos ni estado conyugal.
+
+\subsection{Coexistencia con apoyos y exploración longitudinal}
+
+Los cuadros anteriores de protección documentan K\(\times\)A por sexo y localidad; se reutilizan y no se repite la integración. En 2021 coexisten K y A en 2\,019 personas y se observa A con negativa K en 3\,558. V de Cramér es 0,0376 en 10\,396 pares conocidos: esta asociación débil no elimina la coexistencia ni demuestra complementariedad o sustitución de prestaciones. Los apoyos se presentan también entre receptoras K; no se infiere reducción de desigualdad o expansión causal a partir de esa distribución.
+
+Condicionando simultáneamente por tamaño de localidad: <100 mil habitantes: A entre K sí 603/1\,045 (57,70\%), entre K no 2\,026/3\,486 (58,12\%); $\geq$100 mil habitantes: A entre K sí 1\,416/2\,546 (55,62\%), entre K no 1\,532/3\,319 (46,16\%).
+
+Condicionando simultáneamente por sexo: Hombre: A entre K sí 1\,095/1\,914 (57,21\%), entre K no 1\,339/2\,656 (50,41\%); Mujer: A entre K sí 924/1\,677 (55,10\%), entre K no 2\,219/4\,149 (53,48\%).
+
+El cuadro~\ref{tab:exploracion-correspondencias} identifica el proceso de observación que condiciona las transiciones.
+
+\input{tablas/exploracion_correspondencias}
+
+La correspondencia del panel distingue personas presentes, entrevistas sobre fallecidos y ausencias. El seguimiento se estratifica por sexo, edad quinquenal, escolaridad y localidad en origen. La observación posterior selecciona la población de pares con recepción conocida; una tasa de inicio entre esos pares no es una incidencia nacional ni una probabilidad incondicional de toda la cohorte. Los intervalos desiguales impiden comparar conteos de inicio como si fueran tasas anuales.
+
+Cohorte con negativa K en 2015, 60+ viva: 5\,503 personas. Inicio A observado 653/2\,740 con negativa A inicial y respuesta final conocida (23,83\%). Mismo donativo adicional, dinero/especie; 2018 desglosa hasta dos instituciones. Solo recepción agregada condicionada.. No equivale a personas sin toda pensión, ni implica que el apoyo haya causado ampliación de cobertura.
+
+9\,886 personas 60+ vivas en origen; 7\,497 pares K/A completos. 488 tienen simultáneamente K y A afirmativos en destino entre pares completos. Comparabilidad binaria condicionada 2012--2015, no equivalencia de programas/instituciones. La tabla conserva las nueve combinaciones parciales, muerte y ausencias por sexo de origen. No se suman K+A ni se atribuyen montos del cónyuge.
+
+Las transiciones propias, del cónyuge y conjuntas se interpretan únicamente bajo comparabilidad condicionada. K2003--2012 y K2015--2018, así como A2001--2003 y A2018--2021, mantienen rupturas de instrumento: sus matrices registran estados documentados, no pérdida o inicio homogéneos. No se infiere muerte de la ausencia ni se completa desconocimiento con cero. Los pendientes J1/2001, punteros, 33 firmas2015, clasificación institucional, apoyos mixtos, pesos y precios permanecen abiertos.
+
+\subsection{Conclusiones parciales}
+
+La ampliación muestra que una clasificación pensionaria única pierde información sobre rama familiar, institución, contingencia y cobertura. Las tasas por edad, escolaridad y actividad presentan patrones diferentes de los apoyos; los contrastes condicionados revelan heterogeneidad que los promedios marginales ocultan. La asociación K/A débil y la coexistencia de trabajo y recepción requieren explicación adicional, sin forzar una narrativa de sustitución o retiro. Los datos sostienen preguntas sobre cobertura y trayectorias, pero todavía no una definición definitiva de vulnerabilidad ni un modelo. La matriz de cumplimiento distingue ejecución provisional, análisis parcial y comparaciones no viables.
+
+\begin{figure}[p]\centering\includegraphics[width=0.96\textwidth,height=0.72\textheight,keepaspectratio]{../resultados/figuras/pensiones_exploratorio_v1__figuras__B2_2021.png}\caption{Distribución de recepción K y A por edad quinquenal. Tasas entre respuestas conocidas; sin ponderar.}\label{fig:exploracion-b2-2021}\end{figure}
+
+\begin{figure}[p]\centering\includegraphics[width=0.96\textwidth,height=0.72\textheight,keepaspectratio]{../resultados/figuras/pensiones_exploratorio_v1__figuras__T1_2021.png}\caption{Pensión propia, del cónyuge y apoyo por sexo y escolaridad simultáneamente. Porcentajes dentro de cada perfil entre respuestas conocidas; escolaridad desconocida se conserva.}\label{fig:exploracion-t1-2021}\end{figure}
+
+\begin{figure}[p]\centering\includegraphics[width=0.96\textwidth,height=0.72\textheight,keepaspectratio]{../resultados/figuras/pensiones_exploratorio_v1__figuras__T7_2021.png}\caption{Recepción pensionaria por condición de actividad y edad simultáneamente. Categorías originales de actividad, sin inferencia causal.}\label{fig:exploracion-t7-2021}\end{figure}
+% END CONSOLIDATED 04_exploracion_pensionaria

@@ -1,0 +1,114 @@
+[
+  {
+    "ano": 2001,
+    "N_total_60": 7416,
+    "N_sin_pareja_residente_explicita": 0,
+    "N_elegible_pareja_confirmado": null,
+    "N_universo_pareja_no_confirmado": null,
+    "nota": "Desde2018 puntero doble y filtro de pareja confirmado; temprano ND, no inferirlo de estado conyugal, num_k o un negativo operativo"
+  },
+  {
+    "ano": 2003,
+    "N_total_60": 7691,
+    "N_sin_pareja_residente_explicita": 0,
+    "N_elegible_pareja_confirmado": null,
+    "N_universo_pareja_no_confirmado": null,
+    "nota": "Desde2018 puntero doble y filtro de pareja confirmado; temprano ND, no inferirlo de estado conyugal, num_k o un negativo operativo"
+  },
+  {
+    "ano": 2012,
+    "N_total_60": 9886,
+    "N_sin_pareja_residente_explicita": 0,
+    "N_elegible_pareja_confirmado": null,
+    "N_universo_pareja_no_confirmado": null,
+    "nota": "Desde2018 puntero doble y filtro de pareja confirmado; temprano ND, no inferirlo de estado conyugal, num_k o un negativo operativo"
+  },
+  {
+    "ano": 2015,
+    "N_total_60": 10416,
+    "N_sin_pareja_residente_explicita": 0,
+    "N_elegible_pareja_confirmado": null,
+    "N_universo_pareja_no_confirmado": null,
+    "nota": "Desde2018 puntero doble y filtro de pareja confirmado; temprano ND, no inferirlo de estado conyugal, num_k o un negativo operativo"
+  },
+  {
+    "ano": 2018,
+    "N_total_60": 10113,
+    "N_sin_pareja_residente_explicita": 3893,
+    "N_elegible_pareja_confirmado": 6205,
+    "N_universo_pareja_no_confirmado": 15,
+    "nota": "Desde2018 puntero doble y filtro de pareja confirmado; temprano ND, no inferirlo de estado conyugal, num_k o un negativo operativo",
+    "recepcion_conyuge_en_parejas_por_sexo": [
+      {
+        "sexo_grupo": "Hombre",
+        "variable": "pension_conyuge_k",
+        "N_total": 3478,
+        "N_elegible_vivo": 3478,
+        "N_si": 446,
+        "N_no": 3017,
+        "N_desconocido": 15,
+        "N_conocido": 3463,
+        "pct_si_total": 12.823461759631972,
+        "pct_si_elegible": 12.823461759631972,
+        "pct_si_conocido": 12.879006641640196,
+        "pct_cobertura_elegible": 99.56871765382404,
+        "N_elegible_pareja_confirmado": 3478
+      },
+      {
+        "sexo_grupo": "Mujer",
+        "variable": "pension_conyuge_k",
+        "N_total": 2727,
+        "N_elegible_vivo": 2727,
+        "N_si": 1248,
+        "N_no": 1467,
+        "N_desconocido": 12,
+        "N_conocido": 2715,
+        "pct_si_total": 45.76457645764577,
+        "pct_si_elegible": 45.76457645764577,
+        "pct_si_conocido": 45.966850828729285,
+        "pct_cobertura_elegible": 99.55995599559957,
+        "N_elegible_pareja_confirmado": 2727
+      }
+    ]
+  },
+  {
+    "ano": 2021,
+    "N_total_60": 10482,
+    "N_sin_pareja_residente_explicita": 4312,
+    "N_elegible_pareja_confirmado": 6071,
+    "N_universo_pareja_no_confirmado": 99,
+    "nota": "Desde2018 puntero doble y filtro de pareja confirmado; temprano ND, no inferirlo de estado conyugal, num_k o un negativo operativo",
+    "recepcion_conyuge_en_parejas_por_sexo": [
+      {
+        "sexo_grupo": "Hombre",
+        "variable": "pension_conyuge_k",
+        "N_total": 3454,
+        "N_elegible_vivo": 3454,
+        "N_si": 387,
+        "N_no": 3062,
+        "N_desconocido": 5,
+        "N_conocido": 3449,
+        "pct_si_total": 11.204400694846555,
+        "pct_si_elegible": 11.204400694846555,
+        "pct_si_conocido": 11.220643664830385,
+        "pct_cobertura_elegible": 99.85524030110017,
+        "N_elegible_pareja_confirmado": 3454
+      },
+      {
+        "sexo_grupo": "Mujer",
+        "variable": "pension_conyuge_k",
+        "N_total": 2617,
+        "N_elegible_vivo": 2617,
+        "N_si": 1160,
+        "N_no": 1452,
+        "N_desconocido": 5,
+        "N_conocido": 2612,
+        "pct_si_total": 44.32556362246847,
+        "pct_si_elegible": 44.32556362246847,
+        "pct_si_conocido": 44.4104134762634,
+        "pct_cobertura_elegible": 99.80894153611005,
+        "N_elegible_pareja_confirmado": 2617
+      }
+    ]
+  }
+]

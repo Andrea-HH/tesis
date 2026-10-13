@@ -1,0 +1,157 @@
+[
+  {
+    "nombre": "concordancia",
+    "url": "https://www.mhasweb.org/resources/DOCUMENTS/Question_Comparison/ENGLISH/Question_Comparison_Core_Questionnaire_MHAS_2001-2021.pdf",
+    "status": 200,
+    "paginas": 42,
+    "sha256": "feef1a2bae133f931a6bedbd2d1fddd622411fb6ab7db589e677350d7b07afd8",
+    "valido": true
+  },
+  {
+    "nombre": "construidos",
+    "url": "https://www.mhasweb.org/Resources/DATA/Constructed_Imputed/Created_Variables/MHAS_Created_Variables_Descriptive_Document.pdf",
+    "status": 200,
+    "paginas": 276,
+    "sha256": "434db9b352f05ebb4331b3ad0f91158e9617cfe72d0a6cc0edc229163cc59566",
+    "valido": true
+  },
+  {
+    "nombre": "im2001",
+    "url": "https://www.mhasweb.org/Resources/DOCUMENTS/2001/Imputation_of_Non-Reponse_on_Economic_Variables_in_the_MHAS-ENASEM_2001.pdf",
+    "status": 200,
+    "paginas": 84,
+    "sha256": "06957557f58948af69fd4cf9c747490ab5012592af97f4b79d647004612140a8",
+    "valido": true
+  },
+  {
+    "nombre": "q2012",
+    "url": "https://www.inegi.org.mx/contenidos/programas/enasem/2012/doc/enasem_2012_cuestionario_basico.pdf",
+    "status": 200,
+    "valido": false
+  },
+  {
+    "nombre": "q2015",
+    "url": "https://www.inegi.org.mx/contenidos/programas/enasem/2015/doc/enasem_2015_cuestionario_basico.pdf",
+    "status": 200,
+    "valido": false
+  },
+  {
+    "nombre": "im2003",
+    "url": "https://www.mhasweb.org/Resources/DOCUMENTS/2003/Imputation_of_Non-Reponse_on_Economic_Variables_in_the_MHAS-ENASEM_2003.pdf",
+    "paginas": 55,
+    "sha256": "2b4c065037abc81676e77dbd19f376667a80ef9f87f6dd9c4af2552768f7c8a1",
+    "valido": true
+  },
+  {
+    "nombre": "im2012",
+    "url": "https://www.mhasweb.org/Resources/DOCUMENTS/2012/Imputations/Imputation_of_Non_Reponse_on_Economic_Variables_in_the_MHAS_ENASEM_2012.pdf",
+    "paginas": 46,
+    "sha256": "beb4c0a9d3c92d185d1807160a11d4e85d7c6b90b07e1a84555c059d2e2742e7",
+    "valido": true
+  },
+  {
+    "nombre": "im2015",
+    "url": "https://www.mhasweb.org/Resources/DOCUMENTS/2015/Imputations/Imputation_of_Non_Reponse_on_Economic_Variables_in_the_MHAS_ENASEM_2015.pdf",
+    "paginas": 49,
+    "sha256": "80dfb56349e224863ee7295c94403c4422908eb375799a458e70c935f22a7fc9",
+    "valido": true
+  },
+  {
+    "nombre": "q2015",
+    "url": "https://www.mhasweb.org/resources/DOCUMENTS/2015/Cuestionario_Basico_2015.pdf",
+    "paginas": 156,
+    "sha256": "ab647ce7d3da806d36bb290a3833f43915b4efd1b39ecb3a3a4c63dc14126e81",
+    "valido": true
+  },
+  {
+    "nombre": "q2012",
+    "url": "https://www.mhasweb.org/resources/DOCUMENTS/2012/Cuestionario_Basico_2012.pdf",
+    "paginas": 117,
+    "sha256": "160f5eb30b1fc617ab078cfe08a5ae436f0e66f716d162f81e8f1458d34bcc38",
+    "valido": true
+  },
+  {
+    "nombre": "q2003",
+    "url": "https://www.mhasweb.org/resources/DOCUMENTS/2003/Cuestionario_Basico_2003.pdf",
+    "paginas": 145,
+    "sha256": "390046f0aa357f4351f2e4c50b12b15376b1d76e31d30527833b55fd69b4f48e",
+    "valido": true
+  },
+  {
+    "nombre": "q2001",
+    "url": "https://www.mhasweb.org/resources/DOCUMENTS/2001/Cuestionario_Basico_2001.pdf",
+    "paginas": 126,
+    "sha256": "a7d3a2dc7d885c78c2605045a54110adf0cff3b2208e526c4dc90b1b64173d6c",
+    "valido": true
+  },
+  {
+    "nombre": "im2018",
+    "url": "https://www.mhasweb.org/Resources/DOCUMENTS/2018/Imputation_of_Non_Reponse_on_Economic_Variables_in_the_MHAS_ENASEM_2018.pdf",
+    "paginas": 219,
+    "sha256": "098b0f808a5bb46c8acb83d34698e23e3ccbcd5545780ee3075dbf7ca75975d8",
+    "valido": true
+  },
+  {
+    "nombre": "cbK2021",
+    "url": "https://www.mhasweb.org/resources/DOCUMENTS/2021/Codebook/Section_K_21.pdf",
+    "paginas": 123,
+    "sha256": "70bb839ef07bf2838e00b8e323d06b476c1570fd52c330588f79336290ceb73a",
+    "valido": true
+  },
+  {
+    "nombre": "cbK2018",
+    "url": "https://www.mhasweb.org/resources/DOCUMENTS/2018/Codebook/Section_K_Pension_Income_and_Assets_2018.pdf",
+    "paginas": 123,
+    "sha256": "b5225ea2717b6d817bdd916ea7ddac2cc25bfc75f7500e133b1fc74dfc7b1032",
+    "valido": true
+  },
+  {
+    "nombre": "cbK2015",
+    "url": "https://www.mhasweb.org/resources/DOCUMENTS/2015/Codebook/Section_K_Pension_Income_and_Assets_2015.pdf",
+    "paginas": 166,
+    "sha256": "13d628bdaad723b26527ca9d2eecb78cbc65c562cd58ab26443e21426d38bac3",
+    "valido": true
+  },
+  {
+    "nombre": "cbK2012",
+    "url": "https://www.mhasweb.org/resources/DOCUMENTS/2012/Codebook/Section_K_Pensions_Income_and_Assets_2012.pdf",
+    "paginas": 147,
+    "sha256": "c9cfc19b98011908e3f3c6bab9c1008cdc62868c5236a08e9af00c6d1942d6b5",
+    "valido": true
+  },
+  {
+    "nombre": "cbK2003",
+    "url": "https://www.mhasweb.org/resources/DOCUMENTS/2003/Codebook/Section_K_Pension_Income_and_Assets_2003.pdf",
+    "paginas": 73,
+    "sha256": "46b0a221fdfe9fd84bea4024bdee4b47a32cd1ff3a7950a96ac511fb9afab263",
+    "valido": true
+  },
+  {
+    "nombre": "cbK2001",
+    "url": "https://www.mhasweb.org/resources/DOCUMENTS/2001/Codebook/Section_K_Pension_Income_and_Assets_2001.pdf",
+    "paginas": 56,
+    "sha256": "441a9eb169f9de48dfc94a63e49b4afe7e8387fd6f57e0268aa1db8276733300",
+    "valido": true
+  },
+  {
+    "nombre": "q2018",
+    "url": "https://www.inegi.org.mx/contenidos/programas/enasem/2018/doc/enasem_2018_cuestionario_basico.pdf",
+    "valido": true,
+    "paginas": 134,
+    "sha256": "f9a8a2b1e260db964dcd7faf3171685be896b4dc97da575f0ace77af982a49df"
+  },
+  {
+    "nombre": "q2021",
+    "url": "https://www.inegi.org.mx/contenidos/programas/enasem/2021/doc/enasem_2021_cuestionario_basico.pdf",
+    "valido": true,
+    "paginas": 120,
+    "sha256": "c3546cb7f0bd2c669f4b1e7c25e847816b3a12128fcf8fc3c1285b171aef56a5"
+  },
+  {
+    "nombre": "im2021",
+    "url": "https://www.mhasweb.org/Resources/DOCUMENTS/2021/Imputation_of_Non_Reponse_on_Economic_Variables_in_the_MHAS_ENASEM_2021.pdf",
+    "valido": true,
+    "paginas": 236,
+    "sha256": "447f4e414256fd39f2f68a5907da1e71d36ceaa0c8ce3dd4e92408e40388ad37"
+  }
+]

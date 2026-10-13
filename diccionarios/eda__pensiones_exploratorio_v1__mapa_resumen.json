@@ -1,0 +1,182 @@
+[
+  {
+    "dimension": "Apoyos gubernamentales",
+    "producto": "original_hogar",
+    "N_columnas": 14
+  },
+  {
+    "dimension": "Demografía",
+    "producto": "construida_individual",
+    "N_columnas": 19
+  },
+  {
+    "dimension": "Demografía",
+    "producto": "imputada_hogar",
+    "N_columnas": 14
+  },
+  {
+    "dimension": "Demografía",
+    "producto": "maestra_ENASEMsimple",
+    "N_columnas": 17
+  },
+  {
+    "dimension": "Demografía",
+    "producto": "original_hogar",
+    "N_columnas": 279
+  },
+  {
+    "dimension": "Educación",
+    "producto": "maestra_ENASEMsimple",
+    "N_columnas": 2
+  },
+  {
+    "dimension": "Educación",
+    "producto": "original_hogar",
+    "N_columnas": 1
+  },
+  {
+    "dimension": "Ingresos",
+    "producto": "construida_individual",
+    "N_columnas": 164
+  },
+  {
+    "dimension": "Ingresos",
+    "producto": "imputada_hogar",
+    "N_columnas": 205
+  },
+  {
+    "dimension": "Ingresos",
+    "producto": "maestra_ENASEMsimple",
+    "N_columnas": 6
+  },
+  {
+    "dimension": "Ingresos",
+    "producto": "original_hogar",
+    "N_columnas": 465
+  },
+  {
+    "dimension": "Ocupación y actividad laboral",
+    "producto": "maestra_ENASEMsimple",
+    "N_columnas": 4
+  },
+  {
+    "dimension": "Ocupación y actividad laboral",
+    "producto": "original_hogar",
+    "N_columnas": 49
+  },
+  {
+    "dimension": "Otros conceptos sustantivos pendientes de revisión",
+    "producto": "construida_individual",
+    "N_columnas": 104
+  },
+  {
+    "dimension": "Otros conceptos sustantivos pendientes de revisión",
+    "producto": "derivada_provisional_2021",
+    "N_columnas": 4
+  },
+  {
+    "dimension": "Otros conceptos sustantivos pendientes de revisión",
+    "producto": "imputada_hogar",
+    "N_columnas": 180
+  },
+  {
+    "dimension": "Otros conceptos sustantivos pendientes de revisión",
+    "producto": "maestra_ENASEMsimple",
+    "N_columnas": 37
+  },
+  {
+    "dimension": "Otros conceptos sustantivos pendientes de revisión",
+    "producto": "original_hogar",
+    "N_columnas": 858
+  },
+  {
+    "dimension": "Patrimonio",
+    "producto": "construida_individual",
+    "N_columnas": 127
+  },
+  {
+    "dimension": "Patrimonio",
+    "producto": "imputada_hogar",
+    "N_columnas": 262
+  },
+  {
+    "dimension": "Patrimonio",
+    "producto": "maestra_ENASEMsimple",
+    "N_columnas": 1
+  },
+  {
+    "dimension": "Patrimonio",
+    "producto": "original_hogar",
+    "N_columnas": 526
+  },
+  {
+    "dimension": "Pensiones",
+    "producto": "construida_individual",
+    "N_columnas": 169
+  },
+  {
+    "dimension": "Pensiones",
+    "producto": "derivada_provisional_2021",
+    "N_columnas": 5
+  },
+  {
+    "dimension": "Pensiones",
+    "producto": "imputada_hogar",
+    "N_columnas": 198
+  },
+  {
+    "dimension": "Pensiones",
+    "producto": "original_hogar",
+    "N_columnas": 930
+  },
+  {
+    "dimension": "Salud, funcionalidad y cognición",
+    "producto": "maestra_ENASEMsimple",
+    "N_columnas": 28
+  },
+  {
+    "dimension": "Salud, funcionalidad y cognición",
+    "producto": "original_hogar",
+    "N_columnas": 4
+  },
+  {
+    "dimension": "Técnica / trazabilidad",
+    "producto": "auxiliar_faltante",
+    "N_columnas": 3887
+  },
+  {
+    "dimension": "Técnica / trazabilidad",
+    "producto": "calendario_nominal",
+    "N_columnas": 1
+  },
+  {
+    "dimension": "Técnica / trazabilidad",
+    "producto": "clave_derivada",
+    "N_columnas": 1
+  },
+  {
+    "dimension": "Técnica / trazabilidad",
+    "producto": "construida_individual",
+    "N_columnas": 20
+  },
+  {
+    "dimension": "Técnica / trazabilidad",
+    "producto": "control_enlace",
+    "N_columnas": 34
+  },
+  {
+    "dimension": "Técnica / trazabilidad",
+    "producto": "imputada_hogar",
+    "N_columnas": 8
+  },
+  {
+    "dimension": "Técnica / trazabilidad",
+    "producto": "maestra_ENASEMsimple",
+    "N_columnas": 24
+  },
+  {
+    "dimension": "Técnica / trazabilidad",
+    "producto": "original_hogar",
+    "N_columnas": 21
+  }
+]

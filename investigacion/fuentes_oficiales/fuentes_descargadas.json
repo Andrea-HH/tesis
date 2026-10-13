@@ -1,0 +1,1733 @@
+[
+  {
+    "id": "estatal_2010",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPE/Documents/Archivos_Estados/INVENTARIO_ESTATAL_CONEVAL_2010.zip",
+    "archivo": "data/raw/documentacion_catalogo/estatal_2010.zip",
+    "sha256": "b5adf80c7ee87b3ae5cac8bb7a1fefd30567f06ac7c3143c818adc129cd306fe",
+    "bytes": 711620,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "estatal_2011",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPE/Documents/Archivos_Estados/INVENTARIO_ESTATAL_CONEVAL_2011.zip",
+    "archivo": "data/raw/documentacion_catalogo/estatal_2011.zip",
+    "sha256": "f4843a52dab52392048cf51fc0278f3f47ef7ac3d5ebbf9bc796ea7ffa58470a",
+    "bytes": 752208,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "estatal_2012",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPE/Documents/Archivos_Estados/INVENTARIO_ESTATAL_CONEVAL_2012.zip",
+    "archivo": "data/raw/documentacion_catalogo/estatal_2012.zip",
+    "sha256": "fb73b1474c5b86431d7a67a34729d1f0b8410b8c112286fb5894fd1ea326056f",
+    "bytes": 923779,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "estatal_2013",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPE/Documents/Archivos_Estados/INVENTARIO_ESTATAL_CONEVAL_2013.zip",
+    "archivo": "data/raw/documentacion_catalogo/estatal_2013.zip",
+    "sha256": "e3e6005199a140b072c309120e36b10fbe40f960d040720241827c7ddc3c6e44",
+    "bytes": 865285,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "estatal_2014",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPE/Documents/Archivos_Estados/INVENTARIO_ESTATAL_CONEVAL_2014.zip",
+    "archivo": "data/raw/documentacion_catalogo/estatal_2014.zip",
+    "sha256": "e8abcccd5fa51d135abc44f832eac0f98dd2a7dbe76691081240e0d7f948c3de",
+    "bytes": 1106063,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "estatal_2018",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPE/Documents/Archivos_Estados/IE_2018.zip",
+    "archivo": "data/raw/documentacion_catalogo/estatal_2018.zip",
+    "sha256": "b4a8ed033b614496de8832acb946069fd2ba60561619fe17977740dd8fa82947",
+    "bytes": 1415968,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "estatal_2021",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPE/Documents/Archivos_Estados/IE_2021.zip",
+    "archivo": "data/raw/documentacion_catalogo/estatal_2021.zip",
+    "sha256": "ca24e5ea3ec15435694c0dc520dda8bae86f383a80e7ccf48ff4d2b04cd7eb4a",
+    "bytes": 1372086,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "estatal_2016",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPE/Documents/Archivos_Estados/INVENTARIO_ESTATAL_CONEVAL_2016.rar",
+    "archivo": "data/raw/documentacion_catalogo/estatal_2016.rar",
+    "sha256": "3b89081a5252b04d661b8c138e52aff1dd2b02a902c7027b941910a4a707f0e9",
+    "bytes": 1021688,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "federal_historico",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPFE/Documents/Inventarios_Anteriores/IF_HISTORICO.zip",
+    "archivo": "data/raw/documentacion_catalogo/federal_historico.zip",
+    "sha256": "78ea0f9716f6b1279f3ca0fd90b7952dd6e5eba8c851d84c023cc4d170eb520d",
+    "bytes": 4879664,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_2020_analisis",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Presentacion_Analisis/Presentacion_Analisis_Inventario_2020.pdf",
+    "archivo": "data/raw/documentacion_catalogo/municipal_2020_analisis.pdf",
+    "sha256": "f6711c3b767cf432a4dc411fb33a22c9b61a334ce6c6e2c91e29ad32268384ef",
+    "bytes": 3902345,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "estatal_2021_analisis",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPE/Documents/Nota_Metodologica/Presentacion_y_Analisis_Inventario_Estatal_2021.pdf",
+    "archivo": "data/raw/documentacion_catalogo/estatal_2021_analisis.pdf",
+    "sha256": "038ee28ea113c8d4d12cd9a8ecdcb90a3363cb041cfa7792abbfc964664f392b",
+    "bytes": 2993538,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Aguascalientes_2012-2013",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Aguascalientes_2012-2013.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Aguascalientes.aspx",
+    "periodo": "2012-2013",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Aguascalientes_2012-2013.zip",
+    "sha256": "87b92da8f4ee917380c115cd07915cb21adc6c697f433bcb0843aede13706818",
+    "bytes": 55193,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Aguascalientes_2014-2015",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Aguascalientes_2014-2015.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Aguascalientes.aspx",
+    "periodo": "2014-2015",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Aguascalientes_2014-2015.zip",
+    "sha256": "e8544e891b4f3e715ac91a967b76327d9db3f8c524a2ae13641cfd873cd7d2fc",
+    "bytes": 46369,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Aguascalientes_2015-2016",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Aguascalientes_2015-2016.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Aguascalientes.aspx",
+    "periodo": "2015-2016",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Aguascalientes_2015-2016.zip",
+    "sha256": "8a5f25cd6b31b25fa0417bc71361cfd494f58da0a4b109202f350a4f5bb0e76b",
+    "bytes": 22952,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Aguascalientes_2017",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Aguascalientes_2017.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Aguascalientes.aspx",
+    "periodo": "2017",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Aguascalientes_2017.zip",
+    "sha256": "e9cac26f3a2751fbf5883a726d41866b76d34265c9032658331c70b636b07012",
+    "bytes": 35401,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Aguascalientes_2020",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Aguascalientes_2020.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Aguascalientes.aspx",
+    "periodo": "2020",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Aguascalientes_2020.zip",
+    "sha256": "aa5e6217dcd51cc86e4313da4779806b88a8225d05e83af73d4907cdc93bcb04",
+    "bytes": 72466,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Baja_California_2012-2013",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Baja_California_2012-2013.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Baja_California.aspx",
+    "periodo": "2012-2013",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Baja_California_2012-2013.zip",
+    "sha256": "c6ba42179750dc4d430d2bcae9015fab315d680fb323557432b2c04d441d8c41",
+    "bytes": 79261,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Baja_California_2014-2015",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Baja_California_2014-2015.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Baja_California.aspx",
+    "periodo": "2014-2015",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Baja_California_2014-2015.zip",
+    "sha256": "f53b074c86d9946e8b050924251398eb92c504b7e6e942990fdb8b11a21dbb79",
+    "bytes": 44476,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Baja_California_2015-2016",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Baja_California_2015-2016.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Baja_California.aspx",
+    "periodo": "2015-2016",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Baja_California_2015-2016.zip",
+    "sha256": "aa295f834de747c7880680a74b4f2b20d90c74961d1c7d59700947a508a926fd",
+    "bytes": 29304,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Baja_California_2017",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Baja_California_2017.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Baja_California.aspx",
+    "periodo": "2017",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Baja_California_2017.zip",
+    "sha256": "c9c2800b29d3ca613f511c78188072e3d471d44249a06f8069139e48c21c8fbb",
+    "bytes": 36443,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Baja_California_2020",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Baja_California_2020.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Baja_California.aspx",
+    "periodo": "2020",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Baja_California_2020.zip",
+    "sha256": "3d29bd8db0f68f367b7f050b4035110f9fcad8b903754dab93ba1371bb2ccce6",
+    "bytes": 53792,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Baja_California_Sur_2012-2013",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Baja_California_Sur_2012-2013.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Baja_California_Sur.aspx",
+    "periodo": "2012-2013",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Baja_California_Sur_2012-2013.zip",
+    "sha256": "0a4c7840ffd9e76e5963d32a20d8ce5b7335fb73d21cfde76f236bf7b48f4e83",
+    "bytes": 78026,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Baja_California_Sur_2014-2015",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Baja_California_Sur_2014-2015.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Baja_California_Sur.aspx",
+    "periodo": "2014-2015",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Baja_California_Sur_2014-2015.zip",
+    "sha256": "e729865be59b159fbb60cb2691fe5b7e1a6293bc49c5b2b286f8439e140896ad",
+    "bytes": 38856,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Baja_California_Sur_2015-2016",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Baja_California_Sur_2015-2016.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Baja_California_Sur.aspx",
+    "periodo": "2015-2016",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Baja_California_Sur_2015-2016.zip",
+    "sha256": "f387808a8157da8035564fdcdbc9b96aff808d481f45edf536e57bc7f5161cfd",
+    "bytes": 18823,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Baja_California_Sur_2017",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Baja_California_Sur_2017.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Baja_California_Sur.aspx",
+    "periodo": "2017",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Baja_California_Sur_2017.zip",
+    "sha256": "c0b57b7e8bc6535527c50c3062d1b84403f4d503799eb9ecfdf5d13e42b18714",
+    "bytes": 23562,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Baja_California_Sur_2020",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Baja_California_Sur_2020.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Baja_California_Sur.aspx",
+    "periodo": "2020",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Baja_California_Sur_2020.zip",
+    "sha256": "d1c5549ef29621afa7cfe62c171b1c2db62b1cae67ea51ea1bb6e9885a3a0a52",
+    "bytes": 44190,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Campeche_2012-2013",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Campeche_2012-2013.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Campeche.aspx",
+    "periodo": "2012-2013",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Campeche_2012-2013.zip",
+    "sha256": "e8ef9b4c38cf22b98cb652153d73beaf092a14a3142d88efe3adb6b6dbffdff8",
+    "bytes": 28941,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Campeche_2014-2015",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Campeche_2014-2015.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Campeche.aspx",
+    "periodo": "2014-2015",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Campeche_2014-2015.zip",
+    "sha256": "f954c8f73bdb1612d7bd61cdec67f8c8a23c39fde3e146275baafad0a6612ae6",
+    "bytes": 48230,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Campeche_2015-2016",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Campeche_2015-2016.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Campeche.aspx",
+    "periodo": "2015-2016",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Campeche_2015-2016.zip",
+    "sha256": "4cae4613228c751a084afd323567fbdb128c772903b2b5455c329f1ff8ae4740",
+    "bytes": 23419,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Campeche_2017",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Campeche_2017.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Campeche.aspx",
+    "periodo": "2017",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Campeche_2017.zip",
+    "sha256": "3397bd6e149016f2ee976ac7a7fd53f55d9a42a085cd44f7535d41f815f47fc1",
+    "bytes": 27785,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Campeche_2020",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Campeche_2020.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Campeche.aspx",
+    "periodo": "2020",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Campeche_2020.zip",
+    "sha256": "38b3b85c9bd7b625adb4014a894022f2be16d584a0f03d1b2d893ea25acbd571",
+    "bytes": 88563,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Chiapas_2012-2013",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Chiapas_2012-2013.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Chiapas.aspx",
+    "periodo": "2012-2013",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Chiapas_2012-2013.zip",
+    "sha256": "7aecdfc929482eef204f8722e29989d44acbcaf2191bb3c906ac5cdadcf1de91",
+    "bytes": 87915,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Chiapas_2014-2015",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Chiapas_2014-2015.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Chiapas.aspx",
+    "periodo": "2014-2015",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Chiapas_2014-2015.zip",
+    "sha256": "5e6b3757aaa98f293ea7528fbbda5e651c86f050b8306566666e961b78683758",
+    "bytes": 85325,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Chiapas_2015-2016",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Chiapas_2015-2016.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Chiapas.aspx",
+    "periodo": "2015-2016",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Chiapas_2015-2016.zip",
+    "sha256": "5184a7b68811be4619450fc1c2dcd587ccbc723d03fa9250a8b48771ca189114",
+    "bytes": 58832,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Chiapas_2017",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Chiapas_2017.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Chiapas.aspx",
+    "periodo": "2017",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Chiapas_2017.zip",
+    "sha256": "1156cc2a2221abbc18d9663e888c45a48cd1d5123f79f70679d41b42ad3d1a4a",
+    "bytes": 95461,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Chiapas_2020",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Chiapas_2020.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Chiapas.aspx",
+    "periodo": "2020",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Chiapas_2020.zip",
+    "sha256": "aca7a33498268b691d80b33f0c873ff67bdb14248163dfa08bc76f3c8fb03708",
+    "bytes": 131819,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Chihuahua_2012-2013",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Chihuahua_2012-2013.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Chihuahua.aspx",
+    "periodo": "2012-2013",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Chihuahua_2012-2013.zip",
+    "sha256": "6fab941b53b205702fcd32d2d6f466a2318a328199f0104ceba885c7e4727448",
+    "bytes": 102541,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Chihuahua_2014-2015",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Chihuahua_2014-2015.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Chihuahua.aspx",
+    "periodo": "2014-2015",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Chihuahua_2014-2015.zip",
+    "sha256": "6dde4b7e6d2b022e5f36d3efa7246de0d8eab27ebb207d001830f1850afa8f09",
+    "bytes": 71539,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Chihuahua_2015-2016",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Chihuahua_2015-2016.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Chihuahua.aspx",
+    "periodo": "2015-2016",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Chihuahua_2015-2016.zip",
+    "sha256": "19ca6038175fa12bd5d3161ec0bc6166ff799b4abbd8173497bbf44ce80b9aa5",
+    "bytes": 88442,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Chihuahua_2017",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Chihuahua_2017.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Chihuahua.aspx",
+    "periodo": "2017",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Chihuahua_2017.zip",
+    "sha256": "658b2b9b050be6e0b9d767368f4a209a850d0360984c0e9c5f3add166770cbb7",
+    "bytes": 78913,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Chihuahua_2020",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Chihuahua_2020.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Chihuahua.aspx",
+    "periodo": "2020",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Chihuahua_2020.zip",
+    "sha256": "5cfd2bec3c9a67d5f0ad397154ee228b61ce286e1267cc44eb41574233c72a57",
+    "bytes": 312628,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Distrito_Federal.aspx",
+    "error": "patron_descarga_no_localizado"
+  },
+  {
+    "id": "municipal_Municipios_Coahuila_2012-2013",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Coahuila_2012-2013.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Coahuila.aspx",
+    "periodo": "2012-2013",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Coahuila_2012-2013.zip",
+    "sha256": "ee2b917791adadb3a6d7b7533487d00bdc9edc56203619b3f05669e6e8b52c6c",
+    "bytes": 74461,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Coahuila_2014-2015",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Coahuila_2014-2015.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Coahuila.aspx",
+    "periodo": "2014-2015",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Coahuila_2014-2015.zip",
+    "sha256": "b5ebbd963cbda03a582b5786f6f64490bd9dde321c0fc1248a3ba3de508c06b1",
+    "bytes": 59764,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Coahuila_2015-2016",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Coahuila_2015-2016.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Coahuila.aspx",
+    "periodo": "2015-2016",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Coahuila_2015-2016.zip",
+    "sha256": "b36c08a621f724c5c0b19d808f3eb3fa09273561fddc95f1d54b4154c9675d8c",
+    "bytes": 48930,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Coahuila_2017",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Coahuila_2017.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Coahuila.aspx",
+    "periodo": "2017",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Coahuila_2017.zip",
+    "sha256": "49d0052c96e1f97c54bd1adc91a35b4de84539e65c06d5ee1a4c221176e42263",
+    "bytes": 48599,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Coahuila_2020",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Coahuila_2020.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Coahuila.aspx",
+    "periodo": "2020",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Coahuila_2020.zip",
+    "sha256": "808571b5528007ef3292bfe847d4e590406bda92411400a624dc52a64635abed",
+    "bytes": 639051,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Colima_2012-2013",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Colima_2012-2013.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Colima.aspx",
+    "periodo": "2012-2013",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Colima_2012-2013.zip",
+    "sha256": "2ebdca56794a240fa0aa556ebf63670f875606b17ee5e6bc5a1d7ecd10d6e451",
+    "bytes": 50211,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Colima_2014-2015",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Colima_2014-2015.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Colima.aspx",
+    "periodo": "2014-2015",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Colima_2014-2015.zip",
+    "sha256": "8d158f97860be3fe88caad18b85ddc8de60258619a25a43017242e28c3dc5333",
+    "bytes": 48588,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Colima_2015-2016",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Colima_2015-2016.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Colima.aspx",
+    "periodo": "2015-2016",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Colima_2015-2016.zip",
+    "sha256": "b2451e9a1475d69232f3381216f76eef1d793b3f471f50f33e306691b5321d9f",
+    "bytes": 20466,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Colima_2017",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Colima_2017.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Colima.aspx",
+    "periodo": "2017",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Colima_2017.zip",
+    "sha256": "fbaa92bdd9c7c8f5f92957e3ea1812aeb274a2ce83a1fe5cd73f0293b2d6c9cb",
+    "bytes": 29934,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Colima_2020",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Colima_2020.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Colima.aspx",
+    "periodo": "2020",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Colima_2020.zip",
+    "sha256": "94ed7d7b1f504e54926d88d2d8c8fabdbdc4b5b45c7c3683eaed5316cb448315",
+    "bytes": 37385,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Durango_2012-2013",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Durango_2012-2013.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Durango.aspx",
+    "periodo": "2012-2013",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Durango_2012-2013.zip",
+    "sha256": "1973f0c840916c603bfa1df6c2cf1521364e4a0034204b665646274c72a12a84",
+    "bytes": 49737,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Durango_2014-2015",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Durango_2014-2015.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Durango.aspx",
+    "periodo": "2014-2015",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Durango_2014-2015.zip",
+    "sha256": "1915f1992ec06e3f847256da5e9a2206b5e157edb831a4cb4a260f381b6a6c2b",
+    "bytes": 64622,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Durango_2015-2016",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Durango_2015-2016.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Durango.aspx",
+    "periodo": "2015-2016",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Durango_2015-2016.zip",
+    "sha256": "55f9f04c5f29dc22fdc5f35259dacadc6f339a0df31f82f20d319ed1b818ad50",
+    "bytes": 43806,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Durango_2017",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Durango_2017.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Durango.aspx",
+    "periodo": "2017",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Durango_2017.zip",
+    "sha256": "eab81e96fb947915d72fb4d85955659d604db91b9d6a9c8ef3f2e1645615b49e",
+    "bytes": 50456,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Durango_2020",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Durango_2020.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Durango.aspx",
+    "periodo": "2020",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Durango_2020.zip",
+    "sha256": "83d196a93f69ef6f4119687e3117f6a52f4085433644c446fd47d3f800ecb8ac",
+    "bytes": 70705,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Estado_de_Mexico_2012-2013",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Estado_de_Mexico_2012-2013.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Estado_de_Mexico.aspx",
+    "periodo": "2012-2013",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Estado_de_Mexico_2012-2013.zip",
+    "sha256": "f663f92bfc7eff2451528e4d35981f643db90fc192f19542a63e31436f44d407",
+    "bytes": 76017,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Estado_de_Mexico_2014-2015",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Estado_de_Mexico_2014-2015.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Estado_de_Mexico.aspx",
+    "periodo": "2014-2015",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Estado_de_Mexico_2014-2015.zip",
+    "sha256": "ab0db8f4ba6a1b39062067e4cec019ff82bdb7648b4a65cfbd8b77e48f8673f3",
+    "bytes": 140691,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Estado_de_Mexico_2015-2016",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Estado_de_Mexico_2015-2016.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Estado_de_Mexico.aspx",
+    "periodo": "2015-2016",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Estado_de_Mexico_2015-2016.zip",
+    "sha256": "4799fb75f6bc0ce8d901faccb9371d28f1c6b49db4115e007739824f9e4f8422",
+    "bytes": 82497,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Estado_de_Mexico_2017",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Estado_de_Mexico_2017.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Estado_de_Mexico.aspx",
+    "periodo": "2017",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Estado_de_Mexico_2017.zip",
+    "sha256": "13efed3f99c36bca6fa4815421cea180df909a817331a8065c9bf9f84c176860",
+    "bytes": 118800,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Estado_de_Mexico_2020",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Estado_de_Mexico_2020.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Estado_de_Mexico.aspx",
+    "periodo": "2020",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Estado_de_Mexico_2020.zip",
+    "sha256": "bc8286760f9f451f948dfcc272693b3bd43c2b8f954906e7d4bb33ec6829c3cb",
+    "bytes": 343579,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Guanajuato_2012-2013",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Guanajuato_2012-2013.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Guanajuato.aspx",
+    "periodo": "2012-2013",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Guanajuato_2012-2013.zip",
+    "sha256": "f1bfbfc70d6744dc98635a6da5b9dbcf30d72b0e8adf1b04f9528898c8ea7ace",
+    "bytes": 59862,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Guanajuato_2014-2015",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Guanajuato_2014-2015.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Guanajuato.aspx",
+    "periodo": "2014-2015",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Guanajuato_2014-2015.zip",
+    "sha256": "0ae4dccab6c0a4bb401b6cc758636123719e485c00655273f2b387f054acead1",
+    "bytes": 132738,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Guanajuato_2015-2016",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Guanajuato_2015-2016.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Guanajuato.aspx",
+    "periodo": "2015-2016",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Guanajuato_2015-2016.zip",
+    "sha256": "05eea97ea4b33f37295a11b3b06ca65f60fe71c62655c8b3bbaf6786de02963e",
+    "bytes": 86233,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Guanajuato_2017",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Guanajuato_2017.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Guanajuato.aspx",
+    "periodo": "2017",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Guanajuato_2017.zip",
+    "sha256": "92e3d9ee4052990f54b038cccf41b9b53ed5a13dcdd0f4fed9dce9489dcd36b9",
+    "bytes": 102902,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Guanajuato_2020",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Guanajuato_2020.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Guanajuato.aspx",
+    "periodo": "2020",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Guanajuato_2020.zip",
+    "sha256": "5b3f2624f664c64c7ebebbb38c951ac62fa006a89dc88832d5587ef08b9ca9b6",
+    "bytes": 213764,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Guerrero_2012-2013",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Guerrero_2012-2013.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Guerrero.aspx",
+    "periodo": "2012-2013",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Guerrero_2012-2013.zip",
+    "sha256": "38e99f7ef8ac8507bb19733c684058b8b44233f2ae53bf36d83d15b21b2d08ff",
+    "bytes": 47978,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Guerrero_2014-2015",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Guerrero_2014-2015.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Guerrero.aspx",
+    "periodo": "2014-2015",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Guerrero_2014-2015.zip",
+    "sha256": "593e017e67154238682268d85e2b6a2feeda2509b08e79e34f63d15a8fa370cc",
+    "bytes": 78750,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Guerrero_2015-2016",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Guerrero_2015-2016.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Guerrero.aspx",
+    "periodo": "2015-2016",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Guerrero_2015-2016.zip",
+    "sha256": "ac7384fd63e0b912b18ddc601b8de167a99ee45b5b8192c8dd61ca958c23466a",
+    "bytes": 46124,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Guerrero_2017",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Guerrero_2017.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Guerrero.aspx",
+    "periodo": "2017",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Guerrero_2017.zip",
+    "sha256": "88f044782660e1388f988d0f868f12003afad94998eec1287ac06b2cac53c84c",
+    "bytes": 58829,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Guerrero_2020",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Guerrero_2020.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Guerrero.aspx",
+    "periodo": "2020",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Guerrero_2020.zip",
+    "sha256": "c66b54f02287ccaf50ae22e2c885baff14b502de34b2c3744011375e053e0b7e",
+    "bytes": 114006,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Hidalgo_2012-2013",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Hidalgo_2012-2013.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Hidalgo.aspx",
+    "periodo": "2012-2013",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Hidalgo_2012-2013.zip",
+    "sha256": "189d009780f058fbfcab3344ad0fa5443f660ba6907e8fa942c99a192b556af5",
+    "bytes": 49264,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Hidalgo_2014-2015",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Hidalgo_2014-2015.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Hidalgo.aspx",
+    "periodo": "2014-2015",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Hidalgo_2014-2015.zip",
+    "sha256": "340ed9a336eb3396ae44fdae1392e6151833b521391a692187fe71eafbe5a3b0",
+    "bytes": 88929,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Hidalgo_2015-2016",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Hidalgo_2015-2016.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Hidalgo.aspx",
+    "periodo": "2015-2016",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Hidalgo_2015-2016.zip",
+    "sha256": "924a5a0de4984b7a53ca8b9157c47e231c966b01a549fa2c454f0ccfd1494117",
+    "bytes": 60517,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Hidalgo_2017",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Hidalgo_2017.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Hidalgo.aspx",
+    "periodo": "2017",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Hidalgo_2017.zip",
+    "sha256": "675670b03ae33163d4982a39313a64a4ef85e4b2ec16a70d71762d5947086a10",
+    "bytes": 77061,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Hidalgo_2020",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Hidalgo_2020.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Hidalgo.aspx",
+    "periodo": "2020",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Hidalgo_2020.zip",
+    "sha256": "559abde02574b65fc90140d4775157106f840eb322bcaaa61f10f5ea79155d26",
+    "bytes": 138476,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Jalisco_2012-2013",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Jalisco_2012-2013.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Jalisco.aspx",
+    "periodo": "2012-2013",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Jalisco_2012-2013.zip",
+    "sha256": "9b1373af7625d80fbb0e2174511a4d0f04a0fca7cfa9090244f66a13b022d108",
+    "bytes": 153911,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Jalisco_2014-2015",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Jalisco_2014-2015.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Jalisco.aspx",
+    "periodo": "2014-2015",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Jalisco_2014-2015.zip",
+    "sha256": "dfe41ac4936569042dab29719f196eb04b6f315956bd82f8bd6751b66af14a08",
+    "bytes": 136255,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Jalisco_2015-2016",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Jalisco_2015-2016.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Jalisco.aspx",
+    "periodo": "2015-2016",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Jalisco_2015-2016.zip",
+    "sha256": "8882290bc9d96ed54e036cf3a6d9e353d6ebcf6bf235a96563783dc440ed56ec",
+    "bytes": 132406,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Jalisco_2017",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Jalisco_2017.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Jalisco.aspx",
+    "periodo": "2017",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Jalisco_2017.zip",
+    "sha256": "903e50712119be2923378897f8854d10535a8d48972c50401afe63bef318e7a2",
+    "bytes": 168743,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Jalisco_2020",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Jalisco_2020.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Jalisco.aspx",
+    "periodo": "2020",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Jalisco_2020.zip",
+    "sha256": "7a95901ed0ae588c92bcd6183b8932ac4c07384e443f5066511c3f1ebd7d8c33",
+    "bytes": 162146,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Michoacan_2012-2013",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Michoacan_2012-2013.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Michoacan.aspx",
+    "periodo": "2012-2013",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Michoacan_2012-2013.zip",
+    "sha256": "1de2c78948bf6c4ed2df87ba374b308b9555263dda300fb7a8acc98b6107222c",
+    "bytes": 73828,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Michoacan_2014-2015",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Michoacan_2014-2015.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Michoacan.aspx",
+    "periodo": "2014-2015",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Michoacan_2014-2015.zip",
+    "sha256": "fcdfadf19bbc11c5acdb1bbd175d0d0e0f9eb611be23db8572692243a21a1ae2",
+    "bytes": 87137,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Michoacan_2015-2016",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Michoacan_2015-2016.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Michoacan.aspx",
+    "periodo": "2015-2016",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Michoacan_2015-2016.zip",
+    "sha256": "3e6f34a158e19289ca02db4060c51fd38ec65755e69c8471d62eb151812983b9",
+    "bytes": 61328,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Michoacan_2017",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Michoacan_2017.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Michoacan.aspx",
+    "periodo": "2017",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Michoacan_2017.zip",
+    "sha256": "ed2d37814d1ee14182d173839b108dea72fde178075bb7aeb75ae90f31af07ed",
+    "bytes": 108479,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Michoacan_2020",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Michoacan_2020.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Michoacan.aspx",
+    "periodo": "2020",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Michoacan_2020.zip",
+    "sha256": "9ef3236bd4368ae46def0d72b48b93ebf63be9f9d7bc9c6301fc209bb5b40e71",
+    "bytes": 310176,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Morelos_2012-2013",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Morelos_2012-2013.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Morelos.aspx",
+    "periodo": "2012-2013",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Morelos_2012-2013.zip",
+    "sha256": "73f632684597a150804f75790fd1a27f270addb308a4b336a46b1605e9707da5",
+    "bytes": 33915,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Morelos_2014-2015",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Morelos_2014-2015.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Morelos.aspx",
+    "periodo": "2014-2015",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Morelos_2014-2015.zip",
+    "sha256": "7ced170673e9e7888f929d22df4a06c78d3d12b32ce0cfc298bbfb98ef121aac",
+    "bytes": 58474,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Morelos_2015-2016",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Morelos_2015-2016.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Morelos.aspx",
+    "periodo": "2015-2016",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Morelos_2015-2016.zip",
+    "sha256": "f2dc0534921d3d378dc44644e451f6faf43b1376219c24f0afa47ff8852b567f",
+    "bytes": 42378,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Morelos_2017",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Morelos_2017.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Morelos.aspx",
+    "periodo": "2017",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Morelos_2017.zip",
+    "sha256": "4c633adf8c093231972ed52c58422ec480559e3769f41f511fd2d4c89cb70d41",
+    "bytes": 56823,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Morelos_2020",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Morelos_2020.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Morelos.aspx",
+    "periodo": "2020",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Morelos_2020.zip",
+    "sha256": "70f77b01c8b3233688fc5f625c33d2be13156863ae1b7bc7321b1cc93d65a510",
+    "bytes": 63441,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Nayarit_2012-2013",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Nayarit_2012-2013.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Nayarit.aspx",
+    "periodo": "2012-2013",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Nayarit_2012-2013.zip",
+    "sha256": "3dbae92f129188f9faf0ffe61593d22bb52799236bf44386bb711fb715b3c3c0",
+    "bytes": 62669,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Nayarit_2014-2015",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Nayarit_2014-2015.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Nayarit.aspx",
+    "periodo": "2014-2015",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Nayarit_2014-2015.zip",
+    "sha256": "96a26a1203fc78b8a3c3ec3c74f8aec7e05c364eb0fdb7eee864bff3e13d4385",
+    "bytes": 50082,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Nayarit_2015-2016",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Nayarit_2015-2016.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Nayarit.aspx",
+    "periodo": "2015-2016",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Nayarit_2015-2016.zip",
+    "sha256": "083f5e82393fd9691b6c6b5ca894cf5a312edc3693fc3bfbec36999cbb5d28c4",
+    "bytes": 28271,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Nayarit_2017",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Nayarit_2017.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Nayarit.aspx",
+    "periodo": "2017",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Nayarit_2017.zip",
+    "sha256": "9548196a8b16d0915bf638f1ed6305cdcc0052a9dd4474cba1da8a259e0ecb17",
+    "bytes": 69611,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Nayarit_2020",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Nayarit_2020.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Nayarit.aspx",
+    "periodo": "2020",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Nayarit_2020.zip",
+    "sha256": "a3f40792c6c53a52ba0a0fa2df2b2684e87a70cb8da0e035db549b1c39543810",
+    "bytes": 65938,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Nuevo_Leon_2012-2013",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Nuevo_Leon_2012-2013.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Nuevo_Leon.aspx",
+    "periodo": "2012-2013",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Nuevo_Leon_2012-2013.zip",
+    "sha256": "88c544aead596e6368e10ae21fe2abb6b7edb9a8430d8192c7cf8be335944161",
+    "bytes": 82884,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Nuevo_Leon_2014-2015",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Nuevo_Leon_2014-2015.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Nuevo_Leon.aspx",
+    "periodo": "2014-2015",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Nuevo_Leon_2014-2015.zip",
+    "sha256": "f229d83555f291f66bc4908f12d1e0bce33865476adb842bc6ee300e4e2b540a",
+    "bytes": 70623,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Nuevo_Leon_2015-2016",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Nuevo_Leon_2015-2016.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Nuevo_Leon.aspx",
+    "periodo": "2015-2016",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Nuevo_Leon_2015-2016.zip",
+    "sha256": "e91e0f2c05ffe27dbe2ae3e76c79b3a7ccbe414ec7727746bbf6d852574d92e6",
+    "bytes": 35780,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Nuevo_Leon_2017",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Nuevo_Leon_2017.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Nuevo_Leon.aspx",
+    "periodo": "2017",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Nuevo_Leon_2017.zip",
+    "sha256": "7dd29873e5e016172a7e7b8cb28c042d0ee5e964d8128c602a48131343a735cf",
+    "bytes": 53910,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Nuevo_Leon_2020",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Nuevo_Leon_2020.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Nuevo_Leon.aspx",
+    "periodo": "2020",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Nuevo_Leon_2020.zip",
+    "sha256": "77540f8997c1edcf4dab98f1aa5ef634456debdc483970dc5877690f49a0b722",
+    "bytes": 113254,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Oaxaca_2012-2013",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Oaxaca_2012-2013.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Oaxaca.aspx",
+    "periodo": "2012-2013",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Oaxaca_2012-2013.zip",
+    "sha256": "5c1790f19f07d9a20586d9aa549a32395d78e561636904373f4b432e074a534d",
+    "bytes": 151258,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Oaxaca_2014-2015",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Oaxaca_2014-2015.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Oaxaca.aspx",
+    "periodo": "2014-2015",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Oaxaca_2014-2015.zip",
+    "sha256": "3370e18a160be34b003759273482f1b1005c76ea5e33a5b830fe3c12bb99b46f",
+    "bytes": 177038,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Oaxaca_2015-2016",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Oaxaca_2015-2016.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Oaxaca.aspx",
+    "periodo": "2015-2016",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Oaxaca_2015-2016.zip",
+    "sha256": "e445458e99ee497578d4c6a525954f0fe8aa2ccec8c7fd48c11fd32027816f06",
+    "bytes": 138892,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Oaxaca_2017",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Oaxaca_2017.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Oaxaca.aspx",
+    "periodo": "2017",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Oaxaca_2017.zip",
+    "sha256": "338456765b94fe8e3a197a488d4ab5996bdcde2d9bb083eed18121d2189a5413",
+    "bytes": 252840,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Oaxaca_2020",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Oaxaca_2020.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Oaxaca.aspx",
+    "periodo": "2020",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Oaxaca_2020.zip",
+    "sha256": "436cd5f8db59b456613dd8845663cd2c8f3cba0499a38005070c79fc6b04420d",
+    "bytes": 416413,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Puebla_2012-2013",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Puebla_2012-2013.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Puebla.aspx",
+    "periodo": "2012-2013",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Puebla_2012-2013.zip",
+    "sha256": "17ac4eeef834e0edb65086e22858c3e78bd2e497143d81322d1efe2a33379478",
+    "bytes": 96378,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Puebla_2014-2015",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Puebla_2014-2015.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Puebla.aspx",
+    "periodo": "2014-2015",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Puebla_2014-2015.zip",
+    "sha256": "e3a32d75a4d20b0b22b1cd36c2d244342375acb8683d4bf58a75e598d89a2b26",
+    "bytes": 98550,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Puebla_2015-2016",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Puebla_2015-2016.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Puebla.aspx",
+    "periodo": "2015-2016",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Puebla_2015-2016.zip",
+    "sha256": "1d93434575bca5110243072eb4af0253d9d8501d506fd3f789ff195ca5c8ab4b",
+    "bytes": 77772,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Puebla_2017",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Puebla_2017.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Puebla.aspx",
+    "periodo": "2017",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Puebla_2017.zip",
+    "sha256": "4b7b567b106777ec5842deea3af8d2dc4582f1db62015a84d06381ae1938fb4f",
+    "bytes": 131813,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Puebla_2020",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Puebla_2020.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Puebla.aspx",
+    "periodo": "2020",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Puebla_2020.zip",
+    "sha256": "7a97b8273673ed69e2d6ee1c4b13c6aa0d6930d0bb79cb86fbffc3773d68e309",
+    "bytes": 445304,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Queretaro_2012-2013",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Queretaro_2012-2013.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Queretaro.aspx",
+    "periodo": "2012-2013",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Queretaro_2012-2013.zip",
+    "sha256": "0e19f3288267facadbaf82f656da33ac3200bb693525e34bf00aaec7e51d0da0",
+    "bytes": 68463,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Queretaro_2014-2015",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Queretaro_2014-2015.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Queretaro.aspx",
+    "periodo": "2014-2015",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Queretaro_2014-2015.zip",
+    "sha256": "a422b33556e4ea6911626c0f29f16cae9766c7b8bc000851e27594fcfc9a9427",
+    "bytes": 66848,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Queretaro_2015-2016",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Queretaro_2015-2016.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Queretaro.aspx",
+    "periodo": "2015-2016",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Queretaro_2015-2016.zip",
+    "sha256": "9d00b5b02e19c454c635b4aaa5f45143750a849f19a4d26a32e10c89f5871a65",
+    "bytes": 36141,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Queretaro_2017",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Queretaro_2017.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Queretaro.aspx",
+    "periodo": "2017",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Queretaro_2017.zip",
+    "sha256": "9b11d073d5a95477bb9dd7fbbf922968def75c42b9c5f0489848b17539393c86",
+    "bytes": 49207,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Queretaro_2020",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Queretaro_2020.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Queretaro.aspx",
+    "periodo": "2020",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Queretaro_2020.zip",
+    "sha256": "04018e9de7e2538821704f49258c89aa1fc2a4667beba7ccfe204cd0f8d550c9",
+    "bytes": 57616,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Quintana_Roo_2012-2013",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Quintana_Roo_2012-2013.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Quintana_Roo.aspx",
+    "periodo": "2012-2013",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Quintana_Roo_2012-2013.zip",
+    "sha256": "cc6182fdece90e4eb610ca9cc0836f53ae670794c23adf17a3d2a59c3505ab51",
+    "bytes": 22247,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Quintana_Roo_2014-2015",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Quintana_Roo_2014-2015.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Quintana_Roo.aspx",
+    "periodo": "2014-2015",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Quintana_Roo_2014-2015.zip",
+    "sha256": "418088c2a0c1fcf537c0c521e379cec2bffe0f0377df8c5318a9d681231c3f98",
+    "bytes": 41679,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Quintana_Roo_2015-2016",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Quintana_Roo_2015-2016.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Quintana_Roo.aspx",
+    "periodo": "2015-2016",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Quintana_Roo_2015-2016.zip",
+    "sha256": "12b3977b10565857c0e04cff4c0906b80eb8266819177c16fee07a9b36eee0b9",
+    "bytes": 19674,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Quintana_Roo_2017",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Quintana_Roo_2017.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Quintana_Roo.aspx",
+    "periodo": "2017",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Quintana_Roo_2017.zip",
+    "sha256": "29214144a62cd7ca06ca5b0a48615082fd947ec62bea7fad6f574cd6e0dc11d2",
+    "bytes": 34138,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Quintana_Roo_2020",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Quintana_Roo_2020.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Quintana_Roo.aspx",
+    "periodo": "2020",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Quintana_Roo_2020.zip",
+    "sha256": "56f47e73a2035bdf73d5601b88159a7d8132c1b7ea8abe923c2914da4380fa9f",
+    "bytes": 29484,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_San_Luis_Potosi_2012-2013",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_San_Luis_Potosi_2012-2013.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/San_Luis_Potos.aspx",
+    "periodo": "2012-2013",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_San_Luis_Potosi_2012-2013.zip",
+    "sha256": "f744de114b9c4cfcc67d18249b096b8457102658eb3a08d89c494c832cad6291",
+    "bytes": 77916,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_San_Luis_Potosi_2014-2015",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_San_Luis_Potosi_2014-2015.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/San_Luis_Potos.aspx",
+    "periodo": "2014-2015",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_San_Luis_Potosi_2014-2015.zip",
+    "sha256": "f2991e3f84ac98a53863dc5753e9e858f0abc460b76ddfba39a0fc04344db280",
+    "bytes": 74574,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_San_Luis_Potosi_2015-2016",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_San_Luis_Potosi_2015-2016.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/San_Luis_Potos.aspx",
+    "periodo": "2015-2016",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_San_Luis_Potosi_2015-2016.zip",
+    "sha256": "fd929306ccc444cc9b6956abea8dd7b1481c297144c9cee63badca985d4edb1a",
+    "bytes": 39232,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_San_Luis_Potosi_2017",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_San_Luis_Potosi_2017.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/San_Luis_Potos.aspx",
+    "periodo": "2017",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_San_Luis_Potosi_2017.zip",
+    "sha256": "37008d09e93e69b4a12d9a9a5d394a5bed81c66d921f916cc69bd74fc9174a38",
+    "bytes": 63046,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_San_Luis_Potosi_2020",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_San_Luis_Potosi_2020.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/San_Luis_Potos.aspx",
+    "periodo": "2020",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_San_Luis_Potosi_2020.zip",
+    "sha256": "78db7e1c16d76ca38d1b418d4729c8b219d94f764f6ca254de298713bd2d0f5e",
+    "bytes": 94416,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Sinaloa_2012-2013",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Sinaloa_2012-2013.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Sinaloa.aspx",
+    "periodo": "2012-2013",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Sinaloa_2012-2013.zip",
+    "sha256": "903988dc3cb9a397af0a632e3eb43d906bc6c0194813be64d5036507751671b0",
+    "bytes": 94612,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Sinaloa_2014-2015",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Sinaloa_2014-2015.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Sinaloa.aspx",
+    "periodo": "2014-2015",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Sinaloa_2014-2015.zip",
+    "sha256": "e099a2bd13dfbcb0cbe5463587e4b1cce1c16d1fd87b908fb03aa124921b5ee8",
+    "bytes": 61079,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Sinaloa_2015-2016",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Sinaloa_2015-2016.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Sinaloa.aspx",
+    "periodo": "2015-2016",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Sinaloa_2015-2016.zip",
+    "sha256": "2d27658a51a82791e0041df48c87c8eaf662ff62ce30ef234ceda64aafee9825",
+    "bytes": 25695,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Sinaloa_2017",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Sinaloa_2017.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Sinaloa.aspx",
+    "periodo": "2017",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Sinaloa_2017.zip",
+    "sha256": "d1dd9831907af7387e334d0309abf7d4a482c7ef3ba664d69102b667f0537ad5",
+    "bytes": 48229,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Sinaloa_2020",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Sinaloa_2020.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Sinaloa.aspx",
+    "periodo": "2020",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Sinaloa_2020.zip",
+    "sha256": "58187d0f8bcd34463de625f56257604922e887c7fd975c5458cba31bc81bbf45",
+    "bytes": 38003,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Sonora_2012-2013",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Sonora_2012-2013.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Sonora.aspx",
+    "periodo": "2012-2013",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Sonora_2012-2013.zip",
+    "sha256": "2397d17136275b7ae4dc4cc4b1a491540a83101b6430e96741314b97f5cb0945",
+    "bytes": 68803,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Sonora_2014-2015",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Sonora_2014-2015.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Sonora.aspx",
+    "periodo": "2014-2015",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Sonora_2014-2015.zip",
+    "sha256": "462d4f6c4b8d992fc5b27a5cb2d322dccc424bf26964e6aea58c244ed8e7c9ce",
+    "bytes": 73717,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Sonora_2015-2016",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Sonora_2015-2016.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Sonora.aspx",
+    "periodo": "2015-2016",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Sonora_2015-2016.zip",
+    "sha256": "1cfb85195154e4b7bc5acf4dfaaf6cb414d25cf01bcfe2ff81022bbda7bb328b",
+    "bytes": 54240,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Sonora_2017",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Sonora_2017.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Sonora.aspx",
+    "periodo": "2017",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Sonora_2017.zip",
+    "sha256": "3131c0d32881fe642501a2b8d79592d1adcbf71f45dd35e878be9f3577a1aeae",
+    "bytes": 64596,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Sonora_2020",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Sonora_2020.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Sonora.aspx",
+    "periodo": "2020",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Sonora_2020.zip",
+    "sha256": "b909548b95824997df29df5d06958139cb32af6138e1b8393453696d3336ac1c",
+    "bytes": 131427,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Tabasco_2012-2013",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Tabasco_2012-2013.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Tabasco.aspx",
+    "periodo": "2012-2013",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Tabasco_2012-2013.zip",
+    "sha256": "b9873bf1fc72c2b21871d71a8c5bc1da4d31a56b5ef5f9f925c42d7becbe42c3",
+    "bytes": 24204,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Tabasco_2014-2015",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Tabasco_2014-2015.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Tabasco.aspx",
+    "periodo": "2014-2015",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Tabasco_2014-2015.zip",
+    "sha256": "df3753cb1233e6a37246b389a35fdb2fc8040eef07710add95392d4a3e17c6d4",
+    "bytes": 42272,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Tabasco_2015-2016",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Tabasco_2015-2016.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Tabasco.aspx",
+    "periodo": "2015-2016",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Tabasco_2015-2016.zip",
+    "sha256": "60322b2c42e2486b67403c7462b324f73113084f8b3819ebe097935e2d20bbd8",
+    "bytes": 35546,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Tabasco_2017",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Tabasco_2017.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Tabasco.aspx",
+    "periodo": "2017",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Tabasco_2017.zip",
+    "sha256": "50ea79fe407dbeaac7e1eafea410b1bd39c965646739903d0e95f181e7c02474",
+    "bytes": 47110,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Tabasco_2020",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Tabasco_2020.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Tabasco.aspx",
+    "periodo": "2020",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Tabasco_2020.zip",
+    "sha256": "91f7b277ad0a523c6c56a71cb7753b1db60e66ba48257e9e7c3edc971e045a9f",
+    "bytes": 79359,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Tamaulipas_2012-2013",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Tamaulipas_2012-2013.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Tamaulipas.aspx",
+    "periodo": "2012-2013",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Tamaulipas_2012-2013.zip",
+    "sha256": "7a8df0eac22b07a6041e3bfe6a1f9939da957f6e7eacc54c4c5cf2a650a2b5f5",
+    "bytes": 51470,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Tamaulipas_2014-2015",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Tamaulipas_2014-2015.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Tamaulipas.aspx",
+    "periodo": "2014-2015",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Tamaulipas_2014-2015.zip",
+    "sha256": "8c5315bd32e6a4223c33dfa4463b19ad3897238f0dc50e40bdfb467b575f0ee7",
+    "bytes": 69465,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Tamaulipas_2015-2016",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Tamaulipas_2015-2016.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Tamaulipas.aspx",
+    "periodo": "2015-2016",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Tamaulipas_2015-2016.zip",
+    "sha256": "72caa3b8d982a14e194bd367f8d9ce39da1b567007c34c14d064cc8fb28cac9c",
+    "bytes": 39734,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Tamaulipas_2017",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Tamaulipas_2017.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Tamaulipas.aspx",
+    "periodo": "2017",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Tamaulipas_2017.zip",
+    "sha256": "c1773ed07bc4aa94bd29e383582810de2dce54a5a34ddf3486688d8f6a2d6d61",
+    "bytes": 82390,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Tamaulipas_2020",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Tamaulipas_2020.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Tamaulipas.aspx",
+    "periodo": "2020",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Tamaulipas_2020.zip",
+    "sha256": "040204a0ed15c963b1f43ea87fbf8d36bfa952b83ba50927186982d6ea4abd0b",
+    "bytes": 66797,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Tlaxcala_2012-2013",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Tlaxcala_2012-2013.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Tlaxcala.aspx",
+    "periodo": "2012-2013",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Tlaxcala_2012-2013.zip",
+    "sha256": "81f0d382f61b0a1aa4bc4469c642d64121edf8f1ad035427a8583af264b4306e",
+    "bytes": 41831,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Tlaxcala_2014-2015",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Tlaxcala_2014-2015.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Tlaxcala.aspx",
+    "periodo": "2014-2015",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Tlaxcala_2014-2015.zip",
+    "sha256": "f27d15103d5ccb86ab1de010494afdd96a37ad8a58732609cd1b7f9a9bb9ef01",
+    "bytes": 59446,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Tlaxcala_2015-2016",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Tlaxcala_2015-2016.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Tlaxcala.aspx",
+    "periodo": "2015-2016",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Tlaxcala_2015-2016.zip",
+    "sha256": "4b8b0af291e934dba412b7f6a00d82e0e0a2f93ffbe8f910a3664f56dba39057",
+    "bytes": 31013,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Tlaxcala_2017",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Tlaxcala_2017.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Tlaxcala.aspx",
+    "periodo": "2017",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Tlaxcala_2017.zip",
+    "sha256": "30ad72b0230c227c8e0f8967418f44484dab6821f312cf1ea9386e6f08f6a273",
+    "bytes": 57553,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Tlaxcala_2020",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Tlaxcala_2020.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Tlaxcala.aspx",
+    "periodo": "2020",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Tlaxcala_2020.zip",
+    "sha256": "0e0a51cc85a63d1b6589efbec2e284437b750ec7bac89a96e66bca18c9630ebd",
+    "bytes": 74528,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Veracruz_2012-2013",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Veracruz_2012-2013.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Veracruz.aspx",
+    "periodo": "2012-2013",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Veracruz_2012-2013.zip",
+    "sha256": "de4d3f633e428842b335063ed8ebd147b89ea9d0cbc9cbecc0c0adc582bdbac4",
+    "bytes": 150551,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Veracruz_2014-2015",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Veracruz_2014-2015.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Veracruz.aspx",
+    "periodo": "2014-2015",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Veracruz_2014-2015.zip",
+    "sha256": "1df22f166cf2c8c1bc426127ffc0196e952338344a4169cb04cf8ba8c0fbd4fc",
+    "bytes": 117877,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Veracruz_2015-2016",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Veracruz_2015-2016.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Veracruz.aspx",
+    "periodo": "2015-2016",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Veracruz_2015-2016.zip",
+    "sha256": "2e0f584a13e8a9fb95cc628adb907d64dbcff4c850f7831bf01b9c66196d4ac9",
+    "bytes": 98536,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Veracruz_2017",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Veracruz_2017.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Veracruz.aspx",
+    "periodo": "2017",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Veracruz_2017.zip",
+    "sha256": "5499009433c60e62b583f2717e38b1242a79690c5aaa9dca483ae04583cccf19",
+    "bytes": 124918,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Veracruz_2020",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Veracruz_2020.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Veracruz.aspx",
+    "periodo": "2020",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Veracruz_2020.zip",
+    "sha256": "ae8d5ebbb944d92597668a61342ba38e6bed21c64359912bdd1d8149713159b3",
+    "bytes": 274922,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Yucatan_2012-2013",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Yucatan_2012-2013.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Yucatan.aspx",
+    "periodo": "2012-2013",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Yucatan_2012-2013.zip",
+    "sha256": "8f91d0bd3af5ee9b039f32127e008b2bb45c7e7769b6411df1fd208d07fb4007",
+    "bytes": 44024,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Yucatan_2014-2015",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Yucatan_2014-2015.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Yucatan.aspx",
+    "periodo": "2014-2015",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Yucatan_2014-2015.zip",
+    "sha256": "6746e367701b5c3b4ed7734d92fa376542f13616ae7ad6542d1600a3a1055dde",
+    "bytes": 72610,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Yucatan_2015-2016",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Yucatan_2015-2016.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Yucatan.aspx",
+    "periodo": "2015-2016",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Yucatan_2015-2016.zip",
+    "sha256": "b1340cc4ad245bd855df41f5112dea4eb2edf7520a8358fc13bacdc301f8f775",
+    "bytes": 48932,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Yucatan_2017",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Yucatan_2017.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Yucatan.aspx",
+    "periodo": "2017",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Yucatan_2017.zip",
+    "sha256": "d688b86e292cbbd08ff708bcc1c90433372a972f176dab0ba5467901c8094680",
+    "bytes": 65126,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Yucatan_2020",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Yucatan_2020.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Yucatan.aspx",
+    "periodo": "2020",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Yucatan_2020.zip",
+    "sha256": "02a924e24451e1361f2696d0c7d4eb057b5d3094a794e5f929359c05db53bb5f",
+    "bytes": 149031,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Zacatecas_2012-2013",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Zacatecas_2012-2013.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Zacatecas.aspx",
+    "periodo": "2012-2013",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Zacatecas_2012-2013.zip",
+    "sha256": "f5e14202b74144eb0881a27bbbb1d8d736452e585ee09f1c738cd97c9d5c505a",
+    "bytes": 82535,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Zacatecas_2014-2015",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Zacatecas_2014-2015.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Zacatecas.aspx",
+    "periodo": "2014-2015",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Zacatecas_2014-2015.zip",
+    "sha256": "f806f1d845cccd846562c2a627d0c764b92f88331a691d76b9f5f86dc2cec45d",
+    "bytes": 88737,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Zacatecas_2015-2016",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Zacatecas_2015-2016.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Zacatecas.aspx",
+    "periodo": "2015-2016",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Zacatecas_2015-2016.zip",
+    "sha256": "94072a95e91344b702f63c011c5a1b6f28bd52be44814b8688cbfb22ecbd8843",
+    "bytes": 48170,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Zacatecas_2017",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Zacatecas_2017.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Zacatecas.aspx",
+    "periodo": "2017",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Zacatecas_2017.zip",
+    "sha256": "3605669fe630d79424da0ad1b86ff6d791f150f234915e8eacf7ffb2306273be",
+    "bytes": 47603,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Zacatecas_2020",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Zacatecas_2020.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Zacatecas.aspx",
+    "periodo": "2020",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Zacatecas_2020.zip",
+    "sha256": "9c1484d93dcece458241eeef96f08896da2c19fa524fc13228df320f2139fd51",
+    "bytes": 75604,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Distrito_Federal_2012-2013",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Distrito_Federal_2012-2013.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Distrito_Federal.aspx",
+    "periodo": "2012-2013",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Distrito_Federal_2012-2013.zip",
+    "sha256": "11142698df9a32f81e092d9fb3218f01e10d7e1cc9995f9498174e4cefcf8ee7",
+    "bytes": 60897,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_Distrito_Federal_2014-2015",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_Distrito_Federal_2014-2015.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Distrito_Federal.aspx",
+    "periodo": "2014-2015",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_Distrito_Federal_2014-2015.zip",
+    "sha256": "70efde10b28a8d6c8ead6b99497e534c4090be2704d5c9affc6c00e09194e268",
+    "bytes": 60002,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_CDMX_2015-2016",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_CDMX_2015-2016.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Distrito_Federal.aspx",
+    "periodo": "2015-2016",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_CDMX_2015-2016.zip",
+    "sha256": "f23d7c994f09381c42948278e99adf5504f5e1b30ccbeb42e507aef82f0c2dcb",
+    "bytes": 76909,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_CDMX_2017",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_CDMX_2017.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Distrito_Federal.aspx",
+    "periodo": "2017",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_CDMX_2017.zip",
+    "sha256": "4c7f95eb38919b29db5b8bd048c27a9819c63bfb5505428b008896aa0fe6a9ae",
+    "bytes": 88116,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "municipal_Municipios_CDMX_2020",
+    "url": "https://www.coneval.org.mx/Evaluacion/IPM/Documents/Archivos_Estados/Municipios_CDMX_2020.zip",
+    "pagina_descarga": "https://www.coneval.org.mx/Evaluacion/IPM/Paginas/Estados/Distrito_Federal.aspx",
+    "periodo": "2020",
+    "archivo": "data/raw/documentacion_catalogo/municipal_Municipios_CDMX_2020.zip",
+    "sha256": "f4e03e94edbe178874f6c0d686ed989adf05c7eab9d0ddb9e46d0fc3d008ddfa",
+    "bytes": 121303,
+    "fecha_consulta": "2026-10-12"
+  },
+  {
+    "id": "imss2010",
+    "url": "https://www.imss.gob.mx/sites/all/statics/pdf/informes/2010/2010_InformeEjecutivoFederal2009-2010.pdf",
+    "archivo": "data/raw/documentacion_catalogo/imss2010.pdf",
+    "sha256": "fc278dc472cd617f3d1fa9ce853693fbdf5e096cca3b2bda26b8049d9eaedc9c",
+    "bytes": 887,
+    "fecha_consulta": "2026-10-12",
+    "error": "Descarga devuelta como PDF de bloqueo Incapsula de una página; no revisado ni utilizado como fuente."
+  },
+  {
+    "id": "norma_5608441",
+    "periodo": "2021 inicial",
+    "url": "https://sidof.segob.gob.mx/notas/docFuente/5608441",
+    "fecha_consulta": "2026-10-12",
+    "archivo": "data/raw/documentacion_catalogo/norma_5608441.html",
+    "sha256": "5b2b1316c9d1bbf70c19a373c44d5f0b29d2cbee5a99e88775d217719a0f9554",
+    "estado": "texto oficial revisado; no inventario de intervenciones",
+    "localizador": "numerales3.2–3.5/transitorios"
+  },
+  {
+    "id": "norma_5624455",
+    "periodo": "2021 modificación",
+    "url": "https://sidof.segob.gob.mx/notas/docFuente/5624455",
+    "fecha_consulta": "2026-10-12",
+    "archivo": "data/raw/documentacion_catalogo/norma_5624455.html",
+    "sha256": "45618857972b87ffcf5831ecd86d5b1408ebaa606d9cf6ff223d73a8e2e5249a",
+    "estado": "texto oficial revisado; no inventario de intervenciones",
+    "localizador": "numerales3.2–3.5/transitorios"
+  },
+  {
+    "id": "norma_5398474",
+    "periodo": "2015 informe2014",
+    "url": "https://sidof.segob.gob.mx/notas/docFuente/5398474",
+    "fecha_consulta": "2026-10-12",
+    "archivo": "data/raw/documentacion_catalogo/norma_5398474.html",
+    "sha256": "8287efe4e95fb4cd83d19b3e4cd88104dc414a293ff20c71034e82a70b65cf43",
+    "estado": "texto oficial revisado; no inventario de intervenciones",
+    "localizador": "apartadoIV.1"
+  }
+]

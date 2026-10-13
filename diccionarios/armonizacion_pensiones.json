@@ -1,0 +1,197 @@
+[
+  {
+    "year": 2001,
+    "own_gate": "k76a",
+    "spouse_gate": "k79a",
+    "own_amounts": [
+      "k77_1"
+    ],
+    "spouse_amounts": [
+      "k80_1"
+    ],
+    "own_programs": [],
+    "spouse_programs": [],
+    "missing_amount": [
+      888888,
+      999999
+    ],
+    "program_labels": {},
+    "specificity": "Donativo público agregado, sin nombre observado",
+    "fuente_original": "F12",
+    "fuente_individual": "F13",
+    "fuente_imputada_hogar": "F19",
+    "universo": "Recepción del periodo previo, personas vivas; propio exige rama orientada. Pareja exige otro puntero/filtro.",
+    "unidad": "Donativo público adicional dinero/especie; no equivale a pensión no contributiva",
+    "periodo": "Año previo a entrevista efectiva, distinto de ronda nominal",
+    "monto": "Mes normal nominal; frecuencia legal no observada. No sumar con K ni otras versiones.",
+    "limite_2001": "J1 independiente pendiente",
+    "discrepancia_2015": null
+  },
+  {
+    "year": 2003,
+    "own_gate": "k79a",
+    "spouse_gate": "k82c",
+    "own_amounts": [
+      "k80a"
+    ],
+    "spouse_amounts": [
+      "k83c"
+    ],
+    "own_programs": [],
+    "spouse_programs": [],
+    "missing_amount": [
+      888888,
+      999999
+    ],
+    "program_labels": {},
+    "specificity": "Donativo público agregado, sin nombre observado",
+    "fuente_original": "F11",
+    "fuente_individual": "F14",
+    "fuente_imputada_hogar": "F18",
+    "universo": "Recepción del periodo previo, personas vivas; propio exige rama orientada. Pareja exige otro puntero/filtro.",
+    "unidad": "Donativo público adicional dinero/especie; no equivale a pensión no contributiva",
+    "periodo": "Año previo a entrevista efectiva, distinto de ronda nominal",
+    "monto": "Mes normal nominal; frecuencia legal no observada. No sumar con K ni otras versiones.",
+    "limite_2001": null,
+    "discrepancia_2015": null
+  },
+  {
+    "year": 2012,
+    "own_gate": "k79a_12",
+    "spouse_gate": "k82c_12",
+    "own_amounts": [
+      "k80_1_12"
+    ],
+    "spouse_amounts": [
+      "k83_1_12"
+    ],
+    "own_programs": [],
+    "spouse_programs": [],
+    "missing_amount": [
+      8888888,
+      9999999
+    ],
+    "program_labels": {},
+    "specificity": "Donativo público agregado, sin nombre observado",
+    "fuente_original": "F07",
+    "fuente_individual": "F15",
+    "fuente_imputada_hogar": "F01",
+    "universo": "Recepción del periodo previo, personas vivas; propio exige rama orientada. Pareja exige otro puntero/filtro.",
+    "unidad": "Donativo público adicional dinero/especie; no equivale a pensión no contributiva",
+    "periodo": "Año previo a entrevista efectiva, distinto de ronda nominal",
+    "monto": "Mes normal nominal; frecuencia legal no observada. No sumar con K ni otras versiones.",
+    "limite_2001": null,
+    "discrepancia_2015": null
+  },
+  {
+    "year": 2015,
+    "own_gate": "k79a_15",
+    "spouse_gate": "k82c_15",
+    "own_amounts": [
+      "k80_1_15"
+    ],
+    "spouse_amounts": [
+      "k83_1_15"
+    ],
+    "own_programs": [],
+    "spouse_programs": [],
+    "missing_amount": [
+      8888888,
+      9999999
+    ],
+    "program_labels": {},
+    "specificity": "Donativo público agregado, sin nombre observado",
+    "fuente_original": "F08",
+    "fuente_individual": "F16",
+    "fuente_imputada_hogar": "F02",
+    "universo": "Recepción del periodo previo, personas vivas; propio exige rama orientada. Pareja exige otro puntero/filtro.",
+    "unidad": "Donativo público adicional dinero/especie; no equivale a pensión no contributiva",
+    "periodo": "Año previo a entrevista efectiva, distinto de ronda nominal",
+    "monto": "Mes normal nominal; frecuencia legal no observada. No sumar con K ni otras versiones.",
+    "limite_2001": null,
+    "discrepancia_2015": "Cuestionario K80/K83 imprime seis dígitos; libro/etiquetas originales siete. Retener alerta."
+  },
+  {
+    "year": 2018,
+    "own_gate": "k79a_18",
+    "spouse_gate": "k82c_18",
+    "own_amounts": [
+      "k80_1_1_18",
+      "k80_1_2_18"
+    ],
+    "spouse_amounts": [
+      "k83_1_1_18",
+      "k83_1_2_18"
+    ],
+    "own_programs": [
+      "k79a_1_1_18",
+      "k79a_1_2_18"
+    ],
+    "spouse_programs": [
+      "k82c_1_1_18",
+      "k82c_1_2_18"
+    ],
+    "missing_amount": [
+      8888888,
+      9999999
+    ],
+    "program_labels": {
+      "1": "PROAGRO Productivo",
+      "2": "PROSPERA",
+      "3": "INAPAM",
+      "4": "Otra institución: tipo no resuelto"
+    },
+    "specificity": "Hasta dos instituciones; dinero o especie sin separación",
+    "fuente_original": "F09",
+    "fuente_individual": "F04",
+    "fuente_imputada_hogar": null,
+    "universo": "Recepción del periodo previo, personas vivas; propio exige rama orientada. Pareja exige otro puntero/filtro.",
+    "unidad": "Donativo público adicional dinero/especie; no equivale a pensión no contributiva",
+    "periodo": "Año previo a entrevista efectiva, distinto de ronda nominal",
+    "monto": "Mes normal nominal; frecuencia legal no observada. No sumar con K ni otras versiones.",
+    "limite_2001": null,
+    "discrepancia_2015": null
+  },
+  {
+    "year": 2021,
+    "own_gate": "k79a_21",
+    "spouse_gate": "k82c_21",
+    "own_amounts": [
+      "k80_1_1_21",
+      "k80_1_2_21"
+    ],
+    "spouse_amounts": [
+      "k83_1_1_21",
+      "k83_1_2_21"
+    ],
+    "own_programs": [
+      "k79a_1_1_21",
+      "k79a_1_2_21"
+    ],
+    "spouse_programs": [
+      "k82c_1_1_21",
+      "k82c_1_2_21"
+    ],
+    "missing_amount": [
+      8888888,
+      9999999
+    ],
+    "program_labels": {
+      "1": "Producción para el Bienestar",
+      "2": "Becas para el Bienestar Benito Juárez",
+      "3": "INAPAM",
+      "4": "Otra institución: tipo no resuelto",
+      "5": "Programa para el Bienestar de las Personas Adultas Mayores"
+    },
+    "specificity": "Hasta dos instituciones; dinero o especie sin separación",
+    "fuente_original": "F10",
+    "fuente_individual": "F17",
+    "fuente_imputada_hogar": "F03",
+    "universo": "Recepción del periodo previo, personas vivas; propio exige rama orientada. Pareja exige otro puntero/filtro.",
+    "unidad": "Donativo público adicional dinero/especie; no equivale a pensión no contributiva",
+    "periodo": "Año previo a entrevista efectiva, distinto de ronda nominal",
+    "monto": "Mes normal nominal; frecuencia legal no observada. No sumar con K ni otras versiones.",
+    "limite_2001": null,
+    "discrepancia_2015": null
+  }
+]
