@@ -1,0 +1,54 @@
+% Plantilla de trabajo: confirmar normas vigentes de tesis UDLAP antes de fijarla.
+\documentclass[12pt,letterpaper,oneside]{report}
+\input{configuracion}
+\input{tablas/cp1_cifras}
+\input{tablas/eda_simple_cifras}
+\input{tablas/eda_k2021_cifras}
+\input{tablas/integracion_cifras}
+\input{tablas/titularidad_cifras}
+\input{tablas/proteccion_cifras}
+\input{tablas/catalogo_cifras}
+
+\begin{document}
+\hypersetup{pageanchor=false}
+\begin{titlepage}
+  \centering
+  {\Large Universidad de las Américas Puebla\par}
+  \vspace{1.8cm}
+  {\LARGE\bfseries Exploración longitudinal de pensiones y protección económica
+  en personas adultas mayores en México\par}
+  \vspace{1.4cm}
+  {\large Borrador de tesis de licenciatura\par}
+  \medskip
+  {\large Ciencia de Datos y Actuaría\par}
+  \vspace{1cm}
+  {\large Andrea Hernández Huerta\par}
+  \medskip
+  Nombre completo, denominación oficial del programa, dirección y jurado por confirmar.
+  \vfill
+  \textbf{Documento de trabajo para revisión académica}\par
+  Octubre de 2026\par
+  \medskip
+  \small Plantilla provisional. La incorporación de resultados descriptivos de CP1
+  no implica una pregunta definitiva, un outcome o una hipótesis principal aprobados.
+\end{titlepage}
+
+\pagenumbering{roman}
+\hypersetup{pageanchor=true}
+\begingroup\singlespacing\tableofcontents\endgroup
+\listoftables
+\listoffigures
+\clearpage
+\pagenumbering{arabic}
+\input{capitulos/01_introduccion}
+\input{capitulos/02_marco_teorico_antecedentes}
+\input{capitulos/03_datos_metodologia}
+\input{capitulos/04_analisis_exploratorio_resultados}
+\input{capitulos/05_discusion_conclusiones}
+
+\bibliographystyle{plainnat}
+\bibliography{../investigacion/referencias}
+\appendix
+\input{capitulos/06_tablas_complementarias_cp1}
+\input{capitulos/07_estado_redaccion_pendientes_revision}
+\end{document}

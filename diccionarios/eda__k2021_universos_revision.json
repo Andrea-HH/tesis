@@ -1,0 +1,608 @@
+{
+  "variables_revisadas": 75,
+  "F17_N_pareja_confirmada": 10189,
+  "F17_N_condicion_desconocida": 23,
+  "sha256_mediciones_preservadas": "e3e235c0d6cf2903ff6fbc78b4361f49b4158040096f6c0765b08bf684e477d3",
+  "cotejos": [
+    {
+      "fuente": "F03",
+      "variable": "amk53a_21",
+      "N_total": 10716,
+      "N_elegible": null,
+      "N_valido": 5034,
+      "N_elegibilidad_desconocida": 10716
+    },
+    {
+      "fuente": "F03",
+      "variable": "amk54a_21",
+      "N_total": 10716,
+      "N_elegible": null,
+      "N_valido": 5018,
+      "N_elegibilidad_desconocida": 10716
+    },
+    {
+      "fuente": "F03",
+      "variable": "amk56a_21",
+      "N_total": 10716,
+      "N_elegible": null,
+      "N_valido": 5195,
+      "N_elegibilidad_desconocida": 10716
+    },
+    {
+      "fuente": "F03",
+      "variable": "amk57a_21",
+      "N_total": 10716,
+      "N_elegible": null,
+      "N_valido": 5197,
+      "N_elegibilidad_desconocida": 10716
+    },
+    {
+      "fuente": "F03",
+      "variable": "amk67_1_1_21",
+      "N_total": 10716,
+      "N_elegible": null,
+      "N_valido": 5041,
+      "N_elegibilidad_desconocida": 10716
+    },
+    {
+      "fuente": "F03",
+      "variable": "amk67_1_2_21",
+      "N_total": 10716,
+      "N_elegible": null,
+      "N_valido": 5193,
+      "N_elegibilidad_desconocida": 10716
+    },
+    {
+      "fuente": "F03",
+      "variable": "amk67_2_1_21",
+      "N_total": 10716,
+      "N_elegible": null,
+      "N_valido": 5189,
+      "N_elegibilidad_desconocida": 10716
+    },
+    {
+      "fuente": "F03",
+      "variable": "amk67_2_2_21",
+      "N_total": 10716,
+      "N_elegible": null,
+      "N_valido": 5199,
+      "N_elegibilidad_desconocida": 10716
+    },
+    {
+      "fuente": "F03",
+      "variable": "amk67_3_1_21",
+      "N_total": 10716,
+      "N_elegible": null,
+      "N_valido": 5189,
+      "N_elegibilidad_desconocida": 10716
+    },
+    {
+      "fuente": "F03",
+      "variable": "amk67_3_2_21",
+      "N_total": 10716,
+      "N_elegible": null,
+      "N_valido": 5199,
+      "N_elegibilidad_desconocida": 10716
+    },
+    {
+      "fuente": "F03",
+      "variable": "amk67_4_1_21",
+      "N_total": 10716,
+      "N_elegible": null,
+      "N_valido": 5188,
+      "N_elegibilidad_desconocida": 10716
+    },
+    {
+      "fuente": "F03",
+      "variable": "amk67_4_2_21",
+      "N_total": 10716,
+      "N_elegible": null,
+      "N_valido": 5199,
+      "N_elegibilidad_desconocida": 10716
+    },
+    {
+      "fuente": "F03",
+      "variable": "amk83_1_1_21",
+      "N_total": 10716,
+      "N_elegible": null,
+      "N_valido": 5176,
+      "N_elegibilidad_desconocida": 10716
+    },
+    {
+      "fuente": "F03",
+      "variable": "amk83_1_2_21",
+      "N_total": 10716,
+      "N_elegible": null,
+      "N_valido": 5191,
+      "N_elegibilidad_desconocida": 10716
+    },
+    {
+      "fuente": "F03",
+      "variable": "amk83_2_21",
+      "N_total": 10716,
+      "N_elegible": null,
+      "N_valido": 5186,
+      "N_elegibilidad_desconocida": 10716
+    },
+    {
+      "fuente": "F03",
+      "variable": "imamk53a_21",
+      "N_total": 10716,
+      "N_elegible": null,
+      "N_valido": 5199,
+      "N_elegibilidad_desconocida": 10716
+    },
+    {
+      "fuente": "F03",
+      "variable": "imamk54a_21",
+      "N_total": 10716,
+      "N_elegible": null,
+      "N_valido": 5199,
+      "N_elegibilidad_desconocida": 10716
+    },
+    {
+      "fuente": "F03",
+      "variable": "imamk56a_21",
+      "N_total": 10716,
+      "N_elegible": null,
+      "N_valido": 5199,
+      "N_elegibilidad_desconocida": 10716
+    },
+    {
+      "fuente": "F03",
+      "variable": "imamk57a_21",
+      "N_total": 10716,
+      "N_elegible": null,
+      "N_valido": 5199,
+      "N_elegibilidad_desconocida": 10716
+    },
+    {
+      "fuente": "F03",
+      "variable": "imamk67_1_1_21",
+      "N_total": 10716,
+      "N_elegible": null,
+      "N_valido": 5199,
+      "N_elegibilidad_desconocida": 10716
+    },
+    {
+      "fuente": "F03",
+      "variable": "imamk67_1_2_21",
+      "N_total": 10716,
+      "N_elegible": null,
+      "N_valido": 5199,
+      "N_elegibilidad_desconocida": 10716
+    },
+    {
+      "fuente": "F03",
+      "variable": "imamk67_2_1_21",
+      "N_total": 10716,
+      "N_elegible": null,
+      "N_valido": 5199,
+      "N_elegibilidad_desconocida": 10716
+    },
+    {
+      "fuente": "F03",
+      "variable": "imamk67_2_2_21",
+      "N_total": 10716,
+      "N_elegible": null,
+      "N_valido": 5199,
+      "N_elegibilidad_desconocida": 10716
+    },
+    {
+      "fuente": "F03",
+      "variable": "imamk67_3_1_21",
+      "N_total": 10716,
+      "N_elegible": null,
+      "N_valido": 5199,
+      "N_elegibilidad_desconocida": 10716
+    },
+    {
+      "fuente": "F03",
+      "variable": "imamk67_3_2_21",
+      "N_total": 10716,
+      "N_elegible": null,
+      "N_valido": 5199,
+      "N_elegibilidad_desconocida": 10716
+    },
+    {
+      "fuente": "F03",
+      "variable": "imamk67_4_1_21",
+      "N_total": 10716,
+      "N_elegible": null,
+      "N_valido": 5199,
+      "N_elegibilidad_desconocida": 10716
+    },
+    {
+      "fuente": "F03",
+      "variable": "imamk67_4_2_21",
+      "N_total": 10716,
+      "N_elegible": null,
+      "N_valido": 5199,
+      "N_elegibilidad_desconocida": 10716
+    },
+    {
+      "fuente": "F03",
+      "variable": "imamk83_1_1_21",
+      "N_total": 10716,
+      "N_elegible": null,
+      "N_valido": 5199,
+      "N_elegibilidad_desconocida": 10716
+    },
+    {
+      "fuente": "F03",
+      "variable": "imamk83_1_2_21",
+      "N_total": 10716,
+      "N_elegible": null,
+      "N_valido": 5199,
+      "N_elegibilidad_desconocida": 10716
+    },
+    {
+      "fuente": "F03",
+      "variable": "imamk83_2_21",
+      "N_total": 10716,
+      "N_elegible": null,
+      "N_valido": 5199,
+      "N_elegibilidad_desconocida": 10716
+    },
+    {
+      "fuente": "F03",
+      "variable": "dumk53a_21",
+      "N_total": 10716,
+      "N_elegible": null,
+      "N_valido": 5199,
+      "N_elegibilidad_desconocida": 10716
+    },
+    {
+      "fuente": "F03",
+      "variable": "dumk54a_21",
+      "N_total": 10716,
+      "N_elegible": null,
+      "N_valido": 5199,
+      "N_elegibilidad_desconocida": 10716
+    },
+    {
+      "fuente": "F03",
+      "variable": "dumk56a_21",
+      "N_total": 10716,
+      "N_elegible": null,
+      "N_valido": 5199,
+      "N_elegibilidad_desconocida": 10716
+    },
+    {
+      "fuente": "F03",
+      "variable": "dumk57a_21",
+      "N_total": 10716,
+      "N_elegible": null,
+      "N_valido": 5199,
+      "N_elegibilidad_desconocida": 10716
+    },
+    {
+      "fuente": "F03",
+      "variable": "dumk67_1_1_21",
+      "N_total": 10716,
+      "N_elegible": null,
+      "N_valido": 5199,
+      "N_elegibilidad_desconocida": 10716
+    },
+    {
+      "fuente": "F03",
+      "variable": "dumk67_1_2_21",
+      "N_total": 10716,
+      "N_elegible": null,
+      "N_valido": 5199,
+      "N_elegibilidad_desconocida": 10716
+    },
+    {
+      "fuente": "F03",
+      "variable": "dumk67_2_1_21",
+      "N_total": 10716,
+      "N_elegible": null,
+      "N_valido": 5199,
+      "N_elegibilidad_desconocida": 10716
+    },
+    {
+      "fuente": "F03",
+      "variable": "dumk67_2_2_21",
+      "N_total": 10716,
+      "N_elegible": null,
+      "N_valido": 5199,
+      "N_elegibilidad_desconocida": 10716
+    },
+    {
+      "fuente": "F03",
+      "variable": "dumk67_3_1_21",
+      "N_total": 10716,
+      "N_elegible": null,
+      "N_valido": 5199,
+      "N_elegibilidad_desconocida": 10716
+    },
+    {
+      "fuente": "F03",
+      "variable": "dumk67_3_2_21",
+      "N_total": 10716,
+      "N_elegible": null,
+      "N_valido": 5199,
+      "N_elegibilidad_desconocida": 10716
+    },
+    {
+      "fuente": "F03",
+      "variable": "dumk67_4_1_21",
+      "N_total": 10716,
+      "N_elegible": null,
+      "N_valido": 5199,
+      "N_elegibilidad_desconocida": 10716
+    },
+    {
+      "fuente": "F03",
+      "variable": "dumk67_4_2_21",
+      "N_total": 10716,
+      "N_elegible": null,
+      "N_valido": 5199,
+      "N_elegibilidad_desconocida": 10716
+    },
+    {
+      "fuente": "F03",
+      "variable": "dumk83_1_1_21",
+      "N_total": 10716,
+      "N_elegible": null,
+      "N_valido": 5199,
+      "N_elegibilidad_desconocida": 10716
+    },
+    {
+      "fuente": "F03",
+      "variable": "dumk83_1_2_21",
+      "N_total": 10716,
+      "N_elegible": null,
+      "N_valido": 5199,
+      "N_elegibilidad_desconocida": 10716
+    },
+    {
+      "fuente": "F03",
+      "variable": "dumk83_2_21",
+      "N_total": 10716,
+      "N_elegible": null,
+      "N_valido": 5199,
+      "N_elegibilidad_desconocida": 10716
+    },
+    {
+      "fuente": "F17",
+      "variable": "imamk53a_21",
+      "N_total": 15739,
+      "N_elegible": null,
+      "N_valido": 10189,
+      "N_elegibilidad_desconocida": 23
+    },
+    {
+      "fuente": "F17",
+      "variable": "imamk54a_21",
+      "N_total": 15739,
+      "N_elegible": null,
+      "N_valido": 10189,
+      "N_elegibilidad_desconocida": 23
+    },
+    {
+      "fuente": "F17",
+      "variable": "imamk56a_21",
+      "N_total": 15739,
+      "N_elegible": null,
+      "N_valido": 10189,
+      "N_elegibilidad_desconocida": 23
+    },
+    {
+      "fuente": "F17",
+      "variable": "imamk57a_21",
+      "N_total": 15739,
+      "N_elegible": null,
+      "N_valido": 10189,
+      "N_elegibilidad_desconocida": 23
+    },
+    {
+      "fuente": "F17",
+      "variable": "imamk67_1_1_21",
+      "N_total": 15739,
+      "N_elegible": null,
+      "N_valido": 10189,
+      "N_elegibilidad_desconocida": 23
+    },
+    {
+      "fuente": "F17",
+      "variable": "imamk67_1_2_21",
+      "N_total": 15739,
+      "N_elegible": null,
+      "N_valido": 10189,
+      "N_elegibilidad_desconocida": 23
+    },
+    {
+      "fuente": "F17",
+      "variable": "imamk67_2_1_21",
+      "N_total": 15739,
+      "N_elegible": null,
+      "N_valido": 10189,
+      "N_elegibilidad_desconocida": 23
+    },
+    {
+      "fuente": "F17",
+      "variable": "imamk67_2_2_21",
+      "N_total": 15739,
+      "N_elegible": null,
+      "N_valido": 10189,
+      "N_elegibilidad_desconocida": 23
+    },
+    {
+      "fuente": "F17",
+      "variable": "imamk67_3_1_21",
+      "N_total": 15739,
+      "N_elegible": null,
+      "N_valido": 10189,
+      "N_elegibilidad_desconocida": 23
+    },
+    {
+      "fuente": "F17",
+      "variable": "imamk67_3_2_21",
+      "N_total": 15739,
+      "N_elegible": null,
+      "N_valido": 10189,
+      "N_elegibilidad_desconocida": 23
+    },
+    {
+      "fuente": "F17",
+      "variable": "imamk67_4_1_21",
+      "N_total": 15739,
+      "N_elegible": null,
+      "N_valido": 10189,
+      "N_elegibilidad_desconocida": 23
+    },
+    {
+      "fuente": "F17",
+      "variable": "imamk67_4_2_21",
+      "N_total": 15739,
+      "N_elegible": null,
+      "N_valido": 10189,
+      "N_elegibilidad_desconocida": 23
+    },
+    {
+      "fuente": "F17",
+      "variable": "imamk83_1_1_21",
+      "N_total": 15739,
+      "N_elegible": null,
+      "N_valido": 10189,
+      "N_elegibilidad_desconocida": 23
+    },
+    {
+      "fuente": "F17",
+      "variable": "imamk83_1_2_21",
+      "N_total": 15739,
+      "N_elegible": null,
+      "N_valido": 10189,
+      "N_elegibilidad_desconocida": 23
+    },
+    {
+      "fuente": "F17",
+      "variable": "imamk83_2_21",
+      "N_total": 15739,
+      "N_elegible": null,
+      "N_valido": 10189,
+      "N_elegibilidad_desconocida": 23
+    },
+    {
+      "fuente": "F17",
+      "variable": "dumk53a_21",
+      "N_total": 15739,
+      "N_elegible": null,
+      "N_valido": 10189,
+      "N_elegibilidad_desconocida": 23
+    },
+    {
+      "fuente": "F17",
+      "variable": "dumk54a_21",
+      "N_total": 15739,
+      "N_elegible": null,
+      "N_valido": 10189,
+      "N_elegibilidad_desconocida": 23
+    },
+    {
+      "fuente": "F17",
+      "variable": "dumk56a_21",
+      "N_total": 15739,
+      "N_elegible": null,
+      "N_valido": 10189,
+      "N_elegibilidad_desconocida": 23
+    },
+    {
+      "fuente": "F17",
+      "variable": "dumk57a_21",
+      "N_total": 15739,
+      "N_elegible": null,
+      "N_valido": 10189,
+      "N_elegibilidad_desconocida": 23
+    },
+    {
+      "fuente": "F17",
+      "variable": "dumk67_1_1_21",
+      "N_total": 15739,
+      "N_elegible": null,
+      "N_valido": 10189,
+      "N_elegibilidad_desconocida": 23
+    },
+    {
+      "fuente": "F17",
+      "variable": "dumk67_1_2_21",
+      "N_total": 15739,
+      "N_elegible": null,
+      "N_valido": 10189,
+      "N_elegibilidad_desconocida": 23
+    },
+    {
+      "fuente": "F17",
+      "variable": "dumk67_2_1_21",
+      "N_total": 15739,
+      "N_elegible": null,
+      "N_valido": 10189,
+      "N_elegibilidad_desconocida": 23
+    },
+    {
+      "fuente": "F17",
+      "variable": "dumk67_2_2_21",
+      "N_total": 15739,
+      "N_elegible": null,
+      "N_valido": 10189,
+      "N_elegibilidad_desconocida": 23
+    },
+    {
+      "fuente": "F17",
+      "variable": "dumk67_3_1_21",
+      "N_total": 15739,
+      "N_elegible": null,
+      "N_valido": 10189,
+      "N_elegibilidad_desconocida": 23
+    },
+    {
+      "fuente": "F17",
+      "variable": "dumk67_3_2_21",
+      "N_total": 15739,
+      "N_elegible": null,
+      "N_valido": 10189,
+      "N_elegibilidad_desconocida": 23
+    },
+    {
+      "fuente": "F17",
+      "variable": "dumk67_4_1_21",
+      "N_total": 15739,
+      "N_elegible": null,
+      "N_valido": 10189,
+      "N_elegibilidad_desconocida": 23
+    },
+    {
+      "fuente": "F17",
+      "variable": "dumk67_4_2_21",
+      "N_total": 15739,
+      "N_elegible": null,
+      "N_valido": 10189,
+      "N_elegibilidad_desconocida": 23
+    },
+    {
+      "fuente": "F17",
+      "variable": "dumk83_1_1_21",
+      "N_total": 15739,
+      "N_elegible": null,
+      "N_valido": 10189,
+      "N_elegibilidad_desconocida": 23
+    },
+    {
+      "fuente": "F17",
+      "variable": "dumk83_1_2_21",
+      "N_total": 15739,
+      "N_elegible": null,
+      "N_valido": 10189,
+      "N_elegibilidad_desconocida": 23
+    },
+    {
+      "fuente": "F17",
+      "variable": "dumk83_2_21",
+      "N_total": 15739,
+      "N_elegible": null,
+      "N_valido": 10189,
+      "N_elegibilidad_desconocida": 23
+    }
+  ]
+}

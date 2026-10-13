@@ -46,3 +46,66 @@ dist/
 /microdatos/
 # Notebooks CP1 ejecutados localmente; los fuentes versionados conservan outputs vacíos
 /reports/notebooks/
+
+# Auxiliares de LaTeX y PDF compilado; fuentes, tablas y figuras agregadas sí versionables
+/manuscrito/build/
+/manuscrito/*.pdf
+/manuscrito/**/*.aux
+/manuscrito/**/*.log
+/manuscrito/**/*.out
+/manuscrito/**/*.toc
+/manuscrito/**/*.lof
+/manuscrito/**/*.lot
+/manuscrito/**/*.bbl
+/manuscrito/**/*.blg
+/manuscrito/**/*.fls
+/manuscrito/**/*.fdb_latexmk
+/manuscrito/**/*.synctex.gz
+reports/eda_independiente/
+reports/contexto_documental/
+
+# Organización vigente: históricos conservados hasta aprobación final de retiro
+/docs/
+/reports/
+/manuscrito/figuras/**
+!/manuscrito/figuras/README.md
+/manuscrito/referencias.bib
+/notebooks/*
+!/notebooks/01_INTEGRACION.ipynb
+!/notebooks/02_EDA_COMPLETO.ipynb
+/investigacion/articulos/*
+/investigacion/fuentes_oficiales/*.pdf
+/investigacion/fuentes_oficiales/*.xls*
+
+# Preparación del repositorio público: exclusión recursiva y revisión del índice
+/data/raw/**
+/data/interim/**
+/data/processed/**
+!/data/raw/.gitkeep
+!/data/interim/.gitkeep
+!/data/processed/.gitkeep
+/respaldo*/
+/backup*/
+*.tar
+*.tar.gz
+*.zip
+*.7z
+*.pdf
+*.xls
+*.xlsx
+*.xlsm
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*
+secrets*
+.vscode/
+.nox/
+.mypy_cache/
+.coverage
+htmlcov/
+# Solo exportaciones agregadas delimitadas y evaluadas
+!/resultados/poblacion_muestras.csv
+!/resultados/recepcion_pension_apoyo.csv
+!/resultados/seguimiento_rondas.csv

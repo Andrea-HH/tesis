@@ -1,0 +1,20 @@
+{
+  "version": "titularidad_v1",
+  "unidad": "persona-ronda",
+  "id": "cunicah:np original del maestro",
+  "ronda": "nominal 1..6",
+  "ano": "año nominal, distinto de a_o_ent",
+  "tipent": "modalidad individual CP1",
+  "pension_propia_k": "Booleano anulable, recepción K atribuida a beneficiario. 2001 orientación del proveedor candidata sin J1 independiente.",
+  "pension_conyuge_k": "Booleano anulable, contexto de pareja residente; nunca ingreso del sujeto por esta variable.",
+  "pension_hogar_k": "Contexto económico enlazado independiente de la orientación individual; no cuenta todos los habitantes de la vivienda.",
+  "titularidad_rama": "1 rama informante, 2 rama pareja; ninguna implica recepción sin respuesta válida.",
+  "titularidad_estado": "Motivo de orientación/indeterminación, conservando informante externo y discrepancias.",
+  "titularidad_pareja_estado": "Cotejo separado del otro puntero moderno; su discrepancia no invalida la recepción propia concordante.",
+  "hogar_fuente": "Localizador privado de fila fuente única. No es un identificador público ni clave longitudinal de hogar.",
+  "apoyo_vejez_propio_2021": "Programa5 en K79/K82 según beneficiario; dinero o especie sin desglose.",
+  "apoyo_vejez_conyuge_2021": "Programa5 de la pareja, nunca monto adjudicado al sujeto.",
+  "eventos_originales": "Clave año+hogar_fuente+fuente+version+rama+tipo+slot única. Monto/inst/código de origen conservados; ningún imputado sumado.",
+  "hogares": "Una fila económica fuente por año; recepción, enlace y ramas separadas. Parquet privado.",
+  "faltantes": "NA no es cero ni ausencia de programa. Los códigos originales y tags completos permanecen en la base anterior."
+}

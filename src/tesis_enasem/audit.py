@@ -11,13 +11,44 @@ from .panel import make_person_id
 INTERVIEW_LABELS = {1: 'Directa de seguimiento', 2: 'Directa de nueva persona',
                     3: 'Sustituto de seguimiento', 4: 'Sustituto de nueva persona',
                     5: 'Sobre fallecido'}
+AGE_LABELS = ['Menores de 50', '50–59', '60–69', '70–79', '80–89', '90 o más', 'Edad faltante']
 CATEGORY_LABELS = {
     'tipent': INTERVIEW_LABELS, 'sexo': {1: 'Hombre', 2: 'Mujer'},
     'est_conyugal': {1: 'Casado o en unión', 2: 'Separado o divorciado', 3: 'Viudo', 4: 'Soltero'},
     'urbano': {0: 'Menos de 100 mil residentes', 1: '100 mil residentes o más'},
     'edad_gru': {0: '49 o menos', 1: '50–59', 2: '60–69', 3: '70–79', 4: '80 o más'},
+    'edu_gru': {0: 'Sin escolaridad', 1: '1–5 años', 2: '6 años', 3: '7–9 años', 4: '10 años o más'},
     'fallecido': {0: 'No', 1: 'Sí'},
 }
+
+
+def age_groups(series: pd.Series) -> pd.Series:
+    """Seis bandas derivadas de edad, sin alterar edad_gru original ni imputar faltantes.
+
+    Límites izquierdos incluidos: <50, [50,60), ..., [80,90), >=90.
+    Los códigos especiales se agregan como edad faltante aquí y se conservan
+    individualmente en la auditoría de la columna original.
+    """
+    groups = pd.cut(numeric_enasem(series), [-np.inf, 50, 60, 70, 80, 90, np.inf],
+                    labels=AGE_LABELS[:-1], right=False)
+    return groups.astype(object).fillna('Edad faltante')
+
+
+def select_population(data: pd.DataFrame, population: str | None = None) -> pd.DataFrame:
+    """Selecciona una alternativa explícita; None conserva todos los registros.
+
+    Requiere prepare_audit. No modifica la entrada ni selecciona por edad,
+    entrevista o balance por defecto. Los nombres proceden de population_masks.
+    """
+    if population is None:
+        return data.copy()
+    masks = population_masks(data)
+    if population not in masks:
+        raise ValueError(f'Población desconocida: {population}')
+    selected = data.loc[masks[population]].copy()
+    if selected.empty:
+        raise ValueError('La población seleccionada no contiene registros.')
+    return selected
 
 
 def value_category(value: object, labels: dict[int, str] | None = None) -> str:
@@ -83,6 +114,7 @@ def population_masks(data: pd.DataFrame) -> dict[str, pd.Series]:
     strict_counts = data.loc[visit & direct].groupby('id')['ronda'].nunique()
     return {
         'Universo amplio': pd.Series(True, index=data.index),
+        'Panel no balanceado, todas las edades/entrevistas': pd.Series(True, index=data.index),
         '60+ por visita, cualquier entrevista': visit,
         'Directas, cualquier edad': direct,
         'Directas 60+ por visita': visit & direct,
@@ -135,7 +167,7 @@ def longitudinal_tables(data: pd.DataFrame) -> dict[str, pd.DataFrame]:
     lengths = matrix.sum(axis=1).value_counts().reindex(range(1, 7), fill_value=0).sort_index()
     patterns_table = pd.DataFrame({'patron_2001_a_2021': patterns.index, 'personas': patterns.values,
                                   'denominador_personas': len(matrix), 'porcentaje': 100*patterns.values/len(matrix)})
-    entries, transitions, states, profiles = [], [], [], []
+    entries, transitions, states, profiles, wave_followup = [], [], [], [], []
     types = data.assign(tipo=numeric_enasem(data['tipent'])).pivot(index='id', columns='ronda', values='tipo')
     types = types.reindex(columns=ROUND_TO_YEAR)
     for wave in ROUND_TO_YEAR:
@@ -145,6 +177,17 @@ def longitudinal_tables(data: pd.DataFrame) -> dict[str, pd.DataFrame]:
                         'ya_observadas': int((current & seen).sum()),
                         'reaparecen_tras_ausencia': int((current & seen & ~matrix[wave-1]).sum()) if wave > 1 else 0,
                         'total': int(current.sum())})
+        if wave > 1:
+            previous = matrix[wave-1]
+            missing_now = previous & ~current
+            previous_dead = types[wave-1].eq(5)
+            prior_n = int(previous.sum())
+            wave_followup.append({'ronda': wave, 'ronda_origen': wave-1, 'denominador_anterior': prior_n,
+                                  'continuan_desde_anterior': int((current & previous).sum()),
+                                  'no_observadas_desde_anterior': int(missing_now.sum()),
+                                  'ausentes_con_fallecimiento_previo': int((missing_now & previous_dead).sum()),
+                                  'ausentes_sin_fallecimiento_previo': int((missing_now & ~previous_dead).sum()),
+                                  'porcentaje_no_observadas': 100*missing_now.sum()/prior_n if prior_n else np.nan})
         if wave == 6:
             continue
         retained = current & matrix[wave+1]
@@ -159,6 +202,9 @@ def longitudinal_tables(data: pd.DataFrame) -> dict[str, pd.DataFrame]:
                             'ausentes_sin_fallecimiento_previo': int((absent & living_origin).sum()),
                             'denominador_origen_vivas': int(living_origin.sum()),
                             'fallecimiento_documentado_destino': int((living_origin & types[wave+1].eq(5)).sum()),
+                            'no_observadas_porcentaje': 100*absent.sum()/current.sum() if current.sum() else np.nan,
+                            'ausentes_con_fallecimiento_previo_porcentaje': 100*(absent & death_origin).sum()/current.sum() if current.sum() else np.nan,
+                            'ausentes_sin_fallecimiento_previo_porcentaje': 100*(absent & living_origin).sum()/current.sum() if current.sum() else np.nan,
                             'retencion_porcentaje': 100*retained.sum()/current.sum() if current.sum() else np.nan})
         state = types.loc[current, wave+1].map(INTERVIEW_LABELS).fillna('No observada')
         for source in sorted(types.loc[current, wave].unique()):
@@ -167,9 +213,9 @@ def longitudinal_tables(data: pd.DataFrame) -> dict[str, pd.DataFrame]:
                 states.append({'origen': wave, 'destino': wave+1, 'tipo_origen': INTERVIEW_LABELS[source],
                                'estado_destino': target, 'n': n, 'denominador': counts.sum(),
                                'porcentaje': 100*n/counts.sum()})
-        # Comparación en t solo entre entrevistados vivos en t; no usa valores futuros.
-        for label, ids in [('Observada siguiente', matrix.index[living_origin & retained]),
-                           ('No observada siguiente', matrix.index[living_origin & absent])]:
+        # Comparación en t en TODO el universo de origen, incluidos sobre fallecidos.
+        for label, ids in [('Observada siguiente', matrix.index[retained]),
+                           ('No observada siguiente', matrix.index[absent])]:
             group = data.loc[data['ronda'].eq(wave) & data['id'].isin(ids)]
             for variable in ['edad', 'educacion']:
                 values = numeric_enasem(group[variable])
@@ -177,28 +223,53 @@ def longitudinal_tables(data: pd.DataFrame) -> dict[str, pd.DataFrame]:
                                  'n': int(values.count()), 'denominador': len(group),
                                  'porcentaje': 100*values.count()/len(group) if len(group) else np.nan,
                                  'media': values.mean(), 'mediana': values.median()})
-            for variable in ['sexo', 'urbano', 'est_conyugal', 'tipent']:
+            for variable in ['sexo', 'urbano', 'est_conyugal', 'tipent', 'edu_gru']:
+                if variable not in group:
+                    continue
                 for row in frequency_table(group[variable], variable).to_dict('records'):
                     profiles.append({'ronda': wave, 'grupo': label, 'variable': variable, **row})
     intersections = matrix.astype(int).T.dot(matrix.astype(int))
     intersections.columns = [f'R{wave}' for wave in intersections.columns]
+    entries_table = pd.DataFrame(entries)
+    for column in ['primera_aparicion', 'ya_observadas', 'reaparecen_tras_ausencia']:
+        entries_table[f'{column}_porcentaje'] = 100*entries_table[column]/entries_table.total.replace(0, np.nan)
     return {'patrones': patterns_table,
             'numero_rondas': pd.DataFrame({'rondas_observadas': lengths.index, 'personas': lengths.values,
                                           'denominador_personas': len(matrix), 'porcentaje': 100*lengths.values/len(matrix)}),
-            'entradas': pd.DataFrame(entries), 'transiciones': pd.DataFrame(transitions),
+            'entradas': entries_table, 'seguimiento_ronda': pd.DataFrame(wave_followup),
+            'transiciones': pd.DataFrame(transitions),
             'estados': pd.DataFrame(states), 'perfiles_seguimiento': pd.DataFrame(profiles),
             'intersecciones': intersections.reset_index()}
 
 
-def build_audit(raw: pd.DataFrame) -> dict[str, pd.DataFrame]:
-    """Construye únicamente tablas agregadas; la matriz y las máscaras no se exportan."""
-    data = prepare_audit(raw)
+def build_audit(raw: pd.DataFrame, population: str | None = None) -> dict[str, pd.DataFrame]:
+    """Audita TODA la base por defecto; los filtros requieren population explícita.
+
+    Solo devuelve tablas agregadas. Las comparaciones de submuestras son
+    secundarias y sus denominadores se refieren al universo auditado. La matriz
+    y las máscaras permanecen privadas. Se valida el original antes de filtrar.
+    """
+    # Índice interno de filas: no deduplicar ni usar un índice de entrada repetido
+    # para seleccionar mediante .loc, que podría multiplicar registros.
+    full_data = prepare_audit(raw.reset_index(drop=True))
+    data = select_population(full_data, population)
+    selected_raw = raw.iloc[data.index]
+    data['edad_cp1'] = age_groups(data.edad)
     masks = population_masks(data)
-    rows, demographics, ages, weights, samples, compositions = [], [], [], [], [], []
+    rows, demographics, ages, education, weights, samples, compositions, age_tables, participation = [], [], [], [], [], [], [], [], []
+    matrix = participation_matrix(data)
+    n_waves = matrix.sum(axis=1)
     for wave, group in data.groupby('ronda'):
-        for variable in ['tipent', 'sexo', 'est_conyugal', 'urbano', 'edad_gru', 'a_o_ent', 'fallecido']:
+        for variable in ['tipent', 'sexo', 'est_conyugal', 'urbano', 'edad_gru', 'a_o_ent', 'fallecido', 'educacion', 'edu_gru']:
             tab = frequency_table(group[variable], variable)
             demographics.extend({'ronda': wave, 'variable': variable, **row} for row in tab.to_dict('records'))
+        age_counts = group.edad_cp1.value_counts().reindex(AGE_LABELS, fill_value=0)
+        age_tables.extend({'ronda': wave, 'categoria': category, 'n': int(n), 'denominador': len(group),
+                           'porcentaje': 100*n/len(group)} for category, n in age_counts.items())
+        n_counts = group.id.map(n_waves).value_counts().reindex(range(1, 7), fill_value=0)
+        participation.extend({'ronda': wave, 'rondas_observadas_2001_2021': int(k), 'personas': int(n),
+                              'denominador_personas_ronda': group.id.nunique(), 'porcentaje': 100*n/len(group)}
+                             for k, n in n_counts.items())
         age = numeric_enasem(group['edad'])
         rows.append({'ronda': wave, 'ano_nominal': ROUND_TO_YEAR[wave], 'registros': len(group),
                      'personas': group['id'].nunique(), 'menores_60': int(age.lt(60).sum()),
@@ -209,6 +280,11 @@ def build_audit(raw: pd.DataFrame) -> dict[str, pd.DataFrame]:
         ages.append({'ronda': wave, 'denominador': len(group), 'n_validos': age.count(), 'media': age.mean(),
                      'de': age.std(), 'min': age.min(), 'q25': age.quantile(.25), 'mediana': age.median(),
                      'q75': age.quantile(.75), 'max': age.max()})
+        edu = numeric_enasem(group.educacion)
+        education.append({'ronda': wave, 'denominador': len(group), 'n_validos': edu.count(),
+                          'n_faltantes': edu.isna().sum(), 'media': edu.mean(), 'de': edu.std(),
+                          'min': edu.min(), 'q25': edu.quantile(.25), 'mediana': edu.median(),
+                          'q75': edu.quantile(.75), 'max': edu.max()})
         for kind in ['factori', 'factorh']:
             col = f'{kind}_{str(ROUND_TO_YEAR[wave])[-2:]}'
             values = numeric_enasem(group[col])
@@ -217,21 +293,36 @@ def build_audit(raw: pd.DataFrame) -> dict[str, pd.DataFrame]:
                 weights.append({'ronda': wave, 'variable': col, 'tipo_entrevista': INTERVIEW_LABELS[interview],
                                 'denominador': len(part), 'validos': v.count(), 'positivos': v.gt(0).sum(),
                                 'ceros': v.eq(0).sum(), 'negativos': v.lt(0).sum(), 'faltantes': v.isna().sum(),
+                                'porcentaje_validos': 100*v.count()/len(part),
+                                'porcentaje_positivos': 100*v.gt(0).sum()/len(part),
+                                'porcentaje_ceros': 100*v.eq(0).sum()/len(part),
+                                'porcentaje_faltantes': 100*v.isna().sum()/len(part),
                                 'min': v.min(), 'mediana': v.median(), 'max': v.max()})
         for name, mask in masks.items():
             subset = group.loc[mask.reindex(group.index)]
             samples.append({'ronda': wave, 'muestra': name, 'registros': len(subset),
-                            'personas': subset['id'].nunique(), 'denominador_registros': len(group)})
-            for variable in ['sexo', 'edad_gru', 'urbano', 'est_conyugal', 'tipent']:
+                            'personas': subset['id'].nunique(), 'denominador_registros': len(group),
+                            'denominador_personas': group.id.nunique(),
+                            'registros_excluidos': len(group)-len(subset),
+                            'personas_excluidas': group.id.nunique()-subset.id.nunique(),
+                            'porcentaje_registros_conservados': 100*len(subset)/len(group),
+                            'porcentaje_personas_conservadas': 100*subset.id.nunique()/group.id.nunique()})
+            for variable in ['sexo', 'edad_cp1', 'urbano', 'est_conyugal', 'tipent', 'edu_gru']:
                 compositions.extend({'ronda': wave, 'muestra': name, 'variable': variable, **row}
                                     for row in frequency_table(subset[variable], variable).to_dict('records'))
     totals = [{'muestra': name, 'registros': int(mask.sum()), 'personas': data.loc[mask, 'id'].nunique(),
-               'denominador_registros': len(data), 'denominador_personas': data['id'].nunique()}
+               'denominador_registros': len(data), 'denominador_personas': data['id'].nunique(),
+               'registros_excluidos': len(data)-int(mask.sum()),
+               'personas_excluidas': data.id.nunique()-data.loc[mask, 'id'].nunique(),
+               'porcentaje_registros_conservados': 100*mask.sum()/len(data),
+               'porcentaje_personas_conservadas': 100*data.loc[mask, 'id'].nunique()/data.id.nunique()}
               for name, mask in masks.items()]
     tables = {'rondas': pd.DataFrame(rows), 'demografia': pd.DataFrame(demographics),
               'edad': pd.DataFrame(ages), 'pesos': pd.DataFrame(weights), 'muestras_ronda': pd.DataFrame(samples),
+              'edad_grupos': pd.DataFrame(age_tables), 'educacion': pd.DataFrame(education),
+              'participacion_ronda': pd.DataFrame(participation),
               'muestras': pd.DataFrame(totals), 'composicion_muestras': pd.DataFrame(compositions),
-              'faltantes': missing_by_wave(raw), 'flujo': sample_flow(data)}
+              'faltantes': missing_by_wave(selected_raw), 'flujo': sample_flow(data)}
     tables.update(longitudinal_tables(data))
     tables['consistencia'] = longitudinal_consistency(data)
     tables['intervalos_efectivos'] = effective_intervals(data)
@@ -240,7 +331,11 @@ def build_audit(raw: pd.DataFrame) -> dict[str, pd.DataFrame]:
         for row in frequency_table(group['a_o_ent'], 'a_o_ent').to_dict('records'):
             chronology.append({'ronda': wave, 'tipo_entrevista': INTERVIEW_LABELS[interview], **row})
     tables['cronologia'] = pd.DataFrame(chronology)
-    tables['estructura'] = pd.DataFrame([{'registros': len(raw), 'personas': data['id'].nunique(),
+    tables['estructura'] = pd.DataFrame([{'poblacion': population or 'Toda la población registrada',
+                                         'registros_originales': len(raw), 'personas_originales': full_data.id.nunique(),
+                                         'registros_excluidos_por_seleccion': len(raw)-len(data),
+                                         'personas_excluidas_por_seleccion': full_data.id.nunique()-data.id.nunique(),
+                                         'registros': len(data), 'personas': data['id'].nunique(),
                                          'variables_originales': len(raw.columns), 'claves_faltantes': 0,
                                          'duplicados': 0}])
     return tables

@@ -1,0 +1,26 @@
+% Toda elección de formato es provisional hasta confirmar las normas UDLAP.
+\usepackage[T1]{fontenc}
+\usepackage{iftex}
+\ifPDFTeX\usepackage[utf8]{inputenc}\fi
+\usepackage[spanish,es-nodecimaldot,es-tabla]{babel}
+\usepackage{lmodern}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs,array,longtable}
+\usepackage{graphicx}
+\usepackage{caption}
+\captionsetup{font=small,labelfont=bf}
+\usepackage[authoryear,round]{natbib}
+\usepackage{xurl}
+\usepackage[unicode,hidelinks]{hyperref}
+\hypersetup{pdftitle={Borrador de tesis: vulnerabilidad económica longitudinal en ENASEM},
+            pdfauthor={Andrea}, pdfsubject={CP1; revisión metodológica pendiente}}
+\newcommand{\doi}[1]{\href{https://doi.org/#1}{DOI: \nolinkurl{#1}}}
+\setlength{\parindent}{1.2em}
+\setlength{\parskip}{0.2em}
+\setlength{\emergencystretch}{2em}
+\newcommand{\variable}[1]{\nolinkurl{#1}}
+\newcommand{\estadoBorrador}{\textit{Borrador: pendiente de revisión académica.}}
+\input{estilo_cuadros}

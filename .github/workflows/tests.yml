@@ -21,3 +21,5 @@ jobs:
         run: python -m pytest -q
       - name: Check notebook format
         run: python scripts/validate_notebooks.py
+      - name: Check manuscript sources and references
+        run: python scripts/validate_manuscript.py

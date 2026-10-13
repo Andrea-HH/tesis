@@ -1,0 +1,46 @@
+{
+  "checkpoint": "CP1",
+  "fecha_ejecucion_fuente": "2026-10-11",
+  "poblacion": "Toda la población registrada; sin filtros",
+  "sha256_original": "2f7b1718c2c60af4ce8998a7852babbaf6cf6aa887b41e174ed61e86035f5683",
+  "sha256_agregados": {
+    "cp1_estructura.json": "f2c5ad1df5c1f7d9d6fe05c1c06e6302a8e7f2550410c3c9897e213c33531e01",
+    "cp1_rondas.json": "fdecd7cf54d294126eb1de9797d566ef3301bedd80bd17279b6dd67d467edca5",
+    "cp1_demografia.json": "28a289458c56d04fdcd17b036138e55cfb7970050720ba7be27c488c787195ea",
+    "cp1_edad_grupos.json": "f53b1c2cda177a4f2081313df43b943882314ff3ba9e2275a7f98054afbffa96",
+    "cp1_entradas.json": "17bb6ca0fc84ffaaadd5d2afe5c5a31563260050a654ef5ebc3250041544dec4",
+    "cp1_numero_rondas.json": "c857d604192a428ff7d9e35016a190995a17b990492bbe852ba4880e08683818",
+    "cp1_transiciones.json": "37c59032cf6ca3deb6134fb60a2ba30b36bf3c09900e21302d668fceae190c2f",
+    "cp1_patrones.json": "7a1125c901af90222aea8fd3b10df81f859383a3141b0bba6e364f0ea18f3fd6",
+    "cp1_faltantes.json": "06e97c01d5a10251ce6cd81cb39bfd9c456ffc9e3a6bc7f82d4ff5406deef511",
+    "cp1_muestras.json": "6dfd89a043b482b4787a3b2660354ca82a8b95250ad533dfd75fc5602170a519",
+    "cp1_muestras_ronda.json": "0b9cb23e0ab2f52371a0dbfdb4149090c336017b39228198c20c16a3dfcb1f1d",
+    "cp1_anomalias_resumen.json": "6b576a52d09472d5ddb412481b05678eae5949803a7e2d8bcb96acfcda317058",
+    "cp1_anomalias_posteriores_modalidad.json": "9ed098bf5de464385290ad430715abec110e3fe69ef0027129a4a5a6379b7d31",
+    "cp1_anomalias_edad_compatibilidad.json": "3ed2a756db2fa11aaeddf3c225f7deb437b582a8f85b7aae88ac5765c0224e3d"
+  },
+  "tablas_generadas": [
+    "cp1_anomalias.tex",
+    "cp1_ausencias.tex",
+    "cp1_cifras.tex",
+    "cp1_cobertura.tex",
+    "cp1_edades.tex",
+    "cp1_edu_gru.tex",
+    "cp1_entradas.tex",
+    "cp1_entrevistas.tex",
+    "cp1_est_conyugal.tex",
+    "cp1_muestras.tex",
+    "cp1_muestras_ronda.tex",
+    "cp1_participacion.tex",
+    "cp1_rondas.tex",
+    "cp1_sexo.tex",
+    "cp1_transiciones.tex",
+    "cp1_urbano.tex"
+  ],
+  "figuras_para_revision": [
+    "manuscrito/figuras/borradores/cp1_modalidades.png",
+    "manuscrito/figuras/borradores/cp1_participacion.png"
+  ],
+  "estado_editorial_figuras": "borradores; aprobación de la autora pendiente",
+  "regeneracion": "python scripts/export_cp1_manuscript.py"
+}

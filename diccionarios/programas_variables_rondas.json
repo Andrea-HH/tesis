@@ -1,0 +1,163 @@
+[
+  {
+    "ano": 2001,
+    "propia_k": [
+      "k55a",
+      "k55b",
+      "k55c",
+      "k55d"
+    ],
+    "conyuge_k": [
+      "k61a",
+      "k61b",
+      "k61c",
+      "k61d"
+    ],
+    "apoyo_propio": "k76a",
+    "apoyo_conyuge": "k79a",
+    "programas_propios": [],
+    "programas_conyuge": [],
+    "opciones_programa": {},
+    "periodo": "Año previo a entrevista efectiva, distinto de ronda nominal",
+    "titularidad": "aplicar orientación existente; rama cónyuge puede pertenecer a persona de la fila",
+    "cobertura": "IMSS/ISSSTE identifican fuente institucional, no régimen. Instituciones/categorías públicas agrupadas no identifican programa específico."
+  },
+  {
+    "ano": 2003,
+    "propia_k": [
+      "k58a",
+      "k58b",
+      "k58c",
+      "k58d"
+    ],
+    "conyuge_k": [
+      "k64c",
+      "k64d",
+      "k64e",
+      "k64f"
+    ],
+    "apoyo_propio": "k79a",
+    "apoyo_conyuge": "k82c",
+    "programas_propios": [],
+    "programas_conyuge": [],
+    "opciones_programa": {},
+    "periodo": "Año previo a entrevista efectiva, distinto de ronda nominal",
+    "titularidad": "aplicar orientación existente; rama cónyuge puede pertenecer a persona de la fila",
+    "cobertura": "IMSS/ISSSTE identifican fuente institucional, no régimen. Instituciones/categorías públicas agrupadas no identifican programa específico."
+  },
+  {
+    "ano": 2012,
+    "propia_k": [
+      "k58a_12",
+      "k58b_12",
+      "k58c_12",
+      "k58d_12"
+    ],
+    "conyuge_k": [
+      "k64c_12",
+      "k64d_12",
+      "k64e_12",
+      "k64f_12"
+    ],
+    "apoyo_propio": "k79a_12",
+    "apoyo_conyuge": "k82c_12",
+    "programas_propios": [],
+    "programas_conyuge": [],
+    "opciones_programa": {},
+    "periodo": "Año previo a entrevista efectiva, distinto de ronda nominal",
+    "titularidad": "aplicar orientación existente; rama cónyuge puede pertenecer a persona de la fila",
+    "cobertura": "IMSS/ISSSTE identifican fuente institucional, no régimen. Instituciones/categorías públicas agrupadas no identifican programa específico."
+  },
+  {
+    "ano": 2015,
+    "propia_k": [
+      "k58a_15",
+      "k58b_15",
+      "k58c_15",
+      "k58d_15"
+    ],
+    "conyuge_k": [
+      "k64c_15",
+      "k64d_15",
+      "k64e_15",
+      "k64f_15"
+    ],
+    "apoyo_propio": "k79a_15",
+    "apoyo_conyuge": "k82c_15",
+    "programas_propios": [],
+    "programas_conyuge": [],
+    "opciones_programa": {},
+    "periodo": "Año previo a entrevista efectiva, distinto de ronda nominal",
+    "titularidad": "aplicar orientación existente; rama cónyuge puede pertenecer a persona de la fila",
+    "cobertura": "IMSS/ISSSTE identifican fuente institucional, no régimen. Instituciones/categorías públicas agrupadas no identifican programa específico."
+  },
+  {
+    "ano": 2018,
+    "propia_k": [
+      "k58a_18",
+      "k58b_18",
+      "k58c_18",
+      "k58d_18"
+    ],
+    "conyuge_k": [
+      "k64c_18",
+      "k64d_18",
+      "k64e_18",
+      "k64f_18"
+    ],
+    "apoyo_propio": "k79a_18",
+    "apoyo_conyuge": "k82c_18",
+    "programas_propios": [
+      "k79a_1_1_18",
+      "k79a_1_2_18"
+    ],
+    "programas_conyuge": [
+      "k82c_1_1_18",
+      "k82c_1_2_18"
+    ],
+    "opciones_programa": {
+      "1": "PROAGRO Productivo",
+      "2": "PROSPERA",
+      "3": "INAPAM",
+      "4": "Otra institución: tipo no resuelto"
+    },
+    "periodo": "Año previo a entrevista efectiva, distinto de ronda nominal",
+    "titularidad": "aplicar orientación existente; rama cónyuge puede pertenecer a persona de la fila",
+    "cobertura": "IMSS/ISSSTE identifican fuente institucional, no régimen. Instituciones/categorías públicas agrupadas no identifican programa específico."
+  },
+  {
+    "ano": 2021,
+    "propia_k": [
+      "k58a_21",
+      "k58b_21",
+      "k58c_21",
+      "k58d_21"
+    ],
+    "conyuge_k": [
+      "k64c_21",
+      "k64d_21",
+      "k64e_21",
+      "k64f_21"
+    ],
+    "apoyo_propio": "k79a_21",
+    "apoyo_conyuge": "k82c_21",
+    "programas_propios": [
+      "k79a_1_1_21",
+      "k79a_1_2_21"
+    ],
+    "programas_conyuge": [
+      "k82c_1_1_21",
+      "k82c_1_2_21"
+    ],
+    "opciones_programa": {
+      "1": "Producción para el Bienestar",
+      "2": "Becas para el Bienestar Benito Juárez",
+      "3": "INAPAM",
+      "4": "Otra institución: tipo no resuelto",
+      "5": "Programa para el Bienestar de las Personas Adultas Mayores"
+    },
+    "periodo": "Año previo a entrevista efectiva, distinto de ronda nominal",
+    "titularidad": "aplicar orientación existente; rama cónyuge puede pertenecer a persona de la fila",
+    "cobertura": "IMSS/ISSSTE identifican fuente institucional, no régimen. Instituciones/categorías públicas agrupadas no identifican programa específico."
+  }
+]

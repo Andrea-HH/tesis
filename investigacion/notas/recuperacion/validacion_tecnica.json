@@ -1,0 +1,46 @@
+{
+  "fecha": "2026-10-12",
+  "unidad": "registros documentales; no beneficiarios",
+  "catalogo": {
+    "N": 46495,
+    "por_nivel": {
+      "federal": 3391,
+      "estatal": 17511,
+      "municipal": 25593
+    },
+    "libros": 169,
+    "celdas_estatales": 256,
+    "celdas_municipales": 160,
+    "fuentes_hash_verificado": 174
+  },
+  "notebook": {
+    "codigo_ejecutado": 7,
+    "errores": 0
+  },
+  "cuadros": "32 entidades y seis rondas J02 reconciliadas; CP1 se verifica mediante su exportador",
+  "pdf": {
+    "paginas": 93,
+    "sha256": "379bcaef09db17f1c9f9f9b824bc5139b3309774041aa1e1e3d7fdeb3e43fc44",
+    "original_paginas": 65,
+    "original_sha256": "f8d02542886fa039bd3b86cf6a7ac9915c4fcf2460fc90a6959fb884f1c5aea8",
+    "copias_original_iguales": true
+  },
+  "huellas_previas_intactas": {
+    "data/processed/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "data/processed/enasem_integrada_provisional.manifest.json": "077542b32c7b849bf3dc49788911e671f560c2d17f1d160495d5306f5334e6b0",
+    "data/processed/enasem_integrada_provisional.parquet": "8c2ec866de93f76abbd7b917de7790fc82a7a7bfa1f67a0f62e11276d542116d",
+    "data/processed/auditoria_titularidad_v1/hogares.parquet": "2d9ccf345afbe537af3e9cb25f031dabea001b99af93fa477629461f8a51e27e",
+    "data/processed/auditoria_titularidad_v1/personas_ronda.parquet": "9d9a63ad0be2e2218c09fbf3442e5a9041d195aad92850431d8c66502f3705f7",
+    "data/processed/auditoria_titularidad_v1/eventos_originales.parquet": "03f67fcefdf0bc5e96b9795059f537fb45b6dae7355656a28aa87797a6769020",
+    "data/processed/auditoria_titularidad_v1/manifest.json": "d93b45d31a61e888d66d6ad800665c2d3ce96724cb51f6cd907dfdaf30a48772",
+    "data/processed/armonizacion_economica_v1/personas_ronda.parquet": "5a98af0beb1e972333d2d3787728b9944c9274a8992e04b85e65d0e9fea68e1c",
+    "data/processed/armonizacion_economica_v1/eventos_pensionarios.parquet": "bc4df9857ccff29d8a8a7b344d70f94ce7d7cd2f8435d8de1ae3ed32af41d292",
+    "data/processed/armonizacion_economica_v1/manifest.json": "f79bccb7ec7b4c45fc88e3f377d49ecad8aeeffb82344d4fc34a8edf1897f690",
+    "data/processed/armonizacion_economica_v1/eventos_apoyos.parquet": "111d5bce8a4e69e772184667664e87f4ec658b23cbeb1b1c9d267809bccb3081",
+    "reports/eda_independiente/simple_resultados.json": "8fa894e418530c853f8174da49100ab9525f5666ccf22f2903b852fde9a388c0",
+    "docs/CP1_RESULTADOS.md": "e5ab84a449e1c72583af953008bffb3eabb9659862a717cb2bc6b66db81605c3",
+    "docs/CP1_INFORME_REVISION.md": "4d8f95ec13f75aabbe230b57c4ec3c13cbf0177a71b5334f72c0b3bad7ef267d",
+    "docs/CP1_TABLAS_RONDAS.md": "a4e22a738fcaeec48acc4856612543c1a3daa3905d33b38275d0179ca67b8934"
+  },
+  "limite": "Validación técnica y cotejo de fuentes nuevas; no aprobación metodológica, editorial institucional o censo normativo completo."
+}
