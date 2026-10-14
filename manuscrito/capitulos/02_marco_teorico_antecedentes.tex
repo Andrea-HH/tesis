@@ -1,41 +1,48 @@
-\chapter{Marco teórico y antecedentes}
+\chapter{Marco teórico, antecedentes y políticas públicas}
 \label{cap:marco}
-\estadoBorrador
 
-La revisión extensa de literatura continúa en desarrollo. Esta versión incorpora
-la historia institucional de pensiones y transferencias; la introducción ya incorpora
-referencias verificadas para motivar el problema; todavía se requiere una
-revisión organizada sobre vulnerabilidad económica, patrimonio e ingreso,
-salud y funcionamiento, predicción longitudinal y selección del seguimiento.
-La revisión distinguirá estudios en México de evidencia de otros países,
-diseños descriptivos de diseños causales y mediciones contemporáneas de
-pronósticos. No se infiere una ausencia de literatura ni una novedad científica
-definitiva a partir de la selección inicial de referencias.
+\section{Protección económica durante la vejez}
 
-% BEGIN CONSOLIDATED 02_recuperacion_conceptual
-\section{Trayectoria laboral, protección pensionaria y posición económica}
-\label{sec:recuperacion-conceptual}
+La protección económica comprende recursos y arreglos institucionales que
+permiten atender necesidades cuando cambian la participación laboral, la
+estructura familiar y las condiciones de salud. Su evaluación debe distinguir
+acceso, cuantía, estabilidad y suficiencia. Una persona puede recibir una
+prestación pequeña y otra carecer de una vía propia, aunque ambas compartan
+hogar con un receptor. La presencia de un ingreso y el derecho personal que
+lo origina describen dimensiones relacionadas, pero diferentes.
 
-Desde una perspectiva actuarial, el análisis de la seguridad económica en la
-vejez no se limita al estudio de las reglas de financiamiento de las pensiones.
-También requiere considerar la trayectoria laboral de las personas, las
-condiciones de salud que pueden afectar su participación y la manera en que
-distintos riesgos se acumulan a lo largo del ciclo de vida. Esta formulación,
-recuperada del planteamiento original de la autora, delimita una perspectiva
-de investigación: estudiar procesos que anteceden al deterioro económico,
-sin asumir que cada retiro laboral o enfermedad conduce necesariamente a él.
-La literatura sobre salud y recursos motiva esos posibles mecanismos, cuya
-dirección y magnitud no se dan por demostradas en este panel \citep{smith1999}.
+El patrimonio representa recursos acumulados, mientras que pensiones y apoyos
+son flujos. ENASEMsimple incorpora patrimonio neto del entrevistado y su
+cónyuge cuando procede \citep{enasem2025simple}. Duplicar ese stock en dos
+registros personales no crea dos activos independientes. Su liquidez y reparto
+no se observan automáticamente. Por ello, esta tesis concentra sus estimandos
+monetarios en prestaciones captadas y mantiene el patrimonio como contexto,
+sin construir una etiqueta de vulnerabilidad patrimonial.
 
-La situación económica de una persona durante la vejez puede relacionarse
-con procesos que se desarrollan durante periodos prolongados. La educación,
-las oportunidades laborales y la continuidad de la cotización son dimensiones
-distintas de una trayectoria. Una pensión de supervivencia, por ejemplo,
-corresponde al beneficiario que recibe la prestación, aunque el derecho
-proceda de la historia contributiva de otra persona. La titularidad económica
-no se resuelve mediante el parentesco ni por el hecho de que dos cónyuges
-compartan hogar; los derechos derivados y las contingencias se distinguen en
-las leyes respectivas \citep{lss1995,issste2007}.
+La seguridad de recursos también tiene una dimensión temporal: continuidad
+de observación no es continuidad garantizada del pago. Puede existir censura
+izquierda cuando la recepción precede a la primera entrevista y falta de
+observación entre visitas. La distinción entre estado registrado y trayectoria
+real es necesaria antes de interpretar un inicio o un cese de declaración.
+
+\section{Sistemas pensionarios y heterogeneidad institucional}
+\label{sec:pensiones-contexto}
+
+Una pensión contributiva está ligada a un esquema de aseguramiento o
+participación ocupacional y puede corresponder a retiro, invalidez, accidente
+o supervivencia. La viudez no convierte automáticamente una pensión en no
+contributiva: quien recibe el derecho derivado es su beneficiario, aunque la
+historia de cotización provenga de otra persona
+\citep{lss1995,issste2007}. Las prestaciones de vejez sin requisito contributivo
+se distinguen de estos mecanismos, pero también de subsidios productivos,
+transferencias educativas y apoyos en especie.
+
+La institución declarada no identifica necesariamente el régimen individual,
+la contingencia precisa ni el historial de aportaciones. Tampoco determina
+si una cantidad corresponde solo a esa institución cuando el cuestionario
+permite selección múltiple. Esta heterogeneidad impide interpretar el conjunto
+K como una medida pura de pensiones contributivas o comparar sus importes
+como si todos provinieran de un solo sistema.
 
 \subsection{Regímenes de 1973 y 1997, cuentas individuales y AFORE}
 
@@ -59,70 +66,69 @@ o año de entrevista. Tampoco se extrapolan a otras instituciones las reglas
 del IMSS: la reforma del ISSSTE de 2007 tiene disposiciones y regímenes
 transitorios propios \citep{issste2007}.
 
-\subsection{Patrimonio, flujos de protección y vulnerabilidad}
 
-El patrimonio neto ofrece una medida complementaria a los indicadores de
-ingreso porque representa recursos acumulados y obligaciones, en lugar de
-un flujo periódico. En ENASEMsimple, \variable{imp_neto} corresponde al
-entrevistado y su cónyuge cuando procede, e incorpora imputación del
-proveedor. Una misma cantidad patrimonial puede describir a una pareja
-registrada en dos filas; ello no la convierte en dos patrimonios independientes
-ni determina su reparto individual \citep{enasem2025simple}.
+\subsection{Conceptos institucionales y variables de la encuesta}
 
-El borrador original justificaba la elección patrimonial porque la base
-reducida no contenía ingresos ni pensiones directamente. Esa restricción
-debe actualizarse: la integración provisional ya conserva las variables
-económicas de diecisiete fuentes. Ahora es posible describir recepción,
-instituciones y montos cuando su procedencia y titularidad se validan,
-manteniendo el patrimonio como dimensión distinta. Esta ampliación no
-resuelve automáticamente la definición de vulnerabilidad ni demuestra que
-recibir una prestación impida una transición patrimonial adversa.
+Las letras K y A se utilizan en la investigación como convenciones de
+medición, no como clasificación jurídica. K resume recepción propia en las
+contingencias pensionarias auditadas. A representa el donativo público
+adicional captado en dinero o especie y puede reunir apoyos diferentes.
+El indicador A5 se restringe a la opción explícita de programa de vejez en
+2021; no identifica retrospectivamente ese programa en todas las rondas.
+Una clasificación contributiva requeriría evidencia adicional por beneficio
+y régimen \citep{inegi2018k,inegi2021k}.
 
-La vulnerabilidad puede formularse conceptualmente como susceptibilidad a
-dificultades ante cambios laborales, familiares, de salud o de gasto. Una
-posición patrimonial relativa es una posible aproximación empírica a esa
-dimensión, cuya validez deberá justificarse. No se la equipara con pobreza
-multidimensional, insuficiencia de ingreso ni una medida de incertidumbre de
-bienestar \citep{ligon2003}. El stock patrimonial puede incluir activos de
-liquidez limitada; su nivel y los flujos pensionarios describen aspectos
-complementarios de la seguridad económica. La comprobación de liquidez,
-necesidades de gasto y suficiencia permanece fuera de los resultados
-descriptivos actualmente disponibles.
+La existencia de un apoyo del hogar tampoco establece quién lo recibió.
+Separar K propia, K del cónyuge y A propia es una condición del análisis
+distributivo. La unión K/A indica presencia de alguna vía propia y permite
+superposición; no es suma de importes ni un total económico. La falta de
+respuesta sobre una vía sigue siendo desconocimiento, aunque otra sí sea
+observada.
 
-La aportación longitudinal consiste en distinguir el estado observado de
-la entrada posterior a una condición de riesgo definida. Una variación de
-posición relativa puede ocurrir por cambios en los recursos propios, en la
-distribución de referencia o en la composición de la pareja. Por ello, usar
-cuantiles por ronda no demuestra una pérdida real de poder adquisitivo.
-La muestra que determina el corte, los precios, los empates y la unidad
-económica deben documentarse antes de construir etiquetas. La formulación
-provisional de estas decisiones aparece en la
-sección~\ref{sec:recuperacion-metodologica}.
-% END CONSOLIDATED 02_recuperacion_conceptual
-% BEGIN CONSOLIDATED 02_pensiones_contexto
-\section{Clasificación y evolución histórica de las pensiones contributivas, no contributivas y transferencias públicas en México (2001--2021).}
-\label{sec:pensiones-contexto}
+\section{Brechas de acceso, monto y poder adquisitivo}
 
-La protección económica durante la vejez reúne mecanismos con fundamentos
-institucionales diferentes. Una pensión contributiva deriva de la participación
-en un sistema de aseguramiento u ocupacional y puede corresponder a retiro,
-invalidez o un derecho de sobrevivencia. Por tanto, una pensión por viudez no
-se clasifica automáticamente como no contributiva. Las leyes del Seguro Social
-y del ISSSTE distinguen contingencias, condiciones y regímenes; la institución
-reportada permite identificar parte del sistema, pero no reconstruir por sí sola
-la trayectoria de cotización ni el régimen individual
-\citep{lss1995,issste2007,imss2006}.
+Una brecha de cobertura compara tasas de recepción dentro de grupos; una
+brecha de monto compara distribuciones entre receptores con dinero medido.
+Sus denominadores difieren. Un grupo puede tener baja cobertura y, al mismo
+tiempo, una mediana alta entre las pocas personas que reciben. Interpretar
+esta combinación exige conservar a las personas sin recepción en el análisis
+de acceso, sin asignarles automáticamente importe cero en la distribución
+condicionada de beneficios.
 
-Las prestaciones públicas de vejez sin requisito contributivo se distinguen,
-a su vez, de las transferencias productivas, educativas, asistenciales o en
-especie. Esta distinción es relevante para la tesis: patrimonio e ingreso
-representan dimensiones diferentes de la posición económica. Dos personas con
-un patrimonio registrado semejante pueden tener flujos de trabajo, pensiones
-y apoyos distintos. Esta posibilidad orienta una comparación descriptiva,
-no constituye un hallazgo ya medido ni demuestra un efecto causal de los
-programas. Tampoco se equipara la institución que otorga un apoyo con su
-naturaleza contributiva: una institución pública puede administrar prestaciones
-que no dependen de cotizaciones.
+La educación inicial, el sexo, la cohorte y el tamaño de localidad pueden
+acompañar trayectorias laborales y formas de acceso diferentes. La comparación
+descriptiva no separa su contribución causal. La ocupación registrada en una
+visita tampoco reconstruye años cotizados, informalidad histórica o régimen
+de retiro. En consecuencia, las diferencias por perfil muestran heterogeneidad
+y posibles preguntas explicativas, sin identificar por sí solas mecanismos.
+
+El poder adquisitivo requiere expresar importes en una unidad temporal común.
+La actualización por INPC permite comparar cuánto representan los pesos
+declarados frente a una misma estructura general de precios. No mide las
+necesidades particulares de cada hogar, precios regionales o gasto de salud
+individual, ni vuelve equivalentes instrumentos distintos. Si aumenta el
+importe nominal menos que el índice de referencia, la cantidad real puede
+disminuir; la conclusión sobre una mediana transversal puede depender también
+de quiénes integran la distribución.
+
+La suficiencia económica es una pregunta más amplia que el poder adquisitivo
+de una prestación. La LPI sirve aquí como referencia mensual por persona
+para una canasta alimentaria y no alimentaria, con ámbitos rural y urbano.
+Comparar una prestación parcial con la línea no permite clasificar a su
+receptor como pobre: faltan otros ingresos, recursos compartidos, tamaño del
+hogar y necesidades. A la inversa, una prestación sobre el umbral no prueba
+suficiencia económica integral. La metodología monetaria del
+capítulo~\ref{cap:datos} mantiene separadas estas interpretaciones.
+
+\section{Expansión histórica de la oferta pública, 2001--2021}
+\label{sec:cronologia-politicas}
+
+La cronología identifica cambios de elegibilidad e importes normativos,
+no tratamientos asignados a las personas de ENASEM. Distingue el documento
+vigente en cada año, su fecha de entrada en vigor y el periodo recordado por
+la entrevista. Los importes que siguen son nominales de cada versión.
+Las entregas bimestrales se expresan en equivalente mensual y no autorizan
+a dividir nuevamente una cantidad que la encuesta ya solicita por mes.
 
 \subsection{Antecedentes locales y expansión federal}
 
@@ -179,182 +185,109 @@ efectiva de entrevista y el periodo al que refiere cada pregunta. Una recepción
 referida al año anterior no demuestra exposición a la ampliación de julio de
 2021 \citep{bienestar2021a,bienestar2021b}.
 
-\subsection{Transferencias adicionales y programas locales}
 
-La protección pública no se limita a las pensiones de vejez. Oportunidades
-incluyó un componente para personas adultas mayores de 70 años en familias
-beneficiarias, con un importe inicial de 250 pesos mensuales durante la segunda
-mitad de 2006. Se distingue ese componente del conjunto del programa.
-PROSPERA reunió intervenciones diferentes; su continuidad institucional no
-convierte todas las transferencias familiares en pensiones
-\citep{oportunidades2006,oportunidades2007,prospera2015}.
+\subsection{Otros apoyos y diversidad territorial}
 
-En el ámbito productivo, el decreto de PROCAMPO de 1994, el componente PROAGRO
-de las reglas agrícolas para 2014 y los lineamientos de Producción para el
-Bienestar de 2019 permiten documentar antecedentes y cambios de padrones.
-Estas relaciones no prueban equivalencia de importes, requisitos o beneficiarios
-individuales. De forma semejante, el decreto de creación de la Coordinación
-Nacional de Becas para el Bienestar Benito Juárez de 2019 no permite homologar
-indiscriminadamente todos los componentes de PROSPERA como una misma prestación
-\citep{procampo1994,proagro2014,produccion2019,becas2019}.
+Las transferencias adicionales exceden las pensiones de vejez.
+Oportunidades incluyó un componente para personas mayores, mientras
+PROSPERA integró intervenciones diferentes. Los programas productivos y
+las becas no se vuelven pensiones por estar dirigidos a hogares donde reside
+una persona mayor \citep{oportunidades2006,oportunidades2007,prospera2015}.
+La categoría A debe leerse con esta amplitud, incluyendo la valoración de
+especie cuando el instrumento la contempla.
 
-El catálogo incorpora ejemplos locales pertinentes, además del Distrito
-Federal. Las reglas de Jalisco para 2014 contemplaban personas de 65 años o más,
-residencia de tres años y restricciones sobre pensiones o apoyos similares,
-con un importe de 1,009.35 pesos mensuales. La ficha histórica de 2018 sirve
-como otra versión, sin trasladarle automáticamente el importe de 2014.
-El informe municipal de Mérida documenta el programa Llegó a Ti, de entrega
-domiciliaria de despensas a personas adultas mayores enfermas que no podían
-recogerlas. Se trata de apoyo en especie, no de una pensión monetaria. Cuando
-no se cotejó la creación exacta de un programa local, su año de origen permanece
-desconocido \citep{jalisco2014,jalisco2018,merida2009}.
+Los inventarios federal, estatal y municipal muestran oferta pública
+heterogénea y discontinuidades documentales
+\citep{conevalhistoricofederal,conevalhistoricoestatal,conevalhistoricmunicipal}.
+Su unidad es la intervención documentada por territorio y periodo, no la
+persona beneficiaria. La existencia local de una intervención no acredita
+su recepción individual; la falta de una fila documental no demuestra
+ausencia de apoyo. Estos inventarios se conservan como contexto y no se
+enlazan a las personas por residencia, edad o coincidencia de importe.
 
-\input{tablas/pensiones_historia}
+\subsection{Lo que permite interpretar la cronología}
 
-La tabla~\ref{tab:pensiones_historia} presenta versiones documentales
-seleccionadas, con encabezados simples y reglas horizontales. El catálogo
-reproducible que la genera añade institución, importe, periodicidad, operación
-documentada y localizador de fuente. Es una selección de programas principales
-y antecedentes locales pertinentes, no un censo de las 32 entidades y todos
-los municipios. Los años de operación no cotejados y los montos no verificados
-permanecen abiertos; no se completa una serie anual mediante supuestos.
+Los cambios normativos ofrecen un marco para preguntar qué perfiles
+podrían incorporarse y si los importes declarados guardan correspondencia
+con referencias conocidas. No prueban que una respuesta A pertenezca al
+programa federal, que el código institucional agrupado K sea exclusivamente
+ese programa o que una persona recibiera la cuantía normativa sin interrupción.
+La fecha real de entrevista y la referencia al año pasado pueden situar
+la observación monetaria antes o después de una modificación.
 
-\subsection{Historia institucional e identificación en la encuesta}
+En particular, la ampliación de acceso y la menor mediana K 2012--2015
+pueden ser compatibles con una mezcla diferente de receptores. Establecer
+cuánto se debe a la política exigiría identificar exposición, elegibilidad,
+historia de participación y un diseño contrafactual. La presente tesis
+describe esa compatibilidad sin atribuir eficacia o efectos a la reforma.
 
-La homologación conserva una familia federal documentada para 70 y Más,
-Pensión para Adultos Mayores y Bienestar, junto con sus versiones de elegibilidad.
-El programa rural de 2003, la pensión del Distrito Federal y los programas
-locales permanecen separados. Una relación de antecedente, sustitución de
-padrones o cambio institucional no equivale a identidad de medición. El catálogo
-contiene nombres originales y homologados, ámbito, tipo, institución, inicio
-documentado y fuente verificable; los campos individuales no se rellenan a
-partir de las reglas de operación.
+\section{Antecedentes empíricos y comparación crítica}
+\label{sec:literatura-proxima}
 
-Conviene distinguir tres tiempos: el inicio oficial del programa, la primera
-recepción declarada por la persona y la primera ronda en que la encuesta
-permite identificarla como receptora. Esta última puede estar afectada por
-censura izquierda, ausencia temporal o cambios de cuestionario. La falta de
-un programa federal en un año tampoco demuestra ausencia de otros apoyos.
-En consecuencia, el contexto histórico delimita hipótesis e interpretación,
-pero no sustituye las respuestas de ENASEM. La identificación efectiva y las
-restricciones de las ocho variables se establecen en la
-sección~\ref{sec:pensiones-metodo}.
-% END CONSOLIDATED 02_pensiones_contexto
-% BEGIN CONSOLIDATED 02_catalogo_nacional
-\section{Oferta pública nacional y alcance de su observación en ENASEM}
-\label{sec:catalogo-nacional}
+\subsection{Seguridad económica y observación longitudinal}
 
-La protección económica debe situarse en una arquitectura que combina
-instituciones contributivas y oferta federal, estatal y municipal. Limitar
-los antecedentes al Distrito Federal impediría reconocer diferencias de
-oferta entre entidades y apoyos que no se denominan pensiones. Los
-inventarios oficiales permiten ampliar ese contexto, pero su unidad es la
-intervención pública documentada: no contienen el historial de recepción
-de las personas del panel. La existencia de una intervención tampoco
-demuestra que todos los residentes elegibles la recibieron.
+\citet{aguila2011} documentan recursos, pensiones y desigualdad en México,
+por lo que la descripción de heterogeneidad pensionaria tiene antecedentes.
+Más directamente, \citet{degraff2018} comparan ingresos, activos y fuentes en
+cortes y una muestra longitudinal ENASEM 2001--2012 de personas de 50 años
+o más. Utilizan estadísticas ponderadas, pesos reales de 2001 y recursos de
+pareja divididos entre sus integrantes. Ya distinguen cambios entre periodos
+y envejecimiento de las mismas personas. Esta tesis no introduce esa distinción:
+estudia prestaciones propias y ventanas posteriores específicas, con
+incorporación y continuidad observadas como grupos monetarios.
 
-Para esta etapa se revisaron las hojas principales de los inventarios
-estatales de 2010, 2011, 2012, 2013, 2014, 2016, 2018 y 2021, el histórico
-federal y cinco cortes municipales por entidad. Se extrajeron
-\catTotal{} registros documentales: \catEstatal{} estatales,
-\catFederal{} federales y \catMunicipal{} municipales. Son ocurrencias por
-ejercicio o periodo y territorio; un mismo programa puede aparecer en
-varias versiones. Estos números no se suman para estimar personas
-beneficiarias ni programas históricos únicos
-\citep{conevalhistoricoestatal,conevalhistoricofederal,conevalhistoricmunicipal}.
+\subsection{Cobertura amplia e ingreso pensionario}
 
-\subsection{Cobertura territorial, periodos y clasificación documental}
+\citet{perezarce2021} estudian China, India y México. Para México utilizan
+rondas 2001/2003/2012, comparan definiciones inclusiva y exclusiva de cobertura
+y analizan ingresos pensionarios e historias laborales. Una cobertura más
+inclusiva reduce gradientes educativos de acceso, mientras persisten diferencias
+en ingreso promedio. El desacople acceso--monto no es, por tanto, una novedad
+conceptual de esta tesis. Sus medias anuales, poblaciones y ponderadores
+tampoco son intercambiables con nuestras medianas mensuales K/A. El trabajo
+es un documento de investigación, no una versión arbitrada acreditada aquí.
 
-El cuadro~\ref{tab:catalogo-cobertura} presenta las 32 entidades y tres
-ejercicios estatales coincidentes con rondas del estudio, junto con el
-corte municipal de 2020. Las cifras son conteos de intervenciones
-inventariadas y no tasas de cobertura poblacional. En 2021, por ejemplo,
-Ciudad de México y Jalisco registran 84 intervenciones estatales cada una,
-mientras Nayarit registra nueve. Esa diferencia permite reconocer
-heterogeneidad documental de oferta, pero no establece diferencias de
-protección efectiva, presupuesto por persona o calidad de atención.
-Dentro de los programas existen beneficios, requisitos y tamaños de
-población objetivo diferentes.
+\subsection{Brechas de género y selección a recepción}
 
-\input{tablas/catalogo_cobertura}
+\citet{garciagarcia2025} examina brechas de género con ENASEM y antecedentes
+laborales, enfocándose en jubilación en 2018 y personas de 65 años o más.
+Utiliza selección a recepción y descomposiciones de cobertura y beneficio;
+la diferencia de monto no tiene la misma evidencia estadística que la de
+cobertura. Nuestro estimando es una diferencia de medianas K más amplia,
+en 60+ y 2012--2015. No constituye una refutación directa. Además, selección
+a recibir pensión y selección por muerte o pérdida de entrevista son
+problemas diferentes. La fuente es un trabajo de investigación de El Colegio de México,
+no un artículo arbitrado acreditado.
 
-La serie estatal no es anual y homogénea desde 2001. La hoja de 2010 no
-incluye filas de intervenciones para Aguascalientes y Tlaxcala; su ausencia
-documental no acredita ausencia de programas. Para 2001 y 2003 se cuenta
-con reglas seleccionadas, pero no con un inventario estatal equivalente;
-el corte de 2015 no se reemplaza por los de 2014 o 2016. El inventario
-federal se restringió a 2004--2021 del libro que también contiene años
-posteriores. Los cortes municipales 2012--2013, 2014--2015 y 2015--2016
-son periodos de recopilación documental, no evidencia automática de
-operación continua en ambos años. El informe municipal advierte
-limitaciones de disponibilidad de documentos y distingue fuentes como
-presupuesto, cuenta pública, informe y plan de desarrollo
-\citep{conevalmunicipal2020}.
+\subsection{Evaluación de programas y límites de transferencia}
 
-La clasificación documental preserva apoyos económicos, alimentación,
-discapacidad, asistencia y otras intervenciones sociales. Un apoyo en
-especie, un servicio, un subsidio productivo y una pensión representan
-recursos o protección distintos. La población objetivo categórica de un
-inventario no acredita requisitos exactos de edad ni permite reconstruir
-un importe individual a partir del presupuesto total. Se conservan los
-campos desconocidos y los nombres originales; las reglas anuales,
-montos, periodicidades e inicio o terminación se verifican por programa.
-Los marcadores de revisión por vejez o discapacidad solo organizan el
-catálogo; no validan elegibilidad ni contributividad.
+La literatura también contiene diseños que identifican programas y
+variaciones de elegibilidad: \citet{galiani2016} y \citet{juarez2015} estudian
+prestaciones no contributivas con estrategias cuasiexperimentales; 
+\citet{aguila2015} analiza una intervención de suplemento de ingreso.
+Sus conclusiones se refieren a tratamientos y poblaciones definidos.
+La coexistencia temporal de una reforma y un cambio en K/A no reproduce
+esos diseños. No se trasladan sus efectos a la recepción K general, a toda A
+o a las trayectorias monetarias estudiadas aquí.
 
-Como ejemplo de un beneficio diferente de la pensión de vejez, las
-reglas iniciales de discapacidad permanente para 2021 contemplaban
-rangos de edad y territorios específicos, con 1\,350 pesos mensuales
-pagaderos bimestralmente. La modificación publicada el 21 de julio
-acotó la edad adulta hasta antes de cumplir 65 años y mantuvo ese
-importe en su tabla. La fecha de firma, 5 de julio, es distinta de la
-publicación y de la vigencia, 22 de julio. Esta prestación no se
-identifica automáticamente con una limitación funcional ni con la
-pregunta K sobre invalidez \citep{discapacidad2021a,discapacidad2021b}.
+\section{Vacío específico y contribución delimitada}
 
-\subsection{Correspondencia con la encuesta y lectura de los resultados}
+Los antecedentes próximos ya relacionan cobertura, ingresos, desigualdad y
+seguimiento. El espacio específico de esta investigación es comparar
+nuevos receptores observados y continuos en K 2012--2015 y A 2015--2018,
+con valores reales, integridad de los eventos captados, composición basal
+común y contraste institucional, y distinguir ese resultado de cambios
+individuales y selección de observación.
 
-El cuadro~\ref{tab:catalogo-instrumentos} distingue preguntas agregadas
-y opciones nominativas. Antes de 2018, el bloque de donativos públicos
-analizado no identifica el nombre del programa. En 2018 aparecen
-PROAGRO, PROSPERA e INAPAM; en 2021 cambian las opciones y se incorpora
-explícitamente el programa de vejez. La categoría de otra institución
-permanece abierta. Una fuente IMSS o ISSSTE en el bloque pensionario
-identifica una institución, sin reconstruir régimen, cotizaciones o
-expediente de beneficiario. Las prestaciones estatales y municipales
-catalogadas carecen de una identificación nominativa general en estos
-campos \citep{inegi2018k,inegi2021k}.
+La aportación no consiste en agregar automáticamente más modelos, sino en
+hacer explícito qué población representa cada cantidad y qué afirmaciones
+se mantienen bajo sensibilidades pertinentes. Los intervalos que preservan
+dependencia individual y las comprobaciones de empates y faltantes permiten
+delimitar la fuerza del contraste. No identifican altas administrativas,
+contributividad de toda K, equivalencia de distribuciones A o una causa
+de la caída de medianas.
 
-\input{tablas/catalogo_instrumentos}
-
-La correspondencia se establece entre documento, pregunta, categoría y
-periodo; la asignación a una persona requiere respuesta y titularidad
-validadas. El catálogo no se une a las personas mediante edad, residencia,
-año o coincidencia de monto. PROSPERA no se equipara a IMSS-PROSPERA,
-INAPAM no prueba una pensión monetaria y la familia de becas no identifica
-automáticamente el componente educativo. Las transferencias adicionales
-en dinero o especie son más amplias que las pensiones no contributivas.
-Dos versiones documentales o dos respuestas de la pareja no representan
-por sí mismas dos ingresos diferentes.
-
-El EDA de protección económica del capítulo~\ref{cap:resultados} permite
-examinar recepción dentro de perfiles de sexo, escolaridad, edad y
-tamaño de localidad. Sus diferencias pueden ser compatibles con cambios
-documentados de reglas e instrumentos, pero también con reclutamiento,
-supervivencia y observación desconocida. No se identifica aquí cuánto
-corresponde a cada mecanismo. La mayor frecuencia de apoyo en perfiles
-de menor escolaridad o localidades de menos de cien mil habitantes
-describe la muestra y no demuestra focalización efectiva ni un impacto.
-Asimismo, el corte de localidad no identifica ruralidad estricta ni
-permite estimar diferencias estatales de beneficiarios.
-
-El catálogo ofrece contexto y restricciones de interpretación; los
-resultados numéricos de recepción conservan sus propios denominadores
-y permanecen sin ponderar. Los importes normativos son nominales y
-dependen de la versión del programa. Compararlos como poder adquisitivo
-constante o atribuir una reforma a una respuesta sobre el año anterior
-exigiría verificaciones temporales y monetarias adicionales. Esta
-separación mantiene abiertas las hipótesis sobre ampliación de cobertura
-y superposición de prestaciones, sin presentarlas como conclusiones
-causales ni convertir un catálogo parcial en un censo exhaustivo.
-% END CONSOLIDATED 02_catalogo_nacional
+Esta diferencia se ha contrastado con los tres antecedentes más cercanos
+de la auditoría bibliográfica. No demuestra prioridad frente a toda la
+literatura. El capítulo~\ref{cap:discusion} retoma esa comparación a la luz
+de las magnitudes e incertidumbre efectivamente obtenidas.

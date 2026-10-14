@@ -109,3 +109,39 @@ htmlcov/
 !/resultados/poblacion_muestras.csv
 !/resultados/recepcion_pension_apoyo.csv
 !/resultados/seguimiento_rondas.csv
+# Bases de datos y archivos intermedios
+data/
+*.dta
+*.parquet
+*.sav
+*.pkl
+
+# Credenciales y archivos privados
+.env
+.env.*
+*credentials*.json
+*token*.json
+*.key
+
+# Archivos temporales
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+.DS_Store
+
+# Archivos temporales de LaTeX
+manuscrito/build/
+
+# Documentos de terceros
+investigacion/articulos/
+investigacion/fuentes_oficiales/
+
+
+
+
+
+
+
+
+
+

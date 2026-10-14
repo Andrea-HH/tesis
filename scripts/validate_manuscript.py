@@ -59,6 +59,12 @@ def validate_manuscript(directory: Path) -> tuple[int, int, int]:
     macro_uses = set(re.findall(r'\\(cp[A-Za-z]+)\b', text))
     if missing := macro_uses - macro_definitions:
         raise ValueError(f'Cifras sin exportación: {sorted(missing)}')
+    # Cifras formales con claves estables: una clave ausente se volvería silenciosamente
+    # \relax en TeX. Exigir la exportación impide entregar texto numérico vacío.
+    data_definitions = set(re.findall(r'\\csname tesisdato:([^\\]+)\\endcsname', text))
+    data_uses = set(re.findall(r'\\dato\{([^}]+)\}', text))
+    if missing := data_uses - data_definitions:
+        raise ValueError(f'Cifras académicas sin agregado exportado: {sorted(missing)}')
     # Cada entorno debe abrirse/cerrarse la misma cantidad de veces.
     if Counter(re.findall(r'\\begin\{([^}]+)\}', text)) != Counter(re.findall(r'\\end\{([^}]+)\}', text)):
         raise ValueError('Entornos LaTeX sin cierre.')

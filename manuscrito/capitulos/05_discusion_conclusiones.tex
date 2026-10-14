@@ -1,70 +1,228 @@
 \chapter{Discusión y conclusiones}
 \label{cap:discusion}
-\estadoBorrador
 
-La discusión final permanece abierta; esta etapa identifica preguntas
-sustentadas por resultados exploratorios. La propuesta predictiva anterior
-se conserva únicamente como antecedente posible. Una eventual discusión de
-esa línea se redactaría a partir de resultados evaluados y aprobados.
-En esa posible línea futura se contrastarían las hipótesis y se identificarían
-limitaciones de selección y
-medición, delimitar la aplicabilidad de las alertas y separar asociación
-predictiva de inferencia causal. La auditoría actual sustenta la necesidad
-de distinguir modalidades, fechas y poblaciones; no demuestra todavía una
-ganancia predictiva ni una anticipación útil para intervenir.
+\section{Alcance de la respuesta a la pregunta central}
 
-% BEGIN CONSOLIDATED 05_preguntas_exploratorias
-\section{Posibles líneas de investigación derivadas de los hallazgos}
+La evidencia muestra que acceso y monto no evolucionan de forma uniforme en
+las ventanas que permiten comparación condicionada. K 2012--2015 y A 2015--2018
+combinan mayor recepción con menor mediana real transversal. Sin embargo,
+K 2018--2021 presenta aumento real de su mediana. La hipótesis de que ampliar
+cobertura no garantiza una mejora equivalente de recursos encuentra apoyo
+en episodios concretos; no queda demostrada como ley general de 2001--2021.
 
-\label{sec:exploracion-preguntas}
+La conclusión tampoco es que las personas que ya recibían perdieron la misma
+proporción que la mediana de cada corte. La incorporación cambia quién
+integra la distribución. Entre continuos K, el cambio individual principal
+es pequeño y sensible a fechas y faltantes. Entre continuos A, la mediana
+negativa es más estable bajo los criterios temporales examinados, pero
+coexiste con personas que aumentan sus importes. Cada respuesta exige su
+población y estimando.
 
-Las siguientes líneas se derivan de los agregados observados y permanecen abiertas. Su prioridad depende de interés sustantivo, cobertura y validación, no de seleccionar un outcome predeterminado. No se estima un modelo ni se aprueba una pregunta definitiva.
+En 2021 persisten \dato{2021.N_KA_no} personas directas con negativas
+propias K/A y \dato{2021.N_KA_ND_elegible} con unión desconocida.
+La primera categoría identifica ausencia declarada de estas vías, no
+ausencia de todo ingreso, y la segunda no se clasifica como desprotección.
+La pensión del cónyuge aporta contexto que no debe transformarse en un
+derecho propio o reparto monetario supuesto.
 
-\subsection{¿Cómo difiere la recepción propia y del cónyuge por sexo y escolaridad inicial?}
+\section{Qué aporta distinguir incorporación y continuidad}
 
-Resultado que motiva: T1\_2021: brecha propia de 18,59 pp en 6 años y 0,55 pp en $\geq$10 años.
+El contraste K de destino \dato{K.Contraste.IC} pesos reales entre nuevos
+y continuos es sustantivamente grande. Su persistencia a composición basal
+común, \dato{K.Ajustado.IC}, muestra que las diferencias de sexo, edad y
+escolaridad consideradas no bastan para igualar sus distribuciones centrales.
+No demuestra que el ajuste haya eliminado selección o confusión.
 
-Variables y rondas: K propia/cónyuge, sexo, escolaridad inicial, edad, estado conyugal. Perfiles transversales seis rondas; trayectorias condicionadas K2001--2003/2012--2015/2018--2021.
+Esta comparación añade información frente a observar únicamente la mediana
+de todos los receptores. Permite identificar una combinación concreta:
+una población que declara recepción por primera vez entre dos visitas y
+presenta montos centrales mucho menores que quienes ya declaraban recibir.
+Es compatible con ampliación de acceso mediante prestaciones de menor monto,
+pero no prueba que ese sea el mecanismo único de la caída transversal.
 
-Viabilidad: Validar J1/2001, filtros de pareja, selección y antecedente laboral. Descriptiva estratificada; econométrica asociacional tras fijar estimando; predicción solo futura y opcional.
+Los nuevos de una vía pueden haber recibido la otra desde el inicio.
+Por ello, incorporación K o A no es sinónimo de primera protección,
+alta administrativa o incremento neto de ingresos. La medida tampoco
+reconstruye interrupciones entre entrevistas. Estas restricciones forman
+parte del aporte de medición y evitan convertir una clasificación observacional
+en historia completa de prestaciones.
 
-\subsection{¿En qué perfiles coexisten pensiones K y apoyos, y cómo varía la coexistencia con la edad?}
+\section{Diferencias entre K y A e instituciones}
 
-Resultado que motiva: 2021: 2\,019 K+A; 3\,558 A con negativa K; V=0,03756 y tasas de A muy diferentes por edad quinquenal.
+A 2015--2018 no reproduce el gran contraste mediano K:
+\dato{A.Contraste.IC} incluye cero y ambas medianas centrales coinciden.
+La concentración de importes respalda una lectura de proximidad del centro
+registrado, sin probar equivalencia de distribuciones o identidad de programa.
+Los dos contrastes pertenecen a periodos y conceptos distintos; no se ha
+estimado un efecto diferencial común de dos sistemas homogéneos.
 
-Variables y rondas: K/A propios, edad, sexo, escolaridad, localidad; programa explícito cuando existe. Cortes seis rondas con contratos separados; recepción conjunta 2012--2015 condicionada; A2018--2021 no homologado.
+Con evidencia IMSS/ISSSTE, el contraste K es
+\dato{K.Institucional.IC}; el intervalo incluye cero.
+Al conservar el solapamiento entre total y subgrupo, la diferencia de
+contrastes \dato{K.DiferenciaContrastes.IC} permanece negativa.
+La composición institucional es, por tanto, relevante para delimitar a
+quién caracteriza el contraste agregado.
 
-Viabilidad: No llamar sin pensión a negativa K ni todo A no contributivo; separar dinero/especie requeriría fuente adicional. Descriptiva/econométrica sin causalidad por defecto.
+No puede afirmarse que IMSS/ISSSTE cause la igualdad mediana, ni que el
+código agrupado8 identifique exclusivamente una pensión pública de vejez.
+La institución declarada no revela régimen, aportaciones, historia laboral
+completa o importe exclusivo por institución. Una explicación más precisa
+requeriría esos vínculos. La tesis aporta heterogeneidad descriptiva
+institucional; no una descomposición causal ni una atribución del descenso
+a un programa.
 
-\subsection{¿Qué continuidad e inicio de apoyo se observa entre personas con negativa K inicial?}
+\section{Brechas de acceso, dinero y referencia económica}
 
-Resultado que motiva: Cohorte con negativa K en 2015, 60+ viva: 5\,503 personas. Inicio A observado 653/2\,740 con negativa A inicial y respuesta final conocida (23,83\%). Mismo donativo adicional, dinero/especie; 2018 desglosa hasta dos instituciones. Solo recepción agregada condicionada.. No equivale a personas sin toda pensión, ni implica que el apoyo haya causado ampliación de cobertura.
+La reducción de la brecha hombre--mujer de unión K/A en 2012--2015 tiene
+una estimación \dato{Sexo.Union.IC} puntos porcentuales.
+En cambio, el cambio real de la brecha monetaria K,
+\dato{Sexo.Monto.IC}, incluye cero. Las diferencias monetarias son positivas
+en ambos cortes, pero su aumento puntual no equivale a ensanchamiento
+establecido.
 
-Variables y rondas: K en origen, A en ambos momentos, perfiles iniciales, seguimiento y modalidades. A2003--2012/2012--2015/2015--2018 condicionados; intervalos nominales desiguales.
+Esta combinación permite sostener que un cierre de diferencias de acceso
+no prueba igualación de montos. No permite afirmar que se haya demostrado
+un empeoramiento de la brecha monetaria. Los denominadores distintos
+son sustantivos: la cobertura incluye respuestas conocidas de todas las
+personas elegibles, y el dinero solo receptores con importe válido.
+Una lectura de igualdad basada exclusivamente en recepción perdería esa
+distinción.
 
-Viabilidad: Necesita examinar selección de pares conocidos, retornos, muerte y sensibilidad. Descriptiva panel; modelo de transición asociacional si se define proceso de observación y estimando.
+La comparación por escolaridad también muestra que mayor cobertura de
+alguna vía puede coexistir con montos K relativamente bajos. No se concluye
+que una escolaridad baja cause menores pensiones; la cohorte, historia
+laboral e instituciones pueden acompañar el patrón. El tamaño de localidad
+ofrece otra dimensión descriptiva que no equivale a ruralidad.
 
-\subsection{¿Cómo se combinan recepción pensionaria y trabajo durante el envejecimiento?}
+La razón A5/LPI mediana de \dato{A5.LPI}\% documenta una prestación parcial
+frente a una referencia de necesidades. Es compatible con que esa cantidad
+no cubra por sí sola el umbral, pero no establece insuficiencia de todos
+los recursos o pobreza de sus receptores. La valoración de especie,
+otros flujos y recursos compartidos limitan cualquier afirmación de
+suficiencia integral.
 
-Resultado que motiva: 2021: 559/2\,760 (20,25\%) K propia entre quienes trabajan; T7 presenta heterogeneidad por edad.
+\section{Cambios individuales y selección actuarial}
 
-Variables y rondas: Ocupación construida, edad, K propia/cónyuge, salario principal en elegibles, instituciones. Actividad en seis ondas; recepción K longitudinal solo en periodos compatibles.
+La mediana del cambio personal K \dato{K.Cambio.IC} es precisa bajo
+el criterio principal y el universo de dos montos íntegros. Esa precisión
+no la vuelve robusta: los criterios temporales alternativos incluyen cero,
+y las cotas por información faltante \dato{K.CotaCambio} también lo cruzan.
+Es incorrecto resumir el resultado como pérdida individual uniforme de
+poder adquisitivo K.
 
-Viabilidad: Ocupación no profesión; retiro/incapacidad/no trabajo no separables. Validar saltos y periodos salarial/pensionario. Descripción de perfiles y transiciones; econometría asociacional, no efecto retiro.
+A presenta un cambio mediano \dato{A.Cambio.IC}, negativo también en
+los escenarios temporales examinados y con cota faltante principal
+\dato{A.CotaCambio}. La conclusión es más estable dentro de esa población,
+sin que implique pérdida para todos o para toda la cohorte basal.
+Los cambios son de prestaciones mensuales medidas entre visitas, no
+tasas mensuales o anuales de deterioro.
 
-\subsection{¿Qué diferencias institucionales aparecen entre receptoras según escolaridad y localidad?}
+Los fallecimientos registrados, ausencias, sustitutos y mediciones no
+válidas muestran cómo se delimita la población evaluable. La selección
+puede cambiar la lectura de niveles y trayectorias; aquí no se cuantifica
+cuánto cambiarían todos los montos bajo observación completa. La
+estandarización de observados no recupera recursos desconocidos.
+Mortalidad y pérdida de observación permanecen como sensibilidad
+complementaria y no como nuevo eje de la tesis.
 
-Resultado que motiva: 2021: IMSS 2\,540/3\,592; instituciones múltiples no aditivas. C1/C2 usan perfiles simultáneos.
+\section{Coincidencias y ampliación de la literatura}
 
-Variables y rondas: Instituciones fuente, contingencia, sexo, edad, educación, localidad, titularidad. Seis cortes por instrumento; cambios institucionales individuales requieren homologación adicional, especialmente2012/2015.
+El estudio de recursos reales y diferencias entre cortes y trayectorias
+tiene un antecedente próximo en \citet{degraff2018}. La ampliación aquí
+consiste en prestaciones propias y ventanas posteriores específicas,
+con grupos de incorporación y continuidad e incertidumbre preservando
+dependencia individual; no en introducir por primera vez el panel.
 
-Viabilidad: Fuente no régimen y código ambiguo permanece desconocido. No asignar monto por institución cuando selección por contingencia. Descriptiva; transición institucional pendiente, no entrenar un modelo.
+La distinción acceso--monto ya aparece en \citet{perezarce2021}.
+Nuestra evidencia precisa cómo se expresa en los grupos observados y
+por qué un contraste K no se extiende sin más a A.
+Las unidades mensuales y estadísticas centrales utilizadas impiden
+equiparar directamente resultados con sus medias anuales.
 
-\subsection{¿Cómo varía la asociación de monto pensionario propio y patrimonio compartido por escolaridad?}
+Las brechas de género también tienen antecedentes en
+\citet{garciagarcia2025}. La diferencia de población y concepto, y la
+incertidumbre del cambio monetario encontrado aquí, impiden presentar
+la tesis como una contradicción directa. La selección a recepción y
+la selección de seguimiento siguen siendo problemas distintos.
 
-Resultado que motiva: 2021: Spearman 0,2643 en 3\,347 pares; T8 distribuye patrimonio simultáneamente por ramas y educación.
+La contribución defendible es una ampliación empírica integrada y una
+delimitación reproducible de medición: titularidad, superposición,
+montos reales, composición institucional y seguimiento.
+La comparación con los antecedentes cotejados no acredita prioridad
+frente a todas las investigaciones existentes ni un avance metodológico
+nuevo en bootstrap o estandarización.
 
-Variables y rondas: Patrimonio, monto K parcial, escolaridad, tipo/slot, titular y pareja. Distribuciones internas a seis rondas; cambio real no disponible hasta validar moneda/precios y unidad compartida.
+\section{Limitaciones que condicionan las conclusiones}
 
-Viabilidad: No vulnerabilidad por cuartil, no ingreso total y no acumulación causal. Descriptiva actual; longitudinal monetaria pendiente de deflactor y consistencia de unidad.
-% END CONSOLIDATED 05_preguntas_exploratorias
+\subsection{Instrumentos y conceptos}
+
+La comparabilidad es condicionada, con cambios de slots, opciones e
+instituciones aun dentro de ventanas admisibles. K no identifica
+contributividad y A no es una pensión no contributiva única.
+La continuidad observada no prueba la misma prestación o pagos
+ininterrumpidos. Las alertas tempranas de titularidad y los registros
+discordantes se preservan.
+
+\subsection{Captura monetaria y tiempo}
+
+Las sumas parciales e íntegras captadas no son ingreso personal completo.
+Los importes desconocidos o beneficios no captados pueden cambiar
+la distribución. El año previo a entrevista es un criterio explícito
+de precios, no una fecha de pago observada. La sensibilidad temporal
+es material para la pequeña diferencia individual K.
+
+\subsection{Población observada e inferencia}
+
+Las directas 60+ de cada corte, los pares con recepción conocida y los
+pares con dos montos son universos diferentes. La muerte trunca la
+trayectoria y la ausencia puede ser temporal. No se corrigió selección
+no observada ni se validaron diseño y ponderadores para inferencia nacional.
+
+Los intervalos cuantifican variación por remuestreo de la muestra
+observada bajo sus supuestos. No incorporan todas las fuentes de error,
+son puntuales y acompañan contrastes seleccionados después de la
+exploración. Excluir cero no identifica causalidad; incluirlo no prueba
+igualdad. La magnitud y la estabilidad sustantivas deben leerse junto
+a su precisión.
+
+\section{Implicaciones para el análisis de políticas pensionarias}
+
+La evidencia indica la utilidad de analizar simultáneamente acceso y
+distribución de recursos, conservando quién se incorpora y quién
+continúa. Una mayor tasa agregada no permite valorar por sí sola
+igualación monetaria. Los indicadores deben distinguir beneficio
+propio, contexto del cónyuge y prestación parcial frente a ingreso total.
+
+La cronología ayuda a formular preguntas sobre cambios de elegibilidad,
+mezcla de receptores e importes. No demuestra que una reforma produzca
+el patrón observado, ni permite recomendar una cuantía o estrategia
+de expansión cuya eficacia no se evaluó. Las implicaciones son
+analíticas: documentar los conceptos, periodos y poblaciones antes
+de comparar políticas o adjudicar resultados.
+
+\section{Conclusiones y líneas futuras}
+
+La pregunta central recibe una respuesta parcial y específica.
+En las ventanas K 2012--2015 y A 2015--2018, ampliar recepción no
+coincide con una mejora de sus medianas reales transversales.
+El contraste K nuevos--continuos y su heterogeneidad institucional
+son la contribución empírica más precisa; el nulo mediano A limita
+su generalización. Los cambios personales no equivalen a la tendencia
+transversal y la selección restringe a quién describen.
+
+Por sexo se precisa una reducción de brecha de unión, pero no se
+establece el aumento de la brecha monetaria. Persisten grupos con
+negativas propias y otros con acceso amplio a prestaciones de monto
+relativamente bajo. Estas conclusiones son compatibles con la
+hipótesis sin demostrar una mejora o deterioro uniforme en 2001--2021,
+suficiencia integral o efectos causales.
+
+Antes de ampliar la explicación convendría validar identidad de
+beneficio, régimen, historia contributiva y fechas de referencia,
+y delimitar diseño de encuesta y observación longitudinal.
+Solo después podría justificarse una descomposición explicativa
+o una sensibilidad de selección con supuestos identificados.
+No se requiere iniciar otra exploración masiva para redactar el
+núcleo actual. La revisión académica debe concentrarse en su alcance,
+en la trazabilidad de los cuadros y en la coherencia entre pregunta,
+estimandos y conclusiones.

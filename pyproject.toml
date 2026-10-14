@@ -13,7 +13,7 @@ dependencies = ["pandas>=2.1", "numpy>=1.26", "scipy>=1.11", "matplotlib>=3.8", 
 [project.optional-dependencies]
 notebooks = ["jupyterlab>=4", "ipykernel>=6", "nbformat>=5", "nbclient>=0.10", "pyarrow>=15"]
 manuscrito = ["pymupdf>=1.24"]
-documentacion = ["openpyxl>=3.1", "xlrd>=2.0.1", "requests>=2.31", "tabulate>=0.9"]
+documentacion = ["openpyxl>=3.1", "xlrd>=2.0.1", "requests>=2.31", "tabulate>=0.9", "markdown-it-py>=3", "reportlab>=4.2", "pymupdf>=1.24"]
 dev = ["pytest>=8", "ruff>=0.6", "nbformat>=5"]
 
 [tool.setuptools.packages.find]

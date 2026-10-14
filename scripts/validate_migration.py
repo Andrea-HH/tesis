@@ -76,6 +76,8 @@ def validate() -> dict:
         assert not any(o.output_type=='error' for c in codes for o in c.outputs)
         notebook_evidence[name]={'celdas_codigo':len(codes),'errores':0,'fuente_sin_outputs':True}
     report=(root/'resultados/INFORME_GENERAL.md').read_text()
+    archive = root/'data/interim/informe_general_evidencia_completa.json'
+    exhaustive_report = json.loads(archive.read_text())['texto'] if archive.exists() else report
     figures=re.findall(r'!\[[^\]]*\]\(([^)]+)\)',report)
     for figure in figures:
         assert (root/'resultados'/figure).is_file(),figure
@@ -84,7 +86,7 @@ def validate() -> dict:
         for prefix in ('B','T'):
             for n in range(1,9):
                 key=f'{prefix}{n}_{year}'
-                assert key in report,key
+                assert key in exhaustive_report,key
                 assert project_path(results['analisis'][key]['tabla']).is_file()
                 assert project_path(results['analisis'][key]['figura']).is_file()
     old_keys=set(json.loads((Path(manifest['backup'])/'manifest.json').read_text())['archivos'])
@@ -104,7 +106,8 @@ def validate() -> dict:
     local_consolidation = manifest.get('consolidacion_capitulos', {})
     if local_consolidation:
         # La tarea local prohíbe operaciones Git: cotejar solo el archivo del índice.
-        assert current_index == local_consolidation['indice_sha256'], 'Índice alterado durante la organización local'
+        local_index = json.loads(archive.read_text())['indice_git_sha256'] if archive.exists() else local_consolidation['indice_sha256']
+        assert current_index == local_index, 'Índice alterado durante la organización local'
     elif (root/'.git/HEAD').exists():
         staged = subprocess.check_output(['git','--no-optional-locks','ls-files','--stage'],cwd=root)
         authorized = manifest.get('publicacion_github', {}).get('seleccion_final_sha256')

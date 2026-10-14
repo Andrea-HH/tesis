@@ -115,6 +115,12 @@ def preserve_editorial_sections(previous: str, metadata: dict, generated: dict[s
 
 def consolidate_report() -> dict:
     """Organiza por tema; conserva universos/versiones y deduplica bloques exactos."""
+    if (PROJECT_ROOT / 'data/interim/informe_general_evidencia_completa.json').exists():
+        # La síntesis académica es editable y selectiva: nunca sustituirla por
+        # la concatenación de las notas exhaustivas al construir un notebook.
+        report = RESULTS_DIR / 'INFORME_GENERAL.md'
+        return {'modo': 'sintesis_editorial_preservada', 'bytes': report.stat().st_size,
+                'evidencia_exhaustiva': 'data/interim/informe_general_evidencia_completa.json'}
     notes = load_json("data/interim/textos_analisis.json")
     buckets = {key: [] for key, _ in SECTIONS}
     selection = {
@@ -280,6 +286,11 @@ def consolidate_report() -> dict:
 
 def report_section(key: str) -> str:
     """Obtiene una sección, sin repetir cálculo o cargar microdatos."""
+    archive = PROJECT_ROOT / 'data/interim/informe_general_evidencia_completa.json'
+    if archive.exists():
+        evidence = json.loads(archive.read_text())
+        item = evidence['indice']['secciones'][key]
+        return evidence['texto'][item['inicio']:item['fin']]
     indices = load_json("data/interim/indice_informe.json")["secciones"]
     text = (RESULTS_DIR / "INFORME_GENERAL.md").read_text()
     item = indices[key]
@@ -294,6 +305,12 @@ def validate_documentary_coverage() -> dict[str, int]:
     notes = load_json('data/interim/textos_analisis.json')
     metadata = load_json('data/interim/indice_informe.json')
     report = (RESULTS_DIR / 'INFORME_GENERAL.md').read_text()
+    archive = PROJECT_ROOT / 'data/interim/informe_general_evidencia_completa.json'
+    if archive.exists():
+        evidence = json.loads(archive.read_text())
+        assert hashlib.sha256(evidence['texto'].encode()).hexdigest() == evidence['sha256']
+        report = evidence['texto']
+        metadata = evidence['indice']
     def normalize(value: str) -> str:
         return re.sub(r'\s+', ' ', re.sub(r'(?m)^#{1,6}\s+', '', value)).strip()
     readable = normalize(report)

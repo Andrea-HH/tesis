@@ -1,0 +1,100 @@
+{
+  "estado": "Descriptivo condicionado a evidencia registrada; no mortalidad completa",
+  "evento": "tipent5 en destino; concordante con fallecido1 en registros presentes",
+  "denominador": "Cohorte viva60+ en visita inicial, K inicial propia sí/no/ND separados",
+  "ausencia": "Vital desconocido, nunca superviviente confirmado ni muerte imputada",
+  "inconsistencia": "Fallecido→entrevista viva conserva fuente y sensibilidad",
+  "fecha_defuncion": "No verificada; no se asigna entrevista/ronda/punto medio como fecha de evento",
+  "supervivencia_IPW": "No implementados por prerequisitos vitales/tiempos/observación; pesos/ESS/balance no certificados",
+  "limites": "D/N a(D+U)/N condicionados a registros correctos; no IC ni riesgo corregido",
+  "CESD": "Nueve componentes completos como04, sin rellenar faltantes",
+  "cognicion": "Flags0/1/desconocido diferenciados; serial2018–2021 bloqueado por cambio7desde100 a3desde20; noTICS",
+  "economia": "Stock persona/cónyuge; negativos/ceros preservados; no cambios monetarios reales sin deflactación/unidades",
+  "fuentes_oficiales": [
+    {
+      "url": "https://www.mhasweb.org/DataProducts/MasterFollowUp.aspx",
+      "acceso": "Producto completo no descargado; acceso registrado"
+    },
+    {
+      "url": "https://www.mhasweb.org/resources/DOCUMENTS/2018/MHAS_Master_Follow_up_File_2001_2003_2012_2015_2018.pdf",
+      "version": "2018; no certificar contenido2021 con esta versión"
+    },
+    {
+      "url": "https://www.mhasweb.org/resources/DOCUMENTS/Constructed_Imputed/MHAS_2018_2021_Cognitive_Function_Measures_Scoring_and_Classification.pdf",
+      "paginas": "5/9 descripción de cambio de tarea; código posterior contiene discrepancias, no corregir automáticamente"
+    }
+  ],
+  "IPW_por_dimension": [
+    {
+      "dimension": "Física",
+      "variables": [
+        "salud_glob",
+        "diabetes",
+        "n_enf",
+        "bmi_imp"
+      ],
+      "estimando_propuesto": "Media/cambio entre sobrevivientes de cohorte basal definida, con observación documentada",
+      "vital_desconocido": "No resuelto para ausentes",
+      "positividad": "No certificada; soporte de medición/modalidad debe auditarse",
+      "pesos_extremos_ESS_balance": "No calculados: no pesos estimados",
+      "limite_especifico": "Salud global directa; diabetes/enfermedades/BMI admiten sustitutos. Diagnóstico y modalidad no equivalentes.",
+      "decision": "No implementar con evidencia actual"
+    },
+    {
+      "dimension": "Mental",
+      "variables": [
+        "n_sint_depr",
+        "solo"
+      ],
+      "estimando_propuesto": "Media/cambio entre sobrevivientes de cohorte basal definida, con observación documentada",
+      "vital_desconocido": "No resuelto para ausentes",
+      "positividad": "No certificada; soporte de medición/modalidad debe auditarse",
+      "pesos_extremos_ESS_balance": "No calculados: no pesos estimados",
+      "limite_especifico": "Solo directa; nueve componentes y basales disponibles seleccionan target.",
+      "decision": "No implementar con evidencia actual"
+    },
+    {
+      "dimension": "Cognición",
+      "variables": [
+        "recuerdo1",
+        "recuerdo2",
+        "orientacion",
+        "serial7"
+      ],
+      "estimando_propuesto": "Media/cambio entre sobrevivientes de cohorte basal definida, con observación documentada",
+      "vital_desconocido": "No resuelto para ausentes",
+      "positividad": "No certificada; soporte de medición/modalidad debe auditarse",
+      "pesos_extremos_ESS_balance": "No calculados: no pesos estimados",
+      "limite_especifico": "Solo directa; productos imputados/flags y cambios de instrumento. IPW no armoniza restas2021.",
+      "decision": "No implementar con evidencia actual"
+    },
+    {
+      "dimension": "Funcionalidad",
+      "variables": [
+        "n_abvd",
+        "n_aivd",
+        "n_mov"
+      ],
+      "estimando_propuesto": "Media/cambio entre sobrevivientes de cohorte basal definida, con observación documentada",
+      "vital_desconocido": "No resuelto para ausentes",
+      "positividad": "No certificada; soporte de medición/modalidad debe auditarse",
+      "pesos_extremos_ESS_balance": "No calculados: no pesos estimados",
+      "limite_especifico": "ABVD admite sustitutos; AIVD/movilidad directas. No único modelo de observación para toda funcionalidad.",
+      "decision": "No implementar con evidencia actual"
+    },
+    {
+      "dimension": "Económica",
+      "variables": [
+        "imp_neto",
+        "ocupacion",
+        "est_conyugal"
+      ],
+      "estimando_propuesto": "Media/cambio entre sobrevivientes de cohorte basal definida, con observación documentada",
+      "vital_desconocido": "No resuelto para ausentes",
+      "positividad": "No certificada; soporte de medición/modalidad debe auditarse",
+      "pesos_extremos_ESS_balance": "No calculados: no pesos estimados",
+      "limite_especifico": "Más cobertura en sustitutos; K propia/cónyuge/A distintos, stock compartido y unidades pendientes.",
+      "decision": "No implementar con evidencia actual"
+    }
+  ]
+}

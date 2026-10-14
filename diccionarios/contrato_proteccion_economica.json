@@ -1,0 +1,38 @@
+{
+  "notebook": "06_COBERTURA_PROTECCION_ECONOMICA.ipynb",
+  "pregunta_autora": "Brechas muestrales de cobertura propia K/A y montos de prestaciones, con selección longitudinal como sensibilidad",
+  "principal": "Personas vivas60+ por visita; recepción solo entrevistas directas, por decisión expresa de la autora",
+  "sensibilidad": "Conservar respuestas válidas por sustituto sin modificar datos ni mezclarlas silenciosamente con el principal",
+  "diccionarios_fuente": ["diccionario_integrado.json", "contratos_enasemsimple.json", "armonizacion_pensiones.json"],
+  "variables": {
+    "K": "pension_propia_k, booleano anulable; afirmativa en alguna contingencia, negativa solo con cuatro negativas; titularidad auditada",
+    "K_conyuge": "pension_conyuge_k, aplicable al complemento únicamente con puntero_pareja_concordante2018/2021",
+    "A": "apoyo_propio, booleano anulable; donativos públicos adicionales en dinero o especie, no pensión no contributiva homologada",
+    "union": "K propia OR A propia: sí si alguna sí, no si ambas no, desconocido en los demás casos",
+    "sexo": "1 hombre, 2 mujer",
+    "edad": "Edad por visita; grupos60–64,65–69,70+",
+    "educacion": "Años al inicio de la primera entrevista; grupos0,1–5,6,7–9,10+; no escolaridad actual dinámica",
+    "urbano": "0<100mil,1≥100mil; no ruralidad estricta",
+    "ocupacion": "1 trabaja,2 busca trabajo,3 labores del hogar,4 retirado/incapacitado/no trabaja; no identifica pensionados",
+    "est_conyugal": "1 casado/unión,2 separado/divorciado,3 viudo,4 nunca unido; no acredita pareja residente",
+    "imp_neto": "Patrimonio compartido neto, stock; no usado como ingreso ni para el modeloQ1 descartado",
+    "tipent": "1 directa seguimiento,2 directa nueva muestra,3 sustituto seguimiento,4 sustituto nueva muestra,5 sobre fallecido",
+    "fallecido": "0 no,1 sí; concordancia tipent no certifica mortalidad completa"
+  },
+  "tipologia": "Ocho combinaciones K propia/K cónyuge/A propia con pareja confirmada; cuatro K/A sin pareja residente, identificadas aparte; contexto indeterminado, recepciónND y sustitutos excluidos separados. Sin mezcla de A del cónyuge.",
+  "montos": "Originales nominales de mes normal por evento único. Campos monto_*_propio_mensual_observado_parcial son sumas personales de eventos observados; no garantizan todos los beneficios ni ingreso total. No sumarK+A, versiones ni replicar instituciones. No interpretar A como efectivo exclusivamente.",
+  "seguimiento": "K condicionadamente comparable2001–2003,2012–2015,2018–2021. UniónKA solo2012–2015 en ventanas analizadas; Abreak2001–2003/2018–2021. Destino conserva edad final discordante, muerte registrada, ausencia vital desconocida, vivoKND, sustituto y reaparición. No inicio real ni riesgos competitivos estimados con tiempos.",
+  "config_suficiencia": {
+    "fuente_indice_confirmada": false,
+    "fuente_indice": null,
+    "frecuencia_indice": null,
+    "ronda_base": null,
+    "INPC_por_ronda": {},
+    "fuente_umbral_confirmada": false,
+    "tipo_umbral": null,
+    "fuente_umbral": null,
+    "umbral_mensual_nominal_por_ronda": {},
+    "limitacion": "Pendiente elegir fuenteINPC, base temporal y umbral con unidad/localidad compatibles; deflactación y suficiencia no ejecutadas. Nunca pobreza del hogar/persona a partir de una prestación parcial."
+  },
+  "estado": "Operacionalmente auditable; sin ponderadores/diseño nacional validados, causalidad ni atribución a reformas. No confirmar hipótesis de convergencia/suficiencia sin evidencia."
+}

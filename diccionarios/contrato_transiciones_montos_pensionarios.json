@@ -1,0 +1,91 @@
+{
+  "pregunta": "¿Qué tanto es consistente la expansión de las pensiones y los apoyos públicos con una reducción de las brechas de cobertura y de monto de la protección económica de los adultos mayores en México (ENASEM 2001–2021), qué grupos siguen sin vía propia de protección y cómo cambia esta lectura al considerar a quienes mueren o dejan de ser entrevistados?",
+  "notebook": "08_TRANSICIONES_MONTOS_PENSIONARIOS.ipynb",
+  "fuentes_definicion": [
+    "contrato_proteccion_economica.json",
+    "contrato_monetario_politicas.json",
+    "armonizacion_pensiones.json"
+  ],
+  "metodologia": {
+    "principal": "Cohorte basal directa60+, sin exigir panel balanceado. Destino directo para principal.",
+    "monto": "Suma íntegra únicamente de eventos captados. Si alguno tiene montoND, se excluye la suma; no se completa con0.",
+    "continuidad": "Recepción declarada en ambas visitas, no continuidad ininterrumpida ni identidad administrativa del beneficio.",
+    "A": "Donativos propios generales dinero/especie. No programaA5 longitudinal.",
+    "pesos": "Descriptivo no ponderado; estandarización de composición no usa pesos de encuesta.",
+    "inferencia": "Sin valoresp, IC de diseño, modelos causales, imputación ni modelos de supervivencia.",
+    "limites": "Rupturas de medición, soporte, montos omitidos no captados y selección impiden descomposición causal única."
+  },
+  "variables_recepcion": {
+    "K": "pension_propia_k",
+    "A": "apoyo_propio"
+  },
+  "ventanas_condicionadas": [
+    [
+      2001,
+      2003,
+      "K"
+    ],
+    [
+      2012,
+      2015,
+      "K"
+    ],
+    [
+      2018,
+      2021,
+      "K"
+    ],
+    [
+      2003,
+      2012,
+      "A"
+    ],
+    [
+      2012,
+      2015,
+      "A"
+    ],
+    [
+      2015,
+      2018,
+      "A"
+    ]
+  ],
+  "foco_monetario": [
+    [
+      2012,
+      2015,
+      "K"
+    ],
+    [
+      2015,
+      2018,
+      "A"
+    ]
+  ],
+  "monto_integro_captado": "Variable solo en memoria monto_completo_K/A; suma de todos los eventos originales captados con monto válido. Si uno falta, ND toda suma. No totalidad real ni flujo administrativo identificado.",
+  "identidad_de_prestacion": "No acreditada. Sensibilidad K un único evento en cada visita, misma contingencia y código institucional1/2; A sin programa homologado en2015–2018.",
+  "periodicidad": "Mes normal, pesos mexicanos; mensualización previa de entrevista. No dividir otra vez por2.",
+  "precio": {
+    "referencia": "2026-09",
+    "INPC": 146.075,
+    "criterio": "Promedio del año calendario anterior a entrevista real, no fecha observada de pago",
+    "sensibilidad": [
+      "12meses previos",
+      "Año real de entrevista"
+    ]
+  },
+  "conflicto_vital": "Registro de entrevista viva posterior a un registro sobre fallecido: preservar fuente, excluir de transiciones principales válidas y dinero pareado, sin inferir muerte real o cobro post mortem. Registros originales solo como sensibilidad explícita.",
+  "composicion": {
+    "estimando": "Distribución mensual de nuevos/continuos entre observados con monto íntegro, a mezcla basal común de soporte.",
+    "celdas": "Sexo basal×edad3×escolaridad inicial0–5/6+; sensibilidad añade localidad100mil",
+    "min_N_por_grupo_celda": 20,
+    "min_cobertura_grupo_pct": 70,
+    "min_celdas": 4,
+    "cuantil": "Inverso de CDF ponderada, no promedio de medianas",
+    "no": "No pesos ENASEM, IPW, causalidad ni corrección de muertos/ausentes"
+  },
+  "seguimiento": "Basal directa60+; LEFT por IDs únicos a todos los destinos. Muerte, ausencia, modalidad, ND, conflicto separados. No panel balanceado. Edad final discordante conservada y sensibilidad60+.",
+  "inflacion": "Identidad contable individual y puente ordenado de medianas; términos dependen del orden y no descomponen causalmente composición/política.",
+  "estado": "Validado computacionalmente; comparabilidad operacional condicionada, no identidad administrativa ni representatividad nacional."
+}

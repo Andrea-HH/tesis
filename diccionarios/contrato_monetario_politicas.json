@@ -1,0 +1,33 @@
+{
+  "pregunta": "¿Qué tanto es consistente la expansión de las pensiones y los apoyos públicos con una reducción de las brechas de cobertura y de monto de la protección económica de los adultos mayores en México (ENASEM 2001–2021), qué grupos siguen sin vía propia de protección y cómo cambia esta lectura al considerar a quienes mueren o dejan de ser entrevistados?",
+  "notebook": "07_POLITICAS_MONTOS_SUFICIENCIA.ipynb",
+  "poblacion": "Directas60+ principal; sustitutos sensibilidad",
+  "monto": "Original mensual por evento y suma parcial por persona; nunca total de ingresos ni K+A. Cónyuge contextual separado.",
+  "moneda": "Pesos mexicanos declarados en preguntas mensuales; no se convierte automáticamente pensiónEEUU a USD ni se supone moneda distinta.",
+  "periodicidad": "K58/K61/K64/K67, A K77/K80/K83: mes normal; entrevistador normalizaperiodos. Montos normativos bimestrales÷2 ya documentados, declaracionesmensuales no se dividenotra vez.",
+  "precios": {
+    "fuente": "INEGI serie865541, base segundaquincena julio2018=100, actualización2024",
+    "referencia": "2026-09",
+    "inpc": 146.075,
+    "periodo_principal": "Media12meses año calendario anterior al año real de entrevista; criterio por año pasado sin mes de pago observado",
+    "sensibilidad": [
+      "12meses anteriores al mes real",
+      "Promedio año real de entrevista",
+      "Mínimo/máximo INPCmensual del año previo"
+    ],
+    "formula": "Nominal×146.075/INPCoriginal; mensual mantiene unidad mensual",
+    "valor_presente_actuarial": false
+  },
+  "lpi": {
+    "fuente": "CONEVAL histórica, archivo marzo2025 reestimado2024; INEGIresponsable desde2025",
+    "unidad": "Pesos mensuales por persona, canasta alimentaria+no alimentaria",
+    "fecha": "Mismo periodo explícito de valoración de prestación; escenarios12meses",
+    "geografia": "Rural<2500/urbana≥2500; camposoriginales2012–21;2001/03≥100milurbana, restoND",
+    "limite": "Una prestación parcial inferior al umbral no diagnostica pobreza individual/hogar. Escenarios no asignan ruralidad."
+  },
+  "comparabilidad": "Condicionada:K2001–03/2012–15/2018–21;A2003–12/2012–15/2015–18. Rupturas limitan también evolución de brechas monetarias.",
+  "comparacion_entre_vias": "Importes mensuales por eventoK frente a A5 de vejez2021 con norma monetaria verificada. TodaA se describe como valoración dinero/especie separada; no se compara como efectivo homogéneo.",
+  "cero_A": "2021puede representar especie sin valoración; no garantiza ingreso efectivo0; sensibilidadpositivos",
+  "imputados": "Inventario198campos, no se suman ni utilizan sin contrato de escala/unidad/beneficiario; no imputación nueva",
+  "seleccionado": "Precios/umbral evaluados solo en07; bloqueos06 describen estado de esa etapa, no anulan autorización07"
+}

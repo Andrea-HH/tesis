@@ -1,0 +1,286 @@
+{
+  "estado": "Comparabilidad operacional condicionada del producto construido; no invariancia psicométrica ni literalidad bruta certificadas",
+  "rondas": [
+    2001,
+    2003,
+    2012,
+    2015,
+    2018,
+    2021
+  ],
+  "componentes": [
+    {
+      "variable": "deprimido",
+      "concepto": "Se ha sentido deprimido",
+      "codificacion_construida": {
+        "0": "No",
+        "1": "Sí"
+      },
+      "contribucion": "valor",
+      "numero_pregunta_original_por_ronda": "Pendiente de concordancia bruta; no extrapolar números2024"
+    },
+    {
+      "variable": "esfuerzo",
+      "concepto": "Todo lo que hacía era un esfuerzo",
+      "codificacion_construida": {
+        "0": "No",
+        "1": "Sí"
+      },
+      "contribucion": "valor",
+      "numero_pregunta_original_por_ronda": "Pendiente de concordancia bruta; no extrapolar números2024"
+    },
+    {
+      "variable": "intranquilo",
+      "concepto": "Sueño intranquilo",
+      "codificacion_construida": {
+        "0": "No",
+        "1": "Sí"
+      },
+      "contribucion": "valor",
+      "numero_pregunta_original_por_ronda": "Pendiente de concordancia bruta; no extrapolar números2024"
+    },
+    {
+      "variable": "feliz",
+      "concepto": "Se ha sentido feliz",
+      "codificacion_construida": {
+        "0": "No",
+        "1": "Sí"
+      },
+      "contribucion": "1 - valor",
+      "numero_pregunta_original_por_ronda": "Pendiente de concordancia bruta; no extrapolar números2024"
+    },
+    {
+      "variable": "solo",
+      "concepto": "Se ha sentido solo",
+      "codificacion_construida": {
+        "0": "No",
+        "1": "Sí"
+      },
+      "contribucion": "valor",
+      "numero_pregunta_original_por_ronda": "Pendiente de concordancia bruta; no extrapolar números2024"
+    },
+    {
+      "variable": "disf_vida",
+      "concepto": "Disfrutaba de la vida",
+      "codificacion_construida": {
+        "0": "No",
+        "1": "Sí"
+      },
+      "contribucion": "1 - valor",
+      "numero_pregunta_original_por_ronda": "Pendiente de concordancia bruta; no extrapolar números2024"
+    },
+    {
+      "variable": "triste",
+      "concepto": "Se ha sentido triste",
+      "codificacion_construida": {
+        "0": "No",
+        "1": "Sí"
+      },
+      "contribucion": "valor",
+      "numero_pregunta_original_por_ronda": "Pendiente de concordancia bruta; no extrapolar números2024"
+    },
+    {
+      "variable": "cansado",
+      "concepto": "Se ha sentido cansado",
+      "codificacion_construida": {
+        "0": "No",
+        "1": "Sí"
+      },
+      "contribucion": "valor",
+      "numero_pregunta_original_por_ronda": "Pendiente de concordancia bruta; no extrapolar números2024"
+    },
+    {
+      "variable": "energia",
+      "concepto": "Tenía mucha energía",
+      "codificacion_construida": {
+        "0": "No",
+        "1": "Sí"
+      },
+      "contribucion": "1 - valor",
+      "numero_pregunta_original_por_ronda": "Pendiente de concordancia bruta; no extrapolar números2024"
+    }
+  ],
+  "escala": [
+    0,
+    9
+  ],
+  "referencia_temporal": "Semana pasada",
+  "modalidades": [
+    1,
+    2
+  ],
+  "criterio_principal": "Nueve componentes válidos, suma coincidente con n_sint_depr",
+  "criterio_sensibilidad": "n_sint_depr válido del proveedor aunque componentes incompletos",
+  "auditoria_por_ronda": [
+    {
+      "ronda": 2001,
+      "N_directas_60": 6812,
+      "N_score_proveedor": 6671,
+      "N_nueve_completos": 6570,
+      "N_score_valido_componentes_incompletos": 101,
+      "N_discordancias_completos": 0,
+      "N_parciales_igual_suma_disponible": 101,
+      "estados_score": {
+        "válido observado": 6671,
+        ".r": 106,
+        ".d": 34,
+        ".i": 1
+      },
+      "componentes_faltantes": {
+        "deprimido": 84,
+        "esfuerzo": 104,
+        "intranquilo": 67,
+        "feliz": 89,
+        "solo": 82,
+        "disf_vida": 140,
+        "triste": 84,
+        "cansado": 86,
+        "energia": 123
+      }
+    },
+    {
+      "ronda": 2003,
+      "N_directas_60": 6970,
+      "N_score_proveedor": 6941,
+      "N_nueve_completos": 6886,
+      "N_score_valido_componentes_incompletos": 55,
+      "N_discordancias_completos": 0,
+      "N_parciales_igual_suma_disponible": 55,
+      "estados_score": {
+        "válido observado": 6941,
+        ".r": 27,
+        ".d": 2
+      },
+      "componentes_faltantes": {
+        "deprimido": 16,
+        "esfuerzo": 11,
+        "intranquilo": 7,
+        "feliz": 27,
+        "solo": 10,
+        "disf_vida": 37,
+        "triste": 7,
+        "cansado": 5,
+        "energia": 35
+      }
+    },
+    {
+      "ronda": 2012,
+      "N_directas_60": 8888,
+      "N_score_proveedor": 8808,
+      "N_nueve_completos": 8808,
+      "N_score_valido_componentes_incompletos": 0,
+      "N_discordancias_completos": 0,
+      "N_parciales_igual_suma_disponible": 0,
+      "estados_score": {
+        "válido observado": 8808,
+        ".r": 47,
+        ".d": 33
+      },
+      "componentes_faltantes": {
+        "deprimido": 13,
+        "esfuerzo": 18,
+        "intranquilo": 9,
+        "feliz": 23,
+        "solo": 8,
+        "disf_vida": 26,
+        "triste": 11,
+        "cansado": 5,
+        "energia": 23
+      }
+    },
+    {
+      "ronda": 2015,
+      "N_directas_60": 9640,
+      "N_score_proveedor": 9600,
+      "N_nueve_completos": 9543,
+      "N_score_valido_componentes_incompletos": 57,
+      "N_discordancias_completos": 0,
+      "N_parciales_igual_suma_disponible": 57,
+      "estados_score": {
+        "válido observado": 9600,
+        ".r": 37,
+        ".i": 2,
+        ".d": 1
+      },
+      "componentes_faltantes": {
+        "deprimido": 17,
+        "esfuerzo": 15,
+        "intranquilo": 5,
+        "feliz": 26,
+        "solo": 9,
+        "disf_vida": 34,
+        "triste": 12,
+        "cansado": 3,
+        "energia": 16
+      }
+    },
+    {
+      "ronda": 2018,
+      "N_directas_60": 9107,
+      "N_score_proveedor": 9055,
+      "N_nueve_completos": 9005,
+      "N_score_valido_componentes_incompletos": 50,
+      "N_discordancias_completos": 0,
+      "N_parciales_igual_suma_disponible": 50,
+      "estados_score": {
+        "válido observado": 9055,
+        ".r": 49,
+        ".d": 3
+      },
+      "componentes_faltantes": {
+        "deprimido": 13,
+        "esfuerzo": 20,
+        "intranquilo": 15,
+        "feliz": 28,
+        "solo": 21,
+        "disf_vida": 38,
+        "triste": 19,
+        "cansado": 15,
+        "energia": 37
+      }
+    },
+    {
+      "ronda": 2021,
+      "N_directas_60": 9424,
+      "N_score_proveedor": 9405,
+      "N_nueve_completos": 9381,
+      "N_score_valido_componentes_incompletos": 24,
+      "N_discordancias_completos": 0,
+      "N_parciales_igual_suma_disponible": 24,
+      "estados_score": {
+        "válido observado": 9405,
+        ".r": 18,
+        ".d": 1
+      },
+      "componentes_faltantes": {
+        "deprimido": 5,
+        "esfuerzo": 11,
+        "intranquilo": 5,
+        "feliz": 17,
+        "solo": 6,
+        "disf_vida": 19,
+        "triste": 5,
+        "cansado": 7,
+        "energia": 10
+      }
+    }
+  ],
+  "fuentes": [
+    {
+      "url": "https://www.mhasweb.org/Resources/DATA/Constructed_Imputed/Created_Variables/MHAS_Created_Variables_Descriptive_Document.pdf",
+      "paginas_pdf": [
+        8,
+        234,
+        235
+      ],
+      "limite": "Diagramas2024 usados como ejemplo conceptual, no homologación de códigos brutos2001–2021"
+    },
+    {
+      "url": "https://www.mhasweb.org/Resources/DATA/Constructed_Imputed/simpleMHAS/simpleMHAS_Descriptive_Document_%26_Codebook.pdf",
+      "version": "v2 enero2025 frente a archivo maestro v3 preservado"
+    }
+  ],
+  "faltantes": "No rellenar0. Par principal excluye componentes faltantes. Conteos parciales del proveedor empíricamente iguales a suma de componentes disponibles; no redefinirlos como completos. Tags se preservan.",
+  "solo": "0/1, directa, componente del mismo conteo; no corroboración independiente",
+  "inferencias_permitidas": "Cambios del conteo completo construido registrado entre visitas, descriptivos y condicionados; no cambios de diagnóstico ni efectos causales."
+}

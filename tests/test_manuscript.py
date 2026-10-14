@@ -1,10 +1,27 @@
 """Exportación segura, reconciliación y equivalencia con agregados sintéticos."""
 import pandas as pd
 import pytest
+from pathlib import Path
+import runpy
 
 from tesis_enasem.audit import build_audit
 from tesis_enasem.cp1_review import investigate_anomalies
 from tesis_enasem.manuscript import FrequencyCell, build_cp1_latex, render_latex_table
+
+
+@pytest.mark.parametrize('defined', [False, True])
+def test_formal_numeric_reference_cannot_disappear_silently(tmp_path, defined):
+    """TeX aceptaría una csname ausente como relax: el control debe detectarla."""
+    script = Path(__file__).resolve().parents[1] / 'scripts/validate_manuscript.py'
+    validate = runpy.run_path(str(script))['validate_manuscript']
+    (tmp_path / 'referencias.bib').write_text('')
+    definition = r'\expandafter\def\csname tesisdato:K.contraste\endcsname{-25}' if defined else ''
+    (tmp_path / 'main.tex').write_text(definition + r'\dato{K.contraste}')
+    if defined:
+        assert validate(tmp_path) == (1, 0, 0)
+    else:
+        with pytest.raises(ValueError, match='Cifras académicas sin agregado'):
+            validate(tmp_path)
 
 
 def synthetic_tables() -> dict[str, pd.DataFrame]:

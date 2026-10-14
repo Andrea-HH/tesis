@@ -3,6 +3,10 @@ from __future__ import annotations
 from tesis_enasem.project_paths import project_path, read_project_text, write_project_text
 
 import json
+import argparse
+from hashlib import sha256
+import re
+from typing import Any
 from pathlib import Path
 import shutil
 
@@ -133,6 +137,149 @@ def export() -> None:
     write_project_text(project_path('', 'manuscrito/capitulos/04_proteccion_economica.tex'), '% Generado desde J02 agregado; regenerar con export_protection_manuscript.py.\n\n'+'\n\n'.join(paragraphs)+'\n')
 
 
+def export_formal() -> None:
+    """Exporta cinco cuadros y cifras06–08 guardadas, sin nuevos análisis."""
+    interim=ROOT/'data/interim';tables=ROOT/'manuscrito/tablas'
+    paths={key:interim/folder/file for key,folder,file in [
+        ('coverage','cobertura_proteccion_economica','resultados.json'),
+        ('money','politicas_montos_suficiencia','resultados.json'),
+        ('synthesis','sintesis_proteccion_economica','resultados.json'),
+        ('transitions','transiciones_montos_pensionarios','resultados.json'),
+        ('precision','transiciones_montos_pensionarios','precision.json')]}
+    d={key:json.loads(path.read_text()) for key,path in paths.items()}
+    assert d['precision']['referencia']=='2026-09' and d['precision']['metodologia']['replicas']==9999
+    numbers: dict[str,str]={};products: list[dict[str,Any]]=[]
+    def n(value: float | int | None, decimals: int=2) -> str:
+        """Formatea sin cambiar magnitudes ni sustituir desconocidos por cero."""
+        return latex_number(value,decimals)
+    def put(key: str, value: float | int | None, decimals: int=2) -> None:
+        """Registra un dato exportado bajo una clave estable para la prosa."""
+        numbers[key]=r'\ensuremath{'+n(value,decimals)+'}'
+    def est(block: dict[str,Any], key: str, folio: bool=False) -> dict[str,Any]:
+        """Recupera el estimando exacto y su agrupamiento ya calculado."""
+        return next(x for x in block['sensibilidad_folio' if folio else 'principal']['estimaciones'] if x['id']==key)
+    def ci(z: dict[str,Any]) -> str:
+        """Permite saltar entre estimación e intervalo sin cortar sus números."""
+        return (r'\ensuremath{'+n(z['estimacion'])+r'}\ \allowbreak\ensuremath{['
+                +n(z['ic95'][0])+r';\,'+n(z['ic95'][1])+']}')
+    def pe(prefix: str, block: dict[str,Any], key: str) -> None:
+        """Exporta conjuntamente punto e intervalo del mismo contraste."""
+        z=est(block,key);put(prefix,z['estimacion']);numbers[prefix+'.IC']=ci(z)
+    def table(name: str, caption: str, headers: list[str], rows: list[list[str]],
+              note: str, widths: str | None=None) -> None:
+        """Escribe exclusivamente filas agregadas seleccionadas con nota y fuente."""
+        rows=[[re.sub(r'^([KA])(?=20\d\d)',r'\1 ',value) if isinstance(value,str) else value
+               for value in row] for row in rows]
+        for old,new in [('septiembre de2026','septiembre de 2026'),('K2003','K 2003'),
+                        ('K2012','K 2012'),('K2015','K 2015'),('A2001','A 2001'),
+                        ('A2015','A 2015'),('A2018','A 2018'),('H/M2012','H/M 2012'),
+                        ('y2015','y 2015'),('es8,888','es 8,888'),('por corte:8','por corte: 8'),
+                        ('de11,168','de 11,168')]:
+            caption=caption.replace(old,new);note=note.replace(old,new)
+        label='tab:tesis-'+name
+        lines=['% Exportado desde agregados; no editar cifras manualmente.',r'\begin{table}[!htbp]',r'\centering',
+            r'\caption{'+caption+r'}\label{'+label+'}',r'\footnotesize\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.25}',
+            r'\begin{tabularx}{\linewidth}{'+(widths or 'Y'*len(headers))+'}',r'\toprule',
+            ' & '.join(r'\textbf{'+h+'}' for h in headers)+r' \\',r'\midrule',
+            *[' & '.join(row)+r' \\' for row in rows],r'\bottomrule',r'\end{tabularx}',
+            r'\notacuadro{'+note+'}',r'\fuentecuadro{Elaboración propia, ENASEM; agregados de notebooks 06--08 y validación focalizada del informe general, secciones 10.2--10.7. Sin ponderación nacional.}',r'\end{table}','']
+        p=tables/('tesis_'+name+'.tex');p.write_text('\n'.join(lines))
+        products.append(dict(archivo=str(p.relative_to(ROOT)),etiqueta=label,titulo=caption,filas=len(rows),sha256=sha256(p.read_bytes()).hexdigest()))
+    rounds={r['ronda']:next(x for x in r['cobertura'] if x['dimension']=='General') for r in d['coverage']['rondas'] if r['analisis']=='principal'}
+    rows=[]
+    for year,z in rounds.items():
+        for key in ['N_elegible','N_KA_no','N_KA_ND_elegible','N_KA_si','N_KA_conocido']:put(str(year)+'.'+key,z[key],0)
+        for v in ['K','A','KA']:put(str(year)+'.'+v,z[v+'_pct'])
+        cells=[r'\ensuremath{'+n(z[v+'_pct'])+r'}\ \allowbreak\ensuremath{('+n(z['N_'+v+'_conocido'],0)+')}' for v in ['K','A','KA']]
+        rows.append([str(year),n(z['N_elegible'],0),*cells,r'/\allowbreak{}'.join(n(z['N_'+v+'_ND_elegible'],0) for v in ['K','A','KA']),n(z['N_KA_no'],0)])
+    table('cobertura','Recepción propia y estados de información por ronda, directas 60+, 2001--2021',
+        ['Ronda','N elegible',r'K: \% (N)',r'A: \% (N)',r'Unión: \% (N)','ND K/A/unión','Ambas negativas'],rows,
+        r'Cada tasa usa el N conocido entre paréntesis; ND se cuenta sobre el N elegible de la fila y no significa negativa. Unión: alguna afirmativa; no: ambas negativas. K y A se superponen. Las filas son cortes separados, no una serie homogénea a través de rupturas K2003--2012/K2015--2018 o A2001--2003/A2018--2021.',
+        r'p{.075\linewidth}p{.085\linewidth}YYYp{.135\linewidth}p{.13\linewidth}')
+    rows=[]
+    for z in d['money']['montos']:
+        if z['dimension']!='General' or z['grupo']!='Todas':continue
+        p=z['persona'];nom,real,lpi=[p[x] for x in ['nominal','real','lpi_pct']]
+        rows.append([str(z['ronda']),z['via'],n(z['N_receptores'],0),n(nom['N'],0)+r'/\allowbreak{}'+n(real['N'],0),n(nom['mediana']),n(real['mediana']),n(lpi['mediana'])+' ('+n(lpi['N'],0)+')'])
+        pre=f"{z['via']}.{z['ronda']}"
+        put(pre+'.N',real['N'],0);put(pre+'.Nominal',nom['mediana']);put(pre+'.Real',real['mediana'])
+    a5=next(x for x in d['synthesis']['A5'] if x['dimension']=='General');p=a5['declarado']
+    rows.append(['2021','A5',n(a5['N_personas'],0),n(p['nominal']['N'],0)+r'/\allowbreak{}'+n(p['real']['N'],0),n(p['nominal']['mediana']),n(p['real']['mediana']),n(p['lpi_pct']['mediana'])+' ('+n(p['lpi_pct']['N'],0)+')'])
+    for key,value in [('N',a5['N_personas']),('Valido',p['real']['N']),('Nominal',p['nominal']['mediana']),('Real',p['real']['mediana']),('LPI',p['lpi_pct']['mediana'])]:put('A5.'+key,value,0 if key in ['N','Valido'] else 2)
+    table('montos','Montos mensuales captados y referencia económica, directas 60+, 2001--2021',
+        ['Ronda','Vía','N recibe','N nom./real',r'Mediana nominal (\$)',r'Mediana real (\$)',r'Prestación/ LPI: mediana \% (N)'],rows,
+        r'K/A: suma personal observada parcial, no ingreso total. A5: evento explícito de vejez; no se añade de nuevo a A. Pesos reales de septiembre de 2026, precios del año calendario anterior a entrevista real. LPI por persona/mes del mismo periodo: la razón se calcula individualmente antes de resumir. En 2001/2003 solo localidades de al menos 100 mil habitantes tienen ámbito asignable; su N de LPI no es comparable con el total posterior. Una prestación bajo LPI no clasifica pobreza.',
+        r'p{.075\linewidth}p{.04\linewidth}YYYYY')
+    k,a=d['precision']['ventanas'];rows=[]
+    for z,key,label in [(k,'new_minus_cont','K2012--15: crudo'),(k,'adjusted_new_minus_cont','K: composición común'),(k,'ss_new_minus_cont','K: evidencia IMSS/ISSSTE'),(a,'new_minus_cont','A2015--18: crudo'),(a,'adjusted_new_minus_cont','A: composición común')]:
+        point=est(z,key+'_real');ns=list(z['soporte_ajuste']['N_en_soporte'].values()) if key.startswith('adjusted') else [point['N_grupo'],point['N_referencia']]
+        rows.append([label,'/'.join(n(v,0) for v in ns),ci(est(z,key+'_nominal')),ci(point)])
+    table('incorporacion','Nuevos menos continuos: diferencias de medianas mensuales en K2012--2015 y A2015--2018',
+        ['Vía y comparación','N nuevos/continuos',r'Nominal [IC95\%]',r'Real [IC95\%]'],rows,
+        r'Directas 60+ basales, destino directo y recepción conocida en ambas visitas; montos íntegros entre eventos captados en destino. IC percentiles por persona, 9,999 réplicas. Composición común: sexo, edad y escolaridad basales, soporte fijo, cuantiles de CDF. Evidencia IMSS/ISSSTE puede coexistir con otras instituciones: no reparte el importe ni identifica régimen. Pesos reales de septiembre de2026; no IC de diseño.')
+    rows=[]
+    for z in [k,a]:
+        for key,label in [('median_change_principal','Periodo principal'),('median_change_12m','Doce meses previos'),('median_change_ano_entrevista','Año de entrevista')]:
+            point=est(z,key);rows.append([z['via']+f"{z['origen']}--{z['destino']}",label,n(point['N_grupo'],0),ci(point),ci(est(z,key,True))])
+    point=est(k,'median_change_stable_ss');rows.append(['K2012--2015','Un evento; misma contingencia/institución',n(point['N_grupo'],0),ci(point),ci(est(k,'median_change_stable_ss',True))])
+    table('cambios','Mediana del cambio real individual entre receptores continuos',
+        ['Vía y periodo','Criterio','N pares',r'$\Delta$ [IC95\%]',r'Por folio [IC95\%]'],rows,
+        r'Montos mensuales íntegros captados en ambas visitas; cambio final menos inicial de cada persona. Pesos de septiembre de2026. Principal: promedio INPC del año anterior a entrevista real; alternativas conservan los mismos pares. Folio cunicah es sensibilidad, no hogar actual o UPM validada. La última fila cambia el universo y no acredita misma prestación administrativa. No se imputan pagos tras fallecimiento.')
+    sex=d['precision']['sexo2012_2015'];rows=[]
+    for label,keys in [('Cobertura K (pp)',['gap_K_2012','gap_K_2015','change_gap_K']),('Cobertura unión K/A (pp)',['gap_KA_2012','gap_KA_2015','change_gap_KA']),('Mediana K nominal (pesos/mes)',['gap_money_partial_2012_nominal','gap_money_partial_2015_nominal','change_gap_money_partial_nominal']),('Mediana K real (pesos/mes)',['gap_money_partial_2012_real','gap_money_partial_2015_real','change_gap_money_partial_real'])]:rows.append([label,*[ci(est(sex,key)) for key in keys]])
+    distributions=sex['principal']['distribuciones']
+    def pair_counts(via: str, year: int) -> str:
+        """Extrae ambos denominadores de sexo de los mismos agregados de precisión."""
+        return '/'.join(n(distributions[f'{via}_{year}_{group}']['N'],0) for group in ['men','women'])
+    money_counts=[]
+    for year in [2012,2015]:
+        money_counts.append('/'.join(n(next(x['N_monto'] for x in sex['denominadores_monto']
+            if (x['ronda'],x['sexo'],x['criterio'])==(year,group,'partial')),0) for group in ['Hombre','Mujer']))
+    denominator_note=(r'Cobertura K: N conocidos H/M en2012='+pair_counts('K',2012)
+        +' y2015='+pair_counts('K',2015)+r'; unión: '+pair_counts('KA',2012)+' y '+pair_counts('KA',2015)
+        +r'. Montos K parciales: '+' y '.join(money_counts)+r' entre receptores. Elegibles por corte: '
+        +n(rounds[2012]['N_elegible'],0)+'/'+n(rounds[2015]['N_elegible'],0)
+        +r'; ND no es negativa. Bootstrap conjunto de '+n(sex['principal']['N_personas'],0)+r' IDs ('
+        +n(sex['principal']['N_filas'],0)+r' personas-ronda), con todas sus visitas. IC puntuales condicionales; '
+        +r'pesos reales de septiembre de2026. El cambio de brecha entre cortes no es cambio individual.')
+    table('sexo','Brechas hombre--mujer y cambio de brecha, directas 60+, 2012--2015',
+        ['Indicador y unidad',r'Brecha2012 [IC95\%]',r'Brecha2015 [IC95\%]',r'Cambio2015--2012 [IC95\%]'],rows,
+        denominator_note)
+    for z,prefix in [(k,'K'),(a,'A')]:
+        put(prefix+'.Basal',z['N_basal'],0);put(prefix+'.Conocidos',z['N_pares_conocidos'],0)
+        for group,name in [('new','Nuevo'),('cont','Continuo')]:
+            for unit in ['real','nominal']:
+                x=z['principal']['distribuciones'][group+'_'+unit];put(prefix+'.'+name+'.'+unit,x['mediana']);put(prefix+'.'+name+'.N',x['N'],0)
+            x=next(x for x in z['faltantes'] if x['grupo']==('No→Sí' if group=='new' else 'Sí→Sí'))
+            put(prefix+'.'+name+'.Recepcion',x['N_recepcion'],0);put(prefix+'.'+name+'.Faltantes',x['N_sin_monto'],0)
+        for stem,key in [('Contraste','new_minus_cont_real'),('Ajustado','adjusted_new_minus_cont_real'),('Cambio','median_change_principal'),('Negativos','negative_change_pct'),('DoceMeses','median_change_12m'),('Anual','median_change_ano_entrevista')]:pe(prefix+'.'+stem,z,key)
+        b=z['cotas_cambio_individual'];put(prefix+'.Pares',b['N_validos'],0);put(prefix+'.SinCambio',b['N_faltantes'],0)
+        numbers[prefix+'.CotaCambio']=r'\ensuremath{['+n(b['inferior'])+r';\,'+n(b['superior'])+']}'
+        for q in ['q25','q75']:put(prefix+'.Cambio.'+q,z['principal']['distribuciones']['change_principal'][q])
+        for x in d['transitions']['transiciones']:
+            if (x['via'],x['origen'],x['destino'])!=(z['via'],z['origen'],z['destino']):continue
+            for stem,state in [('Muertes','Fallecido registrado'),('Ausencias','Ausente; vital desconocido'),('Sustitutos','Sustituto vivo; fuera del principal')]:put(prefix+'.'+stem,next(s['N'] for s in x['estados'] if s['estado']==state),0)
+        old=next(x for x in d['transitions']['analisis'] if x['via']==prefix);put(prefix+'.OtraVia',old['otra_via_previa']['N_otra_via_basal_si'],0)
+    pe('K.Institucional',k,'ss_new_minus_cont_real');pe('K.DiferenciaContrastes',k,'total_minus_ss_contrast_real')
+    for stem,key in [('K','change_gap_K'),('Union','change_gap_KA'),('Monto','change_gap_money_partial_real')]:pe('Sexo.'+stem,sex,key)
+    for z in d['synthesis']['perfiles2021']:
+        names={('educacion_grupo','0 años'):'SinEscuela',('educacion_grupo','≥10 años'):'AltaEscuela',('edad_06','60–64'):'EdadTemprana',('edad_06','70+'):'EdadMayor',('localidad_grupo','<100 mil habitantes'):'LocalidadMenor',('localidad_grupo','≥100 mil habitantes'):'LocalidadMayor'}
+        if (z['dimension'],z['grupo']) not in names:continue
+        pre='Perfil.'+names[(z['dimension'],z['grupo'])]
+        for stem,key in [('Union','KA_pct'),('UnionN','N_KA_conocido'),('UnionSi','N_KA_si')]:put(pre+'.'+stem,z['cobertura'][key],0 if stem in ['UnionN','UnionSi'] else 2)
+        put(pre+'.MontoN',z['K']['N_monto'],0);put(pre+'.Real',z['K']['real']['mediana']);put(pre+'.Nominal',z['K']['nominal']['mediana'])
+    macro_path=tables/'tesis_cifras.tex';macro_path.write_text('% Exportado desde agregados06--08; sin microdatos.\n'+'\n'.join(r'\expandafter\def\csname tesisdato:'+key+r'\endcsname{'+value+'}' for key,value in numbers.items())+'\n')
+    mp=interim/'migracion_proyecto.json';migration=json.loads(mp.read_text())
+    migration['redaccion_formal']['exportacion']={'fuentes':{str(p.relative_to(ROOT)):sha256(p.read_bytes()).hexdigest() for p in paths.values()},'cuadros':products,'macros':list(numbers),'sha_macros':sha256(macro_path.read_bytes()).hexdigest(),'analisis_nuevos':False}
+    mp.write_text(json.dumps(migration,ensure_ascii=False,indent=2)+'\n')
+    print('Redacción formal:',len(products),'cuadros;',len(numbers),'cifras/comparaciones exportadas; sin recálculo.')
+
+
 if __name__=='__main__':
-    export()
-    print('J02: cuatro tablas, cifras, dos figuras y narrativa desde agregados.')
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--formal',action='store_true',help='Exportar selección académica06--08 validada.')
+    args=parser.parse_args()
+    if args.formal:export_formal()
+    else:
+        export()
+        print('J02: cuatro tablas, cifras, dos figuras y narrativa desde agregados.')
