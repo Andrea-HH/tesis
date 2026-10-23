@@ -1,16 +1,18 @@
-# Tesis ENASEM — pensiones y protección económica (2001–2021)
+# Tesis ENASEM — ¿más cobertura significa menos desprotección?
 
 ## Pregunta y enfoque vigentes — 23 de octubre de 2026
 
-> ¿Qué tanto es consistente la expansión de las pensiones y los apoyos públicos con una reducción de las brechas de cobertura y de monto de la protección económica de los adultos mayores en México (ENASEM 2001–2021), qué grupos siguen sin vía propia de protección y cómo cambia esta lectura al considerar a quienes mueren o dejan de ser entrevistados?
+> ¿En qué medida la incorporación a prestaciones económicas observadas en ENASEM representa una ampliación de la protección propia de los adultos mayores previamente sin recepción identificada, y cómo varían los montos recibidos según sus condiciones socioeconómicas y las prestaciones que ya tenían?
 
-**Esta es la pregunta de investigación vigente**, desarrollada en [la introducción](manuscrito/capitulos/01_introduccion.tex) y evaluada en el [Informe General](resultados/INFORME_GENERAL.md). La propuesta inicial de *alerta temprana / early warning* y predicción de vulnerabilidad económica **ya no es el objetivo de la tesis ni una tarea pendiente de implementación**. Sus once notebooks se conservan exclusivamente como [antecedentes históricos](investigacion/notas/notebooks_historicos/README.md).
+**Título de trabajo:** *¿Más cobertura significa menos desprotección? Incorporación, complementariedad y desigualdades en las prestaciones económicas de los adultos mayores en México: evidencia longitudinal de ENASEM 2001–2021.*
 
-**Hipótesis de trabajo:** ampliar la cobertura no necesariamente implica reducir en la misma medida las desigualdades monetarias ni mejorar uniformemente el poder adquisitivo. Es una proposición parcialmente contrastada, no una conclusión general ni causal.
+**Eje de contribución:** distinguir (i) incorporación a K o A sin la otra vía propia declarada al inicio, (ii) incorporación como complemento de una vía propia ya declarada y (iii) continuidad, vinculando estos estados con las diferencias monetarias observadas y la selección de personas reentrevistadas. Esta pregunta se desarrolla en [la introducción](manuscrito/capitulos/01_introduccion.tex); los resultados disponibles están documentados en el [Informe General](resultados/INFORME_GENERAL.md).
 
-**Contribución candidata:** distinguir cobertura, incorporación de nuevos receptores, continuidad, montos nominales y reales, perfiles institucionales y selección por mortalidad/ausencia en las ventanas comparables de ENASEM. La evidencia de mayor detalle procede de los análisis 06–08 y la precisión de la sección 10.7 del informe. El estudio describe muestras analíticas; no acredita inferencia nacional, pobreza individual, ingreso total ni efectos de reformas.
+**Evidencia ya calculada:** en K 2012–2015, de 1,469 nuevos receptores observados, 1,090 negaban A al inicio, 376 la declaraban y 3 eran ND. En A 2015–2018, de 1,212 nuevos, 603 negaban K, 606 la declaraban y 3 eran ND. La diferencia K nuevos--continuos y su heterogeneidad institucional ya tienen contrastes monetarios auditados. Las dos ventanas no constituyen una serie homogénea ni identifican primeras altas de toda la vida.
 
-**Estado público:** el repositorio de GitHub contiene los notebooks 01 y 02, las funciones, el informe, las figuras y el manuscrito. Los notebooks independientes 03–08 se documentan en el informe y en scripts, pero sus archivos `.ipynb` no están publicados aquí. Las bases privadas y agregados locales de `data/` tampoco se distribuyen. Esta corrección del enfoque es documental; no recalcula resultados ni modifica microdatos.
+**Límite fundamental:** todavía no se estimó el cruce conjunto `desventaja socioeconómica basal × primera vía/complementariedad × montos de destino`. Por ello, la tesis no puede concluir que la expansión se concentre en quienes más lo necesitan, que reduzca pobreza o que produzca un efecto causal. El título es interrogativo; los resultados describen muestras no ponderadas para inferencia nacional. La historia de cobertura y brechas se conserva como antecedente y evidencia complementaria.
+
+**Estado del repositorio:** fuentes LaTeX alineadas al nuevo enfoque; **el PDF compilado previamente requiere recompilación** para reflejar estas ediciones. Los notebooks públicos 01–02, funciones, informe y figuras permanecen; los notebooks analíticos 03–08 se describen en el informe, pero sus `.ipynb` y agregados locales no están publicados aquí. El antiguo enfoque de alerta temprana y los once notebooks asociados son exclusivamente [históricos](investigacion/notas/notebooks_historicos/README.md).
 
 ## Dónde consultar el proyecto
 
