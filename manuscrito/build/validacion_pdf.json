@@ -40,6 +40,33 @@
     "manuscrito/build/revision/contacto_06.png",
     "manuscrito/build/revision/contacto_07.png"
   ],
-  "visual_review": "Pendiente de inspección humana o del asistente; no certificada por este script",
+  "visual_review": {
+    "estado": "Revisada por el asistente",
+    "fecha": "2026-10-23",
+    "pdf_sha256": "1c72ed8867c3da819df5dece7045c53d62e4d6014cc51cc048369575bfcc3d73",
+    "alcance": "Inspección detallada de portada, resumen, índice, inicio metodológico, las dos páginas del cuadro 3.1, recordatorio de resultados y limitaciones. Inspección de contactos de las 75 páginas para distribución general.",
+    "imagenes_inspeccionadas": [
+      "manuscrito/build/revision/comparabilidad_01.png",
+      "manuscrito/build/revision/comparabilidad_02.png",
+      "manuscrito/build/revision/comparabilidad_03.png",
+      "manuscrito/build/revision/comparabilidad_04.png",
+      "manuscrito/build/revision/contacto_01.png",
+      "manuscrito/build/revision/contacto_02.png",
+      "manuscrito/build/revision/contacto_03.png",
+      "manuscrito/build/revision/contacto_04.png",
+      "manuscrito/build/revision/contacto_05.png",
+      "manuscrito/build/revision/contacto_06.png",
+      "manuscrito/build/revision/contacto_07.png"
+    ],
+    "hallazgos": "Cuadro legible, diez filas presentes, encabezados repetidos, notas y fuentes visibles; sin recortes o solapamientos identificados en las páginas examinadas. No se certifican datos institucionales pendientes ni cierre de análisis estadísticos.",
+    "paginas_pdf_cuadro": [
+      27,
+      28
+    ],
+    "paginas_impresas_cuadro": [
+      20,
+      21
+    ]
+  },
   "statistical_recalculation": false
 }
