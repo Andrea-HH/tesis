@@ -1,6 +1,19 @@
 # Informe general acumulativo — tesis ENASEM
 
-**Actualización:** 14 de octubre de 2026.
+**Orientación editorial vigente, 23 de octubre de 2026.**
+La pregunta del manuscrito se centra ahora en distinguir incorporación a una
+primera vía propia K/A observada y complementariedad con otra vía ya declarada,
+y en describir diferencias monetarias y socioeconómicas.
+Los cálculos del informe fueron generados bajo la pregunta anterior de cobertura
+y montos; permanecen como evidencia auditada. Las menciones a «pregunta central»
+en los apartados originales pertenecen a su contexto de generación. Véase
+[la introducción vigente](../manuscrito/capitulos/01_introduccion.tex).
+La información existente cuantifica las nuevas recepciones con o sin la otra
+vía inicial, pero **no** ha comprobado focalización conjunta según desventaja
+basal y monto posterior. Esta actualización es editorial: no recalcula
+estimaciones ni altera microdatos.
+
+**Actualización del análisis acumulativo:** 14 de octubre de 2026.
 
 Exploración de pensiones, titularidad, apoyos gubernamentales, características socioeconómicas y seguimiento longitudinal, 2001–2021. Síntesis académica acumulativa, actualizada con los notebooks 03–08. La etapa06 examina la pregunta orientadora de la autora sobre brechas de cobertura/monto; la igualación y la suficiencia permanecen hipótesis por contrastar. La etapa 07 añade precios constantes de septiembre de 2026, umbrales históricos y cronología oficial, con resultados condicionados por definición y periodo monetario.
 
