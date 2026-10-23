@@ -44,7 +44,7 @@ for number, page in enumerate(doc, 1):
     for block in page.get_text("dict")["blocks"]:
         for line in block.get("lines", []):
             for span in line["spans"]:
-                x0, y0, x1, y1 = span["bbox"]
+                x0, y0, x1, y1 = (pymupdf.Rect(span["bbox"]) * page.rotation_matrix)
                 if span["text"].strip() and (x0 < -1 or y0 < -1 or x1 > page.rect.width + 1 or y1 > page.rect.height + 1):
                     outside.append({"page": number, "text": span["text"], "bbox": span["bbox"]})
 if outside:

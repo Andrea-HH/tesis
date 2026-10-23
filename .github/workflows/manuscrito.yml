@@ -15,7 +15,7 @@ concurrency:
   cancel-in-progress: true
 jobs:
   pdf:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
@@ -23,10 +23,13 @@ jobs:
         with:
           python-version: '3.11'
       - name: Instalar herramientas editoriales
+        timeout-minutes: 8
+        env:
+          DEBIAN_FRONTEND: noninteractive
         run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y --no-install-recommends latexmk texlive-latex-extra texlive-lang-spanish texlive-fonts-recommended lmodern
-          python -m pip install 'PyMuPDF>=1.24,<2'
+          sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=20 -o Acquire::https::Timeout=20 update -qq
+          sudo -E apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=20 -o Acquire::https::Timeout=20 install -y --no-install-recommends latexmk texlive-latex-extra texlive-lang-spanish texlive-fonts-recommended lmodern
+          python -m pip install --timeout 30 --retries 2 'PyMuPDF>=1.24,<2'
       - name: Validar fuentes y compilar sin microdatos
         env:
           PYTHONPATH: src
