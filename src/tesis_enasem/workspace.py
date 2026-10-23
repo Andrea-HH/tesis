@@ -20,7 +20,7 @@ SECTIONS = [
     ("longitudinal", "Trayectorias longitudinales y estados de observación"),
     ("hallazgos", "Hallazgos principales y relaciones complementarias"),
     ("limites", "Limitaciones metodológicas y comparabilidad"),
-    ("preguntas", "Posibles preguntas de investigación: ninguna adoptada"),
+    ("preguntas", "Antecedentes de preguntas exploratorias (no vigentes)"),
     ("pendientes", "Pendientes, avances y evidencia de migración"),
 ]
 
