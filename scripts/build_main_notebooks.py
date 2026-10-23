@@ -43,7 +43,7 @@ pd.set_option('display.max_columns', None)
         md("## 6. Validación real de la base existente\n\nLectura selectiva de las claves, sin mostrar IDs. No se ejecuta la integración ni se alteran datos."),
         code("from hashlib import sha256\nbase = PROCESSED_DIR/'enasem_integrada_provisional.parquet'\nassert sha256(base.read_bytes()).hexdigest() == audit['hash_parquet']\nkeys = pd.read_parquet(base, columns=['id','ronda'])\nassert len(keys) == audit['N_registros'] == 99676\nassert keys['id'].nunique() == audit['N_personas'] == 27171\nassert not keys.duplicated(['id','ronda']).any()\ndisplay(pd.DataFrame([{'registros':len(keys),'personas':keys.id.nunique(),'duplicados':0,'sha_preservado':True}]))\ndisplay_section('validacion', BUSCAR)"),
         md("## 7. Resultado y reproducción\n\nLa base es `data/processed/enasem_integrada_provisional.parquet`; el manifiesto privado describe la versión y la procedencia. `python scripts/run_longitudinal_integration.py` reconstruye el producto solo cuando sea necesario y autorizado; la ejecución ordinaria reutiliza la base. J1/2001, punteros, 33 firmas 2015, no enlaces, pesos/precios y homologaciones pendientes permanecen documentados. No es una clasificación pensionaria definitiva.")]
-    eda = [md("# 02 · EDA completo ENASEM\n\nTodos los bloques exploratorios existentes, con sus poblaciones independientes, comparaciones, pensiones/apoyos, bivariados, trivariados y seguimiento. Sin modelos, outcomes o preguntas definitivas. La ejecución lee agregados y figuras guardados.\n\n" + "\n".join(f"- [{i}. {title}](#{key})" for i, (key,title) in enumerate(SECTIONS[3:],1))), code(setup),
+    eda = [md("# 02 · EDA completo ENASEM\n\nTodos los bloques exploratorios existentes, con sus poblaciones independientes, comparaciones, pensiones/apoyos, bivariados, trivariados y seguimiento. La pregunta de la tesis vigente es sobre cobertura y montos de protección económica; este notebook reúne evidencia descriptiva previa, sin modelos predictivos. La ejecución lee agregados y figuras guardados.\n\n" + "\n".join(f"- [{i}. {title}](#{key})" for i, (key,title) in enumerate(SECTIONS[3:],1))), code(setup),
            md("## Configuración y filtros poblacionales\n\nCP1 conserva todas las edades/modalidades. El EDA pensionario utiliza 60+ por visita; los EDA independientes de ENASEMsimple y K usan sus universos originales. No se suman poblaciones ni se filtra el maestro permanentemente. `PopulationSpec` centraliza la selección."),
            code("sample_spec = PopulationSpec(minimum_age=60)\nexploratory = load_json('docs/eda/pensiones_exploratorio_v1/resultados.json')\nassert exploratory['poblacion']['N_personas_ronda_60'] == 56004\nassert exploratory['poblacion']['N_personas_60'] == 18754\ndisplay(pd.DataFrame([exploratory['poblacion']]))"),
            md("## Disponibilidad y búsqueda de variables\n\nEl diccionario integrado y el mapa conservan 8,668 columnas; no son 8,668 conceptos validados. La búsqueda reúne definición, procedencia, onda, etiquetas, titularidad y comparabilidad. Las 429 fichas independientes están consolidadas, sin perder sus resultados."),
@@ -51,7 +51,15 @@ pd.set_option('display.max_columns', None)
            md("## Comparaciones entre rondas\n\nLa comparación de seis muestras transversales no es una trayectoria individual. Montos nominales no son crecimiento real; la escala de localidad es <100 mil/≥100 mil. Las gráficas BrBG originales se preservan."),
            code("display(pd.DataFrame(exploratory['comparativos_univariados']).T)")]
     for key, title in SECTIONS[3:]:
-        eda += [md(f'<a id="{key}"></a>\n\n## {title}\n\nSección independiente: puede ejecutarse después de la configuración sin recalcular otros bloques. `BUSCAR` limita la lectura, no cambia los datos ni denominadores.'), code(f"display_section('{key}', BUSCAR)")]
+        note = ("Esta sección conserva preguntas exploratorias de etapas anteriores "
+                "solo como antecedentes. La pregunta vigente sobre pensiones y "
+                "protección económica se documenta en el README y manuscrito. "
+                "No reactiva modelos de alerta temprana."
+                if key == "preguntas" else
+                "Sección independiente: puede ejecutarse después de la configuración "
+                "sin recalcular otros bloques. `BUSCAR` limita la lectura, "
+                "no cambia los datos ni denominadores.")
+        eda += [md(f'<a id="{key}"></a>\n\n## {title}\n\n{note}'), code(f"display_section('{key}', BUSCAR)")]
     for name, cells in [("01_INTEGRACION", integration), ("02_EDA_COMPLETO", eda)]:
         if kind != "all" and kind not in name:
             continue
