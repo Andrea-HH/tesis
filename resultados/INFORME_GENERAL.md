@@ -1,5 +1,7 @@
 # Informe general acumulativo — tesis ENASEM
 
+**Edición pública revisada10:** originales íntegros y PDF previo bajo acceso privado. Los detalles retirados no se utilizan para sostener conclusiones. La versión pública no acredita saneamiento del historial de GitHub.
+
 **Orientación editorial vigente, 23 de octubre de 2026.**
 La pregunta del manuscrito se centra ahora en distinguir incorporación a una
 primera vía propia K/A observada y complementariedad con otra vía ya declarada,
@@ -15,7 +17,7 @@ estimaciones ni altera microdatos.
 
 **Actualización del análisis acumulativo:** 14 de octubre de 2026.
 
-Exploración de pensiones, titularidad, apoyos gubernamentales, características socioeconómicas y seguimiento longitudinal, 2001–2021. Síntesis académica acumulativa, actualizada con los notebooks 03–08. La etapa06 examina la pregunta orientadora de la autora sobre brechas de cobertura/monto; la igualación y la suficiencia permanecen hipótesis por contrastar. La etapa 07 añade precios constantes de septiembre de 2026, umbrales históricos y cronología oficial, con resultados condicionados por definición y periodo monetario.
+Exploración de pensiones, titularidad, apoyos gubernamentales, características socioeconómicas y seguimiento longitudinal, 2001–2021. Síntesis académica acumulativa, actualizada con los notebooks 03–08. La etapa 06 examina la pregunta orientadora de la autora sobre brechas de cobertura/monto; la igualación y la suficiencia permanecen hipótesis por contrastar. La etapa 07 añade precios constantes de septiembre de 2026, umbrales históricos y cronología oficial, con resultados condicionados por definición y periodo monetario.
 
 El Markdown es la única fuente editable; el PDF es una versión generada. Los notebooks conservan la exploración exhaustiva. La selección prioriza relevancia conceptual, contrastes entre grupos, comparabilidad y calidad; no se basa en significancia estadística. Se muestran también asociaciones débiles y rupturas de medición.
 
@@ -175,7 +177,7 @@ En 2001, el puente enlaza por `cunicah/codent01` y aporta `unhhid`; en 2003 enla
 
 **Procedencia:** ENASEM, agregados conservados en [cp1_ejecucion.json](../data/interim/cp1/cp1_ejecucion.json); notebook [02_EDA_COMPLETO](../notebooks/02_EDA_COMPLETO.ipynb), bloque EDA pensionario.
 
-La pérdida de respuesta sustantiva debe distinguirse de la falta de enlace y de no aplicabilidad. Se conservan tags Stata, NR/NS y banderas específicas. J1/2001, punteros discordantes y las 33 firmas candidatas de 2015 permanecen pendientes: no se corrigen automáticamente ni se borran por coincidencia de montos. Los EDA independientes de ENASEMsimple y K2021 conservan sus universos originales; sus resultados y 429 fichas siguen consultables en [fichas variables](../diccionarios/fichas_variables.json) desde los bloques de fuentes independientes del notebook 02. Seleccionar aquí resultados pensionarios no elimina aquellos análisis.
+La pérdida de respuesta sustantiva debe distinguirse de la falta de enlace y de no aplicabilidad. Se conservan tags Stata, NR/NS y banderas específicas. J1/2001, punteros discordantes y las 33 firmas candidatas de 2015 permanecen pendientes: no se corrigen automáticamente ni se borran por coincidencia de montos. Los EDA independientes de ENASEMsimple y K 2021 conservan sus universos originales; sus resultados y 429 fichas siguen consultables en [fichas variables](../diccionarios/fichas_variables.json) desde los bloques de fuentes independientes del notebook 02. Seleccionar aquí resultados pensionarios no elimina aquellos análisis.
 
 <a id="seccion-pensiones"></a>
 
@@ -751,7 +753,7 @@ V de Cramér entre pensión propia y la característica estudiada oscila de 0.14
 
 **Interpretación y alcance:** El patrimonio pertenece al entrevistado y su cónyuge, si lo hay; los registros no son hogares distintos. Se conservan ceros y negativos. Los contrastes son internos a la ronda; no se calcula crecimiento real ni vulnerabilidad.
 
-La distribución se condiciona por escolaridad y rama pensionaria a la vez. Extremos de medianas dentro de escolaridad: 0 años: Solo cónyuge 774,788.12 (N=102) frente a Ambas negativas K 420,000.00 (N=1,277); 1–5 años: Solo cónyuge 807,000.00 (N=283) frente a Ambas negativas K 479,158.16 (N=1,974); 6 años: Solo cónyuge 841,674.31 (N=298) frente a Ambas negativas K 523,736.81 (N=1,151); 7–9 años: Ambas 1,550,000.00 (N=114) frente a Ambas negativas K 676,000.00 (N=723); Desconocido: Ambas 1,961,276.62 (N=5) frente a Ambas negativas K 732,289.41 (N=84); ≥10 años: Ambas 1,800,000.00 (N=207) frente a Ambas negativas K 942,635.25 (N=503).
+La auditoría 10 identifica aquí cruces escasos, incluido un perfil ND menor de 10, y una selección retrospectiva de extremos de mediana. Esa comparación no se conserva como evidencia de necesidad. Se reformula a escolaridad 0–5/6+ y titularidad conocida, aplicando la misma regla a todos los grupos. Los conteos de exclusión y el cuadro corregido aparecen en 10.9; la figura 21 se regenera sin ramas desconocidas y sin grupos no revisados.
 
 Spearman imp_neto–monto_k_propio_mensual_observado_parcial: ρ=0.2643, N válido=3,347; asociación de rangos dentro de ronda.
 
@@ -907,7 +909,7 @@ La diferencia media de síntomas pasa de −0.434 a −0.071 en el mismo soporte
 | apoyo_propio | 2015 | 2018 | Sí | Mismo donativo adicional, dinero/especie; 2018 desglosa hasta dos instituciones. Solo recepción agregada condicionada. |
 | apoyo_propio | 2018 | 2021 | No | 2021 incorpora explícitamente vejez en opción 5 y cambia programas; no interpretar un inicio como expansión causal. |
 
-**Nota:** Comparabilidad condicionada no es homologación definitiva. K2003–2012/K2015–2018 y A2001–2003/A2018–2021 requieren especial cautela.
+**Nota:** Comparabilidad condicionada no es homologación definitiva. K 2003–2012/K 2015–2018 y A 2001–2003/A 2018–2021 requieren especial cautela.
 
 **Procedencia:** ENASEM, agregados conservados en [resultados.json](../data/interim/proteccion_economica/resultados.json); notebook [02_EDA_COMPLETO](../notebooks/02_EDA_COMPLETO.ipynb), bloque EDA pensionario.
 
@@ -975,9 +977,9 @@ Perfil de origen: Hombre: N origen 4,464, fallecidos 712, ausentes 206, recepci�
 
 **Pregunta exploratoria:** ¿cómo se relacionan los cambios de síntomas de las mismas personas con sus respuestas K registradas durante 2001–2021? Se integran población por ronda, los cinco pares consecutivos y trayectorias de múltiples visitas. No se adopta pregunta definitiva, causalidad ni predicción.
 
-**Contrato CES-D y estado:** comparación operacional condicionada de productos construidos. Se verificaron nueve componentes0/1: deprimido, esfuerzo, sueño intranquilo, feliz, solo, disfrute de vida, triste, cansado y energía; los tres componentes positivos se invierten. En casos completos, la suma coincide exactamente con n_sint_depr en todas las rondas. La auditoría60+ detecta 287 conteos válidos del proveedor con componentes incompletos: el análisis principal exige nueve completos y la sensibilidad conserva el proveedor. No se rellenan faltantes ni se altera la base. Literalidad/números de preguntas brutas e invariancia psicométrica no quedan certificados por esta reconciliación; documentación actual ejemplifica2024. [Contrato y evidencia](../diccionarios/contrato_longitudinal_salud_mental.json).
+**Contrato CES-D y estado:** comparación operacional condicionada de productos construidos. Se verificaron nueve componentes0/1: deprimido, esfuerzo, sueño intranquilo, feliz, solo, disfrute de vida, triste, cansado y energía; los tres componentes positivos se invierten. En casos completos, la suma coincide exactamente con n_sint_depr en todas las rondas. La auditoría 60+ detecta 287 conteos válidos del proveedor con componentes incompletos: el análisis principal exige nueve completos y la sensibilidad conserva el proveedor. No se rellenan faltantes ni se altera la base. Literalidad/números de preguntas brutas e invariancia psicométrica no quedan certificados por esta reconciliación; documentación actual ejemplifica2024. [Contrato y evidencia](../diccionarios/contrato_longitudinal_salud_mental.json).
 
-**Pensión:** comparabilidad condicionada2001–2003,2012–2015,2018–2021; rupturas2003–2012 y2015–2018. Sí/sí y no/no solo describen extremos; no/sí no identifica fecha o primer acceso. En rupturas son patrones de respuestas, no altas/bajas homologadas.
+**Pensión:** comparabilidad condicionada2001–2003,2012–2015,2018–2021; rupturas2003–2012 y 2015–2018. Sí/sí y no/no solo describen extremos; no/sí no identifica fecha o primer acceso. En rupturas son patrones de respuestas, no altas/bajas homologadas.
 
 **Figura 26. Seis rondas: composición observada, no cambios de las mismas personas**
 
@@ -1007,7 +1009,7 @@ Perfil de origen: Hombre: N origen 4,464, fallecidos 712, ausentes 206, recepci�
 
 **Fuente y procedencia:** ENASEM; [04_TRAYECTORIAS_PENSIONES_SALUD](../notebooks/04_TRAYECTORIAS_PENSIONES_SALUD.ipynb); [agregados completos](../data/interim/trayectorias_pensiones_salud/resultados.json). Bloque 6.
 
-Los conteos de la auditoría anterior se reproducen con el proveedor; la reducción del principal deriva de la nueva restricción de componentes completos. Una persona registrada sobre fallecido en2012 reaparece viva después: anomalía preservada. No se interpreta toda ausencia como muerte o pérdida definitiva.
+Los conteos de la auditoría anterior se reproducen con el proveedor; la reducción del principal deriva de la nueva restricción de componentes completos. Una persona registrada sobre fallecido en 2012 reaparece viva después: anomalía preservada. No se interpreta toda ausencia como muerte o pérdida definitiva.
 
 **Cuadro 18. Cinco intervalos: cambios pareados de síntomas y comparabilidad**
 
@@ -1052,7 +1054,7 @@ Los conteos de la auditoría anterior se reproducen con el proveedor; la reducci
 | 2018–2021 | No→Sí | 513 | -0.043 | 0.000 | [-0.273, 0.187] |
 | 2018–2021 | Sí→No | 368 | -0.217 | 0.000 | [-0.507, 0.072] |
 
-**Nota:** Los cuatro patrones suman N principal de cada intervalo. Diferencias entre medias no equivalen a efectos. Matrices con % por fila y total están en notebook; rupturas2003–2012 y2015–2018 no homologadas.
+**Nota:** Los cuatro patrones suman N principal de cada intervalo. Diferencias entre medias no equivalen a efectos. Matrices con % por fila y total están en notebook; rupturas2003–2012 y 2015–2018 no homologadas.
 
 **Fuente y procedencia:** ENASEM; [04_TRAYECTORIAS_PENSIONES_SALUD](../notebooks/04_TRAYECTORIAS_PENSIONES_SALUD.ipynb); [agregados completos](../data/interim/trayectorias_pensiones_salud/resultados.json). Bloque 8–10.
 
@@ -1101,7 +1103,7 @@ Los conteos de la auditoría anterior se reproducen con el proveedor; la reducci
 | 5 | 1428 | 1218 | 1198 |
 | 6 | 1528 | 910 | 887 |
 
-**Nota:** Cada columna cuenta personas por su propio número de visitas. Personas con0/1 mediciones se conservan en cobertura. No sumar columnas ni pares como personas distintas. Universo por visita60+, no cohorte basal única.
+**Nota:** Cada columna cuenta personas por su propio número de visitas. Personas con 0/1 mediciones se conservan en cobertura. No sumar columnas ni pares como personas distintas. Universo por visita60+, no cohorte basal única.
 
 **Fuente y procedencia:** ENASEM; [04_TRAYECTORIAS_PENSIONES_SALUD](../notebooks/04_TRAYECTORIAS_PENSIONES_SALUD.ipynb); [agregados completos](../data/interim/trayectorias_pensiones_salud/resultados.json). Bloque 3,11–14.
 
@@ -1143,7 +1145,7 @@ Los conteos de la auditoría anterior se reproducen con el proveedor; la reducci
 
 2018–2021: N principal=6,887, frente a 6,939 con conteo del proveedor. Cambio medio=-0.017 síntomas; aumenta 39.6%, disminuye 40.5% y permanece igual 19.9%. No→Sí: N=513, cambio -0.043; No→No: N=3,950, cambio +0.005. Comparabilidad K condicionada.
 
-Composición y cambio individual: la media disponible de nueve síntomas completos pasa de 3.807 en2001 (N=6,570) a 3.138 en2021 (N=9,381), mientras 4 de cinco intervalos tienen cambios pareados medios positivos pequeños. Universos de visitas disponibles y pares conK conocida son diferentes. El descenso agregado no demuestra mejoría de las mismas personas; entrada, selección, supervivencia y criterio de disponibilidad pueden intervenir, sin identificar aquí su contribución causal.
+Composición y cambio individual: la media disponible de nueve síntomas completos pasa de 3.807 en 2001 (N=6,570) a 3.138 en 2021 (N=9,381), mientras 4 de cinco intervalos tienen cambios pareados medios positivos pequeños. Universos de visitas disponibles y pares conK conocida son diferentes. El descenso agregado no demuestra mejoría de las mismas personas; entrada, selección, supervivencia y criterio de disponibilidad pueden intervenir, sin identificar aquí su contribución causal.
 
 Multivisita: 14,069 personas tienen al menos dos mediciones completas; 6,357 muestran cambios de dirección y 1,104 el mismo conteo en sus visitas. La media pequeña del cambio no demuestra estabilidad de todas las personas. Las categorías son retrospectivas y el número de oportunidades para fluctuar aumenta con las mediciones.
 
@@ -1165,11 +1167,11 @@ La comparación transversal del notebook03 y los cambios pareados responden preg
 | 2015–2018 | 274 | 0.281 | 321 | -0.097 |
 | 2018–2021 | 224 | -0.018 | 289 | -0.062 |
 
-**Nota:** Cambio medio de síntomas, no diferencia de efectos. Los signos varían por periodo; ruptura2003–2012 y2015–2018. IC y demás patrones/estratos en notebook.
+**Nota:** Cambio medio de síntomas, no diferencia de efectos. Los signos varían por periodo; ruptura2003–2012 y 2015–2018. IC y demás patrones/estratos en notebook.
 
 **Fuente y procedencia:** ENASEM; [04_TRAYECTORIAS_PENSIONES_SALUD](../notebooks/04_TRAYECTORIAS_PENSIONES_SALUD.ipynb); [agregados completos](../data/interim/trayectorias_pensiones_salud/resultados.json). Bloque 16.
 
-En2012–2015, No→Sí de80+ registra cambio medio+0.529 síntomas (N=136); no permite separar edad, cohorte y periodo. Escolaridad no presenta un gradiente uniforme en los cinco intervalos; conservar inconsistencias es parte del resultado.
+En2012–2015, No→Sí de 80+ registra cambio medio+0.529 síntomas (N=136); no permite separar edad, cohorte y periodo. Escolaridad no presenta un gradiente uniforme en los cinco intervalos; conservar inconsistencias es parte del resultado.
 
 **Cuadro 24. Selección: edad y síntomas iniciales según seguimiento**
 
@@ -1357,7 +1359,7 @@ En No→Sí, la soledad registrada aumenta en los cinco intervalos, aunque el ca
 
 **Fuente y procedencia:** ENASEM; [05_PENSIONES_MORTALIDAD_SELECCION](../notebooks/05_PENSIONES_MORTALIDAD_SELECCION.ipynb); [agregados](../data/interim/pensiones_mortalidad_seleccion/resultados.json). Bloque 8–9.
 
-**Reconciliación04:** se reproducen13,570personas con pares de salud mental/K y14,069con≥2mediciones de síntomas:13,560comunes,10solo pares y509solo multimedición. Las10 tienen edad final<60 registrada, que se conserva; no son exclusiones corregidas automáticamente. No interpretar diferencia neta como pérdidas.
+**Reconciliación04:** se reproducen13,570personas con pares de salud mental/K y 14,069con≥2mediciones de síntomas:13,560comunes,10solo pares y 509solo multimedición. Las10 tienen edad final<60 registrada, que se conserva; no son exclusiones corregidas automáticamente. No interpretar diferencia neta como pérdidas.
 
 **Figura 32. Composición por visita frente a subconjuntos observados repetidamente**
 
@@ -1414,7 +1416,7 @@ En No→Sí, la soledad registrada aumenta en los cinco intervalos, aunque el ca
 
 **Fuente y procedencia:** ENASEM; [05_PENSIONES_MORTALIDAD_SELECCION](../notebooks/05_PENSIONES_MORTALIDAD_SELECCION.ipynb); [agregados](../data/interim/pensiones_mortalidad_seleccion/resultados.json). Bloque 16.
 
-**Comparabilidad adicional:** [documentación cognitiva oficial](https://www.mhasweb.org/resources/DOCUMENTS/Constructed_Imputed/MHAS_2018_2021_Cognitive_Function_Measures_Scoring_and_Classification.pdf) indica restas3 desde20 en2021 en lugar de restas7 desde100. Se bloquea el cambio2018–2021 de serial7; nombre/rango común no demuestra equivalencia. Orientación falta2001. Aprendizaje/evocación conservan flags y sensibilidad no imputada. No TICS ni índice nuevo.
+**Comparabilidad adicional:** [documentación cognitiva oficial](https://www.mhasweb.org/resources/DOCUMENTS/Constructed_Imputed/MHAS_2018_2021_Cognitive_Function_Measures_Scoring_and_Classification.pdf) indica restas3 desde20 en 2021 en lugar de restas7 desde100. Se bloquea el cambio2018–2021 de serial7; nombre/rango común no demuestra equivalencia. Orientación falta2001. Aprendizaje/evocación conservan flags y sensibilidad no imputada. No TICS ni índice nuevo.
 
 **Economía:** se estudia cobertura y selección de patrimonio, ocupación y estado conyugal. No cambios monetarios reales por unidades/deflactación pendientes ni diferencias numéricas de categorías. Stock compartido no es ingreso. A y cónyuge se analizan como ramas complementarias de universo propio.
 
@@ -1436,9 +1438,9 @@ La estandarización de valores basales permite cuantificar cambios de composici�
 
 Sin estado vital de todos los ausentes y fechas de defunción verificadas no se implementan Kaplan–Meier, Cox ni IPW. Los límites lógicos y escenarios son sensibilidades, no estimaciones corregidas. Serial2018–2021 bloqueado por cambio de tarea; patrimonio sin cambios reales por homologación monetaria pendiente.
 
-Aprendizaje verbal: media disponible 4.384 en2001 (N=6,704) y 4.753 en2021 (N=9,424); cambios pareados del indicador, sin exigirK: 2001–2003: -0.499 (N=5,576); 2003–2012: -0.084 (N=3,814); 2012–2015: -0.101 (N=7,381); 2015–2018: -0.121 (N=7,323); 2018–2021: -0.041 (N=7,044). Poblaciones disponibles y pares son distintos; no sumar cambios como trayectoria completa ni atribuir divergencia exclusivamente a mortalidad. Cognición conserva incertidumbre de imputación/instrumento; AIVD mide limitaciones declaradas.
+Aprendizaje verbal: media disponible 4.384 en 2001 (N=6,704) y 4.753 en 2021 (N=9,424); cambios pareados del indicador, sin exigirK: 2001–2003: -0.499 (N=5,576); 2003–2012: -0.084 (N=3,814); 2012–2015: -0.101 (N=7,381); 2015–2018: -0.121 (N=7,323); 2018–2021: -0.041 (N=7,044). Poblaciones disponibles y pares son distintos; no sumar cambios como trayectoria completa ni atribuir divergencia exclusivamente a mortalidad. Cognición conserva incertidumbre de imputación/instrumento; AIVD mide limitaciones declaradas.
 
-AIVD: media disponible 0.234 en2001 (N=6,702) y 0.268 en2021 (N=9,413); cambios pareados del indicador, sin exigirK: 2001–2003: +0.057 (N=5,550); 2003–2012: +0.286 (N=3,803); 2012–2015: +0.127 (N=7,348); 2015–2018: +0.080 (N=7,092); 2018–2021: +0.135 (N=6,879). Poblaciones disponibles y pares son distintos; no sumar cambios como trayectoria completa ni atribuir divergencia exclusivamente a mortalidad. Cognición conserva incertidumbre de imputación/instrumento; AIVD mide limitaciones declaradas.
+AIVD: media disponible 0.234 en 2001 (N=6,702) y 0.268 en 2021 (N=9,413); cambios pareados del indicador, sin exigirK: 2001–2003: +0.057 (N=5,550); 2003–2012: +0.286 (N=3,803); 2012–2015: +0.127 (N=7,348); 2015–2018: +0.080 (N=7,092); 2018–2021: +0.135 (N=6,879). Poblaciones disponibles y pares son distintos; no sumar cambios como trayectoria completa ni atribuir divergencia exclusivamente a mortalidad. Cognición conserva incertidumbre de imputación/instrumento; AIVD mide limitaciones declaradas.
 
 **Estado y próximos pasos:** ejecución y reconciliación operacional verificadas; interpretación exploratoria condicionada. IPW no implementada por incertidumbre vital y selección de modalidad/medición; pesos, extremos, ESS y balance no se declararon validados. Requiere seguimiento completo, historial basal, positividad y dependencia por persona/hogar. No reconstruir síntomas después de muerte. Aportación: distinguir condiciones basales, supervivencia documentada y proceso de medición multidimensional antes de elegir enfoque definitivo.
 
@@ -1454,7 +1456,7 @@ Los contrastes por sexo, escolaridad, actividad y tamaño de localidad describen
 
 La dimensión longitudinal añade estados de observación que las comparaciones transversales no recuperan. Seguir los mismos IDs permite formular preguntas sobre continuidad y cambio, pero las rupturas documentales, ausencia, muerte y ND limitan la atribución de transiciones. Ningún contraste presentado constituye un efecto de política o una prueba causal.
 
-La autora orienta la etapa06 hacia brechas de cobertura y monto, con selección como sensibilidad. Esto no establece una hipótesis confirmada, efecto causal ni modelo predictivo. Las explicaciones laborales, familiares e institucionales permanecen hipótesis para contrastar con documentación y diseños futuros autorizados.
+La autora orienta la etapa 06 hacia brechas de cobertura y monto, con selección como sensibilidad. Esto no establece una hipótesis confirmada, efecto causal ni modelo predictivo. Las explicaciones laborales, familiares e institucionales permanecen hipótesis para contrastar con documentación y diseños futuros autorizados.
 
 <!-- BEGIN salud_integracion -->
 
@@ -1719,7 +1721,7 @@ La hipótesis de acceso más igualado que monto o suficiencia se contrasta por v
 
 **Población y estimandos.** Principal: personas vivas 60+ por visita con entrevista directa, sin exigir panel balanceado. Se conservan respuestas válidas por sustituto en sensibilidad. Montos originales mensuales por evento y sumas parciales por persona, separadas entre K propia, A propia y cónyuge contextual. K no prueba contributividad; A incluye valoraciones de especie y distintos programas. No se suman K+A, originales+imputados, instituciones ni personas entre rondas. Las cifras describen muestra no ponderada; diseño y pesos no validados.
 
-**Fecha y precios.** Se verificó y descargó la serie mensual oficial INEGI 865541, base segunda quincena julio 2018=100, actualización 2024:321 meses enero 2000–septiembre 2026. **Referencia común: septiembre 2026, INPC 146.075**, último mes mensual disponible al consultar 14 octubre 2026, cotejado con el aviso INEGI publicado DOF 9 octubre. Fórmula: **monto constante = nominal ×146.075 / INPC del periodo original**. [Serie oficial](https://www.inegi.org.mx/app/indicesdeprecios/Estructura.aspx?idEstructura=112001700010), [aviso INEGI](https://sidof.segob.gob.mx/notas/docFuente/5800864).
+**Fecha y precios.** Se verificó y descargó la serie mensual oficial INEGI 865541, base segunda quincena julio 2018=100, actualización 2024: 321 meses enero 2000–septiembre 2026. **Referencia común: septiembre 2026, INPC 146.075**, último mes mensual disponible al consultar 14 octubre 2026, cotejado con el aviso INEGI publicado DOF 9 octubre. Fórmula: **monto constante = nominal ×146.075 / INPC del periodo original**. [Serie oficial](https://www.inegi.org.mx/app/indicesdeprecios/Estructura.aspx?idEstructura=112001700010), [aviso INEGI](https://sidof.segob.gob.mx/notas/docFuente/5800864).
 
 Las preguntas dicen año pasado y mes normal, sin identificar mes de pago. Principal: promedio del año calendario anterior al **año real de entrevista**, criterio explícito de valoración, no fecha observada. Sensibilidades: doce meses anteriores al mes real, promedio del año de entrevista y extremos mensuales del año previo. En ronda 2021 hay 6794 directas entrevistadas 2021 y 2630 en 2022; sus precios principales son 2020 y 2021 respectivamente. Ronda 2012 tiene 12 directas en 2013 y una sin año válido; ronda 2018 tiene 202 directas en 2019. Las entrevistas tardías conservan su ronda y se valoran según su fecha real. No se inventan flujos ni fechas de pago.
 
@@ -1898,10 +1900,10 @@ Las líneas históricas cubren todos los periodos 2000–2022 usados. Para 2012/
 | 2012 | 70+, sin ingresos de jubilación/pensión; alcance nacional, incorporación de localidades mayores 30 mil y dispersión electrónica. | 500 | 924.20 | [DOF](https://sidof.segob.gob.mx/notas/docFuente/5228700) |
 | 2013 | RO 26 febrero 2013: edad 65+, incremento 525 mensuales desde segundo bimestre; reforma posterior admite pensión contributiva hasta 1092 mensuales. | 525 | 934.82 | [DOF](https://sidof.segob.gob.mx/notas/docFuente/5309974) |
 | 2014–2018 | 65+, mexicanas o 25 años de residencia; pensión contributiva no mayor 1092 mensuales. Importe 580 mensuales,1160 bimestrales, sin aumento nominal hasta 2018. | 580 | 992.86 | [DOF](https://sidof.segob.gob.mx/notas/docFuente/5509626) |
-| 2019 | RO 28 febrero 2019:68+ general,65+ indígenas en municipios catalogados, continuidad 65–67 del padrón activo diciembre 2018;1275 mensuales. | 1,275 | 1,792.54 | [DOF](https://sidof.segob.gob.mx/notas/docFuente/5551445) |
+| 2019 | RO 28 febrero 2019: 68+ general,65+ indígenas en municipios catalogados, continuidad 65–67 del padrón activo diciembre 2018;1275 mensuales. | 1,275 | 1,792.54 | [DOF](https://sidof.segob.gob.mx/notas/docFuente/5551445) |
 | 2020 | 1310 mensuales,2620 bimestrales;68+ general y 65+ indígenas, continuidad de padrón 65–67. | 1,310 | 1,781.24 | [DOF](https://sidof.segob.gob.mx/notas/docFuente/5583304) |
-| 2021 enero–junio | RO 22 diciembre 2020:1350 mensuales,2700 bimestrales;68+ general,65+ indígenas/afromexicanos y continuidad del padrón. | 1,350 | 1,764.49 | [DOF](https://sidof.segob.gob.mx/notas/docFuente/5608440) |
-| 2021 julio–diciembre | Modificación publicada 7 julio, vigencia 8 julio 2021:65+ general,1550 mensuales,3100 bimestrales. | 1,550 | 1,963.33 | [DOF](https://sidof.segob.gob.mx/notas/docFuente/5623150) |
+| 2021 enero–junio | RO 22 diciembre 2020: 1350 mensuales,2700 bimestrales;68+ general,65+ indígenas/afromexicanos y continuidad del padrón. | 1,350 | 1,764.49 | [DOF](https://sidof.segob.gob.mx/notas/docFuente/5608440) |
+| 2021 julio–diciembre | Modificación publicada 7 julio, vigencia 8 julio 2021: 65+ general,1550 mensuales,3100 bimestrales. | 1,550 | 1,963.33 | [DOF](https://sidof.segob.gob.mx/notas/docFuente/5623150) |
 
 **Nota:** Montos oficiales mensuales; entrega bimestral general. Norma real usa INPC medio del periodo indicado, distinto del año previo usado para respuestasENASEM.2008–09 columna real refiere 2009;2014–18 a 2014, evolución completa en figura.2013 incremento desde segundo bimestre;2021 julio vigencia 8 julio, sin flujo diario reconstruido. Antecedentes localesDF y otros programas documentados en nota; no toda A corresponde a estas normas.
 
@@ -2082,7 +2084,7 @@ La distinción también aparece fuera de esa ventana conjunta: K 2018–2021 red
 | Labores del hogar | 2536 | 1001 | 39.47 | 11 | 60.53 | 452 | 1308 | 3,050.00 | 4,079.17 | 1,550.00 | 2,107.57 | 90.14 | 43.66 |
 | Mujer | 5232 | 1788 | 34.17 | 20 | 65.83 | 1437 | 2736 | 3,700.00 | 4,895.00 | 1,550.00 | 2,107.57 | 106.07 | 43.66 |
 
-**Nota:** Directas 60+, denominadores de unión y montos separados. Los grupos de diferentes dimensiones se solapan: no sumar sus N. Unión ND no es negativa. LPI asignable cubre todos los montos de estos perfiles 2021, usando periodo original y geografía 2500. Perfil de localidad del cuadro previo corta 100 mil. Las cifras A valoran dinero/especie y no son todas A5. La ausencia propia no excluye cónyuge, transferencias familiares, patrimonio u otros ingresos. Ningún porcentaje es prevalencia de pobreza.
+**Nota:** Directas 60+, denominadores de unión y montos separados. Los grupos de diferentes dimensiones se solapan: no sumar sus N. Unión ND no es negativa. LPI asignable cubre todos los montos de estos perfiles 2021, usando periodo original y geografía 2500. Perfil de localidad del cuadro previo corta 100 mil. Las cifras A valoran dinero/especie y no son todas A 5. La ausencia propia no excluye cónyuge, transferencias familiares, patrimonio u otros ingresos. Ningún porcentaje es prevalencia de pobreza.
 
 **Fuente y procedencia:** ENASEM; [notebook 06](../notebooks/06_COBERTURA_PROTECCION_ECONOMICA.ipynb), bloques 5–12; [notebook 07](../notebooks/07_POLITICAS_MONTOS_SUFICIENCIA.ipynb), bloques 4–15; [agregados 06](../data/interim/cobertura_proteccion_economica/resultados.json), [agregados 07](../data/interim/politicas_montos_suficiencia/resultados.json) y [cotejo de esta síntesis](../data/interim/sintesis_proteccion_economica/resultados.json).
 
@@ -2095,9 +2097,9 @@ La situación de recepción también distingue montos del mismo componente entre
 
 La coexistencia de dos vías propias se asocia aquí con un componente K central menor. No permite concluir que A reduzca K, que el importe total K+A sea menor ni que exista una compensación diseñada por el programa: las categorías tienen composiciones diferentes y no se ajustaron sus perfiles. El importe del cónyuge no entra en estas cifras. Los grupos con contexto o recepción indeterminados permanecen separados en los agregados y cuadros previos.
 
-**K, A y A5 son distintos.** A5 de vejez se identifica solo en 2021 en 4,784 eventos/4,784 personas directas 60+, con 4,758 montos válidos. No existe una serie A5 homologada desde 2001 ni se estima aquí cobertura A5 completa sin un denominador de conocimiento del programa validado. La comparación monetaria entre vías se restringe a ese componente con norma monetaria verificada: por evento, K tiene mediana nominal $4,000/real $5,303 (N=3,312) y A5 $1,550/$2,108 (N=4,758), razón real 2.52. Son eventos entre receptores distintos, no ingresos personales completos ni un contraste de todos los apoyos como efectivo.
+**K, A y A 5 son distintos.** A 5 de vejez se identifica solo en 2021 en 4,784 eventos/4,784 personas directas 60+, con 4,758 montos válidos. No existe una serie A 5 homologada desde 2001 ni se estima aquí cobertura A 5 completa sin un denominador de conocimiento del programa validado. La comparación monetaria entre vías se restringe a ese componente con norma monetaria verificada: por evento, K tiene mediana nominal $4,000/real $5,303 (N=3,312) y A 5 $1,550/$2,108 (N=4,758), razón real 2.52. Son eventos entre receptores distintos, no ingresos personales completos ni un contraste de todos los apoyos como efectivo.
 
-La razón prestación/LPI es una referencia para el componente observado, no diagnóstico de pobreza o suficiencia integral. En A general 2015–2018 su mediana pasa de 20.76% a 20.47% (N=2582/2699); el ligero descenso de esa razón no tiene que igualar −5.84%, porque la línea cambia con su canasta y geografía, no solo con el índice general. En 2021 A5 tiene mediana 43.66% de la LPI y 97.33% de los importes están bajo ella; con el criterio de doce meses previos la mediana de razón es 41.38%. No permite afirmar que esas personas sean pobres o que carezcan de otros ingresos. Un monto por encima de la línea tampoco acredita protección integral.
+La razón prestación/LPI es una referencia para el componente observado, no diagnóstico de pobreza o suficiencia integral. En A general 2015–2018 su mediana pasa de 20.76% a 20.47% (N=2582/2699); el ligero descenso de esa razón no tiene que igualar −5.84%, porque la línea cambia con su canasta y geografía, no solo con el índice general. En 2021 A 5 tiene mediana 43.66% de la LPI y 97.33% de los importes están bajo ella; con el criterio de doce meses previos la mediana de razón es 41.38%. No permite afirmar que esas personas sean pobres o que carezcan de otros ingresos. Un monto por encima de la línea tampoco acredita protección integral.
 
 **Cuadro 49. Política, indicador, resultado y límite de interpretación**
 
@@ -2108,7 +2110,7 @@ La razón prestación/LPI es una referencia para el componente observado, no dia
 | 70 y Más: ampliaciones territoriales 2008–2012 y PAM 65+ desde 2013 | A propia; K con programas agrupados; edad y localidad 100 mil | En 2012–2015 crecen K, A y unión; sube más el acceso de ciertos grupos de menor escolaridad/localidad. | Programa individual no identificado en A histórica; corte 100 mil no reproduce 20/30 mil; slots y composición cambian. |
 | PAM $580 mensuales 2014–2018, sin aumento nominal | Monto normativo separado; monto parcial A 2015–2018 | Norma real disminuye 14.88% en 2014–2018; A mediana real −5.84% en 2015–2018, con recepción +2.91 pp. | Periodos y recursos distintos: coincidencia compatible con erosión por precios, sin atribuir toda A a PAM. |
 | Bienestar 2018–2019: 580 a 1275 mensuales; edad 68 general/65 indígena | Importe normativo mensual oficial | Norma nominal +119.83%; equivalente real +112.11% según precios de sus periodos. | No hay rondas anuales 2019/2020; A 2018–2021 rompe definición. No estima efecto de la reforma sobre hogares. |
-| Bienestar 2021: 1350 a 1550 mensuales y ampliación 65+ desde julio | A5 identificada 2021; perfiles por edad; fecha real de entrevista | Norma nominal +14.81%, real +11.27%; mediana A5 declarada 1550; unión propia mucho mayor en 70+ que 60–64. | Inscripción escalonada, recuerdo incierto y 2630 directas en 2022. Coincidencia no es causalidad ni certificación de cobro. |
+| Bienestar 2021: 1350 a 1550 mensuales y ampliación 65+ desde julio | A 5 identificada 2021; perfiles por edad; fecha real de entrevista | Norma nominal +14.81%, real +11.27%; mediana A 5 declarada 1550; unión propia mucho mayor en 70+ que 60–64. | Inscripción escalonada, recuerdo incierto y 2630 directas en 2022. Coincidencia no es causalidad ni certificación de cobro. |
 
 **Nota:** Importes normativos y respuestas ENASEM conservan sus diferentes periodos. Norma usa precio medio del periodo indicado; ENASEM, año calendario previo a entrevista real. Beneficio bimestral convertido a equivalente mensual normativo; no rescalar automáticamente lo declarado mensual. Fechas, condiciones y fuentes oficiales en cuadro 43 y nota documental de políticas. La reforma 2021 entra en vigor 8 julio, sin reconstruir pagos diarios; ampliación legal no equivale a incorporación efectiva.
 
@@ -2131,7 +2133,7 @@ Los montos basales de retenidos pueden cambiar las brechas. En K 2018–2021 la 
 | H1 | Respaldo descriptivo parcial | En 2012–2015 unión: brecha sexo 12.43→9.24 pp; K: brecha escolar 32.54→18.34 pp. También hay ventanas con menor brecha K por sexo. | Edad amplía 31.52→50.50 pp; unión escolar invierte +5.92→−9.13 pp y amplía magnitud; localidad no converge. | Determinados grupos/periodos; contradice igualación general. No prueba efecto de una política. |
 | H2 | Respaldada para casos verificados | K 2012–15 nominal 0%, real −11.05%; A 2015–18 nominal +5.45%, real −5.84%. | Dirección negativa bajo fechas alternativas; K 2018–21 y cambios normativos específicos sí muestran aumentos reales. | Medianas transversales parciales; no caída universal del ingreso individual ni prueba inferencial. |
 | H3 | Respaldo descriptivo condicionado | 2012–15: brecha unión por sexo menor y razón K H/M 1.13→1.20; cobertura K escolar menor brecha, razón de montos 4.21→15.00. | Ocupación: razón K 1.25 estable y brecha absoluta menor. No existe monto agregado de unión validado. | Acceso y componente K en poblaciones distintas; no desigualdad total de protección o ingreso. Generalización 2001–21 insuficiente. |
-| H4 | Respaldada descriptivamente | 2021: 3000 negativas propias/9366 conocidas; ciertos perfiles de alto acceso reciben componentes bajos respecto de LPI. | 538 reportan solo pensión del cónyuge; otros recursos no evaluados. A5 solo identificable 2021. | No cobertura integral, pobreza, suficiencia del hogar ni ausencia de otros ingresos. |
+| H4 | Respaldada descriptivamente | 2021: 3000 negativas propias/9366 conocidas; ciertos perfiles de alto acceso reciben componentes bajos respecto de LPI. | 538 reportan solo pensión del cónyuge; otros recursos no evaluados. A 5 solo identificable 2021. | No cobertura integral, pobreza, suficiencia del hogar ni ausencia de otros ingresos. |
 
 **Nota:** Evaluaciones descriptivas, no pruebas de significancia. Sensibilidades de fechas, modalidad y observación son análisis de robustez o cambios de estimando, no IC, ajuste causal ni corrección automática. Todos los N y unidades en los cuadros previos y los agregados 06/07. La hipótesis de trabajo es parcialmente compatible con ciertos contrastes, no confirmada como ley general.
 
@@ -2153,7 +2155,7 @@ Las figuras 35–36 del informe permiten consultar cobertura por perfil; las fig
 
 **Datos, universo y estado.** El análisis 08 se justificó después de la auditoría: nuevas comparaciones de montos por transición, integridad de captura, identidad contable de precios y composición común. Principal: personas registradas vivas, directas y 60+ al inicio; destino directo, sin panel balanceado. Se conservan estados no observados y edad final discordante. Solo dos ventanas monetarias nuevas, K 2012–2015 y A 2015–2018; las matrices de recepción cubren las seis combinaciones vía/intervalo condicionadamente comparables. Sin pesos nacionales, modelos causales, imputación, supervivencia ni identificación administrativa de prestaciones. Cálculos reproducidos desde cero y validados; comparabilidad operacional condicionada e inferencia nacional no acreditadas. No modifica 01–07, bases ni LaTeX.
 
-**Viabilidad antes de analizar.** Se reutilizan recepción, titularidad, eventos y precios de 01–07. Los 1,762 pares K y 1,240 pares A de 07 admitían sumas parciales. Al exigir monto de cada evento captado, fecha válida y ausencia de conflicto vital quedan 1,756 y 1,223. En A hay un par con entrevista viva posterior a registro sobre fallecido: se separa sin corregir el original; 1,224 queda solo como sensibilidad de registros observados. Completo significa íntegro respecto de captura, no totalidad de beneficios reales. No hay identificador administrativo de prestación. K cambia de un importe por contingencia en 2012 a slots en 2015; A pasa de importe agregado a eventos en 2018. La comparabilidad de la suma por persona es condicionada. A es donativo general en dinero o especie; no A5 de vejez, identificado solo en 2021. Slots y multiselección institucional no acreditan el número total real de beneficios. La periodicidad es mes normal en pesos, ya normalizada en la entrevista; no se divide de nuevo por dos. Variables: `pension_propia_k`, `apoyo_propio`, eventos originales con beneficiario orientado, entrevista real, INPC y características basales validadas.
+**Viabilidad antes de analizar.** Se reutilizan recepción, titularidad, eventos y precios de 01–07. Los 1,762 pares K y 1,240 pares A de 07 admitían sumas parciales. Al exigir monto de cada evento captado, fecha válida y ausencia de conflicto vital quedan 1,756 y 1,223. En A hay un par con entrevista viva posterior a registro sobre fallecido: se separa sin corregir el original; 1,224 queda solo como sensibilidad de registros observados. Completo significa íntegro respecto de captura, no totalidad de beneficios reales. No hay identificador administrativo de prestación. K cambia de un importe por contingencia en 2012 a slots en 2015; A pasa de importe agregado a eventos en 2018. La comparabilidad de la suma por persona es condicionada. A es donativo general en dinero o especie; no A 5 de vejez, identificado solo en 2021. Slots y multiselección institucional no acreditan el número total real de beneficios. La periodicidad es mes normal en pesos, ya normalizada en la entrevista; no se divide de nuevo por dos. Variables: `pension_propia_k`, `apoyo_propio`, eventos originales con beneficiario orientado, entrevista real, INPC y características basales validadas.
 
 **Cuadro 51. Viabilidad longitudinal y selección de montos íntegros captados**
 
@@ -2230,7 +2232,7 @@ Las figuras 35–36 del informe permiten consultar cobertura por perfil; las fig
 | A 2015–2018 | Sí→Sí · destino | 1281 | 1245 | 36 | 580.00 | 886.48 | 550 / 1,000 | 840.63 / 1,528.41 |
 | A 2015–2018 | Sí→No · basal | 721 | 708 | 13 | 550.00 | 941.50 | 500 / 626 | 855.91 / 1,072.03 |
 
-**Nota:** Moneda real: septiembre 2026. Destino para nuevos/continuos; basal para Sí→No, cuyo monto posterior no se completa con cero. Continua recepción no exige importe basal para este contraste; cambios personales sí. A dinero/especie, no A5. N sin monto íntegro incluye importe faltante de cualquier evento captado; no total de ingreso. Fechas válidas cubren los importes de estos contrastes.
+**Nota:** Moneda real: septiembre 2026. Destino para nuevos/continuos; basal para Sí→No, cuyo monto posterior no se completa con cero. Continua recepción no exige importe basal para este contraste; cambios personales sí. A dinero/especie, no A 5. N sin monto íntegro incluye importe faltante de cualquier evento captado; no total de ingreso. Fechas válidas cubren los importes de estos contrastes.
 
 **Fuente y procedencia:** ENASEM; [notebook 08](../notebooks/08_TRANSICIONES_MONTOS_PENSIONARIOS.ipynb), bloques 1–16; [copia ejecutada](../data/interim/notebooks_ejecutados/08_TRANSICIONES_MONTOS_PENSIONARIOS_ejecutado.ipynb); [auditoría](../data/interim/transiciones_montos_pensionarios/auditoria.json) y [agregados 08](../data/interim/transiciones_montos_pensionarios/resultados.json). Integración, definiciones, precios y seguimiento reutilizados de 01–07; INPC oficial congelado.
 
@@ -2431,7 +2433,7 @@ Las dos primeras matrices registran pregunta, procedencia, periodo, universo, N,
 
 | ID / notebook / ubicación | Pregunta y rondas | Población y N | Variable y unidad | Resultado guardado |
 | --- | --- | --- | --- | --- |
-| E11 · 07; 07 celdas 34, 37; cuadros 42, 44, 48; figura 41 | ¿Qué representa la prestación A5 frente a una referencia de necesidades? · 2021 | Directas 60+ con evento de programa de vejez A código 5; 4,784 personas/eventos; 4,758 importes válidos | Original por evento mensual; LPI histórica per cápita/mes según geografía 2,500 | Mediana nominal $1,550.00; real $2,107.57. Mediana prestación/LPI 43.66%; 97.33% de estos importes bajo LPI. |
+| E11 · 07; 07 celdas 34, 37; cuadros 42, 44, 48; figura 41 | ¿Qué representa la prestación A 5 frente a una referencia de necesidades? · 2021 | Directas 60+ con evento de programa de vejez A código 5; 4,784 personas/eventos; 4,758 importes válidos | Original por evento mensual; LPI histórica per cápita/mes según geografía 2,500 | Mediana nominal $1,550.00; real $2,107.57. Mediana prestación/LPI 43.66%; 97.33% de estos importes bajo LPI. |
 | E12 · 08; Celda 13; cuadro 53; figura 46 | ¿Los nuevos K tienen montos diferentes de los continuos? · 2012–2015 | Directas 60+ basales; directa y K conocida en ambas visitas; Nuevos 1,435 / 1,469; continuos 1,857 / 1,975 | No→Sí / Sí→Sí observados; suma íntegra de eventos captados en destino | Nominales $580.00 / $2,500.00; reales $992.86 / $4,279.56. |
 | E13 · 08; Celda 19; texto de 10.5 y figura 46 | ¿La heterogeneidad institucional acompaña el contraste K? · 2012–2015 | Nuevos/continuos K con monto íntegro captado; 1,435 nuevos / 1,857 continuos; IMSS/ISSSTE 433 / 1,671 | Evidencia institucional múltiple por persona, no partición excluyente | Código 8: 927 nuevos (64.60%) / 144 continuos (7.75%). Con evidencia IMSS/ISSSTE: ambas medianas nominales $2,500. |
 | E14 · 08; Celdas 37, 40; cuadro 56 | ¿La diferencia K persiste a composición basal común? · K 2012–2015; A 2015–2018 | Nuevos/continuos observados en soporte común; K 1,428 / 1,846; A 1,087 / 1,192 | Sexo×edad 3×escolaridad 0–5/6+; cuantiles de CDF, mezcla común del soporte | K nominal ajustada $580.00 / $2,400.00; A $580.00 / $580.00. |
@@ -2458,11 +2460,11 @@ Las dos primeras matrices registran pregunta, procedencia, periodo, universo, N,
 | E08 | Unión condicionada solo en 2012–2015. Monto solo K, no toda protección K/A; cobertura K por sexo se amplía 14.79 → 15.27 pp. No estimando común monetario de unión. | Fuerte descriptiva; diferencia temporal sin IC específico | Central: Ilustra divergencia entre indicadores, con su cambio de vía explícito. | Resultados y discusión |
 | E09 | Condicionada, no unir a K 2015–2018. Composición, entrevistas tardías y rupturas; no recuperación nacional acreditada. | Fuerte para contraste muestral | Central: Contraejemplo indispensable a una narrativa uniforme de erosión. | Resultados principales |
 | E10 | Tipología contemporánea, no tendencia homologada de veinte años. No totalidad de transferencias/ingreso ni falta universal de protección; 1,058 sustitutos fuera del principal. | Fuerte para categorías operativas | Central: Responde a ausencia de vía propia sin borrar la información contextual o ND. | Resultados de cobertura |
-| E11 | A5 identificada solo 2021; no sustituye a A general histórica. Prestación parcial, no ingreso total ni diagnóstico de pobreza. Norma/recuerdo/entrevista diferentes. | Fuerte descriptiva; suficiencia total no identificada | Central: Dimensiona el recurso identificado sin afirmar pobreza por pensión. | Resultados monetarios y discusión |
+| E11 | A 5 identificada solo 2021; no sustituye a A general histórica. Prestación parcial, no ingreso total ni diagnóstico de pobreza. Norma/recuerdo/entrevista diferentes. | Fuerte descriptiva; suficiencia total no identificada | Central: Dimensiona el recurso identificado sin afirmar pobreza por pensión. | Resultados monetarios y discusión |
 | E12 | Comparabilidad condicionada; no alta administrativa. No continuidad entre visitas ni ingreso completo. 376 de los 1,469 nuevos ya tenían A. | Fuerte contraste observado; precisión pendiente | Central: Distinción específica de incorporación frente a continuidad monetaria. | Resultado principal de composición |
 | E13 | Código institucional condicionado; mismo programa no acreditado. Código 8 agrupa programas; personas pueden solaparse y la suma no es monto de la institución. | Moderada para composición; explicación causal no identificada | Central: Acota el contraste global: no todos los nuevos reciben menos. | Resultados y discusión; no atribución a PAM |
 | E14 | Mismo soporte y convención de cuantil en cada contraste. No control de toda composición, mortalidad o ausencia; no pesos de encuesta ni IPW. | Moderada; soporte alto K, restringido A | Sensibilidad: Refuerza contraste K y conserva mediana nula A sin identificar mecanismos. | Junto al resultado principal; detalles en anexo |
-| E15 | A condicionada 2015–2018, con cambio de slots. No A5 homologada. Igual mediana no equivalencia de distribuciones; 606 nuevos ya tenían K. | Fuerte para mediana observada; equivalencia no probada | Central: Resultado nulo imprescindible: limita generalización del mecanismo K. | Resultados principales |
+| E15 | A condicionada 2015–2018, con cambio de slots. No A 5 homologada. Igual mediana no equivalencia de distribuciones; 606 nuevos ya tenían K. | Fuerte para mediana observada; equivalencia no probada | Central: Resultado nulo imprescindible: limita generalización del mecanismo K. | Resultados principales |
 | E16 | Suma de prestaciones captadas; identidad administrativa no verificada. K cambia de signo bajo fecha alternativa; A incluye valor de especie. Heterogeneidad, faltantes y selección. | Moderada; K débil para dirección, A robusta a fechas examinadas | Sensibilidad: Separación de estimandos; evita atribuir pérdida transversal a cada persona. | K como sensibilidad; A como resultado condicionado |
 | E17 | Suma de prestaciones captadas; identidad administrativa no verificada. K cambia de signo bajo fecha alternativa; A incluye valor de especie. Heterogeneidad, faltantes y selección. | Moderada; K débil para dirección, A robusta a fechas examinadas | Central: Separación de estimandos; evita atribuir pérdida transversal a cada persona. | K como sensibilidad; A como resultado condicionado |
 | E18 | Condicionada a instrumento y observación; no tasas anuales. El archivo completo de no entrevista no está validado; ausencia no muerte. No monto de fallecidos imputado ni desigualdad corregida por selección. | Fuerte para estados registrados; corrección de sesgo no identificada | Sensibilidad: Delimita representados y muestra universos diferentes sin convertir selección en eje causal. | Subsección actuarial; detalle en anexo |
@@ -2534,7 +2536,7 @@ La parte de Ciencia de Datos defendible es la trazabilidad desde cuestionarios a
 
 **Lo que está resuelto operacionalmente.** Se preservan IDs, LEFT JOIN, originales y faltantes; titularidad propia/cónyuge; negativa/ND; directa principal y sustituto sensibilidad. K tiene ventanas condicionadas 2001–2003, 2012–2015 y 2018–2021; A, 2003–2012, 2012–2015 y 2015–2018. La unión solo permite el contraste longitudinal conjunto 2012–2015. No se debe construir una serie de altas y bajas homogénea atravesando rupturas. En 08 nuevos significa No→Sí registrado entre visitas, no fecha efectiva de alta; continuos significa Sí→Sí observado, no pagos ininterrumpidos ni mismo beneficio administrativo.
 
-**Montos.** 07 presenta eventos originales y suma parcial personal. 08 exige importe válido en todos los eventos captados; no garantiza todos los beneficios reales. Múltiples instituciones no replican un evento ni reciben automáticamente la suma personal. Original, imputado y construido no son ingresos independientes. A general valora dinero/especie; A5 de vejez solo se identifica en 2021 y admite la comparación por evento con K del cuadro 44, sin transformar toda A histórica en efectivo de un programa. Titularidad operativa y recepción tampoco acreditan el derecho legal, historial de cotización o tipo contributivo.
+**Montos.** 07 presenta eventos originales y suma parcial personal. 08 exige importe válido en todos los eventos captados; no garantiza todos los beneficios reales. Múltiples instituciones no replican un evento ni reciben automáticamente la suma personal. Original, imputado y construido no son ingresos independientes. A general valora dinero/especie; A 5 de vejez solo se identifica en 2021 y admite la comparación por evento con K del cuadro 44, sin transformar toda A histórica en efectivo de un programa. Titularidad operativa y recepción tampoco acreditan el derecho legal, historial de cotización o tipo contributivo.
 
 **Precios.** Cantidades declaradas son de mes normal, ya mensualizadas por entrevista; la norma bimestral se divide por dos únicamente al preparar su equivalente mensual. Fórmula: nominal × INPC septiembre2026 / INPC original. Se mantiene la fuente oficial congelada INEGI, serie 865541 y referencia septiembre de 2026 = 146.075. Es unidad común verificada en la etapa 07, no una nueva actualización de fecha ni un valor presente actuarial. Con referencia positiva común, cambiar únicamente el mes base escala los niveles y diferencias absolutas; no cambia razones, porcentajes de variación o dirección. La fecha original supuesta sí puede hacerlo. Año calendario previo a entrevista real es criterio de recuerdo, no mes de pago observado; fechas alternativas ya están examinadas. Ronda no equivale a fecha efectiva de entrevista o ingreso.
 
@@ -2581,7 +2583,7 @@ La hipótesis de trabajo conserva carácter provisional. Una proposición existe
 | H2 · Nominal no siempre mejora poder adquisitivo | A favor: A 2015–18 nominal +5.45%, real −5.84%; K 2012–15 nominal constante, real −11.05%. | K 2018–21 real +27.09%; no erosión universal. K individual cambia signo bajo fecha alternativa. | Medianas transversales de receptores, suma parcial; 08 cambios personales separados. | Respaldada como proposición condicional, no tendencia uniforme de veinte años. |
 | H3 · Acceso y brechas monetarias pueden divergir | A favor: sexo unión reduce brecha y K amplía diferencia real $504 → $685 en 2012–15. | K acceso por sexo no se estrecha en esa ventana; en jubilados/trabajadores la diferencia real disminuye. A muestra medianas próximas. | Indicadores distintos: unión para acceso, K para dinero. No monto integral de unión ni causalidad. | Divergencia descriptiva específica; no prueba desigualdad de toda protección ni siempre mayor desigualdad. |
 | H4 · Incorporación puede asociarse con distribución monetaria distinta | A favor: K nuevos $580 vs continuos $2,500; ajustado $580 vs $2,400. | A ambas $580; IMSS/ISSSTE K ambas $2,500. No toda incorporación tiene monto menor. | Nuevos/continuos observados con monto íntegro captado; selección y superposición institucional. | Mayor respaldo específico en K 2012–15. Explica una propiedad de mezcla observada; no porcentaje causal de caída transversal. |
-| H5 · Persisten negativas propias y prestaciones parciales bajas | A favor: 3,000 negativas K/A en 2021; A5 mediana/LPI 43.66%. | 538 personas cuentan con K del cónyuge; otros ingresos/transferencias no están resumidos aquí. K mediana puede superar LPI. | Directas 60+; A5 4,758 importes válidos; 58 ND en unión, fuera de negativas. | Se identifican grupos sin vía propia K/A o importes parciales bajos; no falta absoluta de protección ni pobreza diagnosticada. |
+| H5 · Persisten negativas propias y prestaciones parciales bajas | A favor: 3,000 negativas K/A en 2021; A 5 mediana/LPI 43.66%. | 538 personas cuentan con K del cónyuge; otros ingresos/transferencias no están resumidos aquí. K mediana puede superar LPI. | Directas 60+; A 5 4,758 importes válidos; 58 ND en unión, fuera de negativas. | Se identifican grupos sin vía propia K/A o importes parciales bajos; no falta absoluta de protección ni pobreza diagnosticada. |
 | H6 · Muerte y ausencia cambian lectura de trayectorias | A favor: universos de pares distintos; K negativos basales muertos 7.84%, ausentes 3.82%; unión pareada 46.55 → 72.40 frente a transversal 47.42 → 65.79%. | Modalidad y estandarización mantienen contraste K; varias medianas basales parecidas no excluyen selección. No cuantificación de distribución corregida. | Estados registrados y soporte observado; vida de ausentes desconocida, sin fecha mortalidad validada. | Selección importa para el estimando; magnitud total y dirección del sesgo monetario no identificadas. |
 
 **Nota:** «A favor» significa compatible con la proposición bajo el estimando descrito. No identificación causal, prueba de equivalencia o inferencia nacional. Las cifras proceden de E06–E18 y cuadros 46–57.
@@ -2766,7 +2768,7 @@ Fuentes verificadas: [DeGraff et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC6
 | Producto final propuesto | Procedencia actual | Conclusión que documenta | Límite que debe acompañarla |
 | --- | --- | --- | --- |
 | C 1 · Acceso y exclusión | Cuadros 39/48; figura 44 | Cobertura propia K/A y negativas/ND de cada corte; ventana monetaria K 2012–15 y A 2015–18. En 2021, 3,000 ambas negativas y 58 ND entre 9,424 directas 60+. | Mantener rupturas de K/A visibles; tendencias por ventanas válidas. Sin CI de diseño, convergencia nacional o primeras altas inferidas. |
-| C 2 · Monto y referencia económica | Cuadros 46/48; misma figura 44 | Nominal/real y denominadores de 07; caída mediana K −11.05% en 2012–15 y A −5.84% en 2015–18, contraejemplo K +27.09% en 2018–21. A5/2021 prestación/LPI mediana 43.66%. | Cuantías mensuales de receptoras; la línea per cápita es referencia de prestación parcial, no pobreza personal. A5/2021 no se traslada a A general longitudinal. |
+| C 2 · Monto y referencia económica | Cuadros 46/48; misma figura 44 | Nominal/real y denominadores de 07; caída mediana K −11.05% en 2012–15 y A −5.84% en 2015–18, contraejemplo K +27.09% en 2018–21. A 5/2021 prestación/LPI mediana 43.66%. | Cuantías mensuales de receptoras; la línea per cápita es referencia de prestación parcial, no pobreza personal. A 5/2021 no se traslada a A general longitudinal. |
 | C 3 · Nuevos/continuos e instituciones | Primer cuadro de 10.7 + cuadro 56; figura 46 | K bruto/ajustado/IMSS-ISSSTE y A, con N, IC y faltantes. Contraste K grande; subgrupo institucional y A incluyen cero. | Solo K 2012–15/A 2015–18. No distribuye montos por institución, explica causalmente una caída o prueba equivalencia en los nulos. |
 | C 4 · Cambios personales | Segundo cuadro de 10.7, cuadro 54; figura 47 | Mismos 1,756 K/1,223 A; IC por persona/folio, fechas y cotas por faltantes. K pequeño sensible; A negativo bajo criterios examinados. | No representa toda la cohorte ni identifica continuidad administrativa. Fallecimiento no es un monto faltante imputable. |
 | C 5 · Desigualdad por sexo | Tercer cuadro de 10.7; nueva figura de precisión | Unión: cambio−3.19 pp con IC negativo; K monetario cambio+$180.54 con IC que contiene 0. Mantener nulos junto a contrastes precisos. | Cortes dinámicos 2012–15. Sexo no sustituye ajuste por historia laboral y las dos brechas no comparten denominador. |
@@ -2804,6 +2806,1147 @@ La reorganización del argumento reutilizaría los cinco archivos existentes. Se
 <!-- END precision08 -->
 
 <a id="seccion-limites"></a>
+
+
+
+
+
+
+
+
+
+
+
+<!-- BEGIN central09 -->
+
+### 10.8 Contraste central: protección previa, desventaja relativa y montos posteriores (etapa 09)
+
+**Estado:** análisis local reproducible solicitado el 23 de octubre de 2026. Esta sección resuelve los cruces declarados pendientes en 10.6–10.7; sus diagnósticos anteriores permanecen como registros fechados. Fuente: `src/tesis_enasem/central_analysis.py`, `central_supplement.py`, notebook 09 y agregados privados `data/interim/incorporacion_proteccion_propia/`. Se verificaron 379 archivos fuente y se reprodujo exactamente la auditoría 08. No se reconstruyó integración, no se modificaron bases ni se agruparon ventanas como observaciones independientes.
+
+**Pregunta y estimandos:** composición P/nuevos, incorporación P/negativos basales reobservados, unión de personas 2012–2015 y diferencias de medianas posteriores P−C. P exige K y A negativas basales; C exige otra afirmativa. R es continuidad de la vía. N observados, monetarios y patrimoniales difieren. Fallecidos, ausentes, sustitutos, conflictos y ND no son negativas. Cortes descriptivos ambas vías en seis rondas; transiciones solo en las seis combinaciones de vía/intervalo ya aprobadas.
+
+**Incertidumbre:** bootstrap 4999 por folio para contrastes principales y 1999 para proporciones, estratos, instituciones, precios y ajuste. Semilla 20261023 y desplazamiento por años guardados por contraste. IC puntuales, exploratorios, sin diseño nacional ni imputación múltiple. Sensibilidad por persona y Wilson guardadas. Folio no certifica hogar actual. No se eligen hallazgos según significancia; empates e intervalos degenerados no equivalen a igualdad distributiva. Umbral 20 por grupo para IC monetarios.
+
+**Patrimonio:** `imp_neto` compartido entrevistado/cónyuge, en unidades almacenadas sin moneda/precios temporalmente homologados. Cuartiles relativos entre directas de 60+ de cada ronda antes de seleccionar seguimiento. Ceros y negativos preservados; no pobreza ni ingreso personal. Montos de prestaciones: todos los eventos captados válidos, nominal por factor oficial 07, septiembre de 2026. A incluye dinero/especie. Sensibilidades temporales no resuelven fechas de pago desconocidas.
+
+#### Recepción propia y monto real en las seis rondas
+
+| Ronda | Vía | Directas 60+ | Conocidas | Sí | No | ND | Mediana real |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 2001 | K | 6,812 | 6,790 | 1,680 | 5,110 | 22 | 3,856.5 |
+| 2001 | A | 6,812 | 6,789 | 666 | 6,123 | 23 | 628.6 |
+| 2003 | K | 6,970 | 6,894 | 1,760 | 5,134 | 76 | 4,191.9 |
+| 2003 | A | 6,970 | 6,894 | 895 | 5,999 | 76 | 703.3 |
+| 2012 | K | 8,888 | 8,738 | 2,819 | 5,919 | 150 | 4,233.7 |
+| 2012 | A | 8,888 | 8,750 | 1,574 | 7,176 | 138 | 962.2 |
+| 2015 | K | 9,640 | 9,504 | 4,159 | 5,345 | 136 | 3,766.0 |
+| 2015 | A | 9,640 | 9,513 | 2,630 | 6,883 | 127 | 941.5 |
+| 2018 | K | 9,107 | 9,047 | 3,247 | 5,800 | 60 | 4,279.6 |
+| 2018 | A | 9,107 | 9,045 | 2,764 | 6,281 | 62 | 886.5 |
+| 2021 | K | 9,424 | 9,366 | 3,261 | 6,105 | 58 | 5,438.9 |
+| 2021 | A | 9,424 | 9,363 | 4,924 | 4,439 | 61 | 2,107.6 |
+
+Fuente: etapa 09, bases analíticas existentes y eventos originales, muestra no ponderada. P: ambas negativas basales; C: otra vía basal afirmativa; R: continuidad de la vía. No alta administrativa ni inferencia nacional. Mediana entre receptores con todos los importes captados válidos; pesos de septiembre de 2026. Cortes separados, no serie longitudinal homogénea.
+
+#### Composición de las incorporaciones observadas
+
+| Vía/ventana | N nuevos | N P | P (%) | N C | Otra ND |
+| --- | --- | --- | --- | --- | --- |
+| K 2001--2003 | 298 | 286 | 96.0 | 12 | 0 |
+| K 2012--2015 | 1,469 | 1,090 | 74.2 | 376 | 3 |
+| K 2018--2021 | 521 | 384 | 73.7 | 137 | 0 |
+| A 2003--2012 | 776 | 678 | 87.4 | 98 | 0 |
+| A 2012--2015 | 1,512 | 1,210 | 80.0 | 296 | 6 |
+| A 2015--2018 | 1,212 | 603 | 49.8 | 606 | 3 |
+
+Fuente: etapa 09, bases analíticas existentes y eventos originales, muestra no ponderada. P: ambas negativas basales; C: otra vía basal afirmativa; R: continuidad de la vía. No alta administrativa ni inferencia nacional.
+
+#### Probabilidad observada de incorporación por situación inicial
+
+| Vía/ventana | Perfil | N basal | N observado | Incorpora | % [IC95 folio] |
+| --- | --- | --- | --- | --- | --- |
+| K 2001--2003 | P | 4,533 | 3,738 | 286 | 7.7 [6.8; 8.5] |
+| K 2001--2003 | C | 576 | 462 | 12 | 2.6 [1.3; 4.1] |
+| K 2012--2015 | P | 4,592 | 3,843 | 1,090 | 28.4 [26.8; 29.9] |
+| K 2012--2015 | C | 1,323 | 1,063 | 376 | 35.4 [32.2; 38.6] |
+| K 2018--2021 | P | 3,368 | 2,700 | 384 | 14.2 [12.9; 15.6] |
+| K 2018--2021 | C | 2,422 | 1,821 | 137 | 7.5 [6.3; 8.8] |
+| A 2003--2012 | P | 4,368 | 2,388 | 678 | 28.4 [26.5; 30.2] |
+| A 2003--2012 | C | 1,631 | 810 | 98 | 12.1 [10.0; 14.3] |
+| A 2012--2015 | P | 4,592 | 3,849 | 1,210 | 31.4 [29.9; 33.1] |
+| A 2012--2015 | C | 2,562 | 2,089 | 296 | 14.2 [12.6; 15.7] |
+| A 2015--2018 | P | 3,253 | 2,497 | 603 | 24.1 [22.5; 25.9] |
+| A 2015--2018 | C | 3,622 | 2,735 | 606 | 22.2 [20.5; 23.9] |
+
+Fuente: etapa 09, bases analíticas existentes y eventos originales, muestra no ponderada. P: ambas negativas basales; C: otra vía basal afirmativa; R: continuidad de la vía. No alta administrativa ni inferencia nacional. N observado: respuesta de la vía conocida en ambas visitas y destino directo sin conflicto vital. Porcentaje entre reobservados, no proporción de todos los nuevos. No tasa anual.
+
+#### Características basales de los perfiles de recepción
+
+| Vía/ventana | Perfil | N | Edad med. | Esc. med. | Mujeres % | Q1 % |
+| --- | --- | --- | --- | --- | --- | --- |
+| K 2001--2003 | P | 286 | 65.0 | 5.0 | 41.3 | 18.9 |
+| K 2001--2003 | C | 12 | 66.5 | 2.0 | 8.3 | 8.3 |
+| K 2001--2003 | R | 1,204 | 68.0 | 6.0 | 36.8 | 18.9 |
+| K 2012--2015 | P | 1,090 | 67.0 | 4.0 | 54.1 | 25.0 |
+| K 2012--2015 | C | 376 | 74.0 | 2.0 | 56.9 | 35.1 |
+| K 2012--2015 | R | 1,975 | 69.0 | 6.0 | 40.5 | 17.4 |
+| K 2018--2021 | P | 384 | 66.0 | 6.0 | 53.4 | 20.3 |
+| K 2018--2021 | C | 137 | 73.0 | 6.0 | 65.0 | 24.1 |
+| K 2018--2021 | R | 2,079 | 71.0 | 6.0 | 43.6 | 16.2 |
+| A 2003--2012 | P | 678 | 67.0 | 2.0 | 61.7 | 27.0 |
+| A 2003--2012 | C | 98 | 67.5 | 5.0 | 37.8 | 12.2 |
+| A 2003--2012 | R | 285 | 67.0 | 1.0 | 50.9 | 28.8 |
+| A 2012--2015 | P | 1,210 | 68.0 | 3.0 | 62.0 | 27.9 |
+| A 2012--2015 | C | 296 | 73.0 | 3.0 | 58.1 | 25.7 |
+| A 2012--2015 | R | 737 | 73.0 | 2.0 | 55.9 | 33.8 |
+| A 2015--2018 | P | 603 | 67.0 | 3.0 | 65.3 | 28.2 |
+| A 2015--2018 | C | 606 | 73.0 | 3.0 | 57.3 | 27.7 |
+| A 2015--2018 | R | 1,281 | 72.0 | 3.0 | 64.0 | 32.0 |
+
+Fuente: etapa 09, bases analíticas existentes y eventos originales, muestra no ponderada. P: ambas negativas basales; C: otra vía basal afirmativa; R: continuidad de la vía. No alta administrativa ni inferencia nacional. Edad y escolaridad en años; denominadores válidos específicos en agregados y notebook. Q1 definido entre patrimonio válido de directas de 60+ de la ronda basal, no pobreza. Localidad y estados desconocidos se conservan en el informe.
+
+#### Distribución del patrimonio neto basal compartido
+
+| Vía/ventana | Perfil | N válido | Q25 | Mediana | Q75 |
+| --- | --- | --- | --- | --- | --- |
+| K 2001--2003 | P | 286 | 90.5 | 225.6 | 442.7 |
+| K 2001--2003 | C | 12 | 134.2 | 335.7 | 505.4 |
+| K 2001--2003 | R | 1,204 | 90.0 | 250.0 | 506.7 |
+| K 2012--2015 | P | 1,090 | 176.9 | 505.7 | 1,089.6 |
+| K 2012--2015 | C | 376 | 100.4 | 375.9 | 899.8 |
+| K 2012--2015 | R | 1,975 | 300.0 | 663.2 | 1,362.9 |
+| K 2018--2021 | P | 384 | 307.5 | 734.0 | 1,520.0 |
+| K 2018--2021 | C | 137 | 230.0 | 562.0 | 1,535.1 |
+| K 2018--2021 | R | 2,079 | 401.5 | 895.0 | 1,764.1 |
+| A 2003--2012 | P | 678 | 60.6 | 195.5 | 430.2 |
+| A 2003--2012 | C | 98 | 131.2 | 296.5 | 589.4 |
+| A 2003--2012 | R | 285 | 60.0 | 170.0 | 486.6 |
+| A 2012--2015 | P | 1,210 | 146.7 | 495.0 | 1,007.2 |
+| A 2012--2015 | C | 296 | 165.4 | 574.0 | 1,208.7 |
+| A 2012--2015 | R | 737 | 103.4 | 398.1 | 947.5 |
+| A 2015--2018 | P | 603 | 155.0 | 550.0 | 1,489.3 |
+| A 2015--2018 | C | 606 | 154.0 | 535.5 | 1,333.1 |
+| A 2015--2018 | R | 1,281 | 117.6 | 457.3 | 1,303.0 |
+
+Fuente: etapa 09, bases analíticas existentes y eventos originales, muestra no ponderada. P: ambas negativas basales; C: otra vía basal afirmativa; R: continuidad de la vía. No alta administrativa ni inferencia nacional. Miles de unidades almacenadas por el proveedor; contrato sin homologación monetaria temporal. No son pesos reales homologados ni ingreso individual. Incluye ceros y negativos; patrimonio del entrevistado y cónyuge, sin sumarlo por hogar. Precisión condicional al producto del proveedor, sin combinar imputaciones múltiples.
+
+#### Montos posteriores por protección basal y continuidad
+
+| Vía/ventana | Perfil | N válido | Q25 | Mediana | Q75 |
+| --- | --- | --- | --- | --- | --- |
+| K 2001--2003 | P | 278 | 3,657.4 | 4,062.5 | 5,626.7 |
+| K 2001--2003 | C | 11 | 3,376.0 | 3,376.0 | 6,189.4 |
+| K 2001--2003 | R | 1,175 | 3,657.4 | 4,191.9 | 7,196.6 |
+| K 2012--2015 | P | 1,060 | 941.5 | 1,027.1 | 3,937.2 |
+| K 2012--2015 | C | 373 | 941.5 | 941.5 | 996.3 |
+| K 2012--2015 | R | 1,857 | 3,423.6 | 4,279.6 | 10,270.9 |
+| K 2018--2021 | P | 360 | 3,859.6 | 4,895.0 | 9,314.1 |
+| K 2018--2021 | C | 132 | 2,107.6 | 4,079.2 | 5,234.9 |
+| K 2018--2021 | R | 1,954 | 3,859.6 | 5,438.9 | 13,140.5 |
+| A 2003--2012 | P | 666 | 962.2 | 962.2 | 1,443.3 |
+| A 2003--2012 | C | 98 | 962.2 | 962.2 | 1,034.4 |
+| A 2003--2012 | R | 278 | 962.2 | 962.2 | 1,732.0 |
+| A 2012--2015 | P | 1,196 | 855.9 | 941.5 | 1,027.1 |
+| A 2012--2015 | C | 286 | 855.9 | 941.5 | 1,690.4 |
+| A 2012--2015 | R | 723 | 855.9 | 941.5 | 1,140.1 |
+| A 2015--2018 | P | 581 | 840.6 | 886.5 | 1,299.2 |
+| A 2015--2018 | C | 589 | 840.6 | 886.5 | 1,528.4 |
+| A 2015--2018 | R | 1,245 | 840.6 | 886.5 | 1,528.4 |
+
+Fuente: etapa 09, bases analíticas existentes y eventos originales, muestra no ponderada. P: ambas negativas basales; C: otra vía basal afirmativa; R: continuidad de la vía. No alta administrativa ni inferencia nacional. Pesos mensuales de septiembre de 2026, importe nominal multiplicado por factor del año calendario previo a entrevista real. Suma íntegra solo de eventos captados, no totalidad real. A incluye dinero/especie; no programa homogéneo. Diferencias de captura de la tabla 3.1 se mantienen.
+
+#### Monto posterior por mitad patrimonial y protección basal
+
+| Vía/ventana | Mitad | N P/C | Mediana P | Mediana C | P-C [IC95] |
+| --- | --- | --- | --- | --- | --- |
+| K 2001--2003 | Inferior | Sin soporte | Reservado | Reservado | No estimable |
+| K 2001--2003 | Superior | Sin soporte | Reservado | Reservado | No estimable |
+| K 2012--2015 | Inferior | 553/230 | 992.9 | 941.5 | 51.4 [8.6; 68.5] |
+| K 2012--2015 | Superior | 507/143 | 1,985.7 | 941.5 | 1,044.2 [492.1; 2,482.1] |
+| K 2018--2021 | Inferior | 176/71 | 4,740.3 | 4,079.2 | 661.1 [37.7; 1,149.4] |
+| K 2018--2021 | Superior | 184/61 | 5,438.9 | 4,079.2 | 1,359.7 [564.7; 2,175.6] |
+| A 2003--2012 | Inferior | 372/42 | 962.2 | 962.2 | 0.0 [0.0; 0.0] |
+| A 2003--2012 | Superior | 294/56 | 962.2 | 962.2 | 0.0 [0.0; 0.0] |
+| A 2012--2015 | Inferior | 661/133 | 941.5 | 941.5 | 0.0 [0.0; 0.0] |
+| A 2012--2015 | Superior | 535/153 | 941.5 | 941.5 | 0.0 [-51.4; 0.0] |
+| A 2015--2018 | Inferior | 316/321 | 886.5 | 886.5 | 0.0 [-39.7; 7.6] |
+| A 2015--2018 | Superior | 265/268 | 878.8 | 886.5 | -7.6 [-38.2; 34.4] |
+
+Fuente: auditoría 10, insumos01--09 intactos. Muestra sin ponderación; IC condicionales, sin inferencia nacional o causal. P: primera vía observada; C: otra vía basal afirmativa. Se conserva la evaluación por cuartiles en privado; la simplificación no rescata la ventana escasa.
+
+
+#### Diferencia de medianas posteriores: P menos C
+
+| Vía/ventana | N P/C | Cruda [IC95] | Mezcla común [IC95] | Retención % |
+| --- | --- | --- | --- | --- |
+| K 2001--2003 | 278/11 | No estimado | No estimado | 0/0 |
+| K 2012--2015 | 1,060/373 | 85.6 [51.4; 409.8] | No estimado | 57/90 |
+| K 2018--2021 | 360/132 | 815.8 [543.9; 1,324.3] | No estimado | 20/50 |
+| A 2003--2012 | 666/98 | 0.0 [0.0; 0.0] | No estimado | 0/0 |
+| A 2012--2015 | 1,196/286 | 0.0 [0.0; 0.0] | No estimado | 51/79 |
+| A 2015--2018 | 581/589 | 0.0 [-30.6; 7.6] | -7.6 [-38.2; 7.6] | 73/89 |
+
+Fuente: etapa 09, bases analíticas existentes y eventos originales, muestra no ponderada. P: ambas negativas basales; C: otra vía basal afirmativa; R: continuidad de la vía. No alta administrativa ni inferencia nacional. Pesos reales. Crudo: bootstrap folio 4999. Mezcla común: sexo×edad de tres grupos×escolaridad 0–5/6+, 1999 réplicas y CDF inversa. Mínimo 20 por grupo/celda, 4 celdas y 70% de cada grupo completo antes de excluir covariables ND. No estimado si falta soporte; no se extrapola. Crudo y ajustado pueden usar poblaciones y convenciones distintas; crudo del mismo soporte en agregados.
+
+#### Incorporación desde ambas negativas según patrimonio basal
+
+| Vía/ventana | Q1 % | Q4 % | Q1−Q4 pp [IC95] | Ajustada pp [IC95] |
+| --- | --- | --- | --- | --- |
+| K 2001--2003 | 5.5 | 8.9 | -3.4 [-5.8; -1.0] | -0.5 [-3.0; 2.1] |
+| K 2012--2015 | 29.0 | 27.4 | 1.6 [-2.8; 5.7] | 0.5 [-4.0; 4.8] |
+| K 2018--2021 | 11.1 | 15.7 | -4.6 [-8.2; -0.9] | -4.0 [-7.6; -0.4] |
+| A 2003--2012 | 33.2 | 22.7 | 10.4 [4.9; 16.1] | 6.8 [0.3; 13.1] |
+| A 2012--2015 | 35.8 | 27.9 | 7.9 [3.5; 12.4] | 4.0 [-0.6; 8.6] |
+| A 2015--2018 | 28.4 | 21.1 | 7.3 [2.3; 12.4] | 6.2 [0.7; 11.5] |
+
+Fuente: etapa 09, bases analíticas existentes y eventos originales, muestra no ponderada. P: ambas negativas basales; C: otra vía basal afirmativa; R: continuidad de la vía. No alta administrativa ni inferencia nacional. Tasas entre reobservados con recepción conocida. Q1/Q4 relativos dentro de ronda. Ajuste descriptivo de sexo, edad y escolaridad a mezcla combinada en soporte común; no causal ni ponderación ENASEM. IC puntuales por folio. Cambio de soporte y ajuste no son el mismo estimando; véase auditoría en agregados.
+
+#### Heterogeneidad institucional del contraste P menos C
+
+| Vía/ventana | Evidencia destino | N P/C | Diferencia real [IC95] |
+| --- | --- | --- | --- |
+| K 2012--2015 | IMSS/ISSSTE | 406/27 | 513.5 [0.0; 984.3] |
+| K 2012--2015 | Programa agrupado | 599/326 | 0.0 [0.0; 0.0] |
+| K 2012--2015 | Un evento IMSS | 305/20 | 428.0 [0.0; 684.7] |
+| K 2018--2021 | IMSS/ISSSTE | 309/79 | 679.9 [-40.0; 1,087.8] |
+| K 2018--2021 | Un evento IMSS | 259/68 | 271.9 [-193.1; 679.9] |
+| A 2015--2018 | A: INAPAM | 163/155 | -30.6 [-45.9; 34.4] |
+| A 2015--2018 | A: Otra institución | 217/257 | 0.0 [-7.6; 7.6] |
+| A 2015--2018 | A: PROSPERA | 149/119 | -15.3 [-45.9; 30.6] |
+
+Fuente: etapa 09, bases analíticas existentes y eventos originales, muestra no ponderada. P: ambas negativas basales; C: otra vía basal afirmativa; R: continuidad de la vía. No alta administrativa ni inferencia nacional. IC folio 1999. Evidencia K puede solaparse: no sumar filas ni asignar el importe a cada institución. Un evento exige un solo evento captado; IMSS/ISSSTE no identifica régimen. A solo 2018: nombres reportados, no programa longitudinal homologado ni A 5 retrospectivo. Celdas inferiores a 20 no generan IC.
+
+#### Seguimiento de cohortes negativas y límites de observación
+
+| Vía/ventana | Perfil | N basal | Fallecido | Ausente | Cota % sin D |
+| --- | --- | --- | --- | --- | --- |
+| K 2001--2003 | P | 4,533 | 239 | 223 | 6.7--19.6 |
+| K 2001--2003 | C | 576 | 22 | 22 | 2.2--18.8 |
+| K 2012--2015 | P | 4,592 | 319 | 199 | 25.5--35.6 |
+| K 2012--2015 | C | 1,323 | 145 | 26 | 31.9--41.7 |
+| K 2018--2021 | P | 3,368 | 304 | 184 | 12.5--24.4 |
+| K 2018--2021 | C | 2,422 | 337 | 55 | 6.6--19.2 |
+| A 2003--2012 | P | 4,368 | 1,165 | 400 | 21.2--46.6 |
+| A 2003--2012 | C | 1,631 | 504 | 201 | 8.7--36.8 |
+| A 2012--2015 | P | 4,592 | 319 | 199 | 28.3--38.2 |
+| A 2012--2015 | C | 2,562 | 214 | 150 | 12.6--23.6 |
+| A 2015--2018 | P | 3,253 | 194 | 374 | 19.7--38.1 |
+| A 2015--2018 | C | 3,622 | 273 | 382 | 18.1--36.4 |
+
+Fuente: etapa 09, bases analíticas existentes y eventos originales, muestra no ponderada. P: ambas negativas basales; C: otra vía basal afirmativa; R: continuidad de la vía. No alta administrativa ni inferencia nacional. Cota sin D: entre quienes no tienen fallecimiento registrado, incorporar a todos los destinos no clasificables o a ninguno. No acredita que ausentes estén vivos ni incidencia previa a morir. Fallecimientos quedan separados, sin imputar recepción post mortem. Sustitutos, ND y conflictos separados en informe y agregados.
+
+#### Unión K/A 2012–2015: personas únicas
+
+En 2012--2015, la única ventana conjunta K/A admitida, 2,188 de 3,846 personas con ambas negativas basales y unión conocida al destino incorporan al menos una vía: 56.9% (IC95 por folio 55.3--58.6%). La cohorte basal contiene 4,592 personas; 746 quedan fuera de ese denominador observado. Permanecen con ambas negativas 1,658. Inician ambas vías 112, contadas una sola vez en la unión. No se suman las incorporaciones K y A. Los restantes destinos son: 319 fallecido registrado, 199 ausente; vital desconocido, 186 sustituto vivo; fuera del principal, 42 unión nd al destino. No se clasifican como negativas de recepción.
+
+#### Interpretación conjunta y contraejemplos
+
+A presenta gradientes crudos Q1−Q4 positivos, pero la auditoría 10.9 muestra sensibilidad de A 2015–2018 al agrupar edades y de K 2018–2021 al soporte mínimo. A 2012–2015 incluye cero ajustado; A 2003–2012 mantiene señal en variantes viables con seguimiento selectivo. No se sostiene una dirección universal ni una focalización por necesidad integral.
+
+En K 2012–2015, P tiene mayor patrimonio mediano y escolaridad que C y es más joven; no corresponde al perfil de mayor desventaja de esos dos grupos. En A 2015–2018, las diferencias patrimoniales y escolares son imprecisas/cero, pero P es más joven. El patrimonio mediano mayor no implica ingreso mayor, liquidez o menor necesidad individual.
+
+Los montos P−C son positivos en K 2012–2015 y 2018–2021, con IC crudos por folio que excluyen cero. En K 2001–2003 C es demasiado pequeño para el contraste. A tiene medianas P/C coincidentes; se conservan los nulos y los empates. Estratos K por sexo/edad e instituciones cambian el tamaño y la precisión. No se han realizado pruebas formales de interacción. Solo A 2015–2018 alcanza soporte monetario ajustado suficiente; cinco contrastes se declaran no estimados, sin reducir umbrales ni extrapolar08.
+
+La cobertura histórica por sexo y los contrastes09 muestran que ampliar recepción no garantiza cierre monetario. La evidencia no demuestra una ley general ni un efecto de políticas. La asociación de desventaja con incorporación depende de vía, ventana y estimando. Solo la ventana conjunta permite cuantificar expansión de unión sin doble conteo.
+
+![Gradiente patrimonial, IC por folio](figuras/central09_gradiente_patrimonio.png)
+
+![Diferencias monetarias P−C, IC por folio](figuras/central09_diferencias_montos.png)
+
+#### Evidencia exhaustiva por grupo y selección
+
+Las siguientes tablas permiten verificar también perfiles desconocidos, fallecidos y ausentes sin trasladarlos al denominador observado. Sexo, edad, escolaridad y localidad son iniciales; patrimonio y montos tienen titulares/unidades diferentes. Porcentajes de perfil incluyen categoría desconocida. Cada grupo informa N, patrimonio válido con Q25/mediana/Q75, monto real válido con Q25/mediana/Q75 y composición completa en los agregados; los cuadros siguientes muestran la síntesis de esas variables para todos los estados.
+
+
+**K 2001--2003 · todos los destinos basales**
+
+| Grupo | N | Patrimonio válido | P Q25/med/Q75 | Edad med | Esc med | Mujeres % | Localidad basal | Monto válido | Monto real Q25/med/Q75 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Sustituto vivo; fuera del principal | 468 | 462 | 42,259.4/176,516.1/409,804.6 | 69.0 | 2.0 | 48.9 | ≥100 mil habitantes: 52.4%; <100 mil habitantes: 47.6% | 43 | 3,446.4/3,938.7/6,752.1 |
+| No→No | 3,903 | 3,903 | 50,000.0/173,000.0/405,417.6 | 67.0 | 2.0 | 61.5 | <100 mil habitantes: 50.4%; ≥100 mil habitantes: 49.6% | 0 | ND/ND/ND |
+| Incorporación desde ambas negativas | 286 | 286 | 90,500.0/225,582.4/442,710.5 | 65.0 | 5.0 | 41.3 | ≥100 mil habitantes: 76.2%; <100 mil habitantes: 23.8% | 278 | 3,657.4/4,062.5/5,626.7 |
+| Continuidad de la vía | 1,204 | 1,204 | 90,000.0/250,000.0/506,692.3 | 68.0 | 6.0 | 36.8 | ≥100 mil habitantes: 73.0%; <100 mil habitantes: 27.0% | 1,175 | 3,657.4/4,191.9/7,196.6 |
+| Fallecido registrado | 361 | 361 | 25,350.0/140,000.0/345,000.0 | 73.0 | 2.0 | 47.9 | ≥100 mil habitantes: 59.0%; <100 mil habitantes: 41.0% | 0 | ND/ND/ND |
+| Ausente; vital desconocido | Reservado | Reservado | Reservado | Reservado | Reservado | Reservado | Reservado | Reservado | Reservado |
+| Sí→No | 164 | 164 | 95,164.4/263,519.4/532,320.2 | 69.0 | 4.0 | 51.8 | ≥100 mil habitantes: 71.3%; <100 mil habitantes: 28.7% | 0 | ND/ND/ND |
+| Recepción ND en alguna visita | 72 | 63 | 82,500.0/194,428.1/404,513.8 | 69.0 | 2.5 | 66.7 | ≥100 mil habitantes: 62.5%; <100 mil habitantes: 37.5% | 2 | 5,494.5/7,883.1/10,271.6 |
+| Incorporación con otra vía basal | 12 | 12 | 134,183.1/335,700.0/505,445.0 | 66.5 | 2.0 | 8.3 | <100 mil habitantes: 75.0%; ≥100 mil habitantes: 25.0% | 11 | 3,376.0/3,376.0/6,189.4 |
+
+**Desglose del seguimiento por perfil inicialmente negativo**
+
+| Perfil | Destino | N |
+| --- | --- | --- |
+| Ambas negativas | No→No | 3,452 |
+| Ambas negativas | Sustituto vivo; fuera del principal | 300 |
+| Ambas negativas | No→Sí | 286 |
+| Ambas negativas | Fallecido registrado | 239 |
+| Ambas negativas | Ausente; vital desconocido | 223 |
+| Ambas negativas | Recepción ND en alguna visita | 33 |
+| Otra vía basal | No→No | 450 |
+| Otra vía basal | Sustituto vivo; fuera del principal | 62 |
+| Otra vía basal | Ausente; vital desconocido | 22 |
+| Otra vía basal | Fallecido registrado | 22 |
+| Otra vía basal | No→Sí | 12 |
+| Otra vía basal | Recepción ND en alguna visita | 8 |
+
+**Otra vía al destino: no equivale a continuidad conjunta**
+
+| Perfil | N | Otra sí | Otra no | Otra ND |
+| --- | --- | --- | --- | --- |
+| Incorporación desde ambas negativas | 286 | 17 | 269 | 0 |
+| Incorporación con otra vía basal | 12 | 4 | 8 | 0 |
+
+**Sensibilidad por informante/edad**
+
+| Criterio | N nuevos | Desde ambas negativas | Otra basal sí |
+| --- | --- | --- | --- |
+| Incluye sustituto destino | 308 | 295 | 13 |
+| Edad destino60+ | 298 | 286 | 12 |
+
+**Precios alternativos, diferencia mediana P−C**
+
+| Criterio | Diferencia [IC95 folio] |
+| --- | --- |
+| factor_12m | No estimado |
+| factor_ano_entrevista | No estimado |
+
+**Cotas por importes faltantes entre receptores observados P−C:** 422.0 a 815.9 pesos reales. No son IC ni asignan montos a ausentes o fallecidos.
+
+**Auditoría de soporte y ajuste:**
+
+| Estimando | N inicial P/C o Q1/Q4 | N soporte | Crudo mismo soporte | Ajustado [IC95] |
+| --- | --- | --- | --- | --- |
+| ajuste_tasa | [977, 864] | [938, 797] | -2.8 | -0.5 [-3.0; 2.1] |
+| ajuste_monto | [278, 11] | [0, 0] | ND | No estimado |
+
+**Estratos completos de contraste monetario P−C**
+
+| Dimensión | Categoría | N P/C | Diferencia real [IC95] |
+| --- | --- | --- | --- |
+| sexo_grupo | Hombre | 161/10 | No estimado |
+| sexo_grupo | Mujer | 117/1 | No estimado |
+| edad_06 | 60–64 | 129/1 | No estimado |
+| edad_06 | 65–69 | 63/6 | No estimado |
+| edad_06 | 70+ | 86/4 | No estimado |
+| educacion_grupo | 0 años | 45/3 | No estimado |
+| educacion_grupo | 1–5 años | 100/7 | No estimado |
+| educacion_grupo | 6 años | 64/1 | No estimado |
+| educacion_grupo | 7–9 años | 41/0 | No estimado |
+| educacion_grupo | Desconocido | 0/0 | No estimado |
+| educacion_grupo | ≥10 años | 28/0 | No estimado |
+| patrimonio_grupo | Desconocido | 0/0 | No estimado |
+| patrimonio_grupo | Q1 | 53/1 | No estimado |
+| patrimonio_grupo | Q2 | 71/4 | No estimado |
+| patrimonio_grupo | Q3 | 83/3 | No estimado |
+| patrimonio_grupo | Q4 | 71/3 | No estimado |
+
+
+**K 2012--2015 · todos los destinos basales**
+
+| Grupo | N | Patrimonio válido | P Q25/med/Q75 | Edad med | Esc med | Mujeres % | Localidad basal | Monto válido | Monto real Q25/med/Q75 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Fallecido registrado | 738 | 738 | 110,211.3/429,841.7/1,004,500.0 | 75.0 | 3.0 | 48.6 | ≥100 mil habitantes: 56.1%; <100 mil habitantes: 43.9% | 0 | ND/ND/ND |
+| Sí→No | 311 | 311 | 152,211.7/517,617.7/1,046,011.8 | 71.0 | 3.0 | 58.2 | ≥100 mil habitantes: 65.9%; <100 mil habitantes: 34.1% | 0 | ND/ND/ND |
+| Recepción ND en alguna visita | 186 | 186 | 68,500.0/535,229.5/985,936.4 | 71.0 | 3.0 | 58.1 | ≥100 mil habitantes: 55.9%; <100 mil habitantes: 44.1% | 31 | 1,069.9/3,766.0/6,830.2 |
+| Continuidad de la vía | 1,975 | 1,975 | 300,000.0/663,153.8/1,362,871.2 | 69.0 | 6.0 | 40.5 | ≥100 mil habitantes: 72.2%; <100 mil habitantes: 27.8% | 1,857 | 3,423.6/4,279.6/10,270.9 |
+| Persistencia sin ambas vías | 1,658 | 1,658 | 231,064.1/600,944.8/1,264,998.6 | 64.0 | 6.0 | 62.9 | ≥100 mil habitantes: 65.0%; <100 mil habitantes: 35.0% | 0 | ND/ND/ND |
+| Sustituto vivo; fuera del principal | 381 | 381 | 99,788.5/417,327.2/1,035,000.0 | 76.0 | 3.0 | 58.3 | ≥100 mil habitantes: 54.1%; <100 mil habitantes: 45.9% | 42 | 1,027.1/3,423.6/6,205.4 |
+| No→No | 1,782 | 1,782 | 118,863.9/428,747.4/930,591.0 | 69.0 | 3.0 | 61.7 | <100 mil habitantes: 55.7%; ≥100 mil habitantes: 44.3% | 0 | ND/ND/ND |
+| Ausente; vital desconocido | Reservado | Reservado | Reservado | Reservado | Reservado | Reservado | Reservado | Reservado | Reservado |
+| Incorporación desde ambas negativas | 1,090 | 1,090 | 176,906.3/505,668.4/1,089,620.4 | 67.0 | 4.0 | 54.1 | ≥100 mil habitantes: 54.8%; <100 mil habitantes: 45.2% | 1,060 | 941.5/1,027.1/3,937.2 |
+| Incorporación con otra vía basal | 376 | 376 | 100,375.0/375,881.1/899,775.5 | 74.0 | 2.0 | 56.9 | <100 mil habitantes: 81.4%; ≥100 mil habitantes: 18.6% | 373 | 941.5/941.5/996.3 |
+| Incorporación con otra vía ND | Reservado | Reservado | Reservado | Reservado | Reservado | Reservado | Reservado | Reservado | Reservado |
+
+**Desglose del seguimiento por perfil inicialmente negativo**
+
+| Perfil | Destino | N |
+| --- | --- | --- |
+| Ambas negativas | No→No | 2,753 |
+| Ambas negativas | No→Sí | 1,090 |
+| Ambas negativas | Fallecido registrado | 319 |
+| Ambas negativas | Ausente; vital desconocido | 199 |
+| Ambas negativas | Sustituto vivo; fuera del principal | 186 |
+| Ambas negativas | Recepción ND en alguna visita | 45 |
+| Otra vía basal | No→No | 687 |
+| Otra vía basal | No→Sí | 376 |
+| Otra vía basal | Fallecido registrado | 145 |
+| Otra vía basal | Sustituto vivo; fuera del principal | 72 |
+| Otra vía basal | Ausente; vital desconocido | 26 |
+| Otra vía basal | Recepción ND en alguna visita | 17 |
+
+**Otra vía al destino: no equivale a continuidad conjunta**
+
+| Perfil | N | Otra sí | Otra no | Otra ND |
+| --- | --- | --- | --- | --- |
+| Incorporación desde ambas negativas | 1090 | 112 | 978 | 0 |
+| Incorporación con otra vía basal | 376 | 130 | 244 | 2 |
+
+**Sensibilidad por informante/edad**
+
+| Criterio | N nuevos | Desde ambas negativas | Otra basal sí |
+| --- | --- | --- | --- |
+| Incluye sustituto destino | 1492 | 1109 | 380 |
+| Edad destino60+ | 1469 | 1090 | 376 |
+
+**Precios alternativos, diferencia mediana P−C**
+
+| Criterio | Diferencia [IC95 folio] |
+| --- | --- |
+| factor_12m | 81.7 [50.2; 395.3] |
+| factor_ano_entrevista | 83.3 [50.0; 395.8] |
+
+**Cotas por importes faltantes entre receptores observados P−C:** 85.6 a 85.6 pesos reales. No son IC ni asignan montos a ausentes o fallecidos.
+
+**Auditoría de soporte y ajuste:**
+
+| Estimando | N inicial P/C o Q1/Q4 | N soporte | Crudo mismo soporte | Ajustado [IC95] |
+| --- | --- | --- | --- | --- |
+| ajuste_tasa | [943, 950] | [942, 941] | 1.6 | 0.5 [-4.0; 4.8] |
+| ajuste_monto | [1060, 373] | [603, 336] | ND | No estimado |
+
+**Estratos completos de contraste monetario P−C**
+
+| Dimensión | Categoría | N P/C | Diferencia real [IC95] |
+| --- | --- | --- | --- |
+| sexo_grupo | Hombre | 478/160 | 1,112.7 [492.1; 2,482.1] |
+| sexo_grupo | Mujer | 582/213 | 51.4 [8.6; 51.4] |
+| edad_06 | 60–64 | 295/25 | 2,482.1 [1,626.2; 2,824.5] |
+| edad_06 | 65–69 | 388/72 | 51.4 [8.6; 85.6] |
+| edad_06 | 70+ | 377/276 | 51.4 [17.1; 85.6] |
+| educacion_grupo | 0 años | 233/152 | 0.0 [0.0; 42.8] |
+| educacion_grupo | 1–5 años | 377/162 | 51.4 [0.0; 51.4] |
+| educacion_grupo | 6 años | 249/40 | 834.5 [25.5; 2,439.6] |
+| educacion_grupo | 7–9 años | 113/17 | No estimado |
+| educacion_grupo | Desconocido | 6/1 | No estimado |
+| educacion_grupo | ≥10 años | 82/1 | No estimado |
+| patrimonio_grupo | Q1 | 271/132 | 42.8 [0.0; 51.4] |
+| patrimonio_grupo | Q2 | 282/98 | 85.6 [8.6; 813.1] |
+| patrimonio_grupo | Q3 | 263/79 | 1,027.1 [85.6; 2,482.1] |
+| patrimonio_grupo | Q4 | 244/64 | 1,031.4 [214.0; 2,482.1] |
+
+
+**K 2018--2021 · todos los destinos basales**
+
+| Grupo | N | Patrimonio válido | P Q25/med/Q75 | Edad med | Esc med | Mujeres % | Localidad basal | Monto válido | Monto real Q25/med/Q75 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| No→No | 4,009 | 4,009 | 165,000.0/600,000.0/1,262,166.5 | 69.0 | 4.0 | 64.5 | <100 mil habitantes: 52.6%; ≥100 mil habitantes: 47.4% | 0 | ND/ND/ND |
+| Continuidad de la vía | 2,079 | 2,079 | 401,500.0/895,000.0/1,764,101.1 | 71.0 | 6.0 | 43.6 | ≥100 mil habitantes: 71.8%; <100 mil habitantes: 28.2% | 1,954 | 3,859.6/5,438.9/13,140.5 |
+| Sustituto vivo; fuera del principal | 599 | 598 | 140,000.0/689,546.8/1,324,725.1 | 75.0 | 3.0 | 58.4 | ≥100 mil habitantes: 51.1%; <100 mil habitantes: 48.9% | 172 | 3,535.3/5,088.5/11,053.0 |
+| Fallecido registrado | 1,069 | 1,069 | 179,260.1/658,291.7/1,453,523.6 | 76.0 | 3.0 | 48.1 | ≥100 mil habitantes: 55.2%; <100 mil habitantes: 44.8% | 0 | ND/ND/ND |
+| Sí→No | 375 | 375 | 197,500.0/703,188.8/1,500,000.0 | 73.0 | 3.0 | 55.5 | ≥100 mil habitantes: 53.6%; <100 mil habitantes: 46.4% | 0 | ND/ND/ND |
+| Ausente; vital desconocido | Reservado | Reservado | Reservado | Reservado | Reservado | Reservado | Reservado | Reservado | Reservado |
+| Recepción ND en alguna visita | 60 | 50 | 127,445.4/551,948.0/1,368,142.5 | 65.5 | 6.0 | 30.0 | ≥100 mil habitantes: 65.0%; <100 mil habitantes: 35.0% | 11 | 4,101.7/6,118.8/11,871.5 |
+| Incorporación desde ambas negativas | 384 | 384 | 307,500.0/733,999.2/1,520,000.0 | 66.0 | 6.0 | 53.4 | ≥100 mil habitantes: 70.6%; <100 mil habitantes: 29.4% | 360 | 3,859.6/4,895.0/9,314.1 |
+| Incorporación con otra vía basal | 137 | 137 | 230,000.0/562,000.0/1,535,124.9 | 73.0 | 6.0 | 65.0 | ≥100 mil habitantes: 50.4%; <100 mil habitantes: 49.6% | 132 | 2,107.6/4,079.2/5,234.9 |
+
+**Desglose del seguimiento por perfil inicialmente negativo**
+
+| Perfil | Destino | N |
+| --- | --- | --- |
+| Ambas negativas | No→No | 2,316 |
+| Ambas negativas | No→Sí | 384 |
+| Ambas negativas | Fallecido registrado | 304 |
+| Ambas negativas | Ausente; vital desconocido | 184 |
+| Ambas negativas | Sustituto vivo; fuera del principal | 175 |
+| Ambas negativas | Recepción ND en alguna visita | 5 |
+| Otra vía basal | No→No | 1,684 |
+| Otra vía basal | Fallecido registrado | 337 |
+| Otra vía basal | Sustituto vivo; fuera del principal | 204 |
+| Otra vía basal | No→Sí | 137 |
+| Otra vía basal | Ausente; vital desconocido | 55 |
+| Otra vía basal | Recepción ND en alguna visita | 5 |
+
+**Otra vía al destino: no equivale a continuidad conjunta**
+
+| Perfil | N | Otra sí | Otra no | Otra ND |
+| --- | --- | --- | --- | --- |
+| Incorporación desde ambas negativas | 384 | 165 | 219 | 0 |
+| Incorporación con otra vía basal | 137 | 95 | 42 | 0 |
+
+**Sensibilidad por informante/edad**
+
+| Criterio | N nuevos | Desde ambas negativas | Otra basal sí |
+| --- | --- | --- | --- |
+| Incluye sustituto destino | 559 | 412 | 147 |
+| Edad destino60+ | 521 | 384 | 137 |
+
+**Precios alternativos, diferencia mediana P−C**
+
+| Criterio | Diferencia [IC95 folio] |
+| --- | --- |
+| factor_12m | 858.4 [517.7; 1,294.2] |
+| factor_ano_entrevista | 771.9 [514.6; 1,157.9] |
+
+**Cotas por importes faltantes entre receptores observados P−C:** 679.9 a 1,077.4 pesos reales. No son IC ni asignan montos a ausentes o fallecidos.
+
+**Auditoría de soporte y ajuste:**
+
+| Estimando | N inicial P/C o Q1/Q4 | N soporte | Crudo mismo soporte | Ajustado [IC95] |
+| --- | --- | --- | --- | --- |
+| ajuste_tasa | [705, 645] | [697, 639] | -4.9 | -4.0 [-7.6; -0.4] |
+| ajuste_monto | [360, 132] | [71, 66] | ND | No estimado |
+
+**Estratos completos de contraste monetario P−C**
+
+| Dimensión | Categoría | N P/C | Diferencia real [IC95] |
+| --- | --- | --- | --- |
+| sexo_grupo | Hombre | 167/45 | 1,359.7 [644.4; 2,611.3] |
+| sexo_grupo | Mujer | 193/87 | 423.7 [136.0; 1,013.9] |
+| edad_06 | 60–64 | 131/12 | No estimado |
+| edad_06 | 65–69 | 114/25 | 733.5 [0.0; 3,062.3] |
+| edad_06 | 70+ | 115/95 | 136.0 [-136.0; 679.9] |
+| educacion_grupo | 0 años | 28/20 | 713.9 [-679.9; 2,243.5] |
+| educacion_grupo | 1–5 años | 89/44 | 271.9 [0.0; 1,497.4] |
+| educacion_grupo | 6 años | 92/41 | -144.4 [-1,021.2; 815.8] |
+| educacion_grupo | 7–9 años | 85/19 | No estimado |
+| educacion_grupo | Desconocido | 5/0 | No estimado |
+| educacion_grupo | ≥10 años | 61/8 | No estimado |
+| patrimonio_grupo | Desconocido | 0/0 | No estimado |
+| patrimonio_grupo | Q1 | 73/31 | 642.4 [-219.6; 1,495.7] |
+| patrimonio_grupo | Q2 | 103/40 | 679.9 [-136.0; 2,076.0] |
+| patrimonio_grupo | Q3 | 91/23 | 1,087.8 [-1,768.3; 2,039.6] |
+| patrimonio_grupo | Q4 | 93/38 | 1,677.1 [543.9; 3,755.8] |
+
+
+**A 2003--2012 · todos los destinos basales**
+
+| Grupo | N | Patrimonio válido | P Q25/med/Q75 | Edad med | Esc med | Mujeres % | Localidad basal | Monto válido | Monto real Q25/med/Q75 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| No→No | 2,422 | 2,422 | 100,575.0/291,954.8/568,691.0 | 65.0 | 3.0 | 55.4 | ≥100 mil habitantes: 67.7%; <100 mil habitantes: 32.3% | 0 | ND/ND/ND |
+| Fallecido registrado | 1,941 | 1,937 | 46,854.4/199,400.0/463,813.3 | 73.0 | 2.0 | 47.2 | ≥100 mil habitantes: 54.7%; <100 mil habitantes: 45.3% | 0 | ND/ND/ND |
+| Ausente; vital desconocido | Reservado | Reservado | Reservado | Reservado | Reservado | Reservado | Reservado | Reservado | Reservado |
+| Sí→No | 231 | 231 | 81,218.7/254,284.9/530,731.8 | 67.0 | 2.0 | 56.7 | <100 mil habitantes: 67.1%; ≥100 mil habitantes: 32.9% | 0 | ND/ND/ND |
+| Recepción ND en alguna visita | 105 | 99 | 89,469.2/237,259.2/518,573.5 | 70.0 | 2.0 | 68.6 | <100 mil habitantes: 52.4%; ≥100 mil habitantes: 47.6% | 8 | 481.1/962.2/962.2 |
+| Continuidad de la vía | 285 | 285 | 60,000.0/170,000.0/486,569.5 | 67.0 | 1.0 | 50.9 | <100 mil habitantes: 88.8%; ≥100 mil habitantes: 11.2% | 278 | 962.2/962.2/1,732.0 |
+| Incorporación desde ambas negativas | 678 | 678 | 60,564.0/195,490.4/430,240.0 | 67.0 | 2.0 | 61.7 | <100 mil habitantes: 61.2%; ≥100 mil habitantes: 38.8% | 666 | 962.2/962.2/1,443.3 |
+| Sustituto vivo; fuera del principal | 564 | 562 | 50,000.0/200,000.0/500,000.0 | 71.0 | 2.0 | 58.9 | <100 mil habitantes: 51.4%; ≥100 mil habitantes: 48.6% | 23 | 962.2/962.2/962.2 |
+| Incorporación con otra vía basal | 98 | 98 | 131,229.8/296,500.6/589,370.5 | 67.5 | 5.0 | 37.8 | <100 mil habitantes: 51.0%; ≥100 mil habitantes: 49.0% | 98 | 962.2/962.2/1,034.4 |
+
+**Desglose del seguimiento por perfil inicialmente negativo**
+
+| Perfil | Destino | N |
+| --- | --- | --- |
+| Ambas negativas | No→No | 1,710 |
+| Ambas negativas | Fallecido registrado | 1,165 |
+| Ambas negativas | No→Sí | 678 |
+| Ambas negativas | Ausente; vital desconocido | 400 |
+| Ambas negativas | Sustituto vivo; fuera del principal | 369 |
+| Ambas negativas | Recepción ND en alguna visita | 46 |
+| Otra vía basal | No→No | 712 |
+| Otra vía basal | Fallecido registrado | 504 |
+| Otra vía basal | Ausente; vital desconocido | 201 |
+| Otra vía basal | Sustituto vivo; fuera del principal | 102 |
+| Otra vía basal | No→Sí | 98 |
+| Otra vía basal | Recepción ND en alguna visita | 14 |
+
+**Otra vía al destino: no equivale a continuidad conjunta**
+
+| Perfil | N | Otra sí | Otra no | Otra ND |
+| --- | --- | --- | --- | --- |
+| Incorporación desde ambas negativas | 678 | 62 | 616 | 0 |
+| Incorporación con otra vía basal | 98 | 84 | 14 | 0 |
+
+**Sensibilidad por informante/edad**
+
+| Criterio | N nuevos | Desde ambas negativas | Otra basal sí |
+| --- | --- | --- | --- |
+| Incluye sustituto destino | 795 | 695 | 100 |
+| Edad destino60+ | 775 | 677 | 98 |
+
+**Precios alternativos, diferencia mediana P−C**
+
+| Criterio | Diferencia [IC95 folio] |
+| --- | --- |
+| factor_12m | 0.0 [0.0; 3.5] |
+| factor_ano_entrevista | 0.0 [0.0; 0.0] |
+
+**Cotas por importes faltantes entre receptores observados P−C:** 0.0 a 0.0 pesos reales. No son IC ni asignan montos a ausentes o fallecidos.
+
+**Auditoría de soporte y ajuste:**
+
+| Estimando | N inicial P/C o Q1/Q4 | N soporte | Crudo mismo soporte | Ajustado [IC95] |
+| --- | --- | --- | --- | --- |
+| ajuste_tasa | [552, 555] | [500, 439] | 10.1 | 6.8 [0.3; 13.1] |
+| ajuste_monto | [666, 98] | [0, 0] | ND | No estimado |
+
+**Estratos completos de contraste monetario P−C**
+
+| Dimensión | Categoría | N P/C | Diferencia real [IC95] |
+| --- | --- | --- | --- |
+| sexo_grupo | Hombre | 255/61 | 0.0 [0.0; 0.0] |
+| sexo_grupo | Mujer | 411/37 | 0.0 [0.0; 0.0] |
+| edad_06 | 60–64 | 222/29 | 0.0 [-837.1; 0.0] |
+| edad_06 | 65–69 | 216/37 | 0.0 [0.0; 0.0] |
+| edad_06 | 70+ | 228/32 | 0.0 [0.0; 0.0] |
+| educacion_grupo | 0 años | 254/13 | No estimado |
+| educacion_grupo | 1–5 años | 286/37 | 0.0 [0.0; 0.0] |
+| educacion_grupo | 6 años | 90/26 | 0.0 [0.0; 0.0] |
+| educacion_grupo | 7–9 años | 26/13 | No estimado |
+| educacion_grupo | Desconocido | 3/0 | No estimado |
+| educacion_grupo | ≥10 años | 7/9 | No estimado |
+| patrimonio_grupo | Desconocido | 0/0 | No estimado |
+| patrimonio_grupo | Q1 | 178/12 | No estimado |
+| patrimonio_grupo | Q2 | 194/30 | 0.0 [0.0; 0.0] |
+| patrimonio_grupo | Q3 | 172/29 | 0.0 [0.0; 0.0] |
+| patrimonio_grupo | Q4 | 122/27 | 0.0 [0.0; 0.0] |
+
+
+**A 2012--2015 · todos los destinos basales**
+
+| Grupo | N | Patrimonio válido | P Q25/med/Q75 | Edad med | Esc med | Mujeres % | Localidad basal | Monto válido | Monto real Q25/med/Q75 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Fallecido registrado | 738 | 738 | 110,211.3/429,841.7/1,004,500.0 | 75.0 | 3.0 | 48.6 | ≥100 mil habitantes: 56.1%; <100 mil habitantes: 43.9% | 0 | ND/ND/ND |
+| Incorporación con otra vía basal | 296 | 296 | 165,387.0/574,009.0/1,208,655.5 | 73.0 | 3.0 | 58.1 | ≥100 mil habitantes: 56.1%; <100 mil habitantes: 43.9% | 286 | 855.9/941.5/1,690.4 |
+| Recepción ND en alguna visita | 169 | 169 | 68,000.0/520,465.5/1,015,000.0 | 72.0 | 3.0 | 56.2 | ≥100 mil habitantes: 52.1%; <100 mil habitantes: 47.9% | 27 | 855.9/941.5/1,014.3 |
+| No→No | 2,785 | 2,785 | 250,300.0/600,000.0/1,250,000.0 | 68.0 | 6.0 | 45.5 | ≥100 mil habitantes: 70.2%; <100 mil habitantes: 29.8% | 0 | ND/ND/ND |
+| Persistencia sin ambas vías | 1,658 | 1,658 | 231,064.1/600,944.8/1,264,998.6 | 64.0 | 6.0 | 62.9 | ≥100 mil habitantes: 65.0%; <100 mil habitantes: 35.0% | 0 | ND/ND/ND |
+| Sustituto vivo; fuera del principal | 381 | 381 | 99,788.5/417,327.2/1,035,000.0 | 76.0 | 3.0 | 58.3 | ≥100 mil habitantes: 54.1%; <100 mil habitantes: 45.9% | 37 | 855.9/941.5/1,027.1 |
+| Sí→No | 520 | 520 | 122,293.1/405,870.6/867,902.5 | 74.0 | 2.0 | 56.3 | <100 mil habitantes: 61.9%; ≥100 mil habitantes: 38.1% | 0 | ND/ND/ND |
+| Incorporación desde ambas negativas | 1,210 | 1,210 | 146,693.4/495,037.8/1,007,245.3 | 68.0 | 3.0 | 62.0 | <100 mil habitantes: 50.1%; ≥100 mil habitantes: 49.9% | 1,196 | 855.9/941.5/1,027.1 |
+| Continuidad de la vía | 737 | 737 | 103,404.3/398,136.7/947,504.9 | 73.0 | 2.0 | 55.9 | <100 mil habitantes: 76.1%; ≥100 mil habitantes: 23.9% | 723 | 855.9/941.5/1,140.1 |
+| Ausente; vital desconocido | Reservado | Reservado | Reservado | Reservado | Reservado | Reservado | Reservado | Reservado | Reservado |
+| Incorporación con otra vía ND | Reservado | Reservado | Reservado | Reservado | Reservado | Reservado | Reservado | Reservado | Reservado |
+
+**Desglose del seguimiento por perfil inicialmente negativo**
+
+| Perfil | Destino | N |
+| --- | --- | --- |
+| Ambas negativas | No→No | 2,639 |
+| Ambas negativas | No→Sí | 1,210 |
+| Ambas negativas | Fallecido registrado | 319 |
+| Ambas negativas | Ausente; vital desconocido | 199 |
+| Ambas negativas | Sustituto vivo; fuera del principal | 186 |
+| Ambas negativas | Recepción ND en alguna visita | 39 |
+| Otra vía basal | No→No | 1,793 |
+| Otra vía basal | No→Sí | 296 |
+| Otra vía basal | Fallecido registrado | 214 |
+| Otra vía basal | Ausente; vital desconocido | 150 |
+| Otra vía basal | Sustituto vivo; fuera del principal | 91 |
+| Otra vía basal | Recepción ND en alguna visita | 18 |
+
+**Otra vía al destino: no equivale a continuidad conjunta**
+
+| Perfil | N | Otra sí | Otra no | Otra ND |
+| --- | --- | --- | --- | --- |
+| Incorporación desde ambas negativas | 1210 | 112 | 1094 | 4 |
+| Incorporación con otra vía basal | 296 | 162 | 134 | 0 |
+
+**Sensibilidad por informante/edad**
+
+| Criterio | N nuevos | Desde ambas negativas | Otra basal sí |
+| --- | --- | --- | --- |
+| Incluye sustituto destino | 1535 | 1228 | 300 |
+| Edad destino60+ | 1511 | 1209 | 296 |
+
+**Precios alternativos, diferencia mediana P−C**
+
+| Criterio | Diferencia [IC95 folio] |
+| --- | --- |
+| factor_12m | 0.0 [-1.9; 1.9] |
+| factor_ano_entrevista | 0.0 [0.0; 0.0] |
+
+**Cotas por importes faltantes entre receptores observados P−C:** 0.0 a 0.0 pesos reales. No son IC ni asignan montos a ausentes o fallecidos.
+
+**Auditoría de soporte y ajuste:**
+
+| Estimando | N inicial P/C o Q1/Q4 | N soporte | Crudo mismo soporte | Ajustado [IC95] |
+| --- | --- | --- | --- | --- |
+| ajuste_tasa | [944, 951] | [943, 942] | 7.9 | 4.0 [-0.6; 8.6] |
+| ajuste_monto | [1196, 286] | [610, 225] | ND | No estimado |
+
+**Estratos completos de contraste monetario P−C**
+
+| Dimensión | Categoría | N P/C | Diferencia real [IC95] |
+| --- | --- | --- | --- |
+| sexo_grupo | Hombre | 454/117 | -5.1 [-59.9; 0.0] |
+| sexo_grupo | Mujer | 742/169 | 0.0 [0.0; 0.0] |
+| edad_06 | 60–64 | 283/23 | 85.6 [-25.7; 171.2] |
+| edad_06 | 65–69 | 479/63 | 0.0 [-25.7; 85.6] |
+| edad_06 | 70+ | 434/200 | 0.0 [-42.8; 0.0] |
+| educacion_grupo | 0 años | 297/72 | 0.0 [0.0; 0.0] |
+| educacion_grupo | 1–5 años | 490/115 | 0.0 [0.0; 0.0] |
+| educacion_grupo | 6 años | 256/50 | 0.0 [-85.6; 38.5] |
+| educacion_grupo | 7–9 años | 99/33 | -684.7 [-770.3; 42.8] |
+| educacion_grupo | Desconocido | 6/2 | No estimado |
+| educacion_grupo | ≥10 años | 48/14 | No estimado |
+| patrimonio_grupo | Q1 | 333/73 | 0.0 [0.0; 60.1] |
+| patrimonio_grupo | Q2 | 328/60 | 0.0 [0.0; 5.1] |
+| patrimonio_grupo | Q3 | 276/80 | 0.0 [-51.4; 0.0] |
+| patrimonio_grupo | Q4 | 259/73 | -42.8 [-72.8; 0.0] |
+
+
+**A 2015--2018 · todos los destinos basales**
+
+| Grupo | N | Patrimonio válido | P Q25/med/Q75 | Edad med | Esc med | Mujeres % | Localidad basal | Monto válido | Monto real Q25/med/Q75 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Sí→No | 721 | 721 | 177,792.5/600,000.0/1,576,446.9 | 71.0 | 3.0 | 55.1 | <100 mil habitantes: 50.9%; ≥100 mil habitantes: 49.1% | 0 | ND/ND/ND |
+| No→No | 4,026 | 4,026 | 278,030.9/678,565.9/1,859,953.8 | 67.0 | 6.0 | 52.9 | ≥100 mil habitantes: 68.8%; <100 mil habitantes: 31.2% | 0 | ND/ND/ND |
+| Fallecido registrado | 771 | 769 | 160,000.0/505,000.0/1,130,000.0 | 76.0 | 3.0 | 46.4 | ≥100 mil habitantes: 51.2%; <100 mil habitantes: 48.8% | 0 | ND/ND/ND |
+| Continuidad de la vía | 1,281 | 1,281 | 117,620.0/457,328.5/1,303,000.0 | 72.0 | 3.0 | 64.0 | <100 mil habitantes: 62.9%; ≥100 mil habitantes: 37.1% | 1,245 | 840.6/886.5/1,528.4 |
+| Incorporación desde ambas negativas | 603 | 603 | 155,000.0/550,000.0/1,489,303.7 | 67.0 | 3.0 | 65.3 | <100 mil habitantes: 51.1%; ≥100 mil habitantes: 48.9% | 581 | 840.6/886.5/1,299.2 |
+| Sustituto vivo; fuera del principal | 618 | 618 | 168,738.2/563,112.9/1,731,562.8 | 75.0 | 3.0 | 57.3 | <100 mil habitantes: 50.6%; ≥100 mil habitantes: 49.4% | 221 | 840.6/886.5/1,528.4 |
+| Ausente; vital desconocido | Reservado | Reservado | Reservado | Reservado | Reservado | Reservado | Reservado | Reservado | Reservado |
+| Recepción ND en alguna visita | 82 | 75 | 151,500.0/667,603.0/3,069,061.9 | 71.0 | 4.0 | 51.2 | ≥100 mil habitantes: 50.0%; <100 mil habitantes: 50.0% | 18 | 773.5/1,108.1/1,750.0 |
+| Incorporación con otra vía basal | 606 | 606 | 154,029.5/535,500.0/1,333,069.6 | 73.0 | 3.0 | 57.3 | <100 mil habitantes: 64.0%; ≥100 mil habitantes: 36.0% | 589 | 840.6/886.5/1,528.4 |
+| Incorporación con otra vía ND | Reservado | Reservado | Reservado | Reservado | Reservado | Reservado | Reservado | Reservado | Reservado |
+| Conflicto de estado vital registrado | Reservado | Reservado | Reservado | Reservado | Reservado | Reservado | Reservado | Reservado | Reservado |
+
+**Desglose del seguimiento por perfil inicialmente negativo**
+
+| Perfil | Destino | N |
+| --- | --- | --- |
+| Ambas negativas | No→No | 1,894 |
+| Ambas negativas | No→Sí | 603 |
+| Ambas negativas | Ausente; vital desconocido | 374 |
+| Ambas negativas | Fallecido registrado | 194 |
+| Ambas negativas | Sustituto vivo; fuera del principal | 176 |
+| Ambas negativas | Recepción ND en alguna visita | 12 |
+| Otra vía basal | No→No | 2,129 |
+| Otra vía basal | No→Sí | 606 |
+| Otra vía basal | Ausente; vital desconocido | 382 |
+| Otra vía basal | Fallecido registrado | 273 |
+| Otra vía basal | Sustituto vivo; fuera del principal | 229 |
+| Otra vía basal | Recepción ND en alguna visita | 3 |
+
+**Otra vía al destino: no equivale a continuidad conjunta**
+
+| Perfil | N | Otra sí | Otra no | Otra ND |
+| --- | --- | --- | --- | --- |
+| Incorporación desde ambas negativas | 603 | 39 | 564 | 0 |
+| Incorporación con otra vía basal | 606 | 140 | 465 | 1 |
+
+**Sensibilidad por informante/edad**
+
+| Criterio | N nuevos | Desde ambas negativas | Otra basal sí |
+| --- | --- | --- | --- |
+| Incluye sustituto destino | 1312 | 637 | 672 |
+| Edad destino60+ | 1211 | 602 | 606 |
+
+**Precios alternativos, diferencia mediana P−C**
+
+| Criterio | Diferencia [IC95 folio] |
+| --- | --- |
+| factor_12m | 0.0 [-26.1; 4.1] |
+| factor_ano_entrevista | 0.0 [-29.1; 7.3] |
+
+**Cotas por importes faltantes entre receptores observados P−C:** -7.6 a 0.0 pesos reales. No son IC ni asignan montos a ausentes o fallecidos.
+
+**Auditoría de soporte y ajuste:**
+
+| Estimando | N inicial P/C o Q1/Q4 | N soporte | Crudo mismo soporte | Ajustado [IC95] |
+| --- | --- | --- | --- | --- |
+| ajuste_tasa | [599, 621] | [533, 559] | 7.6 | 6.2 [0.7; 11.5] |
+| ajuste_monto | [581, 589] | [426, 523] | -7.6 | -7.6 [-38.2; 7.6] |
+
+**Estratos completos de contraste monetario P−C**
+
+| Dimensión | Categoría | N P/C | Diferencia real [IC95] |
+| --- | --- | --- | --- |
+| sexo_grupo | Hombre | 197/249 | 0.0 [-30.6; 7.6] |
+| sexo_grupo | Mujer | 384/340 | -7.6 [-45.9; 7.6] |
+| edad_06 | 60–64 | 133/12 | No estimado |
+| edad_06 | 65–69 | 231/173 | 0.0 [-30.6; 34.6] |
+| edad_06 | 70+ | 217/404 | -7.6 [-45.9; 0.0] |
+| educacion_grupo | 0 años | 141/176 | 0.0 [-34.4; 7.8] |
+| educacion_grupo | 1–5 años | 225/229 | -45.9 [-45.9; 0.0] |
+| educacion_grupo | 6 años | 128/122 | 0.0 [-45.9; 36.0] |
+| educacion_grupo | 7–9 años | 55/39 | 0.0 [-81.0; 45.9] |
+| educacion_grupo | Desconocido | 4/2 | No estimado |
+| educacion_grupo | ≥10 años | 28/21 | 68.8 [-855.9; 840.6] |
+| patrimonio_grupo | Desconocido | 0/0 | No estimado |
+| patrimonio_grupo | Q1 | 166/165 | -3.8 [-45.9; 22.9] |
+| patrimonio_grupo | Q2 | 150/156 | 0.0 [-45.9; 7.6] |
+| patrimonio_grupo | Q3 | 141/145 | -22.9 [-45.9; 38.2] |
+| patrimonio_grupo | Q4 | 124/123 | 0.0 [-30.6; 38.2] |
+
+
+#### Matriz de objetivos, análisis, tablas y conclusiones
+
+| Objetivo | Análisis | Tabla/evidencia | Conclusión y límite |
+| --- | --- | --- | --- |
+| 1. Distinguir vías propias/cónyuge/A 5 | 06–07, recepción 09 y coexistencia | Rondas y superposiciones; tabla 3.1 | Demostrado operacionalmente; A 5 solo 2021, cónyuge no recurso propio |
+| 2. Cobertura y diferencias sociodemográficas | Seis cortes 06–07 y tasas 09 | Rondas, perfiles, gradiente | Descritas ambas vías; sin representatividad nacional |
+| 3. Montos nominales/reales y referencia parcial | 07, dinero 09 y sensibilidad precios | Montos, diferencias, cuadros LPI previos | Poder adquisitivo operativo; no pobreza o ingreso total |
+| 4. Primera vía y otra vía basal | Seis ventanas y unión 2012–2015 | Composición, riesgo y unión | Composición y probabilidad distintas; sin alta administrativa |
+| 5. Nuevos/continuos e instituciones | 08 precisión +09 P/C/R e institución destino | Montos, diferencias, instituciones | Heterogeneidad demostrada; no atribución causal ni reparto por institución |
+| 6. Condiciones socioeconómicas y monto posterior | 09 cruce basal conjunto, estratos y mezcla común | Perfiles, patrimonio, gradiente, diferencias | Asociaciones específicas; cinco ajustes monetarios sin soporte |
+| 7. Transversal frente a cambio personal | 08/10.7 conservados, cortes 09 | Cuadros de continuidad y cambios previos | Estimandos distintos; cambios individuales no inferidos de cortes |
+| 8. Mortalidad/ausencia/información insuficiente | 05,08 y particiones/cotas09 | Selección y todos los destinos | Observabilidad cuantificada; recepción no observada y antes de morir no identificadas |
+
+**Partes sin respuesta:** pobreza y necesidad económica integral; efectos causales; ingreso total personal/familiar; primera alta administrativa; continuidad entre visitas; programas homogéneos antes de identificación; crecimiento patrimonial real; inferencia nacional; recepción/montos de ausentes o antes de morir; mediana P/C ajustada en cinco ventanas por falta de soporte. Estas carencias son límites explícitos, no resultados inventados.
+
+<!-- END central09 -->
+
+### 10.9 Auditoría de calidad estadística y divulgación (etapa 10)
+
+**Alcance y conservación.** Se censaron 126 cuadros y 50 figuras del informe original; 71 archivos LaTeX de cuadros/macros, activos y auxiliares; fuentes01–09 y 222 tablas EDA externas. El registro privado contiene 135,029 nodos de conteos/estadísticos: **no son ese número de contrastes independientes**. Frecuencias por valor, exclusiones, eventos y N de estimación se separan. Los originales completos, incluido el PDF de 88 páginas y las versiones previas de las figuras, están en la instantánea privada inmutable; no se alteran microdatos ni stash. La edición actual es la versión pública corregida.
+
+**Cierre del filtro y de la publicación.** Se restauró la figura de cambios reales individuales de continuos (figura 47 del informe): N=1,756/1,223 pares principales y 1,183/1,103 en sensibilidades. El filtro anterior leía el separador LaTeX de miles como final del número. La comparación de decisiones sobre las fuentes originales encontró un único bloque LaTeX afectado indebidamente, ninguna estimación recalculada y ningún párrafo Markdown afectado por ese error. Las estadísticas originales se conservan. Los exportadores históricos están bloqueados para evitar sobrescribir salidas revisadas y el flujo de GitHub ya no hace publicaciones automáticas. El manifiesto público define también los retiros propuestos de archivos ya rastreados; excluirlos de una carpeta no equivale a retirarlos de Git. La auditoría aplicada de familias, formatos y rutas se registra en el manifiesto de cierre y sus límites no se confunden con una garantía frente a información externa arbitraria. El historial anterior queda separado, sin reescritura.
+
+**Embudo exacto central.** Hay336 embudos de vía/intervalo/perfil/estrato con N de cohorte, categoría basal, presencia al destino, entrevista directa, ausencia de conflicto vital, recepción conocida/afirmativa, todos los montos captados válidos y factor de precios. Se concilian con 09; IDs únicos y LEFT1:1, sin pérdida nueva por programación detectada. Se preservan las alertas originales del proveedor; ello no certifica toda la integración histórica. Cada fila de intervalo es una persona, pero un evento no es una persona y las ventanas se solapan: las cinco cohortes suman41,417 personas-intervalo y solo 16,447 personas únicas.
+
+**Criterios distintos.** N <10 impide divulgar estadísticas monetarias o perfiles continuos del grupo y no permite una conclusión poblacional. N 10–29 activa revisión de dispersión, IC, empates, influencia y estabilidad. N ≥30 tampoco acredita representatividad, precisión o causalidad. Son criterios operativos conservadores de esta tesis, no mínimos universales de ENASEM ni certificación legal. Las condiciones de acceso MHAS prohíben intentar identificar participantes y redistribuir bases a terceros; la documentación oficial de confidencialidad INEGI exige protección de identificación. No se encontró en las fuentes consultadas una regla universal10/30. Véase [política documentada](../diccionarios/politica_calidad_divulgacion.json).
+
+**Resultado central conservado.** Unión K/A 2012–2015: 2,188/3,846 reobservados desde ambas negativas, 56.9%, IC por folio 9999 réplicas [55.3; 58.5]%. La cohorte inicial es4,592. Dos semillas y la omisión de cada folio mantienen el resultado: máximo cambio de 0.030 puntos porcentuales. Esto evalúa precisión condicional, no corrige la selección de los 746 destinos no incluidos en el denominador observado.
+
+**Causas y efecto científico.** K 2001–2003 contiene 12 receptores C y 11 importes: solo un monto falta; no existe una pérdida masiva que justifique relajar filtros. La rareza de otra vía basal, la baja incorporación K y su subdivisión por cuartiles explican las celdas de 1–4. Incluso al pasar a mitades el contraste sigue sin soporte: se retira de conclusiones direccionales. No se une con otras ventanas. T8 contextual2021 cruza escolaridad detallada y titularidad K; además seleccionaba máximos/mínimos de medianas y trataba ND como perfil. Se reformula uniformemente a0–5/6+ y titularidad conocida, con todos los grupos, sin escoger extremos; los originales siguen privados.
+
+**Sensibilidad que cambia la redacción.** El gradiente patrimonial A 2015–2018 es positivo bajo edad 3/celda20, pero incluye cero con edad 2 y soporte revisado. K 2018–2021 conserva dirección puntual negativa, aunque edad 3/celda30 incluye cero. Por tanto, no se presentan sus signos como hallazgos incondicionales. A 2003–2012 mantiene señal positiva en las especificaciones viables, con seguimiento selectivo y la especificación fina/celda30 sin retención suficiente. A 2012–2015 incluye cero ajustado. Los nulos y contraejemplos se conservan. Los IC de medianas A que colapsan a cero se explican por empates, no por equivalencia distributiva. La diferencia cruda P−C K reciente conserva dirección positiva con dos semillas, rangos binomiales y omisión de folios, pero el extremo superior del IC K 2012–2015 es sensible al remuestreo: no se exagera precisión de su magnitud.
+
+#### Precisión monetaria P menos C y estabilidad de remuestreo
+
+| Vía/ventana | N P/C | IC semilla1 | IC semilla2 | Evaluación |
+| --- | --- | --- | --- | --- |
+| K 2001--2003 | 278/11 | No confiable | No confiable | Sin soporte direccional |
+| K 2012--2015 | 1,060/373 | [51.4; 668.3] | [51.4; 409.1] | Dirección cruda estable |
+| K 2018--2021 | 360/132 | [543.9; 1,324.3] | [543.9; 1,281.3] | Dirección cruda estable |
+| A 2003--2012 | 666/98 | [0.0; 0.0] | [0.0; 0.0] | Condicional; empates |
+| A 2012--2015 | 1,196/286 | [0.0; 0.0] | [0.0; 0.0] | Condicional; empates |
+| A 2015--2018 | 581/589 | [-30.6; 7.6] | [-30.6; 7.6] | Medianas coincidentes |
+
+Fuente: auditoría 10, insumos01--09 intactos. Muestra sin ponderación; IC condicionales, sin inferencia nacional o causal. P: primera vía observada; C: otra vía basal afirmativa. 9999 réplicas por folio y dos semillas. Se muestran estimación e IC. Los intervalos por orden e influencia están en el informe. La diferencia K 2001--2003 no se usa como conclusión direccional aunque pueda calcularse.
+
+#### Sensibilidad del gradiente patrimonial de incorporación
+
+| Vía/ventana | Edad3/celda20 pp | Edad2/celda30 pp | N soporte Q1/Q4 |
+| --- | --- | --- | --- |
+| K 2001--2003 | -0.5 [-3.1; 1.9] | -0.8 [-3.2; 1.7] | 956/831 |
+| K 2012--2015 | 0.5 [-4.0; 5.0] | 0.3 [-4.2; 4.9] | 918/894 |
+| K 2018--2021 | -4.0 [-7.7; -0.4] | -4.0 [-7.6; -0.4] | 668/596 |
+| A 2003--2012 | 6.8 [0.3; 13.2] | 6.9 [0.9; 13.3] | 527/499 |
+| A 2012--2015 | 4.0 [-0.8; 8.6] | 4.0 [-1.0; 8.8] | 919/895 |
+| A 2015--2018 | 6.2 [0.7; 11.6] | 4.7 [-0.8; 10.2] | 508/490 |
+
+Fuente: auditoría 10, insumos01--09 intactos. Muestra sin ponderación; IC condicionales, sin inferencia nacional o causal. P: primera vía observada; C: otra vía basal afirmativa. Q1 menos Q4 entre negativas K/A reobservadas; sexo y escolaridad se mantienen. Edad2=60--69/70+, edad 3=60--64/65--69/70+. Cambian soporte y mezcla, no es la misma población. Todas las cuatro especificaciones están en el informe; no se elige por significancia.
+
+#### Monto posterior por mitad patrimonial y protección basal
+
+| Vía/ventana | Mitad | N P/C | Mediana P | Mediana C | P-C [IC95] |
+| --- | --- | --- | --- | --- | --- |
+| K 2001--2003 | Inferior | Sin soporte | Reservado | Reservado | No estimable |
+| K 2001--2003 | Superior | Sin soporte | Reservado | Reservado | No estimable |
+| K 2012--2015 | Inferior | 553/230 | 992.9 | 941.5 | 51.4 [8.6; 68.5] |
+| K 2012--2015 | Superior | 507/143 | 1,985.7 | 941.5 | 1,044.2 [492.1; 2,482.1] |
+| K 2018--2021 | Inferior | 176/71 | 4,740.3 | 4,079.2 | 661.1 [37.7; 1,149.4] |
+| K 2018--2021 | Superior | 184/61 | 5,438.9 | 4,079.2 | 1,359.7 [564.7; 2,175.6] |
+| A 2003--2012 | Inferior | 372/42 | 962.2 | 962.2 | 0.0 [0.0; 0.0] |
+| A 2003--2012 | Superior | 294/56 | 962.2 | 962.2 | 0.0 [0.0; 0.0] |
+| A 2012--2015 | Inferior | 661/133 | 941.5 | 941.5 | 0.0 [0.0; 0.0] |
+| A 2012--2015 | Superior | 535/153 | 941.5 | 941.5 | 0.0 [-51.4; 0.0] |
+| A 2015--2018 | Inferior | 316/321 | 886.5 | 886.5 | 0.0 [-39.7; 7.6] |
+| A 2015--2018 | Superior | 265/268 | 878.8 | 886.5 | -7.6 [-38.2; 34.4] |
+
+Fuente: auditoría 10, insumos01--09 intactos. Muestra sin ponderación; IC condicionales, sin inferencia nacional o causal. P: primera vía observada; C: otra vía basal afirmativa. Se conserva la evaluación por cuartiles en privado; la simplificación no rescata la ventana escasa.
+
+#### Reformulación del contexto patrimonial por escolaridad y titularidad,2021
+
+| Titularidad K | Esc. años | N | Q25 | Mediana | Q75 |
+| --- | --- | --- | --- | --- | --- |
+| Ambas | 0–5 | 84 | 419.9 | 805.6 | 1,088.3 |
+| Ambas | 6+ | 384 | 800.0 | 1,580.0 | 2,769.7 |
+| Ambas negativas K | 0–5 | 3,251 | 90.0 | 450.0 | 1,000.0 |
+| Ambas negativas K | 6+ | 2,377 | 152.0 | 650.0 | 1,382.7 |
+| Solo cónyuge | 0–5 | 385 | 400.0 | 800.0 | 1,505.0 |
+| Solo cónyuge | 6+ | 677 | 530.0 | 1,050.0 | 2,022.0 |
+| Solo propia | 0–5 | 996 | 224.9 | 650.8 | 1,222.5 |
+| Solo propia | 6+ | 2,067 | 400.0 | 914.3 | 1,800.7 |
+
+Fuente: EDA original 60+ por visita, incluidas modalidades originales; no es la población principal directa09. Patrimonio compartido, miles de unidades almacenadas, no pesos reales. Escolaridad0--5/6+; titularidad o escolaridad ND quedan como exclusiones. Se presentan todos los grupos, no máximos seleccionados.
+
+#### Soporte de los contrastes institucionales P menos C
+
+| Vía/ventana | Institución | N P/C | Diferencia [IC95] | Uso |
+| --- | --- | --- | --- | --- |
+| K 2001--2003 | Evidencia IMSS/ISSSTE | 244/<10 | No estimable | No confiable |
+| K 2001--2003 | Programas agrupados | 0/0 | No estimable | No confiable |
+| K 2001--2003 | Un evento IMSS | 214/<10 | No estimable | No confiable |
+| K 2001--2003 | Un evento ISSSTE | 25/<10 | No estimable | No confiable |
+| K 2012--2015 | Evidencia IMSS/ISSSTE | 406/27 | 513.5 [0.0; 1,027.1] | Exploratorio 10–29 |
+| K 2012--2015 | Programas agrupados | 599/326 | 0.0 [0.0; 0.0] | Sin equivalencia |
+| K 2012--2015 | Un evento IMSS | 305/20 | 428.0 [0.0; 684.7] | Exploratorio 10–29 |
+| K 2012--2015 | Un evento ISSSTE | 63/<10 | No estimable | No confiable |
+| K 2018--2021 | Evidencia IMSS/ISSSTE | 309/79 | 679.9 [-61.2; 1,087.8] | Exploratorio |
+| K 2018--2021 | Programas agrupados | 0/0 | No estimable | No confiable |
+| K 2018--2021 | Un evento IMSS | 259/68 | 271.9 [-192.4; 679.9] | Exploratorio |
+| K 2018--2021 | Un evento ISSSTE | 33/10 | No estimable | No confiable |
+
+Fuente: auditoría 10, insumos01--09 intactos. Muestra sin ponderación; IC condicionales, sin inferencia nacional o causal. P: primera vía observada; C: otra vía basal afirmativa. Conteos monetarios pequeños se indican como menos de 10. Las ramas con 10--29 se revisaron por amplitud e influencia: las viables se conservan como exploratorias, incluyan o no cero. Las no confiables se indican sin estimación. No se mezclan instituciones para obtener N. Sin programa común longitudinalA.
+
+#### Todos los embudos centrales con muestras monetarias pequeñas
+
+| Vía/ventana | Perfil | Estrato | N receptor | N monto | Faltantes | Causa/evaluación |
+| --- | --- | --- | --- | --- | --- | --- |
+| K 2001–2003 | P | educacion_grupo / ≥10 años | 32 | 28 | <10 | Subdivisión; revisar incertidumbre |
+| K 2001–2003 | C | General / Todas | 12 | 11 | <10 | Rareza basal; no soporte general |
+| K 2001–2003 | C | patrimonio_grupo / Q1 | <10 | <10 | 0 | Rareza basal; no soporte general |
+| K 2001–2003 | C | patrimonio_grupo / Q2 | <10 | <10 | 0 | Rareza basal; no soporte general |
+| K 2001–2003 | C | patrimonio_grupo / Q3 | <10 | <10 | 0 | Rareza basal; no soporte general |
+| K 2001–2003 | C | patrimonio_grupo / Q4 | <10 | <10 | <10 | Rareza basal; no soporte general |
+| K 2001–2003 | C | sexo_grupo / Hombre | 11 | 10 | <10 | Rareza basal; no soporte general |
+| K 2001–2003 | C | sexo_grupo / Mujer | <10 | <10 | 0 | Rareza basal; no soporte general |
+| K 2001–2003 | C | edad_06 / 60–64 | <10 | <10 | <10 | Rareza basal; no soporte general |
+| K 2001–2003 | C | edad_06 / 65–69 | <10 | <10 | 0 | Rareza basal; no soporte general |
+| K 2001–2003 | C | edad_06 / 70+ | <10 | <10 | 0 | Rareza basal; no soporte general |
+| K 2001–2003 | C | educacion_grupo / 0 años | <10 | <10 | 0 | Rareza basal; no soporte general |
+| K 2001–2003 | C | educacion_grupo / 1–5 años | <10 | <10 | <10 | Rareza basal; no soporte general |
+| K 2001–2003 | C | educacion_grupo / 6 años | <10 | <10 | 0 | Rareza basal; no soporte general |
+| K 2001–2003 | C | localidad_grupo / <100 mil habitantes | <10 | <10 | <10 | Rareza basal; no soporte general |
+| K 2001–2003 | C | localidad_grupo / ≥100 mil habitantes | <10 | <10 | 0 | Rareza basal; no soporte general |
+| K 2001–2003 | R | educacion_grupo / Desconocido | <10 | <10 | 0 | Cruce escaso; ND no es perfil |
+| K 2012–2015 | P | educacion_grupo / Desconocido | <10 | <10 | 0 | Cruce escaso; ND no es perfil |
+| K 2012–2015 | C | edad_06 / 60–64 | 25 | 25 | 0 | Subdivisión; revisar incertidumbre |
+| K 2012–2015 | C | educacion_grupo / 7–9 años | 17 | 17 | 0 | Subdivisión; revisar incertidumbre |
+| K 2012–2015 | C | educacion_grupo / Desconocido | <10 | <10 | 0 | Cruce escaso; ND no es perfil |
+| K 2012–2015 | C | educacion_grupo / ≥10 años | <10 | <10 | 0 | Subdivisión; revisar incertidumbre |
+| K 2012–2015 | R | educacion_grupo / Desconocido | 15 | 11 | <10 | Cruce escaso; ND no es perfil |
+| K 2018–2021 | P | educacion_grupo / 0 años | 29 | 28 | <10 | Subdivisión; revisar incertidumbre |
+| K 2018–2021 | P | educacion_grupo / Desconocido | <10 | <10 | 0 | Cruce escaso; ND no es perfil |
+| K 2018–2021 | C | patrimonio_grupo / Q3 | 24 | 23 | <10 | Subdivisión; revisar incertidumbre |
+| K 2018–2021 | C | edad_06 / 60–64 | 12 | 12 | 0 | Subdivisión; revisar incertidumbre |
+| K 2018–2021 | C | edad_06 / 65–69 | 27 | 25 | <10 | Subdivisión; revisar incertidumbre |
+| K 2018–2021 | C | educacion_grupo / 0 años | 21 | 20 | <10 | Subdivisión; revisar incertidumbre |
+| K 2018–2021 | C | educacion_grupo / 7–9 años | 20 | 19 | <10 | Subdivisión; revisar incertidumbre |
+| K 2018–2021 | C | educacion_grupo / ≥10 años | <10 | <10 | <10 | Subdivisión; revisar incertidumbre |
+| K 2018–2021 | R | educacion_grupo / Desconocido | 22 | 22 | 0 | Cruce escaso; ND no es perfil |
+| A 2003–2012 | P | educacion_grupo / 7–9 años | 28 | 26 | <10 | Subdivisión; revisar incertidumbre |
+| A 2003–2012 | P | educacion_grupo / Desconocido | <10 | <10 | 0 | Cruce escaso; ND no es perfil |
+| A 2003–2012 | P | educacion_grupo / ≥10 años | <10 | <10 | 0 | Subdivisión; revisar incertidumbre |
+| A 2003–2012 | C | patrimonio_grupo / Q1 | 12 | 12 | 0 | Subdivisión; revisar incertidumbre |
+| A 2003–2012 | C | patrimonio_grupo / Q3 | 29 | 29 | 0 | Subdivisión; revisar incertidumbre |
+| A 2003–2012 | C | patrimonio_grupo / Q4 | 27 | 27 | 0 | Subdivisión; revisar incertidumbre |
+| A 2003–2012 | C | edad_06 / 60–64 | 29 | 29 | 0 | Subdivisión; revisar incertidumbre |
+| A 2003–2012 | C | educacion_grupo / 0 años | 13 | 13 | 0 | Subdivisión; revisar incertidumbre |
+| A 2003–2012 | C | educacion_grupo / 6 años | 26 | 26 | 0 | Subdivisión; revisar incertidumbre |
+| A 2003–2012 | C | educacion_grupo / 7–9 años | 13 | 13 | 0 | Subdivisión; revisar incertidumbre |
+| A 2003–2012 | C | educacion_grupo / ≥10 años | <10 | <10 | 0 | Subdivisión; revisar incertidumbre |
+| A 2003–2012 | R | educacion_grupo / 6 años | 24 | 22 | <10 | Subdivisión; revisar incertidumbre |
+| A 2003–2012 | R | educacion_grupo / 7–9 años | <10 | <10 | 0 | Subdivisión; revisar incertidumbre |
+| A 2003–2012 | R | educacion_grupo / ≥10 años | <10 | <10 | 0 | Subdivisión; revisar incertidumbre |
+| A 2012–2015 | P | educacion_grupo / Desconocido | <10 | <10 | 0 | Cruce escaso; ND no es perfil |
+| A 2012–2015 | C | edad_06 / 60–64 | 25 | 23 | <10 | Subdivisión; revisar incertidumbre |
+| A 2012–2015 | C | educacion_grupo / Desconocido | <10 | <10 | <10 | Cruce escaso; ND no es perfil |
+| A 2012–2015 | C | educacion_grupo / ≥10 años | 15 | 14 | <10 | Subdivisión; revisar incertidumbre |
+| A 2012–2015 | R | educacion_grupo / 7–9 años | 26 | 25 | <10 | Subdivisión; revisar incertidumbre |
+| A 2012–2015 | R | educacion_grupo / ≥10 años | 13 | 13 | 0 | Subdivisión; revisar incertidumbre |
+| A 2015–2018 | P | educacion_grupo / Desconocido | <10 | <10 | 0 | Cruce escaso; ND no es perfil |
+| A 2015–2018 | P | educacion_grupo / ≥10 años | 28 | 28 | 0 | Subdivisión; revisar incertidumbre |
+| A 2015–2018 | C | edad_06 / 60–64 | 14 | 12 | <10 | Subdivisión; revisar incertidumbre |
+| A 2015–2018 | C | educacion_grupo / Desconocido | <10 | <10 | 0 | Cruce escaso; ND no es perfil |
+| A 2015–2018 | C | educacion_grupo / ≥10 años | 26 | 21 | <10 | Subdivisión; revisar incertidumbre |
+| A 2015–2018 | R | educacion_grupo / Desconocido | <10 | <10 | 0 | Cruce escaso; ND no es perfil |
+| A 2015–2018 | R | educacion_grupo / ≥10 años | 32 | 28 | <10 | Subdivisión; revisar incertidumbre |
+
+Son59 embudos de 1–29; 29 con menos de 10. Los N exactos y cada paso están en el registro privado sin IDs; la tabla pública usa menos de 10 donde corresponde. El catálogo público [de muestras](../diccionarios/auditoria_calidad_muestras.json) enumera también los nodos de fuentes históricas afectados, sin importes. Un nodo repetido o una frecuencia de clase no es una comparación nueva.
+
+#### Matriz de todos los cuadros del informe original
+
+| Cuadro original | Contenido | Filas | Menor N visible | Trazabilidad y uso |
+| --- | --- | --- | --- | --- |
+| 1 | Cuadro 1. Universo original y selección de 60+ por visita | 6 | 4,359 | N visible y fuente registrada |
+| 2 | Cuadro 2. Disponibilidad económica y orientación del titular | 6 | 7,211 | N visible y fuente registrada |
+| 3 | Cuadro 3. Anomalías CP1 conservadas sin corrección automática | 5 | <10 | N visible y fuente registrada |
+| 4 | Cuadro 4. Recepción propia K en seis rondas | 6 | 1,788 | N visible y fuente registrada |
+| 5 | Cuadro 5. Apoyo propio A en seis rondas | 6 | 726 | N visible y fuente registrada |
+| 6 | Cuadro 6. Universo específico de pareja, 2018 y 2021 | 2 | 10,113 | N visible y fuente registrada |
+| 7 | Cuadro 7. Montos mensuales nominales por evento K y A | 12 | 726 | N visible y fuente registrada |
+| 8 | Cuadro 8. Disponibilidad de indicadores y cobertura de salud, referencia 2021 | 15 | 9,405 | N visible y fuente registrada |
+| 9 | Cuadro 9. Asociaciones descriptivas seleccionadas en las seis rondas | 36 | 7,164 | N visible y fuente registrada |
+| 10 | Cuadro 10. Pensión propia y del cónyuge por sexo, 2021 | 4 | 387 | N visible y fuente registrada |
+| 11 | Cuadro 11. Contrastes de salud por recepción K propia, 2021 | 14 | 3,257 | N visible y fuente registrada |
+| 12 | Cuadro 12. Contrastes complementarios por rama de recepción, 2021 | 12 | 1,444 | N visible y fuente registrada |
+| 13 | Cuadro 13. Contrastes K propia × indicador × estrato seleccionados, 2021 | 19 | 251 | N visible y fuente registrada |
+| 14 | Cuadro 14. Contraste crudo y estandarizado en el mismo soporte, 2021 | 6 | 9,171 | N visible y fuente registrada |
+| 15 | Cuadro 15. Presencia, fallecimiento registrado y ausencia entre visitas | 5 | 7,416 | N visible y fuente registrada |
+| 16 | Cuadro 16. Comparabilidad de la recepción entre instrumentos | 10 | No consta | Conceptual/normativo; no muestra por celda |
+| 17 | Cuadro 17. Seguimiento de cohortes60+ y selección de pares de salud mental | 5 | No consta | N no visible: consultar fuente; no inferencia desde este cuadro |
+| 18 | Cuadro 18. Cinco intervalos: cambios pareados de síntomas y comparabilidad | 5 | 3,644 | N visible y fuente registrada |
+| 19 | Cuadro 19. Respuestas K y cambios medios de síntomas en cinco intervalos | 20 | 98 | N visible y fuente registrada |
+| 20 | Cuadro 20. No→Sí menos No→No: cambios según composición inicial y soporte | 10 | 1,179 | N visible y fuente registrada |
+| 21 | Cuadro 21. Personas según visitas observadas y mediciones válidas60+ | 5 | No consta | N no visible: consultar fuente; no inferencia desde este cuadro |
+| 22 | Cuadro 22. Secuencias K retrospectivas y cambio primera–última medición | 5 | 1,242 | N visible y fuente registrada |
+| 23 | Cuadro 23. No→Sí: cambios de síntomas por sexo en los cinco periodos | 5 | 116 | N visible y fuente registrada |
+| 24 | Cuadro 24. Selección: edad y síntomas iniciales según seguimiento | 15 | 355 | N visible y fuente registrada |
+| 25 | Cuadro 25. Soledad: cambio pareado entre respuestas No→Sí y No→No K | 5 | 295 | N visible y fuente registrada |
+| 26 | Cuadro 26. K inicial y registro sobre fallecido: comparación de cinco cohortes | 5 | 1,788 | N visible y fuente registrada |
+| 27 | Cuadro 27. Perfiles basales y registro de fallecimiento: diferencias estandari | 20 | 6,237 | N visible y fuente registrada |
+| 28 | Cuadro 28. Sensibilidad a estado vital desconocido: límites de diferencia K sí | 5 | No consta | N no visible: consultar fuente; no inferencia desde este cuadro |
+| 29 | Cuadro 29. Universos longitudinales propios de cada indicador | 16 | No consta | N no visible: consultar fuente; no inferencia desde este cuadro |
+| 30 | Cuadro 30. Composición basal de retenidos frente al target de soporte común | 20 | 3,713 | N visible y fuente registrada |
+| 31 | Cuadro 31. Cobertura propia K y unión K/A: principal de entrevistas directas | 6 | 6,789 | N visible y fuente registrada |
+| 32 | Cuadro 32. Tipología exhaustiva de personas por contexto de pareja, 2018 y 202 | 18 | <10 | N visible y fuente registrada |
+| 33 | Cuadro 33. Cobertura K y unión K/A en idéntico soporte por grupo, 2021 | 16 | 158 | N visible y fuente registrada |
+| 34 | Cuadro 34. Montos nominales por vía y perfil: evento frente a suma parcial per | 10 | 242 | N visible y fuente registrada |
+| 35 | Cuadro 35. Estados posteriores de cohortes con negativa propia K directa inici | 3 | 5,110 | N visible y fuente registrada |
+| 36 | Cuadro 36. Cotas de negativa viva y fallecimiento en la cohorte basal sin K | 6 | 5,110 | N visible y fuente registrada |
+| 37 | Cuadro 37. Selección de cobertura propia: cohorte inicial frente a pares obser | 3 | 5,568 | N visible y fuente registrada |
+| 38 | Cuadro 38. Montos de prestaciones: receptores, faltantes y cuartiles nominales | 12 | 625 | N visible y fuente registrada |
+| 39 | Cuadro 39. Variación de medianas en ventanas con comparabilidad condicionada | 6 | 821 | N visible y fuente registrada |
+| 40 | Cuadro 40. Acceso y montos por perfil en 2021: poblaciones y unidades distinta | 12 | 77 | N visible y fuente registrada |
+| 41 | Cuadro 41. Brechas absolutas y relativas de medianas K entre receptores | 8 | 242 | N visible y fuente registrada |
+| 42 | Cuadro 42. Prestación parcial en relación con la LPI histórica asignable | 12 | 81 | N visible y fuente registrada |
+| 43 | Cuadro 43. Cronología federal y monto normativo mensual nominal y real | 9 | No consta | Conceptual/normativo; no muestra por celda |
+| 44 | Cuadro 44. Programa de vejez identificado A 5 en 2021 y dos referencias normat | 3 | 4,758 | N visible y fuente registrada |
+| 45 | Cuadro 45. Selección económica: basal completo, retenidos y cambios monetarios | 6 | 263 | N visible y fuente registrada |
+| 46 | Cuadro 46. Integración de cobertura, monto y referencia económica en periodos  | 8 | No consta | N no visible: consultar fuente; no inferencia desde este cuadro |
+| 47 | Cuadro 47. Brechas de acceso y del componente K entre perfiles en 2012–2015 | 5 | 394 | N visible y fuente registrada |
+| 48 | Cuadro 48. Perfiles con negativas propias o prestaciones parciales bajas en 20 | 7 | 77 | N visible y fuente registrada |
+| 49 | Cuadro 49. Política, indicador, resultado y límite de interpretación | 4 | No consta | Conceptual/normativo; no muestra por celda |
+| 50 | Cuadro 50. Balance de las proposiciones de la tesis | 4 | No consta | Conceptual/normativo; no muestra por celda |
+| 51 | Cuadro 51. Viabilidad longitudinal y selección de montos íntegros captados | 6 | <10 | N visible y fuente registrada |
+| 52 | Cuadro 52. Transiciones de recepción y destinos de seguimiento en las dos vent | 18 | <10 | N visible y fuente registrada |
+| 53 | Cuadro 53. Montos de nuevos, continuos y quienes dejan de declarar recepción | 6 | 293 | N visible y fuente registrada |
+| 54 | Cuadro 54. Cambios de montos en pares íntegros y sensibilidades de concepto | 5 | 1,103 | N visible y fuente registrada |
+| 55 | Cuadro 55. Brechas monetarias dentro de nuevos y continuos por perfil basal | 12 | 28 | N visible y fuente registrada |
+| 56 | Cuadro 56. Distribuciones estandarizadas de nuevos y continuos en soporte comú | 4 | 1,054 | N visible y fuente registrada |
+| 57 | Cuadro 57. Seguimiento por recepción inicial y evidencia posterior de ausentes | 6 | <10 | N visible y fuente registrada |
+| 58 | Cuadro 58. Diagnóstico y función académica de los ocho notebooks | 8 | No consta | N no visible: consultar fuente; no inferencia desde este cuadro |
+| 59 | Cuadro 59. Evidencia seleccionada: fundamentos, cobertura y contrastes monetar | 10 | <10 | N visible y fuente registrada |
+| 60 | Cuadro 60. Evidencia seleccionada: recurso parcial, incorporación y seguimient | 8 | <10 | N visible y fuente registrada |
+| 61 | Cuadro 61. Comparabilidad, límites y selección editorial de la evidencia | 18 | No consta | Conceptual/normativo; no muestra por celda |
+| 62 | Cuadro 62. Literatura pertinente, resultado conocido y aspecto abierto | 16 | No consta | Conceptual/normativo; no muestra por celda |
+| 63 | Cuadro 63. Contribución candidata, evidencia y posición frente a literatura | 3 | No consta | Conceptual/normativo; no muestra por celda |
+| 64 | Cuadro 64. Comprobaciones pendientes y efecto posible sobre conclusiones | 12 | No consta | Conceptual/normativo; no muestra por celda |
+| 65 | Cuadro 65. Balance crítico de las seis proposiciones | 6 | No consta | Conceptual/normativo; no muestra por celda |
+| 66 | Cuadro 66. Arquitectura propuesta sobre los cinco capítulos y dos anexos exist | 7 | No consta | Conceptual/normativo; no muestra por celda |
+| 67 | Cuadro 67. Precisión de las diferencias de medianas entre nuevos y continuos | 6 | 433 | N visible y fuente registrada |
+| 68 | Cuadro 68. Precisión de la mediana del cambio real individual entre continuos | 7 | 1,183 | N visible y fuente registrada |
+| 69 | Cuadro 69. Brechas por sexo en 2012–2015 y precisión de su cambio | 4 | No consta | N no visible: consultar fuente; no inferencia desde este cuadro |
+| 70 | Cuadro 70. Aportación delimitada frente a los tres antecedentes más próximos | 3 | No consta | N no visible: consultar fuente; no inferencia desde este cuadro |
+| 71 | Cuadro 71. Propuesta de cinco cuadros y cuatro figuras para el núcleo de resul | 5 | No consta | N no visible: consultar fuente; no inferencia desde este cuadro |
+| 72 | Cuadro 72. Asignación propuesta a los cinco capítulos y contenidos que requier | 5 | No consta | N no visible: consultar fuente; no inferencia desde este cuadro |
+| 73 | Recepción propia y monto real en las seis rondas | 12 | No consta | N no visible: consultar fuente; no inferencia desde este cuadro |
+| 74 | Composición de las incorporaciones observadas | 6 | 12 | N visible y fuente registrada |
+| 75 | Probabilidad observada de incorporación por situación inicial | 12 | 462 | N visible y fuente registrada |
+| 76 | Características basales de los perfiles de recepción | 18 | 12 | N visible y fuente registrada |
+| 77 | Distribución del patrimonio neto basal compartido | 18 | 12 | N visible y fuente registrada |
+| 78 | Montos posteriores por protección basal y continuidad | 18 | 11 | N visible y fuente registrada |
+| 79 | Monto posterior por cuartil patrimonial y protección basal | 24 | <10 | N visible y fuente registrada |
+| 80 | Diferencia de medianas posteriores: P menos C | 6 | 11 | N visible y fuente registrada |
+| 81 | Incorporación desde ambas negativas según patrimonio basal | 6 | No consta | N no visible: consultar fuente; no inferencia desde este cuadro |
+| 82 | Heterogeneidad institucional del contraste P menos C | 8 | 20 | N visible y fuente registrada |
+| 83 | Seguimiento de cohortes negativas y límites de observación | 12 | 576 | N visible y fuente registrada |
+| 84 | Evidencia exhaustiva por grupo y selección | 9 | 12 | N visible y fuente registrada |
+| 85 | Evidencia exhaustiva por grupo y selección | 12 | <10 | N visible y fuente registrada |
+| 86 | Evidencia exhaustiva por grupo y selección | 2 | 12 | N visible y fuente registrada |
+| 87 | Evidencia exhaustiva por grupo y selección | 2 | 298 | N visible y fuente registrada |
+| 88 | Evidencia exhaustiva por grupo y selección | 2 | No consta | N no visible: consultar fuente; no inferencia desde este cuadro |
+| 89 | Evidencia exhaustiva por grupo y selección | 2 | 11 | N visible y fuente registrada |
+| 90 | Evidencia exhaustiva por grupo y selección | 16 | <10 | N visible y fuente registrada |
+| 91 | Evidencia exhaustiva por grupo y selección | 11 | <10 | N visible y fuente registrada |
+| 92 | Evidencia exhaustiva por grupo y selección | 12 | 17 | N visible y fuente registrada |
+| 93 | Evidencia exhaustiva por grupo y selección | 2 | 376 | N visible y fuente registrada |
+| 94 | Evidencia exhaustiva por grupo y selección | 2 | 1,469 | N visible y fuente registrada |
+| 95 | Evidencia exhaustiva por grupo y selección | 2 | No consta | N no visible: consultar fuente; no inferencia desde este cuadro |
+| 96 | Evidencia exhaustiva por grupo y selección | 2 | 336 | N visible y fuente registrada |
+| 97 | Evidencia exhaustiva por grupo y selección | 15 | <10 | N visible y fuente registrada |
+| 98 | Evidencia exhaustiva por grupo y selección | 9 | 60 | N visible y fuente registrada |
+| 99 | Evidencia exhaustiva por grupo y selección | 12 | <10 | N visible y fuente registrada |
+| 100 | Evidencia exhaustiva por grupo y selección | 2 | 137 | N visible y fuente registrada |
+| 101 | Evidencia exhaustiva por grupo y selección | 2 | 521 | N visible y fuente registrada |
+| 102 | Evidencia exhaustiva por grupo y selección | 2 | No consta | N no visible: consultar fuente; no inferencia desde este cuadro |
+| 103 | Evidencia exhaustiva por grupo y selección | 2 | 66 | N visible y fuente registrada |
+| 104 | Evidencia exhaustiva por grupo y selección | 16 | <10 | N visible y fuente registrada |
+| 105 | Evidencia exhaustiva por grupo y selección | 9 | 98 | N visible y fuente registrada |
+| 106 | Evidencia exhaustiva por grupo y selección | 12 | 14 | N visible y fuente registrada |
+| 107 | Evidencia exhaustiva por grupo y selección | 2 | 98 | N visible y fuente registrada |
+| 108 | Evidencia exhaustiva por grupo y selección | 2 | 775 | N visible y fuente registrada |
+| 109 | Evidencia exhaustiva por grupo y selección | 2 | No consta | N no visible: consultar fuente; no inferencia desde este cuadro |
+| 110 | Evidencia exhaustiva por grupo y selección | 2 | 98 | N visible y fuente registrada |
+| 111 | Evidencia exhaustiva por grupo y selección | 16 | <10 | N visible y fuente registrada |
+| 112 | Evidencia exhaustiva por grupo y selección | 11 | <10 | N visible y fuente registrada |
+| 113 | Evidencia exhaustiva por grupo y selección | 12 | 18 | N visible y fuente registrada |
+| 114 | Evidencia exhaustiva por grupo y selección | 2 | 296 | N visible y fuente registrada |
+| 115 | Evidencia exhaustiva por grupo y selección | 2 | 1,511 | N visible y fuente registrada |
+| 116 | Evidencia exhaustiva por grupo y selección | 2 | No consta | N no visible: consultar fuente; no inferencia desde este cuadro |
+| 117 | Evidencia exhaustiva por grupo y selección | 2 | 225 | N visible y fuente registrada |
+| 118 | Evidencia exhaustiva por grupo y selección | 15 | <10 | N visible y fuente registrada |
+| 119 | Evidencia exhaustiva por grupo y selección | 11 | <10 | N visible y fuente registrada |
+| 120 | Evidencia exhaustiva por grupo y selección | 12 | <10 | N visible y fuente registrada |
+| 121 | Evidencia exhaustiva por grupo y selección | 2 | 603 | N visible y fuente registrada |
+| 122 | Evidencia exhaustiva por grupo y selección | 2 | 1,211 | N visible y fuente registrada |
+| 123 | Evidencia exhaustiva por grupo y selección | 2 | No consta | N no visible: consultar fuente; no inferencia desde este cuadro |
+| 124 | Evidencia exhaustiva por grupo y selección | 2 | 426 | N visible y fuente registrada |
+| 125 | Evidencia exhaustiva por grupo y selección | 16 | <10 | N visible y fuente registrada |
+| 126 | Matriz de objetivos, análisis, tablas y conclusiones | 8 | No consta | Conceptual/normativo; no muestra por celda |
+
+La matriz enumera cada cuadro original, no solo el4.14. Los N visibles incluyen márgenes que no son N de estimación: el catálogo identifica ese límite. No se inventa una secuencia retrospectiva de filtros cuando el agregado histórico no la documenta. Los resultados centrales tienen embudos exactos; una comparación auxiliar no trazable no se usa para sostener las conclusiones centrales. La evaluación de frecuencias no debe confundirse con tamaño de una población o con número de IDs.
+
+#### Sensibilidades completas, incluidas especificaciones sin soporte
+
+| Vía/ventana | Estimando | Especificación | N soporte | Retención% | Diferencia [IC95] |
+| --- | --- | --- | --- | --- | --- |
+| K 2001–2003 | tasa | edad 3/N 20 | 938/797 | 96/92 | -0.5 [-3.1; 1.9] |
+| K 2001–2003 | tasa | edad 3/N 30 | 916/724 | 94/84 | -1.8 [-4.2; 0.4] |
+| K 2001–2003 | tasa | edad 2/N 20 | 956/831 | 98/96 | -0.8 [-3.2; 1.7] |
+| K 2001–2003 | tasa | edad 2/N 30 | 956/831 | 98/96 | -0.8 [-3.2; 1.7] |
+| K 2001–2003 | monto | edad 3/N 20 | 0/0 | 0/0 | No estimable |
+| K 2001–2003 | monto | edad 3/N 30 | 0/0 | 0/0 | No estimable |
+| K 2001–2003 | monto | edad 2/N 20 | 0/0 | 0/0 | No estimable |
+| K 2001–2003 | monto | edad 2/N 30 | 0/0 | 0/0 | No estimable |
+| K 2012–2015 | tasa | edad 3/N 20 | 942/941 | 100/99 | 0.5 [-4.0; 5.0] |
+| K 2012–2015 | tasa | edad 3/N 30 | 889/815 | 94/86 | 0.4 [-4.2; 5.0] |
+| K 2012–2015 | tasa | edad 2/N 20 | 942/941 | 100/99 | 1.0 [-3.5; 5.5] |
+| K 2012–2015 | tasa | edad 2/N 30 | 918/894 | 97/94 | 0.3 [-4.2; 4.9] |
+| K 2012–2015 | monto | edad 3/N 20 | 603/336 | 57/90 | No estimable |
+| K 2012–2015 | monto | edad 3/N 30 | 392/268 | 37/72 | No estimable |
+| K 2012–2015 | monto | edad 2/N 20 | 739/357 | 70/96 | No estimable |
+| K 2012–2015 | monto | edad 2/N 30 | 610/314 | 58/84 | No estimable |
+| K 2018–2021 | tasa | edad 3/N 20 | 697/639 | 99/99 | -4.0 [-7.7; -0.4] |
+| K 2018–2021 | tasa | edad 3/N 30 | 592/556 | 84/86 | -3.7 [-7.5; 0.1] |
+| K 2018–2021 | tasa | edad 2/N 20 | 697/639 | 99/99 | -3.9 [-7.7; -0.3] |
+| K 2018–2021 | tasa | edad 2/N 30 | 668/596 | 95/92 | -4.0 [-7.6; -0.4] |
+| K 2018–2021 | monto | edad 3/N 20 | 71/66 | 20/50 | No estimable |
+| K 2018–2021 | monto | edad 3/N 30 | 38/38 | 11/29 | No estimable |
+| K 2018–2021 | monto | edad 2/N 20 | 71/66 | 20/50 | No estimable |
+| K 2018–2021 | monto | edad 2/N 30 | 38/38 | 11/29 | No estimable |
+| A 2003–2012 | tasa | edad 3/N 20 | 500/439 | 91/79 | 6.8 [0.3; 13.2] |
+| A 2003–2012 | tasa | edad 3/N 30 | 433/333 | 78/60 | No estimable |
+| A 2003–2012 | tasa | edad 2/N 20 | 527/499 | 95/90 | 6.9 [0.9; 13.3] |
+| A 2003–2012 | tasa | edad 2/N 30 | 527/499 | 95/90 | 6.9 [0.9; 13.3] |
+| A 2003–2012 | monto | edad 3/N 20 | 0/0 | 0/0 | No estimable |
+| A 2003–2012 | monto | edad 3/N 30 | 0/0 | 0/0 | No estimable |
+| A 2003–2012 | monto | edad 2/N 20 | 151/44 | 23/45 | No estimable |
+| A 2003–2012 | monto | edad 2/N 30 | 0/0 | 0/0 | No estimable |
+| A 2012–2015 | tasa | edad 3/N 20 | 943/942 | 100/99 | 4.0 [-0.8; 8.6] |
+| A 2012–2015 | tasa | edad 3/N 30 | 890/816 | 94/86 | 2.9 [-1.8; 7.7] |
+| A 2012–2015 | tasa | edad 2/N 20 | 943/942 | 100/99 | 4.0 [-0.8; 8.7] |
+| A 2012–2015 | tasa | edad 2/N 30 | 919/895 | 97/94 | 4.0 [-1.0; 8.8] |
+| A 2012–2015 | monto | edad 3/N 20 | 610/225 | 51/79 | No estimable |
+| A 2012–2015 | monto | edad 3/N 30 | 354/170 | 30/59 | No estimable |
+| A 2012–2015 | monto | edad 2/N 20 | 896/256 | 75/90 | 0.0 [0.0; 0.0] |
+| A 2012–2015 | monto | edad 2/N 30 | 647/207 | 54/72 | No estimable |
+| A 2015–2018 | tasa | edad 3/N 20 | 533/559 | 89/90 | 6.2 [0.7; 11.6] |
+| A 2015–2018 | tasa | edad 3/N 30 | 398/400 | 66/64 | No estimable |
+| A 2015–2018 | tasa | edad 2/N 20 | 576/576 | 96/93 | 5.1 [-0.2; 10.6] |
+| A 2015–2018 | tasa | edad 2/N 30 | 508/490 | 85/79 | 4.7 [-0.8; 10.2] |
+| A 2015–2018 | monto | edad 3/N 20 | 426/523 | 73/89 | -7.6 [-41.4; 7.6] |
+| A 2015–2018 | monto | edad 3/N 30 | 426/523 | 73/89 | -7.6 [-41.4; 7.6] |
+| A 2015–2018 | monto | edad 2/N 20 | 558/535 | 96/91 | -7.6 [-38.2; 7.6] |
+| A 2015–2018 | monto | edad 2/N 30 | 558/535 | 96/91 | -7.6 [-38.2; 7.6] |
+
+Tasas en puntos porcentuales; montos en pesos de septiembre2026. Las especificaciones no comparten necesariamente población o mezcla; no promediar sus estimadores. No se ha reducido el mínimo de retención para obtener un ajuste. Las diferencias entre estratos no son pruebas formales de interacción.
+
+#### Rangos binomiales, influencia y empates
+
+| Vía/ventana | Cota95 de diferencia por orden | Máximo cambio LOO folio | % exactamente mediana P/C |
+| --- | --- | --- | --- |
+| K 2001–2003 | [-8,721.4; 1,547.4] | 140.7 | 0.0/36.4 |
+| K 2012–2015 | [29.1; 770.3] | 0.0 | 4.2/37.0 |
+| K 2018–2021 | [271.9; 1,631.7] | 0.0 | 1.9/12.1 |
+| A 2003–2012 | [0.0; 0.0] | 0.0 | 61.9/64.3 |
+| A 2012–2015 | [0.0; 0.0] | 0.0 | 29.0/22.0 |
+| A 2015–2018 | [-30.6; 7.6] | 0.0 | 14.8/18.3 |
+
+El método de orden combina dos IC97.5% por Bonferroni bajo independencia personal, no reemplaza al remuestreo por folio ni al diseño de encuesta. En N par la mediana puede ser promedio de dos valores y no estar observada: porcentaje exactamente en mediana cero no significa ausencia de empates. LOO cero tampoco prueba precisión o equivalencia.
+
+#### Confidencialidad, reconstrucción e historial
+
+Se retiran conjuntamente la estadística sensible, su IC, contraste, perfiles y derivados de cada rama pequeña. Se retira la familia de cuartiles K 2001–2003 y se muestra la falta de soporte también en mitades. Los resultados ND no se convierten en perfiles socioeconómicos. No se publican distribuciones monetarias exactas por valor, máximos/mínimos individuales, JSON privados completos ni salidas con microdatos. Se conserva un procedimiento de supresión complementaria de conteos/márgenes para tablas enlazadas; si una familia no puede protegerse sin reconstrucción, se excluye completa de la propuesta. Los conteos básicos de recepción o de información ND no equivalen por sí solos a un importe individual y no se usan para reconstruir estadísticas retiradas.
+
+La revisión histórica de `origin/main` no encontró rutas de microdatos o credenciales, pero sí la interpretación T8 con mediana en un grupo N=5 en el Informe General publicado anteriormente. Corregir el documento actual no borra commits, descargas o copias anteriores. No se reescribió historia ni se contactó a terceros. La propuesta de archivos públicos se genera localmente por lista explícita; no se declara que el historial de GitHub esté saneado.
+
+**Estado de la pregunta central.** El núcleo observacional conserva apoyo: composición y probabilidad de incorporación distintas, expansión de unión observada en 2012–2015, heterogeneidad de montos K y coincidencias medianas A. No está completamente respondida en sentido integral o para todas las ventanas: no se identifica pobreza, necesidad total, causalidad, primera alta administrativa, montos de ausentes o una mediana ajustada P/C con soporte suficiente en cinco ventanas de la especificación principal. La sensibilidad de los gradientes se reconoce. La tesis es defendible como respuesta observacional acotada, no como demostración de focalización universal, equivalencia o evaluación causal. La aceptación académica e institucional y el tratamiento del historial permanecen pendientes.
+
 
 ## 11. Limitaciones y pendientes de investigación
 

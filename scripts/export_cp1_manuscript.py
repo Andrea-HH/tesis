@@ -22,6 +22,8 @@ TABLE_NAMES = ['estructura', 'rondas', 'demografia', 'edad_grupos', 'entradas',
 
 def main() -> None:
     """Comprueba origen, exporta tablas/figuras y registra huellas reproducibles."""
+    from tesis_enasem.release_guard import block_legacy_export
+    block_legacy_export()
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--check', action='store_true', help='Verificar tablas existentes sin escribir archivos.')
     args = parser.parse_args()
@@ -62,4 +64,6 @@ def main() -> None:
 
 
 if __name__ == '__main__':
+    from tesis_enasem.release_guard import block_legacy_export
+    block_legacy_export()
     main()

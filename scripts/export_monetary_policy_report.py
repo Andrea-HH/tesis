@@ -13,6 +13,8 @@ from tesis_enasem.project_paths import INTERIM_DIR, RESULTS_DIR
 
 def export() -> None:
     """Selección editorial07: tablas/figuras, denominadores y lectura sustantiva."""
+    from tesis_enasem.release_guard import block_legacy_export
+    block_legacy_export()
     validate()
     r=json.loads((OUTPUT/'resultados.json').read_text())
     a=json.loads((OUTPUT/'auditoria.json').read_text())
@@ -213,4 +215,7 @@ K/A ya piden cantidades mensuales; las instrucciones2021 de K indican normalizar
     print('Informe07:',len(tables),'cuadros y',len(images),'figuras totales')
 
 
-if __name__=='__main__':export()
+if __name__=='__main__':
+    from tesis_enasem.release_guard import block_legacy_export
+    block_legacy_export()
+    export()

@@ -28,10 +28,10 @@ def assert_no_direct_disclosure(text: str) -> None:
         raise ValueError('Posible identificador personal: requiere revisión')
 
 
-def validate_coarse_counts(rows: Iterable[dict[str, Any]], count_fields: Iterable[str], minimum: int = 5) -> int:
+def validate_coarse_counts(rows: Iterable[dict[str, Any]], count_fields: Iterable[str], minimum: int = 10) -> int:
     """Evalúa frecuencias de una tabla previamente delimitada a agregados amplios.
 
-    Cinco es una regla conservadora de esta preparación, no una norma de ENASEM.
+    Diez es el criterio conservador de revisión10, no una norma universal de ENASEM.
     Rechazar la tabla completa evita reconstruir una celda mediante sus márgenes.
     No transforma códigos, no imputa ND y no promete anonimato por el umbral solo.
     """

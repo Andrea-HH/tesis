@@ -23,6 +23,8 @@ ROOT=Path(__file__).resolve().parents[1]
 
 def export() -> None:
     """Mantiene las cifras de la tesis sincronizadas con las tablas calculadas."""
+    from tesis_enasem.release_guard import block_legacy_export
+    block_legacy_export()
     r=json.loads(read_project_text(project_path('', "docs/eda/proteccion_economica/resultados.json")))
     tables=project_path('', "manuscrito/tablas");figures=project_path('', "manuscrito/figuras/borradores")
     summary,validity=[],[]
@@ -276,6 +278,8 @@ def export_formal() -> None:
 
 
 if __name__=='__main__':
+    from tesis_enasem.release_guard import block_legacy_export
+    block_legacy_export()
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--formal',action='store_true',help='Exportar selección académica06--08 validada.')
     args=parser.parse_args()

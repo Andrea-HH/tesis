@@ -598,6 +598,8 @@ def run() -> dict:
 
 
 if __name__=="__main__":
+    from tesis_enasem.release_guard import block_legacy_export
+    block_legacy_export()
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--reports-only",action="store_true",help="Actualiza narrativa desde agregados sin recalcular")
     parser.add_argument("--figures-only",action="store_true",help="Actualiza figuras/agregados suplementarios desde sidecar sin repetir análisis")

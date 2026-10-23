@@ -7,6 +7,8 @@ from tesis_enasem.benefit_transitions import OUTPUT, analyze, analyze_precision,
 from tesis_enasem.project_paths import PROJECT_ROOT
 
 if __name__ == '__main__':
+    from tesis_enasem.release_guard import block_legacy_export
+    block_legacy_export()
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--precision',action='store_true',help='Validación seleccionada sin sobrescribir resultados08.')
     parser.add_argument('--replicas',type=int,default=9999)

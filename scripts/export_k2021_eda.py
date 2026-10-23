@@ -17,6 +17,8 @@ ROOT=Path(__file__).resolve().parents[1]
 
 def export() -> dict:
     """No carga microdatos; mantiene la trazabilidad y selecciona tablas académicas."""
+    from tesis_enasem.release_guard import block_legacy_export
+    block_legacy_export()
     payload=json.loads(read_project_text(project_path('', "reports/eda_independiente/k2021/resultados.json")))
     f03=next(s for s in payload["fuentes"] if s["fuente"]=="F03")
     selected=[("4_1","Deuda de negocio 1"),("47a","Salario principal propio"),("61_1_1","Jubilación propia 1"),
@@ -93,4 +95,6 @@ def export() -> dict:
 
 
 if __name__=="__main__":
+    from tesis_enasem.release_guard import block_legacy_export
+    block_legacy_export()
     export()

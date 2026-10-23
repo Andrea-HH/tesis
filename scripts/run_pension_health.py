@@ -6,6 +6,8 @@ import time
 from tesis_enasem.pension_health import OUTPUT,analyze,verify_frozen_inputs
 
 if __name__=='__main__':
+    from tesis_enasem.release_guard import block_legacy_export
+    block_legacy_export()
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--bootstrap',type=int,default=999)
     args=parser.parse_args()

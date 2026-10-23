@@ -20,10 +20,10 @@ mayores previamente sin recepción identificada, y cómo varían los montos
 recibidos según sus condiciones socioeconómicas y las prestaciones que ya
 tenían?»
 No confundir primera vía observada K/A con primera alta de toda la vida o
-desprotección económica integral. El cruce conjunto necesidad basal ×
-complementariedad × monto posterior NO está estimado: no afirmar
-focalización en personas vulnerables, efectos, inferencia nacional ni
-suficiencia integral. Conservar como evidencia adicional los contrastes
+desprotección económica integral. La etapa09 estima posición socioeconómica basal × primera vía/complemento ×
+monto posterior (Informe10.8). Hay heterogeneidad, nulos y soporte limitado:
+no convertir patrimonio relativo en necesidad integral, ni afirmar efectos,
+inferencia nacional o suficiencia integral. Conservar como evidencia adicional los contrastes
 históricos de cobertura frente a monto real.
 La pregunta anterior de alerta temprana y los modelos predictivos de
 vulnerabilidad ya no son el objetivo vigente ni un pendiente a implementar.

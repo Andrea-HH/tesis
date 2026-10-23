@@ -385,6 +385,8 @@ def render_report(report: dict) -> None:
 
 
 if __name__ == "__main__":
+    from tesis_enasem.release_guard import block_legacy_export
+    block_legacy_export()
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--reports-only',action='store_true',help='Regenera narrativa desde agregados sin repetir la auditoría')
     args=parser.parse_args()

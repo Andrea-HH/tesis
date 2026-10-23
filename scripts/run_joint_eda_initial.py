@@ -107,5 +107,7 @@ def run() -> dict:
 
 
 if __name__ == "__main__":
+    from tesis_enasem.release_guard import block_legacy_export
+    block_legacy_export()
     result = run()
     print(f"J01: {result['N_tablas_asociacion']} asociaciones, perfiles 2021 y dos figuras; referencia {result['N_referencia']:,}")

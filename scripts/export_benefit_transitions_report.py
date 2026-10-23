@@ -23,6 +23,8 @@ def fmt(v: Any) -> str:
 
 def export() -> None:
     """Genera solo la nueva contribución académica; no modifica bloques anteriores."""
+    from tesis_enasem.release_guard import block_legacy_export
+    block_legacy_export()
     check();r=json.loads((OUTPUT/'resultados.json').read_text());texts=interpretations(r)
     figs=json.loads((OUTPUT/'figuras.json').read_text());products=[]
     source=(f"**Fuente y procedencia:** ENASEM; [notebook 08](../notebooks/{NOTEBOOK}), bloques 1–16; "
@@ -236,6 +238,8 @@ def export() -> None:
 
 def export_precision() -> None:
     """Añade el cierre de precisión y el diagnóstico editorial sin alterar06–08."""
+    from tesis_enasem.release_guard import block_legacy_export
+    block_legacy_export()
     check()
     result = json.loads((OUTPUT / 'precision.json').read_text())
     validate_precision(result)
@@ -617,6 +621,8 @@ Esta sección actualiza las reservas sobre precisión expresadas en 10.6. Conser
 
 
 if __name__=='__main__':
+    from tesis_enasem.release_guard import block_legacy_export
+    block_legacy_export()
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--precision', action='store_true', help='Exportar solo la validación final de precisión.')
     args = parser.parse_args()

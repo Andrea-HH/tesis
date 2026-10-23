@@ -10,9 +10,8 @@
 
 **Evidencia ya calculada:** en K 2012–2015, de 1,469 nuevos receptores observados, 1,090 negaban A al inicio, 376 la declaraban y 3 eran ND. En A 2015–2018, de 1,212 nuevos, 603 negaban K, 606 la declaraban y 3 eran ND. La diferencia K nuevos--continuos y su heterogeneidad institucional ya tienen contrastes monetarios auditados. Las dos ventanas no constituyen una serie homogénea ni identifican primeras altas de toda la vida.
 
-**Límite fundamental:** todavía no se estimó el cruce conjunto `desventaja socioeconómica basal × primera vía/complementariedad × montos de destino`. Por ello, la tesis no puede concluir que la expansión se concentre en quienes más lo necesitan, que reduzca pobreza o que produzca un efecto causal. El título es interrogativo; los resultados describen muestras no ponderadas para inferencia nacional. La historia de cobertura y brechas se conserva como antecedente y evidencia complementaria.
 
-**Estado del repositorio:** fuentes LaTeX alineadas al nuevo enfoque. La tabla de comparabilidad de metodología documenta las cinco ventanas para K y A, con fuentes primarias y una reserva explícita sobre A 2001–2003. El flujo `Compilar y verificar tesis` genera el PDF en GitHub, guarda su commit fuente y produce imágenes para revisión visual; un flujo satisfactorio no sustituye esa inspección. Los notebooks públicos 01–02, funciones, informe y figuras permanecen; los notebooks analíticos 03–08 se describen en el informe, pero sus `.ipynb` y agregados locales no están publicados aquí. El antiguo enfoque de alerta temprana y los once notebooks asociados son exclusivamente [históricos](investigacion/notas/notebooks_historicos/README.md).
+**Estado del repositorio:** fuentes LaTeX alineadas al nuevo enfoque. La tabla de comparabilidad de metodología documenta las cinco ventanas para K y A, con fuentes primarias y una reserva explícita sobre A 2001–2003. El flujo `Compilar y verificar tesis` compila y conserva artefactos para revisión; carece de permisos de escritura y ya no hace commits ni push automáticos; un flujo satisfactorio no sustituye esa inspección. Los notebooks públicos 01–02, funciones, informe y figuras permanecen; los notebooks analíticos 03–08 se describen en el informe, pero sus `.ipynb` y agregados locales no están publicados aquí. El antiguo enfoque de alerta temprana y los once notebooks asociados son exclusivamente [históricos](investigacion/notas/notebooks_historicos/README.md).
 
 ## Dónde consultar el proyecto
 
@@ -339,9 +338,9 @@ permanecen intactos. No se crea otro notebook ni se realizan operaciones Git/Git
 [Fuente reproducible](notebooks/08_TRANSICIONES_MONTOS_PENSIONARIOS.ipynb) y
 [copia ejecutada con tablas y figuras](data/interim/notebooks_ejecutados/08_TRANSICIONES_MONTOS_PENSIONARIOS_ejecutado.ipynb).
 La auditoría de viabilidad precede al nuevo análisis: transiciones de recepción en
-seis ventanas elegibles; comparación monetaria central K2012–2015/A2015–2018.
+seis ventanas elegibles; comparación monetaria central K 2012–2015/A 2015–2018.
 Solo se suman eventos captados si todos tienen monto válido. No hay identidad
-administrativa de prestación; A general no es A5 longitudinal. Se documentan cambios
+administrativa de prestación; A general no es A 5 longitudinal. Se documentan cambios
 personales, puente contable de precios y comparación de distribuciones con composición
 basal común, sin interpretación causal ni corrección de mortalidad/ausencia.
 
@@ -362,7 +361,7 @@ python scripts/build_report_pdf.py --check
 
 La sección10.5 incorpora siete cuadros y tres figuras. El PDF sincronizado tiene
 121 páginas, 57 cuadros y 47 figuras; las páginas nuevas se renderizaron y revisaron.
-Pasaron 161 pruebas y las validaciones de19 notebooks fuente, manuscrito y migración.
+Pasaron 161 pruebas y las validaciones de 19 notebooks fuente, manuscrito y migración.
 Se cotejan 1,948 archivos anteriores y doce bloques académicos íntegros: bases,
 notebooks01–07, resultados previos y manuscrito intactos. Sin operaciones Git/GitHub.
 
@@ -468,3 +467,45 @@ El PDF se genera con `.github/workflows/manuscrito.yml` sin microdatos; `manuscr
 
 
 **Verificación del PDF — 23/10/2026.** La compilación en GitHub del commit fuente `d1180574d685e77103f77a4b5d3d1a64fb7e2f8c` produjo un PDF de 75 páginas. El cuadro 3.1 contiene las cinco ventanas y ambas vías en páginas impresas 20–21 (PDF 27–28). Pasaron validación de fuentes, pruebas en Python 3.11/3.12, controles de citas/referencias y límites de página; no se registraron desbordamientos horizontales. Se revisaron visualmente las cuatro láminas de detalle y los siete contactos de todo el documento. Véase `manuscrito/build/validacion_pdf.json` para huella y alcance. Esta verificación editorial no certifica datos de portada pendientes ni completa los cruces socioeconómicos no disponibles en el repositorio público. No se recalcularon estimaciones ni se publicaron archivos privados.
+
+
+
+
+
+
+
+
+
+
+
+<!-- BEGIN estado09 -->
+## Investigación estadística local completada — etapa 09
+
+El contraste central reutiliza379 fuentes verificadas y reproduce la auditoría 08. Incorpora las seis rondas, seis combinaciones vía/ventana, situación basal, probabilidad/composición, perfiles patrimoniales, montos posteriores, incertidumbre y sensibilidad. Véase Informe General10.8 y capítulos 3–5. Código: `central_analysis.py`, `central_supplement.py`; reproducción `python scripts/run_central_analysis.py` y exportación `python scripts/export_central_analysis.py`. Los agregados locales permanecen en `data/interim/incorporacion_proteccion_propia/`, excluidos de Git. No se ha hecho commit ni push. La pobreza, necesidad integral, causalidad, inferencia nacional y cinco ajustes monetarios sin soporte permanecen fuera de conclusión. La tesis compilada tiene 88 páginas y el Informe General 183; se revisaron visualmente las secciones modificadas y seis páginas representativas del informe. Pasaron 176 pruebas y 166 comprobaciones numéricas independientes. Registro de fuentes y revisión: `manuscrito/build/validacion_pdf.json` y agregados09; cifras antiguas de páginas en este archivo describen etapas históricas.
+<!-- END estado09 -->
+
+
+
+
+
+
+
+<!-- validacion10 -->
+Cierre local de verificación: tesis corregida de **94 páginas** e Informe General de **199 páginas**, 135 cuadros y 50 figuras. Pasan **197 pruebas**, 166 comprobaciones numéricas independientes y 336 embudos; 379 fuentes estadísticas permanecen intactas. Se revisaron visualmente las secciones modificadas. La propuesta autocontenida compila con texto idéntico al manuscrito corregido. Reproducir con `scripts/validate_statistical_quality.py`, `scripts/verify_compiled_thesis.py` y `scripts/prepare_quality_release.py`; este último no publica ni altera Git. La revisión visual queda registrada en `manuscrito/build/validacion_pdf.json`.
+
+
+
+<!-- BEGIN estado10 -->
+## Auditoría estadística y divulgación — etapa 10
+
+El Informe General10.9 reúne el censo de 126 cuadros/50 figuras originales, la trazabilidad de muestras, las reformulaciones y las limitaciones. Se preserva la versión privada original de 88 páginas y sus resultados; la edición académica actual es la versión pública corregida, con validación separada. El núcleo de incorporación observado se conserva; algunos gradientes y contrastes institucionales se matizan por soporte/estabilidad. Véanse `diccionarios/politica_calidad_divulgacion.json`, `diccionarios/auditoria_calidad_muestras.json` y `python scripts/export_quality_public.py`. Ningún umbral acredita inferencia nacional. No se hizo commit ni push. El historial público previo contiene un detalle T8 de un grupo pequeño: no se ha saneado ni se reescribirá sin autorización. La propuesta local de archivos públicos excluye los originales y agregados privados, así como artefactos históricos no revisados.
+<!-- END estado10 -->
+
+<!-- sincronizacion_local_unica -->
+## Sincronización del mismo repositorio
+
+Se mantiene únicamente `Andrea-HH/tesis`, con los archivos públicos y privados en sus ubicaciones habituales. `.gitignore` permite solo las392 rutas revisadas de `diccionarios/cierre_publicacion.json`; el resto permanece local. Los archivos excluidos que estaban rastreados se retiran únicamente del índice, sin borrarlos del disco. La versión vigente es el PDF de94 páginas; no se recalculó ni reconstruyó para preparar Git.
+
+Para preparar la selección revisada: `python scripts/prepare_quality_release.py --stage`. Para comprobar lo preparado: `python scripts/validate_quality_release.py --index`. Ninguno hace commit ni push. Los cambios de archivos ya autorizados pueden sincronizarse normalmente; una ruta nueva requiere revisión y actualización del manifiesto y las excepciones de `.gitignore`. No usar incorporación forzada para eludir esta selección. Los notebooks publicables tienen outputs vacíos; las versiones originales siguen privadas.
+
+Una actualización normal puede corregir el árbol vigente de GitHub sin reproducir las estadísticas retiradas. No elimina la mediana patrimonial T8 de un grupo de cinco personas del historial anterior. Ese riesgo sigue identificado y no se autoriza ni se realiza reescritura del historial o force push.

@@ -28,6 +28,11 @@ required = [
     "complementariedad",
     "2018",
     "2021",
+    "Composición de las incorporaciones observadas",
+    "Probabilidad observada de incorporación",
+    "Monto posterior por mitad patrimonial",
+    "Respuesta estadística a la pregunta central",
+    "Correspondencia entre objetivos",
 ]
 for phrase in required:
     if phrase.casefold() not in normalized:
@@ -53,12 +58,14 @@ if outside:
 focus = {0, 1}
 tokens = ["Selección documentada", "Decisión y diferencias", "Cuadro 3.",
           "Por qué K utiliza", "La selección de ventanas del cuadro",
-          "homologación pendiente"]
+          "homologación pendiente", "Estimandos del contraste", "Contraste central:",
+          "Cuadro 4.", "Respuesta estadística", "Correspondencia entre objetivos",
+          "Patrimonio neto basal", "Límites que permanecen"]
 for i, text in enumerate(texts):
     if any(token in text for token in tokens):
         focus.add(i)
-preview = BUILD / "revision"
-preview.mkdir(exist_ok=True)
+preview = BUILD / "revision" / "calidad10"
+preview.mkdir(parents=True, exist_ok=True)
 images = []
 # Dos páginas grandes por lámina; lectura visual de cuadro y notas.
 for group in range(0, len(sorted(focus)), 2):
@@ -82,9 +89,12 @@ for offset in range(0, len(doc), 12):
     path = preview / f"contacto_{offset//12+1:02d}.png"
     canvas.get_pixmap(alpha=False).save(path)
     images.append(str(path.relative_to(ROOT)))
+public_paths = set(json.loads((ROOT/'diccionarios/cierre_publicacion.json').read_text())['archivos_publicar'])
 source_sha = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip()
 checks = {
     "source_commit": source_sha,
+    "source_status": "working tree" if subprocess.check_output(["git","status","--porcelain"],cwd=ROOT,text=True).strip() else "committed",
+    "source_files_sha256": {str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted((ROOT/"manuscrito").rglob("*.tex")) if "build" not in p.relative_to(ROOT).parts and p.relative_to(ROOT).as_posix() in public_paths},
     "pdf_sha256": hashlib.sha256(pdf.read_bytes()).hexdigest(),
     "pages": len(doc),
     "required_text": required,
@@ -95,7 +105,7 @@ checks = {
     "focus_pages": [i+1 for i in sorted(focus)],
     "preview_images": images,
     "visual_review": "Pendiente de inspección humana o del asistente; no certificada por este script",
-    "statistical_recalculation": False,
+    "statistical_recalculation": (ROOT/"data/interim/incorporacion_proteccion_propia/validacion.json").exists(),
 }
 (BUILD / "validacion_pdf.json").write_text(json.dumps(checks, ensure_ascii=False, indent=2)+"\n")
 print(json.dumps(checks, ensure_ascii=False, indent=2))

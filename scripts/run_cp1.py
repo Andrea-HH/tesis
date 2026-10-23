@@ -81,4 +81,6 @@ def main() -> None:
 
 
 if __name__ == '__main__':
+    from tesis_enasem.release_guard import block_legacy_export
+    block_legacy_export()
     main()

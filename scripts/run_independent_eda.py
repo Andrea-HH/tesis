@@ -219,6 +219,8 @@ def run(figures: bool = True) -> dict:
 
 
 if __name__ == "__main__":
+    from tesis_enasem.release_guard import block_legacy_export
+    block_legacy_export()
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--sin-figuras", action="store_true")
     run(not parser.parse_args().sin_figuras)

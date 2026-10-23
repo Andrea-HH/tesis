@@ -17,6 +17,8 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def export() -> dict:
     """Solo recibe agregados; nunca carga microdatos ni construye una base integrada."""
+    from tesis_enasem.release_guard import block_legacy_export
+    block_legacy_export()
     data = json.loads(read_project_text(project_path('', "reports/eda_independiente/simple_resultados.json")))
     registry = json.loads(read_project_text(project_path('', "docs/eda/contratos_simple.json")))
     results = {r["contrato"]["variable"]: r for r in data["resultados"]}
@@ -204,4 +206,6 @@ def export() -> dict:
 
 
 if __name__ == "__main__":
+    from tesis_enasem.release_guard import block_legacy_export
+    block_legacy_export()
     export()

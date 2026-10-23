@@ -1,2 +1,0 @@
-# Para un entorno editable usar: pip install -e ".[notebooks,dev]"
--e .[notebooks,dev]

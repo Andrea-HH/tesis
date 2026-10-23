@@ -6,6 +6,8 @@ from tesis_enasem.monetary_policy import OUTPUT, analyze, save_json, verify_inpu
 from tesis_enasem.project_paths import PROJECT_ROOT
 
 if __name__ == "__main__":
+    from tesis_enasem.release_guard import block_legacy_export
+    block_legacy_export()
     r=analyze()
     save_json(OUTPUT / "resultados.json",r)
     save_json(OUTPUT / "manifest.json",dict(insumos_protegidos=verify_inputs(),

@@ -5,6 +5,7 @@ from tesis_enasem.project_paths import project_path, read_project_text, write_pr
 from collections import Counter
 from pathlib import Path
 import re
+import json
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -13,6 +14,11 @@ def validate_manuscript(directory: Path) -> tuple[int, int, int]:
     """Valida enlaces, referencias, macros y claves; no sustituye compilación."""
     files = list(directory.rglob('*.tex'))
     files = [path for path in files if 'build' not in path.relative_to(directory).parts]
+    manifest = directory.parent / 'diccionarios/cierre_publicacion.json'
+    if manifest.exists():
+        authorized = set(json.loads(manifest.read_text())['archivos_publicar'])
+        files = [p for p in files if p.relative_to(directory.parent).as_posix() in authorized]
+    # Los auxiliares históricos privados permanecen en disco y no son fuentes del PDF público.
     text = '\n'.join(re.sub(r'(?<!\\)%[^\n]*', '', read_project_text(p)) for p in files)
     for relative in re.findall(r'\\(?:input|include)\{([^}]+)\}', text):
         path = directory / relative

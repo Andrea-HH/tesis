@@ -59,6 +59,8 @@ def make_figure(r: dict) -> dict:
 
 def export() -> None:
     """Verifica primero, escribe después y preserva todos los bloques previos."""
+    from tesis_enasem.release_guard import block_legacy_export
+    block_legacy_export()
     r=synthesize();validate(r);save_json(OUTPUT/"resultados.json",r)
     r6,r7=read_inputs()
     fig=make_figure(r)
@@ -281,4 +283,6 @@ Esta síntesis utiliza exclusivamente los resultados ya calculados en 06/07 y la
 
 
 if __name__=="__main__":
+    from tesis_enasem.release_guard import block_legacy_export
+    block_legacy_export()
     export()

@@ -9,6 +9,8 @@ from tesis_enasem.project_paths import RESULTS_DIR, INTERIM_DIR
 
 def export() -> None:
     """Inserta evidencia validada y actualiza índice/numeración sin reescribir resultados previos."""
+    from tesis_enasem.release_guard import block_legacy_export
+    block_legacy_export()
     verify_inputs()
     r = json.loads((OUTPUT / "resultados.json").read_text())
     figures = json.loads((OUTPUT / "figuras.json").read_text())
@@ -315,4 +317,6 @@ def export() -> None:
 
 
 if __name__ == "__main__":
+    from tesis_enasem.release_guard import block_legacy_export
+    block_legacy_export()
     export()

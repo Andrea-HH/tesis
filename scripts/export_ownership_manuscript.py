@@ -18,6 +18,8 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def export() -> None:
     """Selecciona una tabla/figura académica, conserva resultados exhaustivos externos."""
+    from tesis_enasem.release_guard import block_legacy_export
+    block_legacy_export()
     report = json.loads(read_project_text(project_path('', 'docs/integracion/titularidad/resultados.json')))
     rows = [{"Año":str(r['ano']),"N personas":r['N_personas'],"Propia K":r['N_pension_propia_si'],
              "Pareja K":r['N_pension_conyuge_si'],"Titular ND":r['N_titular_indeterminado'],
@@ -67,4 +69,6 @@ def export() -> None:
 
 
 if __name__ == '__main__':
+    from tesis_enasem.release_guard import block_legacy_export
+    block_legacy_export()
     export()

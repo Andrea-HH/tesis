@@ -520,3 +520,42 @@ satisfactorias. No se recupera un ingreso total ni se prueba suficiencia integra
 tampoco se identifica un efecto causal de política ni se valora actuarialmente una
 renta vitalicia. Las conclusiones deben referirse a las vías y ventanas
 efectivamente observadas.
+
+% BEGIN central09_metodos
+\section{Estimandos del contraste de protección basal y monto posterior}
+\label{sec:metodo-central09}
+La etapa 09 reutiliza el maestro, los sidecars de titularidad y eventos y la serie de precios verificados de 06--08. Se cotejan 379 archivos fuente por SHA256 y se reproduce exactamente la auditoría 08 antes de calcular nuevos cruces. No se reconstruye la integración. Se conserva el conjunto de ventanas del cuadro~\ref{tab:comparabilidad-ventanas}; la expansión no altera las decisiones documentales.
+
+Se define P como incorporación No$\to$Sí de una vía con negativa explícita de la otra al inicio; C como incorporación con la otra vía afirmativa al inicio; y R como Sí$\to$Sí de la vía analizada. Otra vía ND permanece separada. Estos perfiles son mutuamente excluyentes dentro de una vía e intervalo; una misma persona puede aparecer en ventanas o vías distintas, por lo que no se agrupan sus filas como personas independientes. La pertenencia a C no prueba coexistencia al destino. La continuidad de la otra vía o la persistencia conjunta sin K/A solo se interpreta longitudinalmente en 2012--2015.
+
+Se estiman dos probabilidades diferentes: la composición $n(P)/n(\text{nuevos de la vía})$ y la incorporación $n(P)/n(\text{basales sin ambas vías, reobservados con respuesta conocida de la vía})$. Para la unión se usa un denominador propio con unión conocida, sin sumar K y A. Las demás personas de la cohorte se clasifican como fallecimiento registrado, ausencia de vital desconocido, sustituto, respuesta ND, conflicto vital u otro destino. Una afirmativa basta para unión afirmativa; unión negativa exige ambas negativas.
+
+El patrimonio basal es \texttt{imp\_neto}, del entrevistado y cónyuge si existe. Se conservan ceros y negativos y se presentan sus cuantiles en unidades almacenadas, sin convertirlos en ingreso ni en pesos reales: su contrato no acredita comparabilidad monetaria temporal. Los cuartiles Q1--Q4 se fijan dentro de las entrevistas directas de 60+ con patrimonio válido de cada ronda, antes de seleccionar destinos. Son posiciones relativas, no pobreza ni necesidad certificada. Se conservan covariables desconocidas, con denominadores válidos específicos. No se combina incertidumbre de imputación múltiple del producto patrimonial del proveedor.
+
+Los montos posteriores exigen recepción afirmativa, importe válido en cada evento captado y factor de precios válido; no se completa un evento faltante con cero. Se actualiza cada importe a septiembre de 2026 usando el promedio del año calendario previo a la entrevista real, con sensibilidades de doce meses previos y año de entrevista. Patrimonio y prestación monetaria tienen unidades y titulares diferentes. El cambio de captura de K 2012--2015 y A 2015--2018 limita incluso estos contrastes; A continúa incluyendo dinero o especie. No se construye un monto K+A.
+
+Se calculan IC percentiles puntuales por remuestreo de folios \texttt{cunicah}, preservando conjuntamente numerador, denominador y ambos grupos: 4999 réplicas para contrastes principales y 1999 para proporciones, estratos, instituciones, precios y estandarización, con semilla 20261023 (desplazada por años en contrastes crudos). Se conserva sensibilidad por persona y Wilson para proporciones. El folio es un agrupamiento compartido de origen, no un hogar actual certificado ni una UPM. Los intervalos son exploratorios, condicionados a muestra, seguimiento, productos del proveedor y definiciones; no son IC nacionales ni simultáneos. Celdas con menos de 20 válidos por grupo no generan un contraste con IC. Empates pueden producir IC degenerados sin acreditar equivalencia distributiva.
+
+La estandarización descriptiva fija sexo por edad basal 60--64/65--69/70+ por escolaridad 0--5/6+. Exige 20 observaciones de cada grupo por celda, al menos cuatro celdas y retención mínima 70\% de cada grupo completo, contando también las covariables ND como exclusiones. Se aplica una mezcla combinada común sobre el soporte y se recalcula en cada réplica por folio. Las medianas ajustadas invierten la CDF de la distribución reponderada; no promedian medianas. Los agregados conservan el contraste crudo del mismo soporte para distinguir restricción de soporte de ajuste. Si el soporte no alcanza se declara no estimado; no se cambia el umbral para obtener un resultado. No es ajuste causal ni corrección por mortalidad o ausencia.
+
+Las cotas de selección asignan a todos los destinos no clasificables recepción o no recepción de destino, con fallecimientos registrados separados. La cota entre quienes no tienen defunción registrada no certifica supervivencia de ausentes. No se imputan montos ni recepción después de morir. No se identifica la probabilidad de incorporación antes de la muerte.
+
+% END central09_metodos
+
+% BEGIN calidad10
+
+\section{Auditoría de tamaños, precisión y divulgación}
+\label{sec:calidad10}
+La etapa 10 revisa todos los cuadros y figuras del Informe General, las fuentes LaTeX activas y auxiliares y los agregados01--09. El registro distingue N elegible, N válido, personas únicas, personas-ronda, eventos, folios, exclusiones y frecuencias de una clase. No se considera cada nodo JSON como una comparación independiente. Los embudos centrales se reconstruyen exactamente sin rehacer la integración: categoría basal, seguimiento, modalidad, conflicto vital, recepción, integridad monetaria y precios. En los agregados históricos que no documentan un paso se declara esa falta de trazabilidad; no se inventa un N ni se reemplaza por el total.
+
+Se separan protección y estadística: N menor de 10 impide divulgar montos y perfiles continuos;10--29 requiere revisión reforzada;30 o más no garantiza validez, precisión o representatividad. Son criterios del proyecto, no reglas universales de ENASEM. Las condiciones de acceso del estudio impiden identificar participantes y redistribuir bases; la política de confidencialidad del INEGI exige protección contra identificación. Ninguna de las páginas consultadas establece aquí un mínimo universal10/30 \citep{mhas2026condiciones,inegi2021confidencialidad}. No se presume validación de un convenio particular no aportado.
+
+La precisión se contrasta con 9999 réplicas por folio y dos semillas para medianas P menos C, omisión de cada folio e intervalos de orden binomial bajo independencia personal. La última es una comprobación distinta, no un IC por folio o de diseño. Los IC son puntuales y exploratorios; los empates pueden producir intervalos degenerados sin demostrar equivalencia. El extremo superior del IC K 2012--2015 es sensible a semilla, aunque la dirección permanezca. Un valor LOO constante tampoco certifica precisión.
+
+Se evalúan uniformemente edad de tres grupos o dos (60--69/70+) y mínimos de 20 o30 por celda, manteniendo sexo, escolaridad, al menos cuatro celdas y 70\% de retención por grupo. Se cuentan réplicas sin soporte; no se extrapolan ni completan con cero. Se distinguen cambio de población, mezcla y granularidad. No se selecciona la especificación por significancia.
+
+Cuando la estratificación no es necesaria para el estimando principal se reduce de manera sustantiva: patrimonio basal en mitades Q1+Q2/Q3+Q4 en todas las ventanas y, en el contexto T8, escolaridad 0--5/6+ con titularidad conocida. Las medianas se recalculan sobre personas, no promediando medianas de los grupos anteriores. ND permanece como estado de información y no como un nivel de desventaja. K 2001--2003 sigue sin soporte direccional y no se combina con otras ventanas para rescatarlo.
+
+La versión privada conserva originales, resultados descartados y trazabilidad; la pública retira conjuntamente estadísticas sensibles y derivados que permitirían reconstruirlas. Se aplica supresión complementaria o exclusión de una familia completa cuando hay márgenes reconstructivos. No se publican frecuencias monetarias exactas por valor ni extremos individuales. El listado público es explícito y excluye bases, eventos, copias privadas y salidas con microdatos. Corregir archivos actuales no elimina una exposición en commits anteriores; la revisión del historial y su eventual tratamiento son independientes y no se ha autorizado aquí su reescritura.
+
+% END calidad10

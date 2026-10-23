@@ -215,6 +215,8 @@ def run(imputation_doc: Path, questionnaire: Path, figures: bool = True, reuse_f
 
 
 if __name__=="__main__":
+    from tesis_enasem.release_guard import block_legacy_export
+    block_legacy_export()
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--imputation-doc",required=True,type=Path)
     parser.add_argument("--questionnaire",required=True,type=Path)

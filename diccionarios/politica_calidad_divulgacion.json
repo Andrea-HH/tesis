@@ -1,0 +1,64 @@
+{
+  "version": "10-2026-10-23",
+  "naturaleza": "Política operativa conservadora de esta tesis, no mínimo legal o universal de ENASEM",
+  "revision_N": {
+    "0": "No estimable; no confundir con un monto cero",
+    "1_9": "No divulgar estadísticas monetarias ni perfiles continuos; sin conclusiones poblacionales",
+    "10_29": "Revisar dispersión, IC, empates, influencia por folio y soporte antes de interpretar",
+    "30_o_mas": "Evaluar igualmente precisión, dependencia, diseño y sensibilidad"
+  },
+  "soporte": {
+    "celdas_principal": 20,
+    "celdas_sensibilidad": 30,
+    "celdas_minimas": 4,
+    "retencion_por_grupo": 0.7
+  },
+  "incertidumbre": "Bootstrap por folio; sensibilidad a semilla, 9999 réplicas, LOO por folio y rangos binomiales con independencia personal como comprobación. IC puntuales, sin inferencia nacional ni equivalencia por empates.",
+  "reformulaciones": [
+    "Patrimonio: Q1+Q2 frente a Q3+Q4, misma regla en las seis ventanas; no rescata K2001–2003",
+    "T8 contextual: escolaridad0–5/6+ y titularidad conocida; ND queda como exclusión, no perfil sustantivo",
+    "Edad basal60–69/70+ solo sensibilidad, sin mezclar ventanas ni elegir por significancia"
+  ],
+  "divulgacion": [
+    "Sin IDs ni microdatos o archivos de eventos",
+    "Retirar conjuntamente estadísticas de rama pequeña, contrastes, IC, porcentajes/perfiles y cualquier derivado reconstructivo",
+    "No publicar frecuencias monetarias exactas por valor, extremos individuales o agregados privados íntegros",
+    "Conteos mínimos de elegibilidad y falta de respuesta no equivalen por sí solos a importes individuales",
+    "Supresión complementaria en márgenes o exclusión completa de familia cuando no sea demostrable su seguridad",
+    "Lista explícita de archivos autorizados en la propuesta local; no git add automático",
+    "Publicar una corrección actual no borra la exposición histórica; revisión del historial separada y sin reescritura autorizada"
+  ],
+  "fuentes": [
+    {
+      "titulo": "MHAS Data Products, condiciones de acceso",
+      "url": "https://www.enasem.org/DataProducts/Home.aspx",
+      "consulta": "2026-10-23",
+      "alcance": "No identificar participantes ni redistribuir datos a terceros; citar el estudio. No se encontró aquí un mínimo numérico de celda."
+    },
+    {
+      "titulo": "INEGI, Confidencialidad de la información",
+      "url": "https://www.inegi.org.mx/inegi/contenido/confidencialidad.html",
+      "consulta": "2026-10-23",
+      "alcance": "Difusión sin identificación de informantes; no fija aquí10 o30."
+    },
+    {
+      "titulo": "Política para la Gestión de la Confidencialidad en la Información Estadística y Geográfica, 2021",
+      "url": "https://sidof.segob.gob.mx/notas/docFuente/5634105",
+      "consulta": "2026-10-23",
+      "alcance": "Marco oficial de riesgo de identificación y protección; no equipararlo a certificación institucional de esta tesis."
+    },
+    {
+      "titulo": "SciPy, bootstrap",
+      "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.bootstrap.html",
+      "consulta": "2026-10-23",
+      "alcance": "Fundamentos operativos, semilla, muestras pareadas y límites de distribuciones degeneradas; no justifica una inferencia nacional."
+    }
+  ],
+  "limite": "No se declara anonimato universal ni cumplimiento de un convenio particular no aportado. No se mezclan reglas para datos enlazados restringidos con las de los archivos de uso público registrados. La aprobación institucional permanece pendiente.",
+  "evaluacion_precision": {
+    "escala": "max(abs(mediana referencia),IQR referencia)",
+    "alerta_amplitud": "AnchoIC mayor que la escala de referencia",
+    "alerta_influencia": "Cambio máximo de mediana diferencial al omitir un folio superior a25% de esa escala",
+    "alcance": "Criterios de revisión operativos, no potencia ni umbral universal. No se descarta un resultado porque su IC incluya cero."
+  }
+}

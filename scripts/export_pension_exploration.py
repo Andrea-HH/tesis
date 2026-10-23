@@ -26,6 +26,8 @@ def academic_latex(text: str) -> str:
 
 
 def export() -> None:
+    from tesis_enasem.release_guard import block_legacy_export
+    block_legacy_export()
     r=json.loads(read_project_text(PUBLIC/'resultados.json'));old=json.loads(read_project_text(project_path('', 'docs/eda/proteccion_economica/resultados.json')))
     tables=project_path('', 'manuscrito/tablas');chapters=project_path('', 'manuscrito/capitulos');figures=project_path('', 'manuscrito/figuras/borradores')
     def load(key):return json.loads(read_project_text(PUBLIC/'tablas'/f'{key}.json'))
@@ -308,4 +310,7 @@ no se infiere un cambio administrativo ni el efecto de una política.
     checked_hashes();print('Cuadros, narrativa y preguntas derivados de agregados; fuentes originales preservadas.')
 
 
-if __name__=='__main__':export()
+if __name__=='__main__':
+    from tesis_enasem.release_guard import block_legacy_export
+    block_legacy_export()
+    export()

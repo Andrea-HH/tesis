@@ -19,6 +19,8 @@ def save(name: str, obj: object) -> None:
 
 def main() -> None:
     """Relaciona categorías de instrumentos, nunca asigna un programa a una persona."""
+    from tesis_enasem.release_guard import block_legacy_export
+    block_legacy_export()
     index=json.loads(read_project_text(project_path('docs/pensiones/nacional', 'indice_catalogo.json')))
     contracts=json.loads(read_project_text(project_path('', 'docs/eda/proteccion_economica/contratos_armonizacion.json')))
     records=[r for s in index['fuentes'] for r in json.loads(read_project_text(project_path('', s['archivo_catalogo'])))]
@@ -154,4 +156,7 @@ Los contrastes por sexo, escolaridad, edad y corte de 100 mil describen la muest
         lines.append('| '+' | '.join([str(g['ano']),', '.join(g['propia_k']),', '.join(g['conyuge_k']),g['apoyo_propio']+' / '+g['apoyo_conyuge'],', '.join(g['programas_propios']+g['programas_conyuge']) or 'No disponibles','; '.join(f'{k}: {v}' for k,v in g['opciones_programa'].items()) or 'Agregado sin nombre'])+' |')
     write_project_text(project_path('docs/pensiones/nacional', 'MATRIZ_ENASEM.md'), academic_spacing('\n'.join(lines)+'\n'))
     print('Catálogo/contexto exportados',len(records),'registros; sin microdatos.')
-if __name__=='__main__':main()
+if __name__=='__main__':
+    from tesis_enasem.release_guard import block_legacy_export
+    block_legacy_export()
+    main()

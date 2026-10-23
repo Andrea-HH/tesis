@@ -98,6 +98,8 @@ def build_contributions(r: dict, figures: list[dict]) -> dict[str,tuple[str,str]
 
 def export() -> None:
     """Actualiza bloques identificados, protege ediciones humanas y renumera presentación."""
+    from tesis_enasem.release_guard import block_legacy_export
+    block_legacy_export()
     verify_frozen_inputs()
     report=RESULTS_DIR/'INFORME_GENERAL.md';text=report.read_text()
     text=text.replace('Síntesis editorial de resultados previamente calculados; sin nuevos análisis ni pregunta definitiva adoptada.', 'Síntesis académica acumulativa, actualizada con la ampliación del notebook 03; sin pregunta definitiva adoptada.')
@@ -144,4 +146,7 @@ def export() -> None:
     verify_frozen_inputs();print('Informe actualizado por sección:',table_no,'cuadros y',figure_no,'figuras en total.')
 
 
-if __name__=='__main__':export()
+if __name__=='__main__':
+    from tesis_enasem.release_guard import block_legacy_export
+    block_legacy_export()
+    export()

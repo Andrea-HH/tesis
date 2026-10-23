@@ -6,6 +6,8 @@ from tesis_enasem.economic_protection import OUTPUT, analyze, save_json, verify_
 from tesis_enasem.project_paths import PROJECT_ROOT
 
 if __name__ == "__main__":
+    from tesis_enasem.release_guard import block_legacy_export
+    block_legacy_export()
     r = analyze()
     save_json(OUTPUT / "resultados.json", r)
     save_json(

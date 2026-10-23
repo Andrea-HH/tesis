@@ -14,6 +14,8 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def export() -> None:
     """Selecciona evidencia académica y conserva el reporte exhaustivo externo."""
+    from tesis_enasem.release_guard import block_legacy_export
+    block_legacy_export()
     audit = json.loads(read_project_text(project_path('', "docs/integracion/validacion.json")))
     joint = json.loads(read_project_text(project_path('', "docs/integracion/eda_conjunto_inicial.json")))
     output = project_path('', "manuscrito/tablas")
@@ -67,4 +69,6 @@ def export() -> None:
 
 
 if __name__ == "__main__":
+    from tesis_enasem.release_guard import block_legacy_export
+    block_legacy_export()
     export()

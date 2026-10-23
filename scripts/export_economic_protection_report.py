@@ -13,6 +13,8 @@ from tesis_enasem.project_paths import INTERIM_DIR, RESULTS_DIR
 
 def export() -> None:
     """Selecciona tablas/figuras sustantivas, no todos los productos auxiliares."""
+    from tesis_enasem.release_guard import block_legacy_export
+    block_legacy_export()
     validate()
     r = json.loads((OUTPUT / "resultados.json").read_text())
     figures = json.loads((OUTPUT / "figuras.json").read_text())
@@ -392,4 +394,6 @@ def export() -> None:
 
 
 if __name__ == "__main__":
+    from tesis_enasem.release_guard import block_legacy_export
+    block_legacy_export()
     export()

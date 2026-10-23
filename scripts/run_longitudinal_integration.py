@@ -288,6 +288,8 @@ def export_reports(audit: dict, dictionary: list) -> None:
 
 
 if __name__ == "__main__":
+    from tesis_enasem.release_guard import block_legacy_export
+    block_legacy_export()
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--reports-only", action="store_true", help="Reexporta desde validación calculada sin repetir uniones")
     args = parser.parse_args()

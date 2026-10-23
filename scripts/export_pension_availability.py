@@ -122,4 +122,6 @@ C: candidata condicionada; P: tipo parcial; T: agregado sin identificación sufi
     return result
 
 if __name__=='__main__':
+    from tesis_enasem.release_guard import block_legacy_export
+    block_legacy_export()
     print('Matriz exportada:',len(export_availability()['disponibilidad']),'concepto-ronda; ninguna variable integrada.')

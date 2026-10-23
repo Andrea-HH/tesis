@@ -2,7 +2,7 @@
 
 **Estado al 23 de octubre de 2026.** El manuscrito adopta la pregunta sobre ampliación de protección propia al incorporarse a K/A, primera vía observada frente a complementariedad, diferencias monetarias y características socioeconómicas. Se conservan las comparaciones de cobertura y recursos reales, incorporación/continuidad y sensibilidad a muerte o ausencia como evidencia complementaria. La pregunta exacta y sus objetivos están en [01_introduccion.tex](capitulos/01_introduccion.tex) y en el [README principal](../README.md). El enfoque predictivo antiguo permanece exclusivamente en [antecedentes históricos](../investigacion/notas/notebooks_historicos/README.md).
 
-Las fuentes de los cinco capítulos han sido actualizadas para revisión académica. **El [PDF](build/main.pdf) se recompila mediante GitHub Actions; comprobar el commit fuente y los controles en [validación del PDF](build/validacion_pdf.json), además de revisar sus imágenes.** El [Informe General](../resultados/INFORME_GENERAL.md) ofrece evidencia histórica y cifras auditadas, en especial secciones 10.5–10.7. El cruce conjunto de desventaja inicial, incorporación sin otra vía/complementariedad y monto posterior sigue pendiente; no se afirma un resultado de focalización inexistente. También permanecen pendientes normas UDLAP, datos de portada y aprobación editorial.
+Las fuentes de los cinco capítulos han sido actualizadas para revisión académica. **El [PDF local](build/main.pdf) fue recompilado y revisado tras el cierre de la etapa 10. La [validación](build/validacion_pdf.json) registra huellas de las fuentes sin commit; todavía no está publicado en GitHub.** El [Informe General](../resultados/INFORME_GENERAL.md) ofrece evidencia histórica y cifras auditadas, en especial secciones 10.5–10.7. La etapa 09 completa el cruce conjunto basal y posterior (Informe 10.8), con resultados heterogéneos por vía y límites de soporte; no identifica necesidad integral o causalidad. También permanecen pendientes normas UDLAP, datos de portada y aprobación editorial.
 
 ## Estructura actual
 
@@ -62,7 +62,7 @@ tectonic --keep-logs --keep-intermediates --outdir build main.tex
 
 Abrir `manuscrito/build/main.pdf` en un visor PDF. En macOS puede usarse `open manuscrito/build/main.pdf` desde la raíz. En VS Code, abrir `main.tex` con LaTeX Workshop si está disponible y configurar su motor; el PDF compilado queda en `build/`. También puede abrirse el PDF en un visor externo. No es necesario usar notebooks para compilar una copia que ya contenga las exportaciones.
 
-**Nota histórica de compilación (etapa anterior):** no había una distribución LaTeX instalada; se utilizó un binario temporal oficial Tectonic 0.17.0 para macOS ARM64 en `/tmp/tesis-tectonic-0.17.0/tectonic`. No es una dependencia permanente del repositorio. La primera ejecución descargó componentes TeX; para recompilar con Tectonic se requiere su caché o acceso de red. Véase la evidencia final de compilación y revisión en `docs/HANDOFF.md`. El PDF se conserva localmente y no se publica.
+**Nota histórica de compilación (etapa anterior):** no había una distribución LaTeX instalada; se utilizó un binario temporal oficial Tectonic 0.17.0 para macOS ARM64 en `tectonic`. No es una dependencia permanente del repositorio. La primera ejecución descargó componentes TeX; para recompilar con Tectonic se requiere su caché o acceso de red. Véase la evidencia final de compilación y revisión en `docs/HANDOFF.md`. El PDF se conserva localmente y no se publica.
 
 ## Actualizar resultados sin transcripción manual
 
@@ -138,13 +138,13 @@ La [matriz de conciliación](../resultados/INFORME_GENERAL.md#origen-eece14d800a
 El [catálogo nacional](../resultados/INFORME_GENERAL.md#origen-d94b156198db) aporta dos cuadros desde inventarios y contratos documentados: cobertura territorial y especificidad de las seis rondas. No identifica beneficiarios ni modifica el EDA. Las 46,495 filas son ocurrencias de intervenciones por territorio/periodo, no programas únicos. Las versiones normativas anteriores permanecen preservadas.
 
 ```bash
-/opt/miniconda3/envs/myenv/bin/python scripts/export_national_context.py
-/opt/miniconda3/envs/myenv/bin/python scripts/build_documentary_notebook.py --execute
-/opt/miniconda3/envs/myenv/bin/python scripts/reconcile_manuscript.py
-/opt/miniconda3/envs/myenv/bin/python scripts/export_cp1_manuscript.py --check
-/opt/miniconda3/envs/myenv/bin/python scripts/validate_manuscript.py
-/opt/miniconda3/envs/myenv/bin/python scripts/compile_manuscript.py --engine tectonic
-/opt/miniconda3/envs/myenv/bin/python scripts/review_documentary_artifacts.py
+python scripts/export_national_context.py
+python scripts/build_documentary_notebook.py --execute
+python scripts/reconcile_manuscript.py
+python scripts/export_cp1_manuscript.py --check
+python scripts/validate_manuscript.py
+python scripts/compile_manuscript.py --engine tectonic
+python scripts/review_documentary_artifacts.py
 ```
 
 Los comandos de esta etapa reutilizan resultados anteriores. Para restaurar las extracciones documentales usar `build_national_catalog.py --download`; no se necesita repetir las 17 uniones. Abrir el notebook 05 eejecutado desde VS Code y el PDF local; consultar la [revisión académica](../resultados/INFORME_GENERAL.md#origen-459ef58882c6) para los límites y decisiones abiertas. El manuscrito compila desde exportaciones agregadas sin microdatos.
@@ -155,7 +155,49 @@ Cada capítulo y cada anexo tiene un único archivo completo; los módulos anter
 
 El capítulo 3 incluye una matriz de los cinco intervalos y ambas vías en `tablas/tesis_comparabilidad_ventanas.tex`. Explica diferencias de preguntas, instituciones, captura y montos, con páginas de las fuentes oficiales. La restricción A 2001–2003 se declara provisional. Los capítulos 4–5 distinguen otra vía basal y coexistencia al destino; las seis rondas descriptivas permanecen.
 
-El flujo `Compilar y verificar tesis` valida las fuentes, compila con LaTeX/BibTeX y verifica texto, referencias y límites de página. Guarda el PDF, `build/validacion_pdf.json` e imágenes en `build/revision/`; estos controles requieren inspección visual adicional. No usa microdatos, no exporta estimaciones nuevas y no certifica el cierre de los cruces socioeconómicos pendientes. Los registros históricos de compilación anteriores no describen el PDF de este flujo.
+El flujo `Compilar y verificar tesis` valida las fuentes, compila con LaTeX/BibTeX y verifica texto, referencias y límites de página. Guarda el PDF, `build/validacion_pdf.json` e imágenes en `build/revision/`; estos controles requieren inspección visual adicional. No usa microdatos, no exporta estimaciones nuevas y no valida por sí solo los análisis estadísticos privados de la etapa 09 (Informe 10.8). Los registros históricos de compilación anteriores no describen el PDF de este flujo.
 
 
 **Verificación del PDF — 23/10/2026.** La compilación en GitHub del commit fuente `d1180574d685e77103f77a4b5d3d1a64fb7e2f8c` produjo un PDF de 75 páginas. El cuadro 3.1 contiene las cinco ventanas y ambas vías en páginas impresas 20–21 (PDF 27–28). Pasaron validación de fuentes, pruebas en Python 3.11/3.12, controles de citas/referencias y límites de página; no se registraron desbordamientos horizontales. Se revisaron visualmente las cuatro láminas de detalle y los siete contactos de todo el documento. Véase `manuscrito/build/validacion_pdf.json` para huella y alcance. Esta verificación editorial no certifica datos de portada pendientes ni completa los cruces socioeconómicos no disponibles en el repositorio público. No se recalcularon estimaciones ni se publicaron archivos privados.
+
+
+
+
+
+
+
+
+
+
+
+<!-- BEGIN estado09 -->
+## Investigación estadística local completada — etapa 09
+
+El contraste central reutiliza379 fuentes verificadas y reproduce la auditoría 08. Incorpora las seis rondas, seis combinaciones vía/ventana, situación basal, probabilidad/composición, perfiles patrimoniales, montos posteriores, incertidumbre y sensibilidad. Véase Informe General10.8 y capítulos 3–5. Código: `central_analysis.py`, `central_supplement.py`; reproducción `python scripts/run_central_analysis.py` y exportación `python scripts/export_central_analysis.py`. Los agregados locales permanecen en `data/interim/incorporacion_proteccion_propia/`, excluidos de Git. No se ha hecho commit ni push. La pobreza, necesidad integral, causalidad, inferencia nacional y cinco ajustes monetarios sin soporte permanecen fuera de conclusión. La tesis compilada tiene 88 páginas y el Informe General 183; se revisaron visualmente las secciones modificadas y seis páginas representativas del informe. Pasaron 176 pruebas y 166 comprobaciones numéricas independientes. Registro de fuentes y revisión: `manuscrito/build/validacion_pdf.json` y agregados09; cifras antiguas de páginas en este archivo describen etapas históricas.
+<!-- END estado09 -->
+
+
+
+
+
+
+
+<!-- validacion10 -->
+Cierre local de verificación: tesis corregida de **94 páginas** e Informe General de **199 páginas**, 135 cuadros y 50 figuras. Pasan **197 pruebas**, 166 comprobaciones numéricas independientes y 336 embudos; 379 fuentes estadísticas permanecen intactas. Se revisaron visualmente las secciones modificadas. La propuesta autocontenida compila con texto idéntico al manuscrito corregido. Reproducir con `scripts/validate_statistical_quality.py`, `scripts/verify_compiled_thesis.py` y `scripts/prepare_quality_release.py`; este último no publica ni altera Git. La revisión visual queda registrada en `manuscrito/build/validacion_pdf.json`.
+
+
+
+<!-- BEGIN estado10 -->
+## Auditoría estadística y divulgación — etapa 10
+
+El Informe General10.9 reúne el censo de 126 cuadros/50 figuras originales, la trazabilidad de muestras, las reformulaciones y las limitaciones. Se preserva la versión privada original de 88 páginas y sus resultados; la edición académica actual es la versión pública corregida, con validación separada. El núcleo de incorporación observado se conserva; algunos gradientes y contrastes institucionales se matizan por soporte/estabilidad. Véanse `diccionarios/politica_calidad_divulgacion.json`, `diccionarios/auditoria_calidad_muestras.json` y `python scripts/export_quality_public.py`. Ningún umbral acredita inferencia nacional. No se hizo commit ni push. El historial público previo contiene un detalle T8 de un grupo pequeño: no se ha saneado ni se reescribirá sin autorización. La propuesta local de archivos públicos excluye los originales y agregados privados, así como artefactos históricos no revisados.
+<!-- END estado10 -->
+
+<!-- sincronizacion_local_unica -->
+## Sincronización del mismo repositorio
+
+Se mantiene únicamente `Andrea-HH/tesis`, con los archivos públicos y privados en sus ubicaciones habituales. `.gitignore` permite solo las392 rutas revisadas de `diccionarios/cierre_publicacion.json`; el resto permanece local. Los archivos excluidos que estaban rastreados se retiran únicamente del índice, sin borrarlos del disco. La versión vigente es el PDF de94 páginas; no se recalculó ni reconstruyó para preparar Git.
+
+Para preparar la selección revisada: `python scripts/prepare_quality_release.py --stage`. Para comprobar lo preparado: `python scripts/validate_quality_release.py --index`. Ninguno hace commit ni push. Los cambios de archivos ya autorizados pueden sincronizarse normalmente; una ruta nueva requiere revisión y actualización del manifiesto y las excepciones de `.gitignore`. No usar incorporación forzada para eludir esta selección. Los notebooks publicables tienen outputs vacíos; las versiones originales siguen privadas.
+
+Una actualización normal puede corregir el árbol vigente de GitHub sin reproducir las estadísticas retiradas. No elimina la mediana patrimonial T8 de un grupo de cinco personas del historial anterior. Ese riesgo sigue identificado y no se autoriza ni se realiza reescritura del historial o force push.
