@@ -143,21 +143,82 @@ de pareja separan ocho combinaciones conocidas de K propia, K del cónyuge
 y A propia; las cuatro combinaciones K/A sin pareja y el contexto
 indeterminado se presentan aparte.
 
-\subsection{Comparabilidad entre instrumentos}
+\subsection{Selección documentada de ventanas longitudinales}
+\label{sec:comparabilidad-ventanas}
 
-K tiene ventanas condicionadamente comparables 2001--2003,2012--2015 y
-2018--2021. A permite 2003--2012,2012--2015 y 2015--2018.
-Las rupturas K 2003--2012/K 2015--2018 y A 2001--2003/A 2018--2021 impiden
-interpretar automáticamente altas y bajas homologadas. La unión tiene
-continuidad conjunta condicionada en 2012--2015 dentro de las ventanas
-analizadas.
+Las seis rondas se conservan para describir K y A en cada visita.
+La selección de ventanas longitudinales se decide por vía y por estimando:
+poder enlazar a la misma persona no garantiza medir el mismo concepto.
+Se exige correspondencia de la pregunta de recepción, del beneficiario y
+del periodo; para dinero se exige además unidad mensual y captura conciliable.
+Una diferencia institucional documentada justifica cautela, pero no cuantifica
+cuánto de una transición se debe al instrumento. Comparabilidad condicionada
+significa análisis de respuestas operacionalmente comparables, sin certificar
+invariancia, identidad de beneficio o alta administrativa.
 
-Incluso en una ventana admisible cambia la captación: K 2012/2015 amplía
-slots e instituciones y A 2015/2018 pasa de apoyo agregado a programas/eventos.
-La comparabilidad es operacional y condicionada, no invariancia perfecta.
-Los slots observados no equivalen al número real total de prestaciones.
-Instituciones múltiples por contingencia no permiten replicar el importe
-o repartirlo entre sus opciones.
+La revisión utiliza los libros de códigos K de 2001 y 2003 y los
+cuestionarios básicos de 2012, 2015, 2018 y 2021
+\citep{enasem2001codigosk,enasem2003codigosk,enasem2012cuestionario,
+enasem2015cuestionario,inegi2018k,inegi2021k}. Las páginas indicadas
+en el cuadro~\ref{tab:comparabilidad-ventanas} son posiciones del PDF,
+contadas desde 1; pueden diferir de la numeración impresa.
+La concordancia oficial permite localizar preguntas entre rondas, pero
+presenta el texto y las respuestas de 2021: no demuestra que todas las
+versiones anteriores hayan tenido esas mismas opciones
+\citep[pp.~34--36 del PDF]{enasemcomparacion2021}.
+Los diccionarios de trabajo \variable{armonizacion_pensiones.json}
+y \variable{contrato_transiciones_montos_pensionarios.json} documentan
+la implementación; no sustituyen a las fuentes primarias.
+
+\input{tablas/tesis_comparabilidad_ventanas}
+\FloatBarrier
+
+\paragraph{Por qué K utiliza ventanas distintas de A.}
+En K las cuatro contingencias se mantienen, pero la captación institucional
+cambia: 2003 no ofrece la opción explícita de programas públicos que
+aparece en 2012; 2015 la conserva y 2018 la omite. Estos cambios afectan
+qué recursos podrían declararse dentro de K. Por ello se mantienen bloques
+2001--2003, 2012--2015 y 2018--2021, con las reservas del cuadro.
+No se presupone que cada cambio de respuesta sea creado por el cuestionario,
+ni se identifica una migración automática de beneficios de K hacia A.
+
+En A se mantiene una pregunta amplia sobre donativos públicos y sus montos,
+con actualización de ejemplos en 2015 y desagregación por instituciones
+en 2018. Esto permite estudiar recepción general en 2003--2012,
+2012--2015 y 2015--2018, sin seguir un programa específico.
+La opción explícita de vejez y los ejemplos de 2021 modifican ese soporte.
+A 2001--2003 se mantiene fuera del principal por cautela de homologación:
+la incorporación de Seguro Popular a los ejemplos y la renumeración son
+verificables, pero no bastan para demostrar por sí mismas una ruptura del
+indicador binario. La validación completa de filtros y titularidad temprana
+sigue pendiente. No se presenta esa exclusión como prohibición establecida
+por ENASEM ni como evidencia de una discontinuidad real de recepción.
+
+\paragraph{Recepción, monto e identidad son niveles diferentes.}
+Las seis ventanas admitidas permiten matrices de respuestas conocidas
+No/No, No/Sí, Sí/Sí y Sí/No, conservando los destinos no observados.
+La comparación monetaria detallada y sus IC existentes se concentran en
+K 2012--2015 y A 2015--2018. Admitir una ventana de recepción no demuestra
+que todos sus contrastes monetarios hayan sido calculados o validados.
+Los importes de cada ronda se mantienen como descriptivos; las sumas de
+eventos captados requieren distinguir integridad, número de espacios
+disponibles y cambios de institución. Ninguna ventana acredita la misma
+prestación administrativa o pagos continuos entre visitas.
+
+\paragraph{Consecuencias para primera vía y complementariedad.}
+Dentro de cada incorporación admisible, la otra vía basal puede ser
+No, Sí o ND. Esto permite describir primera vía propia observada o presencia
+de otra vía en el origen, aunque no autoriza comparar la evolución de esa
+otra vía cuando atraviesa una restricción. Solo 2012--2015 admite actualmente
+la transición conjunta K/A bajo los dos contratos: en 2015--2018 la
+restricción afecta K y en 2018--2021 afecta A.
+Así, otra vía afirmativa al inicio no prueba complementariedad simultánea
+en destino; otra vía negativa no prueba ausencia de toda prestación previa.
+Comprobar acumulación o posible sustitución exige observar y homologar
+también la otra vía al final. El porcentaje sin otra vía entre incorporados
+es una composición de grupo, distinta de la proporción que se incorpora
+entre todos los inicialmente No/No. Esta última requiere su propio
+denominador, destinos de seguimiento y comparabilidad de la unión.
 
 \section{Montos, periodicidad y productos alternativos}
 

@@ -2,7 +2,7 @@
 
 **Estado al 23 de octubre de 2026.** El manuscrito adopta la pregunta sobre ampliación de protección propia al incorporarse a K/A, primera vía observada frente a complementariedad, diferencias monetarias y características socioeconómicas. Se conservan las comparaciones de cobertura y recursos reales, incorporación/continuidad y sensibilidad a muerte o ausencia como evidencia complementaria. La pregunta exacta y sus objetivos están en [01_introduccion.tex](capitulos/01_introduccion.tex) y en el [README principal](../README.md). El enfoque predictivo antiguo permanece exclusivamente en [antecedentes históricos](../investigacion/notas/notebooks_historicos/README.md).
 
-Las fuentes de los cinco capítulos han sido actualizadas para revisión académica. **El [PDF compilado existente](build/main.pdf) es anterior a este cambio de enfoque y debe recompilarse antes de entregarse como versión actual.** El [Informe General](../resultados/INFORME_GENERAL.md) ofrece evidencia histórica y cifras auditadas, en especial secciones 10.5–10.7. El cruce conjunto de desventaja inicial, incorporación sin otra vía/complementariedad y monto posterior sigue pendiente; no se afirma un resultado de focalización inexistente. También permanecen pendientes normas UDLAP, datos de portada y aprobación editorial.
+Las fuentes de los cinco capítulos han sido actualizadas para revisión académica. **El [PDF](build/main.pdf) se recompila mediante GitHub Actions; comprobar el commit fuente y los controles en [validación del PDF](build/validacion_pdf.json), además de revisar sus imágenes.** El [Informe General](../resultados/INFORME_GENERAL.md) ofrece evidencia histórica y cifras auditadas, en especial secciones 10.5–10.7. El cruce conjunto de desventaja inicial, incorporación sin otra vía/complementariedad y monto posterior sigue pendiente; no se afirma un resultado de focalización inexistente. También permanecen pendientes normas UDLAP, datos de portada y aprobación editorial.
 
 ## Estructura actual
 
@@ -150,3 +150,9 @@ El [catálogo nacional](../resultados/INFORME_GENERAL.md#origen-d94b156198db) ap
 Los comandos de esta etapa reutilizan resultados anteriores. Para restaurar las extracciones documentales usar `build_national_catalog.py --download`; no se necesita repetir las 17 uniones. Abrir el notebook 05 eejecutado desde VS Code y el PDF local; consultar la [revisión académica](../resultados/INFORME_GENERAL.md#origen-459ef58882c6) para los límites y decisiones abiertas. El manuscrito compila desde exportaciones agregadas sin microdatos.
 
 Cada capítulo y cada anexo tiene un único archivo completo; los módulos anteriores se incorporaron sin reescritura. No generar archivos independientes por sección.
+
+## Ventanas y compilación en GitHub — 23/10/2026
+
+El capítulo 3 incluye una matriz de los cinco intervalos y ambas vías en `tablas/tesis_comparabilidad_ventanas.tex`. Explica diferencias de preguntas, instituciones, captura y montos, con páginas de las fuentes oficiales. La restricción A 2001–2003 se declara provisional. Los capítulos 4–5 distinguen otra vía basal y coexistencia al destino; las seis rondas descriptivas permanecen.
+
+El flujo `Compilar y verificar tesis` valida las fuentes, compila con LaTeX/BibTeX y verifica texto, referencias y límites de página. Guarda el PDF, `build/validacion_pdf.json` e imágenes en `build/revision/`; estos controles requieren inspección visual adicional. No usa microdatos, no exporta estimaciones nuevas y no certifica el cierre de los cruces socioeconómicos pendientes. Los registros históricos de compilación anteriores no describen el PDF de este flujo.

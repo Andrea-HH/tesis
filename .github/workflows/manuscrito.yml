@@ -1,0 +1,60 @@
+name: Compilar y verificar tesis
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'manuscrito/**/*.tex'
+      - 'investigacion/referencias.bib'
+      - 'scripts/verify_compiled_thesis.py'
+      - '.github/workflows/manuscrito.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: manuscrito-main
+  cancel-in-progress: true
+jobs:
+  pdf:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Instalar herramientas editoriales
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends latexmk texlive-latex-extra texlive-lang-spanish texlive-fonts-recommended lmodern
+          python -m pip install 'PyMuPDF>=1.24,<2'
+      - name: Validar fuentes y compilar sin microdatos
+        env:
+          PYTHONPATH: src
+        run: |
+          python scripts/validate_manuscript.py
+          cd manuscrito
+          mkdir -p build
+          latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=build main.tex
+      - name: Verificar texto, referencias y páginas
+        run: python scripts/verify_compiled_thesis.py
+      - name: Conservar PDF, diagnósticos e imágenes de revisión
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tesis-pdf-revision
+          path: |
+            manuscrito/build/main.pdf
+            manuscrito/build/main.log
+            manuscrito/build/validacion_pdf.json
+            manuscrito/build/revision/*.png
+      - name: Actualizar únicamente el PDF y su evidencia editorial en GitHub
+        if: success()
+        run: |
+          test "$(git ls-remote origin refs/heads/main | cut -f1)" = "$GITHUB_SHA"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f manuscrito/build/main.pdf manuscrito/build/validacion_pdf.json manuscrito/build/revision/*.png
+          if ! git diff --cached --quiet; then
+            git commit -m "tesis: PDF compilado y evidencia editorial desde $GITHUB_SHA"
+            git push origin HEAD:main
+          fi

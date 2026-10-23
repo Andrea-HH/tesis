@@ -12,7 +12,7 @@
 
 **Límite fundamental:** todavía no se estimó el cruce conjunto `desventaja socioeconómica basal × primera vía/complementariedad × montos de destino`. Por ello, la tesis no puede concluir que la expansión se concentre en quienes más lo necesitan, que reduzca pobreza o que produzca un efecto causal. El título es interrogativo; los resultados describen muestras no ponderadas para inferencia nacional. La historia de cobertura y brechas se conserva como antecedente y evidencia complementaria.
 
-**Estado del repositorio:** fuentes LaTeX alineadas al nuevo enfoque; **el PDF compilado previamente requiere recompilación** para reflejar estas ediciones. Los notebooks públicos 01–02, funciones, informe y figuras permanecen; los notebooks analíticos 03–08 se describen en el informe, pero sus `.ipynb` y agregados locales no están publicados aquí. El antiguo enfoque de alerta temprana y los once notebooks asociados son exclusivamente [históricos](investigacion/notas/notebooks_historicos/README.md).
+**Estado del repositorio:** fuentes LaTeX alineadas al nuevo enfoque. La tabla de comparabilidad de metodología documenta las cinco ventanas para K y A, con fuentes primarias y una reserva explícita sobre A 2001–2003. El flujo `Compilar y verificar tesis` genera el PDF en GitHub, guarda su commit fuente y produce imágenes para revisión visual; un flujo satisfactorio no sustituye esa inspección. Los notebooks públicos 01–02, funciones, informe y figuras permanecen; los notebooks analíticos 03–08 se describen en el informe, pero sus `.ipynb` y agregados locales no están publicados aquí. El antiguo enfoque de alerta temprana y los once notebooks asociados son exclusivamente [históricos](investigacion/notas/notebooks_historicos/README.md).
 
 ## Dónde consultar el proyecto
 
@@ -459,3 +459,9 @@ Quedan pendientes la revisión académica de la autora, el título, los datos
 institucionales y las normas UDLAP. La defensa debe mantener las restricciones
 de comparabilidad, selección, montos parciales e inferencia condicionada a la
 muestra. No se realizaron operaciones de Git/GitHub ni cambios de selección.
+
+## Comparabilidad documentada y validación editorial — 23/10/2026
+
+La justificación de las ventanas está en el capítulo 3 y su cuadro de comparabilidad (cinco intervalos, ambas vías), con referencias oficiales por pregunta y página. Resultados y limitaciones recuerdan sus consecuencias. A 2001–2003 conserva homologación pendiente: no se presenta su exclusión conservadora como ruptura binaria demostrada. Se mantienen los descriptivos de las seis rondas y todos los resultados nulos y contraejemplos previos. No se calcularon nuevos cruces estadísticos en GitHub porque sus agregados y microdatos no están publicados. La pregunta conserva una respuesta parcial, explícita en el manuscrito.
+
+El PDF se genera con `.github/workflows/manuscrito.yml` sin microdatos; `manuscrito/build/validacion_pdf.json` registra el commit fuente, huella y controles. Las imágenes de `manuscrito/build/revision/` permiten revisar el cuadro y las páginas. Este registro técnico distingue controles automáticos de revisión visual. Ningún archivo privado se incorpora al flujo.
