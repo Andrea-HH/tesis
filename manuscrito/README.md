@@ -1,26 +1,26 @@
-# Manuscrito de tesis en LaTeX
+# Manuscrito de tesis en LaTeX — enfoque vigente
 
-La escritura avanza junto con cada checkpoint. Este proyecto contiene un borrador académico de introducción, datos/metodología CP1 y resultados del primer bloque de EDA independiente autorizado, no una conversión literal de Markdown. Las decisiones predictivas siguen pendientes; CP2 está en curso y no se declara cerrado.
+**Estado al 23 de octubre de 2026.** Este manuscrito desarrolla la pregunta de investigación sobre expansión de pensiones y apoyos públicos, brechas de cobertura y monto real, incorporación/continuidad y sensibilidad a muerte o ausencia en ENASEM 2001–2021. La pregunta exacta, los objetivos y la hipótesis de trabajo se encuentran en [01_introduccion.tex](capitulos/01_introduccion.tex) y en el [README principal](../README.md). El proyecto **no propone construir un modelo de alerta temprana o predicción de vulnerabilidad**: ese enfoque pertenece a los [antecedentes históricos](../investigacion/notas/notebooks_historicos/README.md).
 
-## Estructura
+Los cinco capítulos están redactados para revisión académica y existe un [PDF compilado](build/main.pdf). El [Informe General](../resultados/INFORME_GENERAL.md), especialmente sus secciones 10.6–10.7, respalda los contrastes y límites; no debe confundirse con el texto final de la tesis. Falta la aprobación académica y editorial, incluyendo el título, datos de portada y normas UDLAP. Las comparaciones son descriptivas y condicionadas a muestra, conceptos y ventanas de medición.
+
+## Estructura actual
 
 ```text
 manuscrito/
-  main.tex                      Documento principal
-  configuracion.tex             Formato provisional y paquetes
+  main.tex                                  Documento principal y portada
+  configuracion.tex                         Formato y paquetes provisionales
   capitulos/
-    01_introduccion.tex          Contexto, problema, pregunta, objetivos e hipótesis
-    02_marco_teorico.tex         Revisión extensa pendiente, declarada como tal
-    03_datos_metodologia.tex     Datos, auditoría y límites reales de CP1
-    04_resultados.tex           EDA B01/B02a; resultados predictivos pendientes
-    05_discusion_conclusiones.tex Discusión final pendiente
-    a_tablas_cp1.tex             Tablas complementarias y exclusiones por ronda
-    b_pendientes.tex             Estado de escritura y revisión
-  tablas/                       Tablas CP1/EDA/inventario, macros y trazabilidad
-  figuras/
-    borradores/                 Figuras agregadas para revisión editorial
-  referencias.bib               Bibliografía científica/documental verificable
-  build/                        PDF/auxiliares locales ignorados por Git
+    01_introduccion.tex                     Pregunta, objetivos, hipótesis y alcance
+    02_marco_teorico_antecedentes.tex        Marco teórico y antecedentes
+    03_datos_metodologia.tex                Fuentes, integración, métodos y límites
+    04_analisis_exploratorio_resultados.tex Resultados centrales contrastados
+    05_discusion_conclusiones.tex           Discusión y conclusiones condicionadas
+    06_tablas_complementarias_cp1.tex       Anexo de auditoría
+    07_estado_redaccion_pendientes_revision.tex Anexo de revisión
+  tablas/                                   Cuadros y macros LaTeX
+  estilo_cuadros.tex                        Formato de cuadros
+  build/main.pdf                            PDF compilado disponible en GitHub
 ```
 
 ## Plantilla UDLAP: confirmación pendiente
@@ -62,7 +62,7 @@ tectonic --keep-logs --keep-intermediates --outdir build main.tex
 
 Abrir `manuscrito/build/main.pdf` en un visor PDF. En macOS puede usarse `open manuscrito/build/main.pdf` desde la raíz. En VS Code, abrir `main.tex` con LaTeX Workshop si está disponible y configurar su motor; el PDF compilado queda en `build/`. También puede abrirse el PDF en un visor externo. No es necesario usar notebooks para compilar una copia que ya contenga las exportaciones.
 
-**Verificación de esta entrega:** no había una distribución LaTeX instalada; se utilizó un binario temporal oficial Tectonic 0.17.0 para macOS ARM64 en `/tmp/tesis-tectonic-0.17.0/tectonic`. No es una dependencia permanente del repositorio. La primera ejecución descargó componentes TeX; para recompilar con Tectonic se requiere su caché o acceso de red. Véase la evidencia final de compilación y revisión en `docs/HANDOFF.md`. El PDF se conserva localmente y no se publica.
+**Nota histórica de compilación (etapa anterior):** no había una distribución LaTeX instalada; se utilizó un binario temporal oficial Tectonic 0.17.0 para macOS ARM64 en `/tmp/tesis-tectonic-0.17.0/tectonic`. No es una dependencia permanente del repositorio. La primera ejecución descargó componentes TeX; para recompilar con Tectonic se requiere su caché o acceso de red. Véase la evidencia final de compilación y revisión en `docs/HANDOFF.md`. El PDF se conserva localmente y no se publica.
 
 ## Actualizar resultados sin transcripción manual
 
@@ -91,11 +91,15 @@ No editar cifras directamente en tablas generadas. Si cambia una definición, va
 
 Las referencias motivacionales no sustituyen una revisión de literatura completa ni demuestran novedad del proyecto. Las cifras de CP1 son cálculos propios reconciliados con el archivo local y el diccionario.
 
-## Pendientes de escritura
+## Pendientes vigentes
 
-Revisar título, pregunta y objetivos con la dirección; confirmar programa/datos de portada y formato; ampliar el capítulo 2; definir resultado económico, elegibilidad, horizonte, modalidades, anomalías, atrición y ponderación; escribir protocolo ejecutado y resultados de modelos cuando existan; completar discusión, resumen y conclusiones. El apéndice B identifica estos pendientes dentro del PDF. Ninguno se considera resuelto por crear esta estructura.
+Revisar con la dirección la contribución empírica y el alcance de la pregunta ya formulada; verificar precisión, fuentes y referencias; decidir si se requieren ponderadores/diseño para afirmaciones nacionales; confirmar título, datos institucionales, resumen y normas UDLAP. Los resultados descriptivos no identifican causalidad, ingreso total ni suficiencia integral. No existe una tarea pendiente de entrenar modelos predictivos de alerta temprana.
 
-## Complemento pensionario (2026-10-12)
+## Registro histórico de etapas previas (no describe el estado actual)
+
+Las notas fechadas a continuación se conservan como trazabilidad de versiones anteriores del proyecto. Sus preguntas, rutas `docs/` o `reports/`, referencias a capítulos inexistentes y pendientes predictivos **no sustituyen** el enfoque y las rutas vigentes explicados arriba.
+
+### Complemento pensionario (2026-10-12)
 
 El capítulo 2 incorpora la sección histórica solicitada, con versiones documentales federales y ejemplos locales; el capítulo 3 incorpora inventario, unidades, claves, ocho conceptos y límites; el capítulo 4 contiene el protocolo exploratorio pendiente, no resultados económicos integrados. Fuentes de texto: `capitulos/02_marco_teorico_antecedentes.tex` y `capitulos/03_datos_metodologia.tex`. Los tres cuadros nuevos se generan desde metadatos y catálogo, sin microdatos en LaTeX:
 
