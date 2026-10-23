@@ -87,5 +87,131 @@
   },
   "seguimiento": "Basal directa60+; LEFT por IDs únicos a todos los destinos. Muerte, ausencia, modalidad, ND, conflicto separados. No panel balanceado. Edad final discordante conservada y sensibilidad60+.",
   "inflacion": "Identidad contable individual y puente ordenado de medianas; términos dependen del orden y no descomponen causalmente composición/política.",
-  "estado": "Validado computacionalmente; comparabilidad operacional condicionada, no identidad administrativa ni representatividad nacional."
+  "estado": "Validado computacionalmente; comparabilidad operacional condicionada, no identidad administrativa ni representatividad nacional.",
+  "justificacion_documental_20261023": {
+    "alcance": "Matriz documental incorporada al capítulo 3 y recordada en capítulos 4 y 5; conserva ventanas y estimaciones anteriores.",
+    "cuadro": "manuscrito/tablas/tesis_comparabilidad_ventanas.tex",
+    "matriz": [
+      {
+        "intervalo": "2001--2003",
+        "via": "K",
+        "decision_y_evidencia": "Condicionada. K55a--d pasa a K58a--d; cuatro contingencias, institución por tipo y monto de mes normal. Códigos institucionales 1--7; 8/9 son NR/NS.",
+        "analisis_limites_y_localizador": "Transiciones K y descripción monetaria condicionadas a titularidad temprana. No primera alta ni régimen contributivo. Libros K 2001, pp. 35--38; 2003, pp. 40--43."
+      },
+      {
+        "intervalo": "2001--2003",
+        "via": "A",
+        "decision_y_evidencia": "Fuera del principal; homologación pendiente. K76a/K77 pasa a K79a/K80a. El libro 2003 agrega Seguro Popular a los ejemplos; ambos registran dinero/especie.",
+        "analisis_limites_y_localizador": "Descriptivos separados. No se demuestra una ruptura binaria solo por renumerar o cambiar ejemplos. Filtros y atribución temprana requieren cierre. Libros K 2001, p. 51; 2003, p. 56."
+      },
+      {
+        "intervalo": "2003--2012",
+        "via": "K",
+        "decision_y_evidencia": "No homologada en el principal. Se mantienen K58a--d, pero K59 pasa de institución por contingencia a selección múltiple e incorpora programas federales/estatales, código 08; NR/NS pasan a 88/99.",
+        "analisis_limites_y_localizador": "Descriptivos por ronda; no altas/bajas homologadas ni variación de una cartera idéntica. Libro K 2003, pp. 40--41; cuestionario 2012, p. 98."
+      },
+      {
+        "intervalo": "2003--2012",
+        "via": "A",
+        "decision_y_evidencia": "Condicionada. K79a y K80 mantienen donativo público en dinero/especie y mes normal, con ejemplos Procampo, Progresa, INSEN y Seguro Popular; cambian sufijos y códigos de no respuesta monetaria.",
+        "analisis_limites_y_localizador": "Recepción A general; nueve años entre rondas nominales no son seguimiento continuo ni tasa anual. Sin programa individual homologado. Libro K 2003, p. 56; cuestionario 2012, p. 101."
+      },
+      {
+        "intervalo": "2012--2015",
+        "via": "K",
+        "decision_y_evidencia": "Condicionada. K58a--d conserva contingencias; K59 incluye programas agrupados, con ejemplos actualizados. Captura de un importe por contingencia en 2012 frente a hasta tres espacios en 2015.",
+        "analisis_limites_y_localizador": "Transiciones, nuevos/continuos y sumas captadas con sensibilidad; no totalidad de beneficios ni identidad de institución por cada monto. Cuestionarios 2012, p. 98, y 2015, p. 99; contrato de eventos."
+      },
+      {
+        "intervalo": "2012--2015",
+        "via": "A",
+        "decision_y_evidencia": "Condicionada. K79a/K80 siguen agregados; cambian ejemplos a PROAGRO, PROSPERA e INAPAM. El papel 2015 imprime NR/NS de seis dígitos; el diccionario original auditado conserva siete.",
+        "analisis_limites_y_localizador": "Transiciones A y unión K/A condicionadas. Retener discrepancia de códigos; no atribuir a un programa ni completar ND con cero. Cuestionarios 2012, p. 101, y 2015, p. 102; diccionario de armonización."
+      },
+      {
+        "intervalo": "2015--2018",
+        "via": "K",
+        "decision_y_evidencia": "No homologada en el principal. K59 deja de mostrar programas federales/estatales 08 y pasa de hasta tres a dos espacios; la atribución reciente usa punteros personales.",
+        "analisis_limites_y_localizador": "Descriptivos K por ronda; no cese/alta homologado ni seguimiento conjunto de unión K/A. Cuestionario 2015, p. 99; 2018, pp. 76--77; contrato de titularidad."
+      },
+      {
+        "intervalo": "2015--2018",
+        "via": "A",
+        "decision_y_evidencia": "Condicionada. K79a conserva donativo amplio, pero 2018 añade K79a_1 con hasta dos instituciones y montos por evento; antes se registra un agregado.",
+        "analisis_limites_y_localizador": "Transiciones A general y comparación monetaria de captura íntegra con reservas. No continuidad de A5 ni dinero efectivo homogéneo. Cuestionario 2015, p. 102; 2018, p. 79."
+      },
+      {
+        "intervalo": "2018--2021",
+        "via": "K",
+        "decision_y_evidencia": "Condicionada. K58a--d, K59 y K61 mantienen cuatro contingencias, hasta dos espacios, códigos 01--07 y monto de mes normal; se conserva control de beneficiario por punteros.",
+        "analisis_limites_y_localizador": "Transiciones K y montos captados; no régimen, historia contributiva o identidad de beneficio. A cambia: no derivar transición de unión K/A. Cuestionarios 2018, pp. 76--77, y 2021, pp. 63--64."
+      },
+      {
+        "intervalo": "2018--2021",
+        "via": "A",
+        "decision_y_evidencia": "No homologada en el principal. K79a modifica ejemplos; K79a_1 añade opción 5 explícita de Bienestar para personas mayores, ausente en 2018. Se mantienen dos espacios.",
+        "analisis_limites_y_localizador": "Descriptivos por ronda y A5 solo en 2021. No interpretar el salto como incorporación real íntegra, ni reconstruir A5 anterior por monto. Cuestionarios 2018, p. 79, y 2021, p. 66."
+      }
+    ],
+    "fuentes": [
+      {
+        "clave": "enasem2001codigosk",
+        "url": "https://www.mhasweb.org/resources/DOCUMENTS/2001/Codebook/Section_K_Pension_Income_and_Assets_2001.pdf",
+        "paginas_pdf": [
+          35,
+          36,
+          37,
+          38,
+          51
+        ]
+      },
+      {
+        "clave": "enasem2003codigosk",
+        "url": "https://www.mhasweb.org/resources/DOCUMENTS/2003/Codebook/Section_K_Pension_Income_and_Assets_2003.pdf",
+        "paginas_pdf": [
+          40,
+          41,
+          43,
+          56
+        ]
+      },
+      {
+        "clave": "enasem2012cuestionario",
+        "url": "https://www.mhasweb.org/resources/DOCUMENTS/2012/Cuestionario_Basico_2012.pdf",
+        "paginas_pdf": [
+          98,
+          101
+        ]
+      },
+      {
+        "clave": "enasem2015cuestionario",
+        "url": "https://www.mhasweb.org/resources/DOCUMENTS/2015/Cuestionario_Basico_2015.pdf",
+        "paginas_pdf": [
+          99,
+          102
+        ]
+      },
+      {
+        "clave": "inegi2018k",
+        "url": "https://www.inegi.org.mx/contenidos/programas/enasem/2018/doc/enasem_2018_cuestionario_basico.pdf",
+        "paginas_pdf": [
+          76,
+          77,
+          79
+        ]
+      },
+      {
+        "clave": "inegi2021k",
+        "url": "https://www.inegi.org.mx/contenidos/programas/enasem/2021/doc/enasem_2021_cuestionario_basico.pdf",
+        "paginas_pdf": [
+          63,
+          64,
+          66
+        ]
+      }
+    ],
+    "reserva_A_2001_2003": "Fuera del principal de manera provisional. Renumeración e inclusión de Seguro Popular verificadas; no demuestran por sí mismas una ruptura binaria. Filtros y titularidad temprana requieren cierre.",
+    "otra_via": "Otra vía basal afirmativa no acredita simultaneidad en destino. Solo 2012–2015 tiene transición conjunta K/A admitida en los contratos vigentes.",
+    "cambios_estadisticos": false
+  }
 }

@@ -8,7 +8,10 @@
 \usepackage{setspace}
 \onehalfspacing
 \usepackage{amsmath,amssymb}
-\usepackage{booktabs,array,longtable}
+\usepackage{booktabs,array,longtable,tabularx}
+\usepackage{pdflscape,placeins}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcommand{\dato}[1]{\csname tesisdato:#1\endcsname}
 \usepackage{graphicx}
 \usepackage{caption}
 \captionsetup{font=small,labelfont=bf}
