@@ -9,9 +9,21 @@ Usa el checkout existente. No hagas commit, push, merge, reset, restore ni cambi
 selección preparada sin autorización explícita. No restaures as.py automáticamente.
 
 ## Objetivo vigente y restricciones científicas
-Explorar ENASEM 2001–2021 con pensiones, titularidad, instituciones y apoyos como eje.
-No adoptar pregunta definitiva, hipótesis principal/causal, outcome, vulnerabilidad
-ni modelo predictivo. Conservar resultados e interpretaciones previos válidos.
+La investigación vigente estudia ENASEM 2001–2021: cobertura de pensiones y apoyos,
+brechas de montos reales, incorporación y continuidad, titularidad, instituciones
+y sensibilidad a mortalidad/ausencia. Pregunta autorizada (texto íntegro en README
+y manuscrito/capitulos/01_introduccion.tex):
+«¿Qué tanto es consistente la expansión de las pensiones y los apoyos públicos
+con una reducción de las brechas de cobertura y de monto de la protección
+económica de los adultos mayores en México (ENASEM 2001–2021), qué grupos siguen
+sin vía propia de protección y cómo cambia esta lectura al considerar a quienes
+mueren o dejan de ser entrevistados?»
+La hipótesis de trabajo sobre expansión de cobertura sin igualación monetaria
+necesaria sigue provisional; no convertirla en conclusión universal ni causal.
+La pregunta anterior de alerta temprana y los modelos predictivos de
+vulnerabilidad ya no son el objetivo vigente ni un pendiente a implementar.
+Conservar como antecedentes los once notebooks históricos y los resultados
+válidos de las etapas previas. No adoptar nuevos outcomes o modelos sin solicitud.
 - CP1: universo completo; maestro 99,676 personas-ronda/27,171 personas intacto.
 - EDA pensionario: 60+ por visita, PopulationSpec configurable; 56,004/18,754.
   EDA independiente mantiene el universo original de cada fuente. No sumar universos.
@@ -23,7 +35,7 @@ ni modelo predictivo. Conservar resultados e interpretaciones previos válidos.
   J1/2001, punteros discordantes, 33 firmas 2015 o anomalías CP1 automáticamente.
 - Slots != número declarado; institución múltiple no distribuye ni replica monto.
   Original/imputado/construido no se suman como ingresos independientes.
-- Patrimonio compartido es stock, no ingreso individual; precios/periodicidad pendientes.
+- Patrimonio compartido es stock, no ingreso individual. Etapa 07 valida INPC y referencia LPI de manera operativa; persisten límites de periodicidad observada, montos parciales y suficiencia integral.
 - Tasas de recepción != composición. N total, elegible, válido/ND y personas distintos.
 - Pesos/diseño no validados: describir muestra; no usar pesos transversales en trayectorias.
 - Seguimiento de mismos IDs; muerte, ausencia, reaparición y desconocido separados.
@@ -102,13 +114,17 @@ por mover archivos. Resumir cambios/validaciones/pendientes en README e informe;
 evidencia técnica en data/interim/migracion_proyecto.json, sin nuevos informes paralelos.
 
 
-## Prioridad local vigente (13/10/2026)
+## Registro de organización local (13/10/2026) y prioridad actual (23/10/2026)
 La autora autorizó la limpieza física conforme al manifiesto auditado y sus
 excepciones. No recrear docs/ ni reports/. Conservar los once antecedentes en
 investigacion/notas/notebooks_historicos/, las bases completas y un único informe
-y notebooks de trabajo independientes en una sola carpeta. GitHub está en pausa: no preparar ediciones
-públicas ni modificar el índice durante la organización local. Los respaldos
-verificados son históricos externos, nunca otro flujo académico activo.
+y notebooks de trabajo independientes en una sola carpeta. La pausa de GitHub
+descrita en la organización del 13/10 era el estado de aquella etapa; la autora
+ha autorizado expresamente corregir ahora la documentación pública del enfoque.
+Los respaldos verificados son históricos externos, nunca otro flujo académico activo.
+Prioridad actual: mantener alineados README, manuscrito e informe con la pregunta
+sobre pensiones y protección económica. No reactivar el proyecto predictivo ni
+alterar datos, estimaciones, archivos históricos o el diseño analítico por este ajuste.
 
 ## Capítulos completos y antecedentes experimentales
 
