@@ -1,0 +1,45 @@
+{
+  "source_commit": "d1180574d685e77103f77a4b5d3d1a64fb7e2f8c",
+  "pdf_sha256": "1c72ed8867c3da819df5dece7045c53d62e4d6014cc51cc048369575bfcc3d73",
+  "pages": 75,
+  "required_text": [
+    "Selección documentada de ventanas longitudinales",
+    "Comparabilidad longitudinal de K y A en las cinco ventanas",
+    "Por qué K utiliza ventanas distintas de A",
+    "homologación pendiente",
+    "Seguro Popular",
+    "primera vía",
+    "complementariedad",
+    "2018",
+    "2021"
+  ],
+  "required_text_present": true,
+  "undefined_references": [],
+  "outside_page_spans": [],
+  "overfull_hboxes": [],
+  "focus_pages": [
+    1,
+    2,
+    4,
+    26,
+    27,
+    28,
+    37,
+    59
+  ],
+  "preview_images": [
+    "manuscrito/build/revision/comparabilidad_01.png",
+    "manuscrito/build/revision/comparabilidad_02.png",
+    "manuscrito/build/revision/comparabilidad_03.png",
+    "manuscrito/build/revision/comparabilidad_04.png",
+    "manuscrito/build/revision/contacto_01.png",
+    "manuscrito/build/revision/contacto_02.png",
+    "manuscrito/build/revision/contacto_03.png",
+    "manuscrito/build/revision/contacto_04.png",
+    "manuscrito/build/revision/contacto_05.png",
+    "manuscrito/build/revision/contacto_06.png",
+    "manuscrito/build/revision/contacto_07.png"
+  ],
+  "visual_review": "Pendiente de inspección humana o del asistente; no certificada por este script",
+  "statistical_recalculation": false
+}
