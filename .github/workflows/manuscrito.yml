@@ -34,6 +34,7 @@ jobs:
       - name: Validar fuentes y compilar sin microdatos
         env:
           PYTHONPATH: src
+          BIBINPUTS: ${{ github.workspace }}/manuscrito:
         run: |
           python scripts/validate_manuscript.py
           cd manuscrito
