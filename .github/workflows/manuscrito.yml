@@ -40,8 +40,11 @@ jobs:
           mkdir -p build
           pdflatex -interaction=nonstopmode -halt-on-error -output-directory=build main.tex
           bibtex build/main
-          pdflatex -interaction=nonstopmode -halt-on-error -output-directory=build main.tex
-          pdflatex -interaction=nonstopmode -halt-on-error -output-directory=build main.tex
+          for pass in 1 2 3 4 5; do
+            pdflatex -interaction=nonstopmode -halt-on-error -output-directory=build main.tex
+            if ! grep -q 'Label(s) may have changed' build/main.log; then break; fi
+          done
+          if grep -q 'Label(s) may have changed' build/main.log; then exit 1; fi
       - name: Verificar texto, referencias y páginas
         run: python scripts/verify_compiled_thesis.py
       - name: Conservar PDF, diagnósticos e imágenes de revisión
