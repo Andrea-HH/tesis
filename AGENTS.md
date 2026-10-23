@@ -9,17 +9,22 @@ Usa el checkout existente. No hagas commit, push, merge, reset, restore ni cambi
 selección preparada sin autorización explícita. No restaures as.py automáticamente.
 
 ## Objetivo vigente y restricciones científicas
-La investigación vigente estudia ENASEM 2001–2021: cobertura de pensiones y apoyos,
-brechas de montos reales, incorporación y continuidad, titularidad, instituciones
-y sensibilidad a mortalidad/ausencia. Pregunta autorizada (texto íntegro en README
-y manuscrito/capitulos/01_introduccion.tex):
-«¿Qué tanto es consistente la expansión de las pensiones y los apoyos públicos
-con una reducción de las brechas de cobertura y de monto de la protección
-económica de los adultos mayores en México (ENASEM 2001–2021), qué grupos siguen
-sin vía propia de protección y cómo cambia esta lectura al considerar a quienes
-mueren o dejan de ser entrevistados?»
-La hipótesis de trabajo sobre expansión de cobertura sin igualación monetaria
-necesaria sigue provisional; no convertirla en conclusión universal ni causal.
+La investigación vigente estudia ENASEM 2001–2021: incorporación a primera
+vía propia observada K/A frente a complementariedad, recursos monetarios,
+diferencias socioeconómicas y heterogeneidad institucional, conservando
+trayectorias y sensibilidad a mortalidad/ausencia. Pregunta vigente (texto
+íntegro en README y manuscrito/capitulos/01_introduccion.tex):
+«¿En qué medida la incorporación a prestaciones económicas observadas en
+ENASEM representa una ampliación de la protección propia de los adultos
+mayores previamente sin recepción identificada, y cómo varían los montos
+recibidos según sus condiciones socioeconómicas y las prestaciones que ya
+tenían?»
+No confundir primera vía observada K/A con primera alta de toda la vida o
+desprotección económica integral. El cruce conjunto necesidad basal ×
+complementariedad × monto posterior NO está estimado: no afirmar
+focalización en personas vulnerables, efectos, inferencia nacional ni
+suficiencia integral. Conservar como evidencia adicional los contrastes
+históricos de cobertura frente a monto real.
 La pregunta anterior de alerta temprana y los modelos predictivos de
 vulnerabilidad ya no son el objetivo vigente ni un pendiente a implementar.
 Conservar como antecedentes los once notebooks históricos y los resultados
@@ -122,9 +127,11 @@ y notebooks de trabajo independientes en una sola carpeta. La pausa de GitHub
 descrita en la organización del 13/10 era el estado de aquella etapa; la autora
 ha autorizado expresamente corregir ahora la documentación pública del enfoque.
 Los respaldos verificados son históricos externos, nunca otro flujo académico activo.
-Prioridad actual: mantener alineados README, manuscrito e informe con la pregunta
-sobre pensiones y protección económica. No reactivar el proyecto predictivo ni
-alterar datos, estimaciones, archivos históricos o el diseño analítico por este ajuste.
+Prioridad actual: mantener README y manuscrito alineados con la pregunta de
+primera vía observada frente a complementariedad y declarar el alcance del
+informe histórico. La versión PDF existente debe recompilarse tras cambiar
+fuentes LaTeX. No reactivar el proyecto predictivo ni alterar microdatos,
+estimaciones o archivos históricos por este ajuste editorial.
 
 ## Capítulos completos y antecedentes experimentales
 
