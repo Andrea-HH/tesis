@@ -1,21 +1,25 @@
-# Tesis ENASEM — proyecto local de trabajo
+# Tesis ENASEM — pensiones y protección económica (2001–2021)
 
-Investigación de pensiones, titularidad, instituciones y apoyos, 2001–2021.
-La redacción integra ocho notebooks sobre cobertura y montos de protección
-económica. La hipótesis autorizada es que ampliar cobertura no necesariamente
-implica reducir de modo equivalente las desigualdades monetarias o mejorar
-uniformemente el poder adquisitivo; no se presenta como conclusión general.
-La prioridad vigente es la redacción formal de los cinco capítulos sobre protección
-económica, con evidencia de 06–08 y precisión de 10.7. GitHub queda en pausa.
+## Pregunta y enfoque vigentes — 23 de octubre de 2026
+
+> ¿Qué tanto es consistente la expansión de las pensiones y los apoyos públicos con una reducción de las brechas de cobertura y de monto de la protección económica de los adultos mayores en México (ENASEM 2001–2021), qué grupos siguen sin vía propia de protección y cómo cambia esta lectura al considerar a quienes mueren o dejan de ser entrevistados?
+
+**Esta es la pregunta de investigación vigente**, desarrollada en [la introducción](manuscrito/capitulos/01_introduccion.tex) y evaluada en el [Informe General](resultados/INFORME_GENERAL.md). La propuesta inicial de *alerta temprana / early warning* y predicción de vulnerabilidad económica **ya no es el objetivo de la tesis ni una tarea pendiente de implementación**. Sus once notebooks se conservan exclusivamente como [antecedentes históricos](investigacion/notas/notebooks_historicos/README.md).
+
+**Hipótesis de trabajo:** ampliar la cobertura no necesariamente implica reducir en la misma medida las desigualdades monetarias ni mejorar uniformemente el poder adquisitivo. Es una proposición parcialmente contrastada, no una conclusión general ni causal.
+
+**Contribución candidata:** distinguir cobertura, incorporación de nuevos receptores, continuidad, montos nominales y reales, perfiles institucionales y selección por mortalidad/ausencia en las ventanas comparables de ENASEM. La evidencia de mayor detalle procede de los análisis 06–08 y la precisión de la sección 10.7 del informe. El estudio describe muestras analíticas; no acredita inferencia nacional, pobreza individual, ingreso total ni efectos de reformas.
+
+**Estado público:** el repositorio de GitHub contiene los notebooks 01 y 02, las funciones, el informe, las figuras y el manuscrito. Los notebooks independientes 03–08 se documentan en el informe y en scripts, pero sus archivos `.ipynb` no están publicados aquí. Las bases privadas y agregados locales de `data/` tampoco se distribuyen. Esta corrección del enfoque es documental; no recalcula resultados ni modifica microdatos.
+
+## Dónde consultar el proyecto
 
 | Necesito | Ubicación |
 |---|---|
 | Integración, puentes, claves y validaciones | [01_INTEGRACION](notebooks/01_INTEGRACION.ipynb) |
 | EDA individual, comparaciones, pensiones y trayectorias | [02_EDA_COMPLETO](notebooks/02_EDA_COMPLETO.ipynb) |
-| Ampliación pensiones, salud, cognición y funcionalidad | [03_PENSIONES_SALUD_COGNICION](notebooks/03_PENSIONES_SALUD_COGNICION.ipynb) |
-| Seguimiento integral de pensiones y salud mental | [04_TRAYECTORIAS_PENSIONES_SALUD](notebooks/04_TRAYECTORIAS_PENSIONES_SALUD.ipynb) |
-| Mortalidad registrada y selección multidimensional | [05_PENSIONES_MORTALIDAD_SELECCION](notebooks/05_PENSIONES_MORTALIDAD_SELECCION.ipynb) |
-| Cobertura propia K/A, montos y selección económica | [06_COBERTURA_PROTECCION_ECONOMICA](notebooks/06_COBERTURA_PROTECCION_ECONOMICA.ipynb) |
+| Análisis locales 03–05: salud, trayectorias y selección (notebooks no publicados) | [Informe General, secciones 6–9](resultados/INFORME_GENERAL.md) |
+| Análisis locales 06–08: cobertura, montos y transiciones (notebooks no publicados) | [Informe General, sección 10](resultados/INFORME_GENERAL.md) |
 | Todos los resultados académicos y explicaciones | [INFORME_GENERAL](resultados/INFORME_GENERAL.md) |
 | Definiciones, contratos y metadatos | diccionarios/ |
 | Fuentes originales intactas | data/raw/ |
@@ -23,7 +27,7 @@ económica, con evidencia de 06–08 y precisión de 10.7. GitHub queda en pausa
 | Bases analíticas y manifiestos | data/processed/ |
 | Bibliografía principal | [referencias.bib](investigacion/referencias.bib) |
 | Antecedentes únicos | [notebooks históricos](investigacion/notas/notebooks_historicos/README.md) |
-| Capítulos, cuadros y PDF local | manuscrito/capitulos/, tablas/ y build/ |
+| Cinco capítulos y PDF compilado | [Manuscrito](manuscrito/README.md) · [PDF](manuscrito/build/main.pdf) |
 | Lógica, ejecución y tests | src/tesis_enasem/, scripts/ y tests/ |
 
 Los notebooks de trabajo permanecen juntos en notebooks/. Los once antecedentes se
