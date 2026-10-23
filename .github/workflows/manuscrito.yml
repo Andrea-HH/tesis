@@ -34,12 +34,14 @@ jobs:
       - name: Validar fuentes y compilar sin microdatos
         env:
           PYTHONPATH: src
-          BIBINPUTS: "${{ github.workspace }}/manuscrito:"
         run: |
           python scripts/validate_manuscript.py
           cd manuscrito
           mkdir -p build
-          latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=build main.tex
+          pdflatex -interaction=nonstopmode -halt-on-error -output-directory=build main.tex
+          bibtex build/main
+          pdflatex -interaction=nonstopmode -halt-on-error -output-directory=build main.tex
+          pdflatex -interaction=nonstopmode -halt-on-error -output-directory=build main.tex
       - name: Verificar texto, referencias y páginas
         run: python scripts/verify_compiled_thesis.py
       - name: Conservar PDF, diagnósticos e imágenes de revisión
