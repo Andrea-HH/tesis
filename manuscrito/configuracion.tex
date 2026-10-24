@@ -1,9 +1,16 @@
 % Toda elección de formato es provisional hasta confirmar las normas UDLAP.
-\usepackage[T1]{fontenc}
 \usepackage{iftex}
-\ifPDFTeX\usepackage[utf8]{inputenc}\fi
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+\else
+  \usepackage{fontspec}
+  \setmainfont{lmroman10-regular.otf}[BoldFont=lmroman10-bold.otf,ItalicFont=lmroman10-italic.otf,BoldItalicFont=lmroman10-bolditalic.otf]
+  \setsansfont{lmsans10-regular.otf}
+  \setmonofont{lmmono10-regular.otf}
+\fi
 \usepackage[spanish,es-nodecimaldot,es-tabla,es-ucroman]{babel}
-\usepackage{lmodern}
 \usepackage[margin=2.5cm]{geometry}
 \usepackage{setspace}
 \onehalfspacing

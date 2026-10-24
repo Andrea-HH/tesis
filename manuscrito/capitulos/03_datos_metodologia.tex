@@ -158,8 +158,9 @@ invariancia, identidad de beneficio o alta administrativa.
 
 La revisión utiliza los libros de códigos K de 2001 y 2003 y los
 cuestionarios básicos de 2012, 2015, 2018 y 2021
-\citep{enasem2001codigosk,enasem2003codigosk,enasem2012cuestionario,
-enasem2015cuestionario,inegi2018k,inegi2021k}. Las páginas indicadas
+\citep{enasem2001codigosk}; \citep{enasem2003codigosk};
+\citep{enasem2012cuestionario}; \citep{enasem2015cuestionario};
+\citep{inegi2018k,inegi2021k}. Las páginas indicadas
 en el cuadro~\ref{tab:comparabilidad-ventanas} son posiciones del PDF,
 contadas desde 1; pueden diferir de la numeración impresa.
 La concordancia oficial permite localizar preguntas entre rondas, pero
@@ -233,8 +234,8 @@ observada parcial y la suma íntegra de lo captado se distinguen:
 \end{align}
 En otro caso el agregado correspondiente es ND, no cero. $F$ significa
 integridad de la captura disponible: no acredita todos los beneficios
-realmente recibidos ni ingreso personal completo. El análisis transversal
-de 07 utiliza $P$; el contraste monetario focalizado de 08 utiliza $F$.
+realmente recibidos ni ingreso personal completo. Los cortes monetarios históricos utilizan $P$; los contrastes longitudinales
+focalizados utilizan $F$.
 A5 se describe por evento explícito y no se suma nuevamente como otro
 ingreso.
 
@@ -257,10 +258,11 @@ La reproducción conserva bases y notebooks originales.
 
 \subsection{INPC y fecha de valoración}
 
-Se utiliza exclusivamente la serie mensual oficial INEGI 865541,
+Se utiliza exclusivamente la serie mensual oficial 865541 del Instituto Nacional de Estadística y
+Geografía (INEGI),
 base segunda quincena de julio de 2018=100, actualización 2024.
 La referencia congelada es septiembre de 2026, con índice 146,075,
-verificado en la etapa monetaria al 14 de octubre de 2026.\footnote{Serie:
+documentado al 14 de octubre de 2026.\footnote{Serie:
 \url{https://www.inegi.org.mx/app/indicesdeprecios/Estructura.aspx?idEstructura=112001700010}.
 Aviso de referencia:
 \url{https://sidof.segob.gob.mx/notas/docFuente/5800864}.
@@ -286,8 +288,9 @@ supervivencia ni calcula un valor presente actuarial.
 
 \subsection{Prestación relativa a LPI}
 
-Se utiliza la serie histórica de LPI de CONEVAL, versión marzo de 2025 reestimada
-con la actualización 2024, conservada en la etapa 07.\footnote{Archivo:
+Se utiliza la serie histórica de LPI del Consejo Nacional de Evaluación de la
+Política de Desarrollo Social (CONEVAL), versión marzo de 2025 reestimada
+con la actualización 2024, conservada con los agregados monetarios.\footnote{Archivo:
 \url{https://www.coneval.org.mx/Medicion/Documents/Lineas_de_Pobreza_por_Ingresos/Lineas_de_Pobreza_por_Ingresos.zip}.
 La definición y la versión se preservan en el manifiesto de fuentes.}
 La línea mensual por persona distingue ruralidad menor a2\,500 habitantes
@@ -330,17 +333,17 @@ vía $\bar v$. Se forman tres categorías excluyentes:
 \item $R_{i\bar v a}=0$: nueva vía sin la otra vía propia identificada
 en el origen; primera vía \emph{observada} entre K/A.
 \item $R_{i\bar v a}=1$: incorporación a la vía $v$ cuando ya se
-declaraba $\bar v$; complementariedad observada.
+declaraba $\bar v$; presencia de otra vía basal, sin acreditar prestación adicional.
 \item $R_{i\bar v a}$ desconocido: no se clasifica como ninguna de
 las dos situaciones.
 \end{itemize}
 El denominador de las proporciones descriptivas son todas las personas
 de $\mathcal N_{v,ab}$, explicitando desconocidos y N de cada ventana.
 No se suman prestaciones en dinero sin información íntegra y compatible,
-ni se equipara K/A negativo a carencia económica integral. Los perfiles
-socioeconómicos del origen pueden estratificar estas categorías, pero los
-resultados actuales no estiman una prueba conjunta de focalización por
-necesidad, patrimonio y monto posterior.
+ni se equipara K/A negativo a carencia económica integral. Los perfiles socioeconómicos se contrastan conjuntamente con esas categorías
+y los montos posteriores en la sección~\ref{sec:resultados-central09}. Ese
+cruce descriptivo no es una prueba de focalización por necesidad integral,
+que no está medida, ni una estimación causal.
 
 El contraste mediano de destino, entre quienes tienen $F_{ivb}$ válido, es:
 \begin{equation}
@@ -364,7 +367,7 @@ En general,
 $\widehat m(F^R_b)-\widehat m(F^R_a)\ne
 \widehat m(F^R_b-F^R_a)$, incluso usando los mismos pares. Tampoco la
 variación porcentual de medianas de dos cortes representa un cambio personal.
-Los N distintos de pares parciales de 07 e íntegros de 08 no se intercambian.
+Los N distintos de pares parciales parciales e íntegros no se intercambian.
 
 \section{Brechas y estandarización de composición}
 \label{sec:composicion-comun}
@@ -393,7 +396,8 @@ celdas y cobertura mínima de 70\% de cada grupo. La mezcla objetivo es:
  \widehat G_g(x)=\sum_{s\in\mathcal S}\widehat w_s\,\widehat G_{g,s}(x).
  \label{eq:cdf-estandarizada}
 \end{equation}
-La mediana ajustada es el inverso de esa CDF:
+La mediana ajustada es el inverso de esa función de distribución acumulada
+(CDF, por sus siglas en inglés):
 \begin{equation}
  \widetilde m_g=\inf\{x:\widehat G_g(x)\geq0{,}5\},\qquad
  \widetilde\nu=\widetilde m_{\mathcal N}-\widetilde m_{\mathcal C}.
@@ -408,10 +412,12 @@ una fracción del contraste a composición.
 \section{Precisión, empates y faltantes}
 \label{sec:inferencia-condicionada}
 
-\subsection{Bootstrap de personas y sensibilidad por folio}
+\subsection{Remuestreo para los contrastes históricos}
 
-La validación focalizada utiliza 9\,999 réplicas no paramétricas, con semilla
-base 20261014. Para cada escenario se remuestrean IDs completos con reemplazo:
+Los contrastes históricos de nuevos frente a continuos, cambios personales
+y brechas por sexo utilizan 9\,999 réplicas no paramétricas por persona,
+con semilla base 20261014. Esta familia se distingue de los contrastes P/C
+por folio y las sensibilidades descritas más adelante. Para cada escenario se remuestrean IDs completos con reemplazo:
 \begin{equation}
  (W^{*(r)}_1,\ldots,W^{*(r)}_n)
  \sim\operatorname{Multinomial}\!\left(n;\frac1n,\ldots,\frac1n\right).
@@ -431,6 +437,7 @@ Para un estimador $\widehat\theta$, el IC percentil es:
   q_{0{,}975}(\widehat\theta^{*})].
  \label{eq:ic-percentil}
 \end{equation}
+Los intervalos de confianza (IC) se interpretan condicionalmente a la muestra.
 El remuestreo conserva empates y evita exigir normalidad de los importes.
 Sus fundamentos se encuentran en \citet{efron1982}; la necesidad de
 respetar dependencia dentro del agrupamiento es discutida por
@@ -438,7 +445,7 @@ respetar dependencia dentro del agrupamiento es discutida por
 resultados de regresión de esa literatura.
 
 La sensibilidad remuestrea folios \variable{cunicah}, conservando sus
-integrantes y visitas. No acredita hogar actual, UPM, estratos o probabilidades
+integrantes y visitas. No acredita hogar actual, unidades primarias de muestreo (UPM), estratos o probabilidades
 de inclusión. Cada procedimiento supone independencia entre sus unidades
 remuestreadas; no resuelve dependencia geográfica no identificada.
 Se revisan réplicas no estimables, celdas vacías y estabilidad de los
@@ -506,8 +513,9 @@ no sustituye esa tarea.
 \section{Reproducibilidad y límites del diseño}
 \label{sec:reproducibilidad}
 
-La integración, definiciones y resultados se conservan en los ocho notebooks;
-el núcleo económico procede de 06--08 y su validación de precisión. La selección
+La integración, las definiciones y los resultados se conservan en los
+notebooks y módulos reproducibles, con agregados de cobertura, montos,
+transiciones y contraste basal conjunto. La selección
 editorial exporta cifras y cuadros desde sus agregados, sin ejecutar nuevamente
 uniones, clasificaciones o análisis. Los códigos de procedencia, manifiestos
 y semillas permiten reproducir deliberadamente cada etapa. El informe
@@ -524,11 +532,14 @@ efectivamente observadas.
 % BEGIN central09_metodos
 \section{Estimandos del contraste de protección basal y monto posterior}
 \label{sec:metodo-central09}
-La etapa 09 reutiliza el maestro, los sidecars de titularidad y eventos y la serie de precios verificados de 06--08. Se cotejan 379 archivos fuente por SHA256 y se reproduce exactamente la auditoría 08 antes de calcular nuevos cruces. No se reconstruye la integración. Se conserva el conjunto de ventanas del cuadro~\ref{tab:comparabilidad-ventanas}; la expansión no altera las decisiones documentales.
+El contraste conjunto reutiliza el maestro, los archivos auxiliares de
+titularidad y eventos y la serie de precios verificada. La procedencia y las
+huellas de las fuentes permiten reproducirlo sin reconstruir la integración. Se conserva el conjunto de ventanas del cuadro~\ref{tab:comparabilidad-ventanas}; la expansión no altera las decisiones documentales.
 
 Se define P como incorporación No$\to$Sí de una vía con negativa explícita de la otra al inicio; C como incorporación con la otra vía afirmativa al inicio; y R como Sí$\to$Sí de la vía analizada. Otra vía ND permanece separada. Estos perfiles son mutuamente excluyentes dentro de una vía e intervalo; una misma persona puede aparecer en ventanas o vías distintas, por lo que no se agrupan sus filas como personas independientes. La pertenencia a C no prueba coexistencia al destino. La continuidad de la otra vía o la persistencia conjunta sin K/A solo se interpreta longitudinalmente en 2012--2015.
 
-Se estiman dos probabilidades diferentes: la composición $n(P)/n(\text{nuevos de la vía})$ y la incorporación $n(P)/n(\text{basales sin ambas vías, reobservados con respuesta conocida de la vía})$. Para la unión se usa un denominador propio con unión conocida, sin sumar K y A. Las demás personas de la cohorte se clasifican como fallecimiento registrado, ausencia de vital desconocido, sustituto, respuesta ND, conflicto vital u otro destino. Una afirmativa basta para unión afirmativa; unión negativa exige ambas negativas.
+Se estiman dos probabilidades diferentes: la composición $n(P)/n(\text{nuevos de la vía})$ y la proporción que incorpora P entre basales sin ambas vías reobservados
+con respuesta conocida de la vía. Para la unión se usa un denominador propio con unión conocida, sin sumar K y A. Las demás personas de la cohorte se clasifican como fallecimiento registrado, ausencia de vital desconocido, sustituto, respuesta ND, conflicto vital u otro destino. Una afirmativa basta para unión afirmativa; unión negativa exige ambas negativas.
 
 El patrimonio basal es \texttt{imp\_neto}, del entrevistado y cónyuge si existe. Se conservan ceros y negativos y se presentan sus cuantiles en unidades almacenadas, sin convertirlos en ingreso ni en pesos reales: su contrato no acredita comparabilidad monetaria temporal. Los cuartiles Q1--Q4 se fijan dentro de las entrevistas directas de 60+ con patrimonio válido de cada ronda, antes de seleccionar destinos. Son posiciones relativas, no pobreza ni necesidad certificada. Se conservan covariables desconocidas, con denominadores válidos específicos. No se combina incertidumbre de imputación múltiple del producto patrimonial del proveedor.
 
@@ -540,22 +551,134 @@ La estandarización descriptiva fija sexo por edad basal 60--64/65--69/70+ por e
 
 Las cotas de selección asignan a todos los destinos no clasificables recepción o no recepción de destino, con fallecimientos registrados separados. La cota entre quienes no tienen defunción registrada no certifica supervivencia de ausentes. No se imputan montos ni recepción después de morir. No se identifica la probabilidad de incorporación antes de la muerte.
 
+
+\subsection{Sensibilidad de medición institucional y de historia previa}
+\label{sec:sensibilidad-medicion}
+
+La definición principal conserva las respuestas originales K/A. Antes de
+calcular la alternativa se fijó un protocolo que no presupone reclasificación.
+Se considera exposición institucional cuando algún evento K propio contiene
+el código 08 en 2012 o 2015. Los cuestionarios lo agrupan como programas
+públicos; no identifica exclusivamente una pensión federal. En 2001/2003 el
+código 8 de no respuesta no recibe esa interpretación. K59 permite varias
+instituciones en 2012 y hasta tres en 2015; K79/K79a recoge apoyos públicos
+adicionales, con instrucciones de excluir ingresos ya declarados. Estas
+reglas hacen plausible una diferencia de ubicación de respuestas, pero no
+prueban identidad administrativa ni sustitución
+\citep[pp.~98 y 101 del PDF]{enasem2012cuestionario}
+\citep[pp.~99 y 102 del PDF]{enasem2015cuestionario}.
+
+En la alternativa estricta, una K afirmativa con exposición 08, institución
+no resuelta o sin evento identificable se trata como ND/no comparable, nunca
+como negativa ni como A. La restricción se aplica a toda la persona--visita,
+incluso si mezcla 08 con otras instituciones: no se dispone de una asignación
+separable del monto. Las negativas explícitas permanecen negativas y A no se
+recodifica. Para una transición se exige que las visitas necesarias sean
+evaluables; los demás casos siguen en la cohorte y quedan sin clasificación.
+Una variante diagnóstica aparta solo 08 identificado, manteniendo las respuestas
+con institución no resuelta; no debe llamarse muestra institucional pura.
+
+Se informa tanto la proporción condicional al conjunto alternativo clasificable
+como la fracción identificada sobre el denominador observado original. Si
+$N_o$ es este denominador, $n_1$ las incorporaciones identificadas y $n_{ND}$
+los desconocidos adicionales por medición, sus límites descriptivos son:
+\begin{equation}
+ \left[\frac{n_1}{N_o},\frac{n_1+n_{ND}}{N_o}\right].
+ \label{eq:cotas-medicion}
+\end{equation}
+No son IC ni imputación: separan identificación y desconocimiento. La
+alternativa conserva ventanas, seguimiento y precios, pero cambia el concepto
+evaluable; no estima el efecto de retirar una prestación pública.
+
+Para quienes se incorporan K con A inicial se distingue A afirmativa,
+negativa y ND al destino. Comparar A de origen con K posterior solo describe
+importes mensuales captados: A puede incluir especie y la coincidencia de
+montos no identifica programa. No se suma K+A ni se construye una mejora
+incondicional de ingreso total a partir de respuestas posiblemente solapadas.
+
+La sensibilidad histórica busca, entre personas P, declaraciones K/A positivas
+en entrevistas directas anteriores sin conflicto vital, bajo la definición
+de cada ronda. No homologa transiciones excluidas ni reconstruye episodios
+administrativos. Una declaración anterior positiva muestra que P no es primera
+recepción conocida de toda la historia; ausencia de historia no acredita
+ausencia de recepción.
+
+\subsection{Seguimiento de la unión y heterogeneidad de los contrastes}
+
+La unión 2012--2015 mantiene la cohorte original con ambas negativas.
+La proporción entre reobservados clasificables se distingue de la fracción
+de incorporación detectada de toda la cohorte. Para la población sin defunción
+registrada se presentan límites al variar el estado de los destinos no
+clasificables. No se interpreta a ausentes como supervivientes confirmados ni
+se asigna recepción posterior a fallecidos. Las cotas de seguimiento y de
+medición responden a supuestos distintos y no se confunden con IC.
+
+Para evaluar si el contraste monetario P--C cambia entre mitades patrimoniales,
+se estima directamente $(P-C)_{Q3+Q4}-(P-C)_{Q1+Q2}$, conservando la dependencia
+por folio de las cuatro ramas. Dos contrastes positivos por separado no prueban
+que difieran entre sí. Se usan 4\,999 réplicas, semilla 20261024; la restricción
+08 se informa aunque limite el soporte o cambie el signo. Los grupos de 20--29
+válidos conservan carácter exploratorio.
+
+\subsection{Procedimientos reproducibles y magnitud económica}
+
+Los contrastes P/C originales usan las semillas y réplicas registradas en sus
+notas; no se sustituyen retroactivamente por intervalos más favorables. Para
+la unión reproducida se emplean 9\,999 réplicas por folio y semilla 20261024.
+Los contrastes de medición nuevos--continuos y P/C emplean 4\,999 y semilla
+20261023; las proporciones alternativas, 1\,999 con esa semilla. Las
+interacciones patrimoniales utilizan 4\,999 y semilla 20261024. El
+cuadro~\ref{tab:procedimientos-institucionales} compara procedimientos sobre
+el mismo estimando institucional; la comprobación común de 9\,999 réplicas,
+semilla 20261024, no cambia muestra ni punto. La discrepancia de extremos
+puede deberse a réplicas y semillas, incluso cuando ambos remuestrean folios.
+
+El folio conserva agrupación compartida de origen y dependencia entre
+integrantes; no acredita hogar actual, UPM ni diseño muestral. El remuestreo
+por persona responde a otro supuesto de independencia. Ninguno produce
+inferencia nacional sin incorporar un diseño validado. Los IC son puntuales,
+exploratorios y sensibles a masas en importes específicos: un intervalo
+$[0;0]$ no es una prueba de equivalencia ni de certeza económica.
+
+Los cambios de medianas entre cortes se remuestrean conjuntamente por folio
+conservando a quienes aparecen en ambas visitas, 4\,999 réplicas y semilla
+20261024. Se mantiene la definición de suma parcial de esos cortes; no se
+sustituye por la suma íntegra longitudinal. Las diferencias se contextualizan
+respecto a niveles monetarios, sin definir un umbral no validado de relevancia,
+ni interpretar patrimonio relativo como pobreza o necesidad integral.
+
 % END central09_metodos
 
 % BEGIN calidad10
-
-\section{Auditoría de tamaños, precisión y divulgación}
+\section{Soporte, precisión y divulgación}
 \label{sec:calidad10}
-La etapa 10 revisa todos los cuadros y figuras del Informe General, las fuentes LaTeX activas y auxiliares y los agregados01--09. El registro distingue N elegible, N válido, personas únicas, personas-ronda, eventos, folios, exclusiones y frecuencias de una clase. No se considera cada nodo JSON como una comparación independiente. Los embudos centrales se reconstruyen exactamente sin rehacer la integración: categoría basal, seguimiento, modalidad, conflicto vital, recepción, integridad monetaria y precios. En los agregados históricos que no documentan un paso se declara esa falta de trazabilidad; no se inventa un N ni se reemplaza por el total.
 
-Se separan protección y estadística: N menor de 10 impide divulgar montos y perfiles continuos;10--29 requiere revisión reforzada;30 o más no garantiza validez, precisión o representatividad. Son criterios del proyecto, no reglas universales de ENASEM. Las condiciones de acceso del estudio impiden identificar participantes y redistribuir bases; la política de confidencialidad del INEGI exige protección contra identificación. Ninguna de las páginas consultadas establece aquí un mínimo universal10/30 \citep{mhas2026condiciones,inegi2021confidencialidad}. No se presume validación de un convenio particular no aportado.
+La revisión distingue N elegible, válido, personas, personas--ronda,
+eventos, folios y frecuencias de una clase; no son medidas intercambiables.
+Se documentan exclusiones por seguimiento, modalidad, recepción, integridad
+monetaria y precios. Un paso no trazable se declara, sin sustituirlo por el
+total de la muestra.
 
-La precisión se contrasta con 9999 réplicas por folio y dos semillas para medianas P menos C, omisión de cada folio e intervalos de orden binomial bajo independencia personal. La última es una comprobación distinta, no un IC por folio o de diseño. Los IC son puntuales y exploratorios; los empates pueden producir intervalos degenerados sin demostrar equivalencia. El extremo superior del IC K 2012--2015 es sensible a semilla, aunque la dirección permanezca. Un valor LOO constante tampoco certifica precisión.
+Los criterios de divulgación se separan de los estadísticos: menos de 10
+válidos impide difundir montos o perfiles continuos; 10--29 requiere revisión
+reforzada; 30 o más no garantiza validez o anonimato. Son criterios del
+proyecto, no un mínimo universal acreditado por ENASEM
+\citep{mhas2026condiciones,inegi2021confidencialidad}. Los contrastes exigen
+al menos 20 válidos por grupo y se mantienen exploratorios con 20--29.
 
-Se evalúan uniformemente edad de tres grupos o dos (60--69/70+) y mínimos de 20 o30 por celda, manteniendo sexo, escolaridad, al menos cuatro celdas y 70\% de retención por grupo. Se cuentan réplicas sin soporte; no se extrapolan ni completan con cero. Se distinguen cambio de población, mezcla y granularidad. No se selecciona la especificación por significancia.
+Las sensibilidades de composición emplean uniformemente edad de tres o dos
+grupos (60--69/70+) y mínimos de 20 o 30 por celda, manteniendo sexo,
+escolaridad, cuatro celdas y retención del 70\% por grupo. No se extrapolan
+réplicas sin soporte ni se elige la especificación por significancia.
+Las mitades patrimoniales Q1+Q2/Q3+Q4 se calculan sobre personas, sin
+promediar medianas previas. ND no es un nivel de desventaja. La omisión de
+folios evalúa influencia, no cobertura del IC; los intervalos de orden
+suponen independencia personal, distinta de folio y diseño.
 
-Cuando la estratificación no es necesaria para el estimando principal se reduce de manera sustantiva: patrimonio basal en mitades Q1+Q2/Q3+Q4 en todas las ventanas y, en el contexto T8, escolaridad 0--5/6+ con titularidad conocida. Las medianas se recalculan sobre personas, no promediando medianas de los grupos anteriores. ND permanece como estado de información y no como un nivel de desventaja. K 2001--2003 sigue sin soporte direccional y no se combina con otras ventanas para rescatarlo.
-
-La versión privada conserva originales, resultados descartados y trazabilidad; la pública retira conjuntamente estadísticas sensibles y derivados que permitirían reconstruirlas. Se aplica supresión complementaria o exclusión de una familia completa cuando hay márgenes reconstructivos. No se publican frecuencias monetarias exactas por valor ni extremos individuales. El listado público es explícito y excluye bases, eventos, copias privadas y salidas con microdatos. Corregir archivos actuales no elimina una exposición en commits anteriores; la revisión del historial y su eventual tratamiento son independientes y no se ha autorizado aquí su reescritura.
-
+Se conservan privadamente los originales y se retiran conjuntamente salidas
+sensibles y derivados reconstructivos, mediante supresión complementaria o
+exclusión de familias cuando corresponda. No se difunden identificadores,
+frecuencias monetarias exactas por valor ni extremos individuales. Antes de
+publicar una revisión se evalúan las nuevas tablas junto con las existentes;
+un umbral de celda no certifica anonimato frente a tablas relacionadas.
 % END calidad10

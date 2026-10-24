@@ -3948,6 +3948,100 @@ La revisión histórica de `origin/main` no encontró rutas de microdatos o cred
 **Estado de la pregunta central.** El núcleo observacional conserva apoyo: composición y probabilidad de incorporación distintas, expansión de unión observada en 2012–2015, heterogeneidad de montos K y coincidencias medianas A. No está completamente respondida en sentido integral o para todas las ventanas: no se identifica pobreza, necesidad total, causalidad, primera alta administrativa, montos de ausentes o una mediana ajustada P/C con soporte suficiente en cinco ventanas de la especificación principal. La sensibilidad de los gradientes se reconoce. La tesis es defendible como respuesta observacional acotada, no como demostración de focalización universal, equivalencia o evaluación causal. La aceptación académica e institucional y el tratamiento del historial permanecen pendientes.
 
 
+### 10.10 Sensibilidad de medición, atrición y revisión del argumento central
+
+**Estado:** cálculos de la Fase A reproducidos e incorporados editorialmente en Fase B por autorización de la autora. La validación final de esta etapa, la revisión conjunta de divulgación y el PDF actualizado se documentan en el cierre de esta sección. No se recalculó la integración ni se cambiaron microdatos. Esta sección matiza la lectura de 10.5–10.9; conserva sus resultados originales como escenarios identificados, sin afirmar que una limitación conocida los vuelva numéricamente falsos.
+
+**Pregunta:** ¿En qué medida la incorporación a prestaciones económicas observadas en ENASEM representa una ampliación de la protección propia de los adultos mayores previamente sin recepción identificada, y cómo varían los montos recibidos según sus condiciones socioeconómicas y las prestaciones que ya tenían?
+
+**Fuentes y universo:** maestro persona-ronda, eventos pensionarios y apoyos ya armonizados; agregados originales 06–10 y tres agregados privados de Fase A, no redistribuidos. Funciones reutilizadas: `central_analysis`, `benefit_transitions`, `monetary_policy`, `statistical_quality`. Muestra no ponderada, directas 60+ basales y destinos directos sin conflicto vital para contrastes principales; fallecido registrado, ausencia de vital desconocido, sustituto y ND permanecen separados. No hay inferencia nacional ni causal. Los importes reales son mensuales de septiembre 2026, con referencia al promedio del año calendario anterior a la entrevista real. Patrimonio neto basal conserva unidades del proveedor y titularidad compartida cuando corresponde: no es ingreso ni pobreza.
+
+**Protocolo previo:** la definición principal conserva K/A. La alternativa estricta trata K afirmativa con 08 en 2012/2015, institución no resuelta o evento no identificable como desconocida/no comparable; nunca como negativa ni como A. Se restringe toda persona-visita, incluidos casos mixtos, porque no hay monto separable por institución. A no cambia. La variante solo 08 identificado conserva las respuestas de institución no resuelta y no identifica una muestra institucional pura. Código 8 de 2001/2003 no se interpreta como programa. Se mantienen cohortes y ventanas. Hash del protocolo previo: `e757c8449151e03e7a815c1bd0d46ccb64ce4793d9e7ac643d6b866f02d2b144`.
+
+#### 10.10.1 Composición institucional y trayectorias
+
+Se reproducen 927/1435 nuevos K con monto y 144/1857 continuos asociados a 08 en 2012–2015. Los nuevos totales tienen mediana nominal 580, pero los nuevos con 08 tienen 550; una coincidencia con un importe programático no identifica programa. K59 incluye instituciones múltiples en 2012 y hasta 3 en 2015; K79/K79a recogen apoyos públicos adicionales con exclusión de ingresos ya mencionados. [Cuestionario 2012, pp 98/101](https://www.mhasweb.org/resources/DOCUMENTS/2012/Cuestionario_Basico_2012.pdf) y [cuestionario 2015, pp 99/102](https://www.mhasweb.org/resources/DOCUMENTS/2015/Cuestionario_Basico_2015.pdf). Esto hace plausible un cambio de ubicación de declaración, no prueba identidad o sustitución administrativa.
+
+Entre 376 incorporados K con A basal, 130 mantienen A, 244 la niegan y el resto es ND. Entre quienes mantienen A, 109 tienen 08; entre quienes la niegan, 216. Tener otra vía basal no acredita prestación adicional, y tener ambas afirmativas no identifica dos programas distintos. Identidad administrativa: no identificable.
+
+Los pares monetarios válidos A origen/K destino son 127/237, en 117/213 folios; la mediana de diferencia real individual es −20.69 en ambos conjuntos, IC95[−20.69; 85.65] y[−20.69; 22.10], 4999 réplicas por folio, semilla 20261023. A puede incluir especie: son importes captados, no ingreso total o efectivo disponible.
+
+| Vía | Ventana | N cohorte | N clasificable original/estricto | N nuevos original/estricto | NC original/estricto |
+| --- | --- | --- | --- | --- | --- |
+| K | 2001–2003 | 6812 | 5569/5558 | 298/297 | 12/12 |
+| K | 2012–2015 | 8888 | 7195/5933 | 1469/539 | 376/49 |
+| K | 2018–2021 | 9107 | 6984/6959 | 521/518 | 137/135 |
+| A | 2003–2012 | 6970 | 3714/3714 | 776/776 | 98/98 |
+| A | 2012–2015 | 8888 | 7212/7212 | 1512/1512 | 296/166 |
+| A | 2015–2018 | 9640 | 7240/7240 | 1212/1212 | 606/153 |
+
+K 2012–2015 P pasa de 1090 receptores/1060 montos a 489/461; C de 376/373 a 49/47. Son cambios de clasificación, no nuevas negativas. En A se conserva recepción y cambia la identificación de K basal. La alternativa solo 08 produce C 167 en A 2012–2015 frente 166 estricto; no deben confundirse las dos reglas.
+
+Probabilidades y composición no se intercambian. Entre negativos K reobservados, P 1090/3843=28.36%, C 376/1063=35.37%. Sobre los mismos denominadores, el resultado institucional distinto sin 08 es 489/3843=12.72%[11.69; 13.84] y 49/1063=4.61%[3.32; 6.00], IC95 folio 1999 semilla 20261023. El orden cambia: no hay efecto identificado de A previa sobre incorporación K.
+
+#### 10.10.2 Unión:56.9%, seguimiento y medición
+
+Cohorte 4592=2188 incorporaciones+1658 negativas+319 fallecimientos registrados+199 ausencias(vital desconocido)+186 sustitutos+42 unión ND. Principal:2188/3846=56.8903%, 3288 folios, IC95 percentil 9999 réplicas/semilla 20261024[55.2830; 58.5026]%. El intervalo original 1999/semilla 20261023[55.3116; 58.5804] es otra ejecución de remuestreo, no otra proporción ni población.
+
+La fracción detectada sobre toda la cohorte es 2188/4592=47.6481%, no una incidencia corregida. Entre 4273 sin defunción registrada, los límites son [2188/4273;(2188+427)/4273]=[51.2052; 61.1982]%; no acreditan supervivencia de ausentes, no son IC ni imputan recepción después de morir. No se usa una cota que atribuya recepción post mortem como escenario sustantivo.
+
+| Definición | N basal | N clasificable | N incorpora | ND adicional | %condicional | Identificada/3846% |
+| --- | --- | --- | --- | --- | --- | --- |
+| Principal | 4592 | 3846 | 2188 | 0 | 56.89 | 56.89 |
+| Conservador 08_ND | 4592 | 3301 | 1643 | 545 | 49.77 | 42.72 |
+
+La alternativa estricta identifica 1643/3846=42.7197% sobre observados originales; 545 pasan a ND y permiten cotas de medición [42.7197; 56.8903]%. Entre 3301 clasificables alternativos, 1643/3301=49.7728%, IC95 folio 1999/semilla 20261023[47.9612; 51.6176]%. No hay una tasa corregida única que sustituya 56.9. Con medición alternativa y sin defunción registrada, las cotas son [38.4507; 61.1982]%. Son supuestos y denominadores distintos, no IC conjuntos.
+
+#### 10.10.3 Montos y patrimonio: qué cambia
+
+Contrastes K 2012–2015 con montos completos válidos, 4999 réplicas por folio/semilla 20261023:
+
+| Contraste | N válidos original | Punto e IC95 original | N válidos estricto | Punto e IC95 estricto |
+|---|---|---|---|---|
+| P−C |1060/373|85.59[51.35; 406.56]|461/47|1027.09[547.78; 3286.70]|
+| Nuevos−continuos |1435/1857|−3286.70[−3457.88;−3201.11]|508/1670|−513.55[−855.91;−171.18]|
+
+El contraste original conserva validez bajo su definición; no se presenta como robusto a composición institucional. Otros IC originales usan semillas desplazadas por años y se etiquetan como tales. En A se mantienen nulos y empates; no se demuestra equivalencia. K 2001–2003 P/C con 11 montos C no sostiene conclusión direccional.
+
+| K ventana | Definición | N P/C inferior/P/C superior | Interacción pesos reales | IC95 |
+| --- | --- | --- | --- | --- |
+| 2012–2015 | Principal | 553/230/507/143 | 992.86 | [666.97; 2430.79] |
+| 2012–2015 | Solo 08_identificado | 206/20/255/27 | -684.73 | [-1883.01; 3595.26] |
+| 2018–2021 | Principal | 176/71/184/61 | 698.59 | [-197.37; 1710.21] |
+
+Interacción=(P−C)superior−(P−C)inferior; 4999 réplicas conjuntas por folio, semilla 20261024. La mayor diferencia en mitad patrimonial superior K 2012–2015 está respaldada solo bajo la definición original; pierde robustez al apartar 08. C 20/27 alternativos cuentan personas C con monto posterior íntegro válido en las mitades patrimoniales basales inferior/superior, no frecuencias en la mediana ni folios. Son exploratorios y no prueban una reversión poblacional. El cambio de signo puede reflejar tanto reclasificación como inestabilidad de las muestras reducidas; la sensibilidad no separa sus contribuciones y no sustenta una conclusión patrimonial general. K 2018–2021 tiene dos contrastes por mitad positivos pero interacción compatible con 0. No se infiere interacción por comparar significancias separadas.
+
+Las magnitudes originales K 2012–2015 son 85.59, 51.35 y 1044.21, aproximadamente 9.1%, 5.5% y 110.9% de la mediana C 941.50. La relevancia económica no se deduce solo de precisión; no se introduce umbral de pobreza o importancia arbitrario.
+
+A 2003–2012 conserva gradiente Q1−Q4 ajustado+6.77 pp[0.26; 13.18], soporte 500/439; edad 2+6.95[0.94; 13.25], 527/499. Una variante no es viable: no es robustez a todas las especificaciones. A 2015–2018 incluye 0 al ampliar edad y exigir 30/celda;+4.74[−0.78; 10.23]. K 2018–2021 también depende del mínimo. No hay focalización universal por necesidad.
+
+El ajuste monetario P/C K 2012–2015 no alcanza soporte en ninguna de cuatro configuraciones; 69.72% de P en la más próxima no se redondea a 70%. Las diferencias originales por sexo, escolaridad, edad y localidad se presentan en el capítulo 4 con N válidos e IC; no son efectos independientes. En el gradiente de incorporación K alternativo solo 08, la diferencia Q1−Q4 cruda−3.95 pp[−7.43;−0.44] pasa a−1.41[−5.08; 2.53] ajustada, soporte 749/774, 1999 réplicas, semilla 20261024: el signo crudo no se mantiene inequívocamente tras composición.
+
+Historia previa directa sin conflicto vital entre quienes son P: K 2012–2015, 217/1090; K 2018–2021, 148/384; A 2012–2015, 222/1210; A 2015–2018, 149/603 con declaración K/A positiva anterior. Se respeta la definición de cada ronda y no se validan puentes excluidos. P no es primera recepción conocida de toda la historia; no tener historia tampoco acredita ausencia anterior.
+
+#### 10.10.4 Procedimientos inferenciales y comprobaciones históricas
+
+Los aparentes conflictos institucionales no implican automáticamente persona frente a folio: los IC originales de ambas tablas remuestrean folios. K 2012–2015 IMSS/ISSSTE, N 406/27427 folios, 1999 réplicas/semilla 20265050:[0; 984.30]; 4999/20261024:[0; 1027.09]. K 2018–2021, N 309/79386 folios, 1999/20265062:[−40.03; 1087.78]; 4999/20261024:[−61.23; 1087.78]. Comprobación común 9999/20261024:[0; 1027.09] y[−9.92; 1087.78], sin cambiar punto o población. Los tres procedimientos se etiquetan en el manuscrito; no se elige el favorable.
+
+P/C K 2012–2015, N 1060/373, 1259 folios:4999/20265050 folio[51.35; 409.77], persona[51.35; 171.18]; 9999 folio/20261024[51.35; 668.25],/20261025[51.35; 409.13]. Son intervalos puntuales exploratorios y varían con remuestreo y masas. El folio es agrupación de origen, no hogar actual ni UPM certificada; no hay inferencia de diseño nacional.
+
+La brecha sexo 2015 parcial, N 2085/1880684.73[513.55; 684.73], tiene 54.6% de réplicas en el punto. Los IC degenerados no acreditan certeza o equivalencia. Se preservan empates y multiplicidades de remuestreo.
+
+Cambios transversales con suma parcial original, remuestreo folio conjunto 4999/semilla 20261024: K 2012–2015,−467.65[−467.65;−275.21], N 2633/3965, 4836 personas/4225 folios; A 2015–2018,−55.02[−55.02;−55.02], N 2582/2699, 4041 personas/3341 folios. No se interpreta como pérdida de las mismas personas. La mediana nominal K 2200 en ambos años se reproduce; Q25/Q75 cambian 1800/5000 a 600/4000.
+
+2021 directas 70+:4733/5099 con unión conocida, 92.822%; total 5125, 26 ND. No es toda la muestra 60+ ni cobertura nacional, pobreza resuelta o ingreso suficiente.
+
+#### 10.10.5 Balance científico y estado editorial
+
+**Cierre de validación de esta etapa:** manuscrito recompilado de 96 páginas;199 pruebas aprobadas,0 fallidas;166 comprobaciones independientes del contraste original y450 cotejos de sensibilidades, con reproducción del IC de unión y las interacciones. Se verifican336 embudos de soporte, las fuentes originales y el índice Git. Los validadores históricos que fijaban huellas editoriales anteriores se ejecutaron además con ámbito explícito: se conservan los manifiestos originales y se distinguen cambios de redacción autorizados de insumos de cálculo inmutables. La revisión de divulgación examina139 cuadros,45 fuentes LaTeX y familias de tablas relacionadas; no se detectan filas monetarias sensibles sin proteger bajo las reglas aplicadas. El riesgo histórico T8 permanece. No hay commit, push ni garantía frente a información auxiliar externa arbitraria. La versión está preparada para revisión académica independiente, con alcance descriptivo y pendientes institucionales de portada/normas.
+
+La tesis responde descriptivamente quiénes declaran incorporarse, qué otra vía tenían y qué montos captados se observan después. Requiere distinguir primera desde negativas basales, otra vía inicial, coexistencia final e identidad no identificable. Las conclusiones universales de focalización, prestación adicional o interacción patrimonial robusta se reformulan. Se conservan 56.9 condicional, los originales válidos, las coincidencias A, los contraejemplos y los no estimados por soporte. No se identifican ingreso total, primera alta de vida, pobreza, necesidad integral o causalidad.
+
+El capítulo 4 se reorganiza con el contraste central primero y el contexto histórico después; el capítulo 5 responde la pregunta y limita la interpretación. La introducción deja de presentar como pendiente el cruce ya realizado. La bibliografía elimina notas internas, conservando hechos y referencias; el título y la pregunta permanecen. Se corrigieron fuentes tipográficas, notas y referencias y se revisó visualmente la compilación actual. El PDF previo permanece solo como respaldo privado.
+
+Reproducción editorial: `python scripts/export_central_analysis.py --sensibilidades-fase-a <directorio_local_de_agregados_auditados>`. Este modo selecciona cuatro familias de tablas existentes, no reconstruye microdatos ni recalcula bootstrap; el exportador histórico queda bloqueado para impedir restauración accidental de una redacción anterior. Los agregados originales y el protocolo quedan privados. Las nuevas salidas se revisaron conjuntamente para divulgación en esta etapa: umbral de celda no certifica anonimato frente a tablas relacionadas. La exposición histórica previamente identificada se trata separadamente y no se modifica el historial.
+
+
 ## 11. Limitaciones y pendientes de investigación
 
 ### 11.1 Límites transversales a la lectura

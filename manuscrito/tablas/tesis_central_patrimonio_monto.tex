@@ -11,16 +11,38 @@ Vía/ventana & Mitad & N P/C & Mediana P & Mediana C & P-C [IC95] \\
 \bottomrule\endfoot
 K 2001--2003 & Inferior & Sin soporte & Reservado & Reservado & No estimable \\
 K 2001--2003 & Superior & Sin soporte & Reservado & Reservado & No estimable \\
-K 2012--2015 & Inferior & 553/230 & 992.9 & 941.5 & 51.4 [8.6; 68.5] \\
-K 2012--2015 & Superior & 507/143 & 1,985.7 & 941.5 & 1,044.2 [492.1; 2,482.1] \\
-K 2018--2021 & Inferior & 176/71 & 4,740.3 & 4,079.2 & 661.1 [37.7; 1,149.4] \\
-K 2018--2021 & Superior & 184/61 & 5,438.9 & 4,079.2 & 1,359.7 [564.7; 2,175.6] \\
-A 2003--2012 & Inferior & 372/42 & 962.2 & 962.2 & 0.0 [0.0; 0.0] \\
-A 2003--2012 & Superior & 294/56 & 962.2 & 962.2 & 0.0 [0.0; 0.0] \\
-A 2012--2015 & Inferior & 661/133 & 941.5 & 941.5 & 0.0 [0.0; 0.0] \\
-A 2012--2015 & Superior & 535/153 & 941.5 & 941.5 & 0.0 [-51.4; 0.0] \\
-A 2015--2018 & Inferior & 316/321 & 886.5 & 886.5 & 0.0 [-39.7; 7.6] \\
-A 2015--2018 & Superior & 265/268 & 878.8 & 886.5 & -7.6 [-38.2; 34.4] \\
+K 2012--2015 & Inferior & 553/230 & 992{,}9 & 941{,}5 & 51{,}4 [8{,}6; 68{,}5] \\
+K 2012--2015 & Superior & 507/143 & 1\,985{,}7 & 941{,}5 & 1\,044{,}2 [492{,}1; 2\,482{,}1] \\
+K 2018--2021 & Inferior & 176/71 & 4\,740{,}3 & 4\,079{,}2 & 661{,}1 [37{,}7; 1\,149{,}4] \\
+K 2018--2021 & Superior & 184/61 & 5\,438{,}9 & 4\,079{,}2 & 1\,359{,}7 [564{,}7; 2\,175{,}6] \\
+A 2003--2012 & Inferior & 372/42 & 962{,}2 & 962{,}2 & 0{,}0 [0{,}0; 0{,}0] \\
+A 2003--2012 & Superior & 294/56 & 962{,}2 & 962{,}2 & 0{,}0 [0{,}0; 0{,}0] \\
+A 2012--2015 & Inferior & 661/133 & 941{,}5 & 941{,}5 & 0{,}0 [0{,}0; 0{,}0] \\
+A 2012--2015 & Superior & 535/153 & 941{,}5 & 941{,}5 & 0{,}0 [-51{,}4; 0{,}0] \\
+A 2015--2018 & Inferior & 316/321 & 886{,}5 & 886{,}5 & 0{,}0 [-39{,}7; 7{,}6] \\
+A 2015--2018 & Superior & 265/268 & 878{,}8 & 886{,}5 & -7{,}6 [-38{,}2; 34{,}4] \\
 \end{longtable}
-{\footnotesize Fuente: auditoría10, insumos01--09 intactos. Muestra sin ponderación; IC condicionales, sin inferencia nacional o causal. P: primera vía observada; C: otra vía basal afirmativa. Reformulación común Q1+Q2/Q3+Q4, manteniendo población, titularidad, ventanas y precios. 4999 réplicas por folio. K2001--2003 sigue sin soporte; retirar conjuntamente ambas mitades y derivados impide recuperar un importe mediante otra rama. No se escogió la agrupación por significancia.\par}
+{\footnotesize Fuente: elaboración propia con los agregados analíticos revisados. Muestra sin ponderación; IC condicionales, sin inferencia nacional o causal. P: primera vía observada; C: otra vía basal afirmativa. Reformulación común Q1+Q2/Q3+Q4, manteniendo población, titularidad, ventanas y precios. 4999 réplicas por folio. K2001--2003 sigue sin soporte; retirar conjuntamente ambas mitades y derivados impide recuperar un importe mediante otra rama. No se escogió la agrupación por significancia. Los empates y la concentración de importes pueden producir extremos repetidos o IC de amplitud cero en el bootstrap de medianas; no implican certeza absoluta, igualdad distributiva ni ausencia de incertidumbre.\par}
 \endgroup
+
+% BEGIN sensibilidad_medicion_editorial
+\begingroup\small\setlength{\tabcolsep}{3pt}
+\begin{longtable}{p{.17\textwidth}p{.24\textwidth}p{.22\textwidth}p{.27\textwidth}}
+\caption{Diferencia de contrastes P menos C entre mitades patrimoniales en K}\label{tab:sensibilidad-interaccion}\\
+\toprule
+Ventana & Definición & N por rama & Interacción [IC95] \\
+\midrule\endfirsthead
+\multicolumn{4}{l}{Continuación del cuadro \thetable}\\
+\toprule
+Ventana & Definición & N por rama & Interacción [IC95] \\
+\midrule\endhead
+\bottomrule\endfoot
+\bottomrule
+\multicolumn{4}{p{.96\textwidth}}{\footnotesize Fuente: remuestreo conjunto por folio,4999 réplicas, semilla 20261024. Interacción=(P--C)superior menos(P--C)inferior; orden de N:P/C inferior y P/C superior. Pesos mensuales reales de septiembre de 2026. Solo 08 identificado aparta K afirmativa expuesta a 08; conserva la declaración original si la institución no está resuelta, por lo que no identifica una muestra institucional pura. N cuenta personas con monto íntegro válido, no folios: C 20 inferior y 27 superior son exploratorios. La reclasificación y la inestabilidad de muestras reducidas pueden contribuir al cambio de signo; no se separan sus aportaciones. No es efecto causal ni prueba de reversión del gradiente.}\\
+\endlastfoot
+2012--2015 & Original & 553/230/507/143 & 992{,}9 [667{,}0; 2\,430{,}8] \\
+2012--2015 & Solo 08 identificado & 206/20/255/27 & -684{,}7 [-1\,883{,}0; 3\,595{,}3] \\
+2018--2021 & Original & 176/71/184/61 & 698{,}6 [-197{,}4; 1\,710{,}2] \\
+\end{longtable}
+\endgroup
+% END sensibilidad_medicion_editorial

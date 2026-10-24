@@ -31,8 +31,13 @@ required = [
     "Composición de las incorporaciones observadas",
     "Probabilidad observada de incorporación",
     "Monto posterior por mitad patrimonial",
-    "Respuesta estadística a la pregunta central",
+    "Respuesta a la pregunta central",
     "Correspondencia entre objetivos",
+    "Sensibilidad de la medición y alcance de primera vía",
+    "Unión K/A",
+    "Diferencia de contrastes",
+    "42,72",
+    "49,77",
 ]
 for phrase in required:
     if phrase.casefold() not in normalized:
@@ -60,11 +65,16 @@ tokens = ["Selección documentada", "Decisión y diferencias", "Cuadro 3.",
           "Por qué K utiliza", "La selección de ventanas del cuadro",
           "homologación pendiente", "Estimandos del contraste", "Contraste central:",
           "Cuadro 4.", "Respuesta estadística", "Correspondencia entre objetivos",
+    "Sensibilidad de la medición y alcance de primera vía",
+    "Unión K/A",
+    "Diferencia de contrastes",
+    "42,72",
+    "49,77",
           "Patrimonio neto basal", "Límites que permanecen"]
 for i, text in enumerate(texts):
     if any(token in text for token in tokens):
         focus.add(i)
-preview = BUILD / "revision" / "calidad10"
+preview = ROOT / "data/interim/validacion_final_faseC_20261023/revision_pdf"
 preview.mkdir(parents=True, exist_ok=True)
 images = []
 # Dos páginas grandes por lámina; lectura visual de cuadro y notas.
@@ -105,7 +115,16 @@ checks = {
     "focus_pages": [i+1 for i in sorted(focus)],
     "preview_images": images,
     "visual_review": "Pendiente de inspección humana o del asistente; no certificada por este script",
-    "statistical_recalculation": (ROOT/"data/interim/incorporacion_proteccion_propia/validacion.json").exists(),
+    "statistical_recalculation": False,
+    "stored_estimates_revalidated": (ROOT/"data/interim/validacion_final_faseC_20261023/comprobaciones_numericas.json").exists(),
 }
+# Bibliography and embedded figures also belong to the compiled provenance.
+checks['source_files_sha256']['investigacion/referencias.bib'] = hashlib.sha256((ROOT/'investigacion/referencias.bib').read_bytes()).hexdigest()
+tex = '\n'.join(p.read_text() for p in (ROOT/'manuscrito').rglob('*.tex') if p.relative_to(ROOT).as_posix() in public_paths)
+for rel in re.findall(r'\\includegraphics(?:\[[^]]*\])?\{([^}]+)\}', tex):
+    figure=(ROOT/'manuscrito'/rel).resolve()
+    name=figure.relative_to(ROOT).as_posix()
+    assert name in public_paths, name
+    checks['source_files_sha256'][name] = hashlib.sha256(figure.read_bytes()).hexdigest()
 (BUILD / "validacion_pdf.json").write_text(json.dumps(checks, ensure_ascii=False, indent=2)+"\n")
 print(json.dumps(checks, ensure_ascii=False, indent=2))

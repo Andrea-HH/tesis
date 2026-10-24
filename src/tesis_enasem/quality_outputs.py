@@ -297,6 +297,8 @@ La revisión histórica de `origin/main` no encontró rutas de microdatos o cred
 
 def export_public() -> dict:
     """Corrige versión académica actual y prepara después una propuesta pública."""
+    if "% FASE_B:" in (ROOT/"manuscrito/main.tex").read_text():
+        raise RuntimeError("Fuentes en revisión Fase B: el exportador histórico no puede restaurar instantáneas anteriores. Use la selección explícita de sensibilidades; validación/publicación pendientes.")
     audit=json.loads((OUT/'privado/auditoria.json').read_text())
     # Siempre partir de los originales, no de una versión previamente censurada.
     logs=[]

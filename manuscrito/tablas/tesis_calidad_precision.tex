@@ -10,11 +10,36 @@ Vía/ventana & N P/C & IC semilla1 & IC semilla2 & Evaluación \\
 \midrule\endhead
 \bottomrule\endfoot
 K 2001--2003 & 278/11 & No confiable & No confiable & Sin soporte direccional \\
-K 2012--2015 & 1,060/373 & [51.4; 668.3] & [51.4; 409.1] & Dirección cruda estable \\
-K 2018--2021 & 360/132 & [543.9; 1,324.3] & [543.9; 1,281.3] & Dirección cruda estable \\
-A 2003--2012 & 666/98 & [0.0; 0.0] & [0.0; 0.0] & Condicional; empates \\
-A 2012--2015 & 1,196/286 & [0.0; 0.0] & [0.0; 0.0] & Condicional; empates \\
-A 2015--2018 & 581/589 & [-30.6; 7.6] & [-30.6; 7.6] & Medianas coincidentes \\
+K 2012--2015 & 1\,060/373 & [51{,}4; 668{,}3] & [51{,}4; 409{,}1] & Dirección cruda estable \\
+K 2018--2021 & 360/132 & [543{,}9; 1\,324{,}3] & [543{,}9; 1\,281{,}3] & Dirección cruda estable \\
+A 2003--2012 & 666/98 & [0{,}0; 0{,}0] & [0{,}0; 0{,}0] & Condicional; empates \\
+A 2012--2015 & 1\,196/286 & [0{,}0; 0{,}0] & [0{,}0; 0{,}0] & Condicional; empates \\
+A 2015--2018 & 581/589 & [-30{,}6; 7{,}6] & [-30{,}6; 7{,}6] & Medianas coincidentes \\
 \end{longtable}
-{\footnotesize Fuente: auditoría10, insumos01--09 intactos. Muestra sin ponderación; IC condicionales, sin inferencia nacional o causal. P: primera vía observada; C: otra vía basal afirmativa. 9999 réplicas por folio y dos semillas. Se muestran estimación e IC. Los intervalos por orden e influencia están en el informe. La diferencia K2001--2003 no se usa como conclusión direccional aunque pueda calcularse.\par}
+{\footnotesize Fuente: elaboración propia con los agregados analíticos revisados. Muestra sin ponderación; IC condicionales, sin inferencia nacional o causal. P: primera vía observada; C: otra vía basal afirmativa. 9999 réplicas por folio y dos semillas. Se muestran estimación e IC. Los intervalos por orden e influencia están en el informe. La diferencia K2001--2003 no se usa como conclusión direccional aunque pueda calcularse. Los empates y la concentración de importes pueden producir extremos repetidos o IC de amplitud cero en el bootstrap de medianas; no implican certeza absoluta, igualdad distributiva ni ausencia de incertidumbre.\par}
 \endgroup
+
+% BEGIN sensibilidad_medicion_editorial
+\begingroup\small\setlength{\tabcolsep}{3pt}
+\begin{longtable}{p{.18\textwidth}p{.16\textwidth}rrp{.29\textwidth}}
+\caption{Mismo contraste institucional con procedimientos de remuestreo explícitos}\label{tab:procedimientos-institucionales}\\
+\toprule
+K ventana & Procedimiento & Réplicas & Semilla & P--C [IC95] \\
+\midrule\endfirsthead
+\multicolumn{5}{l}{Continuación del cuadro \thetable}\\
+\toprule
+K ventana & Procedimiento & Réplicas & Semilla & P--C [IC95] \\
+\midrule\endhead
+\bottomrule\endfoot
+\bottomrule
+\multicolumn{5}{p{.96\textwidth}}{\footnotesize Fuente: reproducción exacta y comprobación de los agregados existentes. P/C con evidencia IMSS/ISSSTE y monto íntegro; todos son IC percentiles por folio.2012--2015:N 406/27,427 folios;2018--2021:N 309/79,386 folios. El procedimiento común usa 9999 réplicas, semilla 20261024 y conserva el estimando; no sustituye silenciosamente los originales. C 27 es exploratorio. Diferencias entre extremos reflejan réplicas/semillas y empates, no necesariamente poblaciones o unidades distintas.}\\
+\endlastfoot
+2012--2015 & Original & 1999 & 20265050 & 513{,}5 [0{,}0; 984{,}3] \\
+2012--2015 & Común & 9999 & 20261024 & 513{,}5 [0{,}0; 1\,027{,}1] \\
+2012--2015 & Sensibilidad & 4999 & 20261024 & 513{,}5 [0{,}0; 1\,027{,}1] \\
+2018--2021 & Original & 1999 & 20265062 & 679{,}9 [-40{,}0; 1\,087{,}8] \\
+2018--2021 & Común & 9999 & 20261024 & 679{,}9 [-9{,}9; 1\,087{,}8] \\
+2018--2021 & Sensibilidad & 4999 & 20261024 & 679{,}9 [-61{,}2; 1\,087{,}8] \\
+\end{longtable}
+\endgroup
+% END sensibilidad_medicion_editorial

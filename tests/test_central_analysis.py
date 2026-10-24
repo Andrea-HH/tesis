@@ -61,3 +61,28 @@ def test_missing_covariates_count_against_support_retention():
     r=standardize(q,'dinero',replicas=99)
     assert not r['viable'] and r['N_antes']==[80,80]
     assert r['cobertura'][0]<.7 and r['estimacion'] is None
+
+
+def test_export_editorial_rechaza_monto_sin_soporte():
+    """Un grupo pequeño no puede producir contraste monetario exportable."""
+    import runpy
+    import pytest
+    from pathlib import Path
+    export = runpy.run_path(str(Path(__file__).resolve().parents[1] / 'scripts/export_central_analysis.py'))
+    with pytest.raises(ValueError, match='soporte'):
+        export['interval']({'N': [200, 5], 'estimacion': 1, 'ic95': [0, 2]})
+    assert export['interval']({'N': [200, 5], 'estimacion': None, 'ic95': None}) == 'No estimado'
+
+
+def test_export_editorial_bloque_idempotente(tmp_path):
+    """Reexportar una sensibilidad no duplica ni borra el contenido original."""
+    import runpy
+    from pathlib import Path
+    export = runpy.run_path(str(Path(__file__).resolve().parents[1] / 'scripts/export_central_analysis.py'))
+    path = tmp_path / 'table.tex'
+    path.write_text('Cuadro original conservado\n')
+    export['block'](path, 'Primera selección')
+    export['block'](path, 'Selección revisada')
+    assert path.read_text().count('Cuadro original conservado') == 1
+    assert 'Primera selección' not in path.read_text()
+    assert path.read_text().count('Selección revisada') == 1
