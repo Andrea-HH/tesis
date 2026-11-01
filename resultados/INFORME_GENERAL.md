@@ -1883,7 +1883,7 @@ La comparación monetaria entre vías se restringe a A 5 con norma monetaria ver
 **Nota:** Directas 60+ con monto y geografía asignable.2001/2003 asignable incluye solo≥100 mil: selección distinta.
 Escenarios aplican ambas líneas a todos los montos; no clasifican ruralidad ni pobreza. No IC.
 
-Las líneas históricas cubren todos los periodos 2000–2022 usados. Para 2012/2015 se dejaron 2 y 4 discordancias geográficas directas como ND;2018/2021 quedan 12 y 14 sin fuente asignable. No se modificaron localidades. Deflactar prestación y línea con el mismo índice deja invariante su razón. [Serie y método CONEVAL](https://www.coneval.org.mx/Medicion/MP/Paginas/Lineas-de-Pobreza-por-Ingresos.aspx), [LPI INEGI](https://www.inegi.org.mx/desarrollosocial/lp/).
+Las líneas históricas cubren todos los periodos 2000–2022 usados. Para 2012/2015 se dejaron 2 y 4 discordancias geográficas directas como ND;2018/2021 quedan 12 y 14 sin fuente asignable. No se modificaron localidades. La prestación y la LPI se expresan en pesos de septiembre de 2026 con el mismo factor INPC. Por ello, la razón individual es invariante, mientras que la diferencia monetaria sí queda expresada en pesos de septiembre de 2026. [Serie y método CONEVAL](https://www.coneval.org.mx/Medicion/MP/Paginas/Lineas-de-Pobreza-por-Ingresos.aspx), [LPI INEGI](https://www.inegi.org.mx/desarrollosocial/lp/).
 
 **Fuente y procedencia:** ENASEM; [07_POLITICAS_MONTOS_SUFICIENCIA](../notebooks/07_POLITICAS_MONTOS_SUFICIENCIA.ipynb); [agregados 07](../data/interim/politicas_montos_suficiencia/resultados.json); [contrato monetario](../diccionarios/contrato_monetario_politicas.json); [fuentes y cronología](../investigacion/notas/politicas_publicas_envejecimiento.md). Bloque 5,12.
 
