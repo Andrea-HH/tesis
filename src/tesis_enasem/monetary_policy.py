@@ -250,24 +250,29 @@ def partitions(f: pd.DataFrame, dimensions: tuple = DIMENSIONS) -> Iterator[tupl
 
 
 def benefit_summary(p: pd.DataFrame, amount: str) -> dict:
-    """Un importe parcial: nominal, real, temporal y relación con dos líneas."""
+    """Un importe parcial y la LPI en pesos de septiembre de 2026."""
     v = p[amount]
     real = v * p.factor
-    eligible = v.notna() & p.lpi_asignada.notna()
-    ratios = 100*v/p.lpi_asignada
+    lpi_real = p.lpi_asignada * p.factor
+    lpi_real_12m = p.lpi_asignada_12m * p.factor_12m
+    eligible = real.notna() & lpi_real.notna()
+    # La razón es invariante si prestación y LPI usan el mismo factor de precios.
+    ratios = 100 * real / lpi_real
+    ratios_12m = 100 * (v * p.factor_12m) / lpi_real_12m
+    below_lpi = eligible & real.lt(lpi_real)
     return dict(nominal=summarize(v), real=summarize(real),
         reales_positivos=summarize(real.where(v.gt(0))),
         sensibilidad_ano_entrevista=summarize(v*p.factor_ano_entrevista),
         sensibilidad_12m=summarize(v*p.factor_12m),
         real_min_fecha=summarize(v*p.factor_min), real_max_fecha=summarize(v*p.factor_max),
-        lpi_pct=summarize(ratios), lpi_pct_12m=summarize(100*v/p.lpi_asignada_12m),
+        lpi_pct=summarize(ratios), lpi_pct_12m=summarize(ratios_12m),
         diferencia_lpi_nominal=summarize((v-p.lpi_asignada).where(v.notna())),
-        diferencia_lpi_real=summarize((v-p.lpi_asignada)*p.factor),
+        diferencia_lpi_real=summarize(real-lpi_real),
         N_geografia_ND_monto=int((v.notna() & p.localidad_lpi.eq('Indeterminado')).sum()),
         N_periodo_ND_monto=int((v.notna() & p.factor.isna()).sum()),
         N_umbral_ND_monto=int((v.notna() & p.lpi_asignada.isna()).sum()),
-        N_lpi=len(p.loc[eligible]), N_prestacion_inferior_lpi=int((eligible & v.lt(p.lpi_asignada)).sum()),
-        prestacion_inferior_lpi_pct=pct(int((eligible & v.lt(p.lpi_asignada)).sum()), int(eligible.sum())),
+        N_lpi=int(eligible.sum()), N_prestacion_inferior_lpi=int(below_lpi.sum()),
+        prestacion_inferior_lpi_pct=pct(int(below_lpi.sum()), int(eligible.sum())),
         escenario_todos_rural_pct=summarize(100*v/p.lpi_rural),
         escenario_todos_urbana_pct=summarize(100*v/p.lpi_urbana))
 
