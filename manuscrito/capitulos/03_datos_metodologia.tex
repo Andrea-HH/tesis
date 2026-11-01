@@ -293,22 +293,45 @@ Política de Desarrollo Social (CONEVAL), versión marzo de 2025 reestimada
 con la actualización 2024, conservada con los agregados monetarios.\footnote{Archivo:
 \url{https://www.coneval.org.mx/Medicion/Documents/Lineas_de_Pobreza_por_Ingresos/Lineas_de_Pobreza_por_Ingresos.zip}.
 La definición y la versión se preservan en el manifiesto de fuentes.}
-La línea mensual por persona distingue ruralidad menor a2\,500 habitantes
+La línea mensual por persona distingue ruralidad menor a 2\,500 habitantes
 y ámbito urbano de 2\,500 o más. El corte analítico de 100 mil habitantes
 no define esa ruralidad. En 2001/2003 solo las localidades de 100 mil o más
 tienen ámbito urbano asignable; el resto no se completa mediante suposiciones.
-
-Para una prestación mensual nominal y la línea del mismo periodo y ámbito
-$g_{it}$:
+Sea $g_{it}$ el ámbito rural o urbano asignable a la persona $i$ en la visita
+$t$. La referencia principal de la LPI es el promedio de sus doce valores
+mensuales del año calendario anterior al año real de entrevista:
 \begin{equation}
- Q_{ivt}=100\,\frac{M_{ivt}}{\overline L_{g_{it},\,y_{it}-1}}.
+ \overline L_{g_{it},\,y_{it}-1}
+ =\frac{1}{12}\sum_{m=1}^{12}L_{g_{it},\,y_{it}-1,m}.
+ \label{eq:lpi-media-anual}
+\end{equation}
+Para expresar también la línea en pesos de septiembre de 2026 se aplica
+el mismo factor de actualización que a la prestación:
+\begin{equation}
+ L^{R}_{g_{it},\,y_{it}-1}
+ =\overline L_{g_{it},\,y_{it}-1}
+ \frac{I_{\mathrm{sep2026}}}{\overline I_{y_{it}-1}}.
+ \label{eq:lpi-real}
+\end{equation}
+Así, la prestación y la línea quedan en una unidad monetaria común. La
+proporción se calcula individualmente y puede escribirse de forma equivalente
+con los importes históricos o con ambos importes actualizados:
+\begin{equation}
+ Q_{ivt}
+ =100\,\frac{M^{R}_{ivt}}{L^{R}_{g_{it},\,y_{it}-1}}
+ =100\,\frac{M_{ivt}}{\overline L_{g_{it},\,y_{it}-1}}.
  \label{eq:prestacion-lpi}
 \end{equation}
-Se resume la distribución de $Q$, no la razón entre dos medianas. Su N exige
-importe, fecha y ámbito compatibles. Un valor inferior a100 informa sobre
-esa prestación parcial frente a la referencia; no clasifica pobreza de la
-persona o del hogar. Poder adquisitivo constante, razón de prestación a LPI
-e ingreso completo son estimandos diferentes.
+El factor común del INPC se cancela en la razón; por ello, hacer explícita
+la actualización de la LPI no modifica los valores de $Q$ ni sus cuantiles.
+Sí permite expresar la diferencia monetaria $M^{R}_{ivt}-L^{R}_{g_{it},\,y_{it}-1}$
+en pesos de septiembre de 2026. Las sensibilidades temporales aplican a
+ambos componentes el mismo criterio de periodo. Se resume la distribución
+individual de $Q$, no la razón entre dos medianas. Su N exige importe, fecha
+y ámbito compatibles. Un valor inferior a 100 informa sobre esa prestación
+parcial frente a la referencia; no clasifica pobreza de la persona o del hogar.
+Poder adquisitivo constante, razón de prestación a LPI e ingreso completo
+son estimandos diferentes.
 
 \section{Incorporación y continuidad observadas}
 \label{sec:transiciones-monetarias}

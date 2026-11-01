@@ -281,8 +281,11 @@ total o K+A. Cónyuge es contexto separado; sustitutos válidos son sensibilidad
 LPI históricas oficiales mensuales por persona, con corte rural de 2,500 habitantes;
 la variable de 100 mil no lo reemplaza. Códigos originales 2012–2021 permiten asignar
 umbrales, conservando faltantes/discordancias. En 2001/2003 se utilizan escenarios
-para localidades sin clasificación suficiente. Una prestación bajo la LPI no
-diagnostica pobreza. INPC mide poder adquisitivo, no valor presente actuarial.
+para localidades sin clasificación suficiente. La prestación y la LPI se expresan
+en pesos de septiembre de 2026 aplicando el mismo factor INPC; por ello, su razón
+individual no cambia al actualizar ambas, aunque la diferencia monetaria sí queda
+en pesos de septiembre de 2026. Una prestación bajo la LPI no diagnostica pobreza.
+INPC mide poder adquisitivo, no valor presente actuarial.
 
 [Fuentes y cronología documental](investigacion/notas/politicas_publicas_envejecimiento.md)
 enlazan reglas oficiales y límites de atribución. Los análisis reutilizan cobertura 06

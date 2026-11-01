@@ -21,9 +21,15 @@
   "lpi": {
     "fuente": "CONEVAL histórica, archivo marzo2025 reestimado2024; INEGIresponsable desde2025",
     "unidad": "Pesos mensuales por persona, canasta alimentaria+no alimentaria",
-    "fecha": "Mismo periodo explícito de valoración de prestación; escenarios12meses",
+    "fecha": "Promedio de los doce meses del año calendario anterior al año real de entrevista; se actualiza a septiembre de 2026 con el mismo factor INPC aplicado a la prestación. Sensibilidad de doce meses previos al mes real con factor común.",
     "geografia": "Rural<2500/urbana≥2500; camposoriginales2012–21;2001/03≥100milurbana, restoND",
-    "limite": "Una prestación parcial inferior al umbral no diagnostica pobreza individual/hogar. Escenarios no asignan ruralidad."
+    "limite": "Una prestación parcial inferior al umbral no diagnostica pobreza individual/hogar. Escenarios no asignan ruralidad.",
+    "formula": {
+      "lpi_historica": "L_promedio(g,y-1) = promedio de LPI mensual rural/urbana de enero a diciembre del año anterior al año real de entrevista",
+      "lpi_real": "LPI_real = LPI_promedio × INPC_sep2026 / INPC_promedio_año_anterior",
+      "proporcion": "Q = 100 × M_real / LPI_real = 100 × M_nominal / LPI_promedio; el factor común se cancela",
+      "diferencia": "M_real − LPI_real, expresada en pesos de septiembre de 2026"
+    }
   },
   "comparabilidad": "Condicionada:K2001–03/2012–15/2018–21;A2003–12/2012–15/2015–18. Rupturas limitan también evolución de brechas monetarias.",
   "comparacion_entre_vias": "Importes mensuales por eventoK frente a A5 de vejez2021 con norma monetaria verificada. TodaA se describe como valoración dinero/especie separada; no se compara como efectivo homogéneo.",
