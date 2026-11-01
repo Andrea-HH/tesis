@@ -42,3 +42,24 @@ def test_nd_is_not_a_zero_in_quantiles():
     z=summarize(pd.Series([0.,100.,200.,np.nan]))
     assert z['N']==3 and z['N_cero']==1 and z['mediana']==100
     assert summarize(pd.Series([np.nan]))['mediana'] is None
+
+def test_benefit_to_lpi_is_reported_in_september_2026_pesos():
+    from tesis_enasem.monetary_policy import benefit_summary
+
+    p = pd.DataFrame({
+        "monto": [1000.0],
+        "factor": [2.0],
+        "factor_ano_entrevista": [2.1],
+        "factor_12m": [2.0],
+        "factor_min": [1.9],
+        "factor_max": [2.1],
+        "lpi_asignada": [2000.0],
+        "lpi_asignada_12m": [2000.0],
+        "localidad_lpi": ["Urbana"],
+        "lpi_rural": [1800.0],
+        "lpi_urbana": [2000.0],
+    })
+    result = benefit_summary(p, "monto")
+    assert result["lpi_pct"]["mediana"] == pytest.approx(50.0)
+    assert result["diferencia_lpi_real"]["mediana"] == pytest.approx(-2000.0)
+    assert result["N_lpi"] == 1
