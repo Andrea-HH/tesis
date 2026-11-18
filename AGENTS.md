@@ -12,13 +12,24 @@ selección preparada sin autorización explícita. No restaures as.py automátic
 La investigación vigente estudia ENASEM 2001–2021: incorporación a primera
 vía propia observada K/A frente a complementariedad, recursos monetarios,
 diferencias socioeconómicas y heterogeneidad institucional, conservando
-trayectorias y sensibilidad a mortalidad/ausencia. Pregunta vigente (texto
-íntegro en README y manuscrito/capitulos/01_introduccion.tex):
+trayectorias y sensibilidad a mortalidad/ausencia. Título vigente (PDF de
+175 páginas y siete capítulos, 17/11/2026, en manuscrito/build/main.pdf):
+«Pensiones y apoyos económicos en la vejez en México: recepción,
+incorporación y poder adquisitivo en ENASEM, 2001–2021». Pregunta central
+vigente (texto íntegro en README):
+«¿Cómo se relacionan la recepción previa y las características
+socioeconómicas de las personas mayores observadas en ENASEM con su
+incorporación a pensiones y apoyos y con los montos que reciben
+posteriormente?»
+La pregunta de la etapa anterior (23/10/2026) se conserva como antecedente:
 «¿En qué medida la incorporación a prestaciones económicas observadas en
 ENASEM representa una ampliación de la protección propia de los adultos
 mayores previamente sin recepción identificada, y cómo varían los montos
 recibidos según sus condiciones socioeconómicas y las prestaciones que ya
 tenían?»
+Las fuentes LaTeX de manuscrito/capitulos/ siguen siendo las de cinco
+capítulos; no recompilar sobre manuscrito/build/main.pdf hasta incorporar
+las fuentes de siete capítulos, porque se perdería la versión vigente.
 No confundir primera vía observada K/A con primera alta de toda la vida o
 desprotección económica integral. La etapa09 estima posición socioeconómica basal × primera vía/complemento ×
 monto posterior (Informe10.8). Hay heterogeneidad, nulos y soporte limitado:

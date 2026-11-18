@@ -1,8 +1,22 @@
-# Tesis ENASEM — ¿más cobertura significa menos desprotección?
+# Tesis ENASEM — Pensiones y apoyos económicos en la vejez en México
 
-**Entrega vigente para GitHub:** tesis de 97 páginas e Informe General de 204 páginas, con las correcciones científicas y editoriales validadas. Solo se incluyen las 392 rutas autorizadas. Las menciones posteriores a cambios locales o publicación pendiente describen el estado de las etapas anteriores. El riesgo histórico T8 permanece documentado y no queda saneado por esta actualización.
+**Título vigente:** *Pensiones y apoyos económicos en la vejez en México: recepción, incorporación y poder adquisitivo en ENASEM, 2001–2021.* Tesis del Programa de Honores en Actuaría, Universidad de las Américas Puebla. Autora: Andrea Hernández Huerta. Director: Dr. Rubén Blancas Rivera. Otoño de 2026.
 
-## Pregunta y enfoque vigentes — 23 de octubre de 2026
+**Entrega vigente (17 de noviembre de 2026):** [PDF de la tesis](manuscrito/build/main.pdf), 175 páginas en siete capítulos y tres apéndices (A: diccionario operacional; B: cuadros complementarios y diagnósticos; C: procedencia del código). La versión de siete capítulos es una reconstrucción editorial que usa la evidencia y el código del commit `6a90c38b795ae94786ec2a50ec9df9f83367e7e0` (apéndice C.1); no rehízo análisis ni cambió estimaciones. El Informe General de 204 páginas se conserva sin cambios.
+
+> **Pendiente:** las fuentes LaTeX de `manuscrito/capitulos/` y `manuscrito/main.tex` todavía corresponden a la versión anterior de cinco capítulos (97 páginas). El PDF en `manuscrito/build/main.pdf` es la versión vigente y no se genera a partir de esas fuentes; recompilarlas sobrescribiría el PDF con la versión anterior hasta que se incorporen las fuentes de siete capítulos.
+
+### Pregunta central vigente
+
+> ¿Cómo se relacionan la recepción previa y las características socioeconómicas de las personas mayores observadas en ENASEM con su incorporación a pensiones y apoyos y con los montos que reciben posteriormente?
+
+**Tres ejes:** (1) quién declara recepción propia por ronda (vía pensionaria K, apoyo público adicional A y su unión); (2) quién se incorpora, desde ambas negativas basales o con la otra vía ya declarada, y quién continúa; (3) cuánto recibe después, en pesos reales de septiembre de 2026, con cambios de las mismas personas y la razón prestación/Línea de Pobreza por Ingresos. Población principal: entrevistas directas de 60 años o más, sin ponderación nacional. Las hipótesis H1–H3 se evalúan por vía y ventana con comparabilidad documentada.
+
+**Resultado central:** en 2012–2015, única ventana conjunta admitida, 2,188 de 3,846 personas reobservadas clasificables que negaban ambas vías al inicio declaran alguna al final (56.89%; 47.65% sobre la cohorte basal de 4,592). Mayor recepción no equivale a mayor monto: en 2021 la unión K/A es 73.35% sin escolaridad y 66.10% con 10+ años, pero la mediana real K es 4,033.70 y 16,316.67 pesos, respectivamente.
+
+## Pregunta y enfoque de la etapa anterior — 23 de octubre de 2026
+
+La pregunta y el título de trabajo de esta sección corresponden a la versión de 97 páginas y se conservan como antecedente de la reconstrucción editorial vigente.
 
 > ¿En qué medida la incorporación a prestaciones económicas observadas en ENASEM representa una ampliación de la protección propia de los adultos mayores previamente sin recepción identificada, y cómo varían los montos recibidos según sus condiciones socioeconómicas y las prestaciones que ya tenían?
 
@@ -31,7 +45,7 @@
 | Bases analíticas y manifiestos | data/processed/ |
 | Bibliografía principal | [referencias.bib](investigacion/referencias.bib) |
 | Antecedentes únicos | [notebooks históricos](investigacion/notas/notebooks_historicos/README.md) |
-| Cinco capítulos y PDF compilado | [Manuscrito](manuscrito/README.md) · [PDF](manuscrito/build/main.pdf) |
+| Fuentes LaTeX (versión anterior de cinco capítulos) y PDF vigente de siete capítulos | [Manuscrito](manuscrito/README.md) · [PDF](manuscrito/build/main.pdf) |
 | Lógica, ejecución y tests | src/tesis_enasem/, scripts/ y tests/ |
 
 Los notebooks de trabajo permanecen juntos en notebooks/. Los once antecedentes se
